@@ -20,7 +20,19 @@ void testFatorial() {
     std::cout << "Todos os testes de Fatorial passaram!" << std::endl;
 }
 
+void testEhPrimo(){
+    std::cout << "Iniciando testes de EhPrimo..." << std::endl;
+    assert(ehPrimo(2) == true);
+    assert(ehPrimo(3) == true);
+    assert(ehPrimo(4) == false);
+    assert(ehPrimo(17) == true);
+    assert(ehPrimo(1) == false);
+    assert(ehPrimo(0) == false);
+    std::cout << "Todos os testes de EhPrimo passaram!" << std::endl;
+}
+
 int main() {
     testFatorial();
+    testEhPrimo();
     return 0;
 }

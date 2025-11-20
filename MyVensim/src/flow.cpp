@@ -47,3 +47,4 @@ System *Flow::getSource() { return m_source; }
 
 // Retorna a System de destino (pode ser nullptr)
 System *Flow::getTarget() { return m_target; }
+

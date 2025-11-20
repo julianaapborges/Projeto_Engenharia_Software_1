@@ -54,3 +54,4 @@ clean:
 	rm -f $(BIN_DIR)/*.so
 	rm -f $(BIN_DIR)/*.dll
 	rm -f $(BIN_DIR)/*.a
+	

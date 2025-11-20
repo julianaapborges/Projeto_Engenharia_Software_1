@@ -32,3 +32,4 @@ void System::setValue(double value) { m_value = value; }
 
 // Retorna o valor atual do System
 double System::getValue() { return m_value; }
+

@@ -37,7 +37,15 @@ make
 **Compilar os testes de validação (TDD):**
 ```bash
 make test
+    ou
+make func
+    ou
+make unit
 
 **Executar os testes (validação dos modelos):**
 ```bash
 ./bin/testeRegressivo.exe
+    ou
+./bin/testeFuncional.exe
+    ou
+./bin/testeUnitario.exe

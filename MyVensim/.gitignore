@@ -1,0 +1,5 @@
+# Ignorar todo o conteúdo do diretório de binários
+bin/
+
+# Ignorar arquivos objeto que possam ser criados acidentalmente na raiz
+*.o

@@ -14,8 +14,8 @@ Flow::Flow() {
 
 Flow::Flow(System *source, System *target) {
   // Construtor com inicialização de fonte e destino
-  m_source = source;
-  m_target = target;
+  this->m_source = source;
+  this->m_target = target;
 }
 
 // Destrutor virtual (implementação vazia). Subclasses podem sobrepor se necessário.
@@ -23,15 +23,15 @@ Flow::~Flow() {}
 
 // Construtor de cópia: copia apenas as referências de source/target
 Flow::Flow(const Flow &flow) {
-  m_source = flow.m_source;
-  m_target = flow.m_target;
+  this->m_source = flow.m_source;
+  this->m_target = flow.m_target;
 }
 
 // Operador de atribuição: copia referências de source/target, protegendo self-assignment
 Flow &Flow::operator=(const Flow &flow) {
   if (this != &flow) {
-    m_source = flow.m_source;
-    m_target = flow.m_target;
+    this->m_source = flow.m_source;
+    this->m_target = flow.m_target;
   }
   return *this;
 }

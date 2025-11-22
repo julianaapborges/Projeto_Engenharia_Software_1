@@ -8,14 +8,16 @@
 class Model {
 protected:
     double m_time;
-    std::vector<System *> m_systems;
-    std::vector<Flow *> m_flows;
+    typedef std::vector<System*> SystemContainer; // coloquei em protected pois nao sei se vai ter iteradores, se precisar passo para public
+    typedef std::vector<Flow*> FlowContainer; // coloquei em protected pois nao sei se vai ter iteradores, se precisar passo para public
+    SystemContainer m_systems;
+    FlowContainer m_flows;
 
 public:
   Model();
   virtual ~Model();
-  Model(const Model &model);
-  Model &operator=(const Model &model);
+  Model(const Model &other);
+  Model &operator=(const Model &other);
   
   void add(System *system);
   void add(Flow *flow);

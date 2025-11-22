@@ -8,8 +8,8 @@ protected:
 public:
   System();
   System(double value);
-  System(const System &system);
-  System &operator=(const System &system);
+  System(const System &other);
+  System &operator=(const System &other);
   virtual ~System();
   
   void print();

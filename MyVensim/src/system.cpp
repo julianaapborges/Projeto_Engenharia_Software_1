@@ -6,20 +6,20 @@
 // que pode ser alterada por Fluxos (Flow). A classe fornece métodos simples
 // para acessar e modificar o valor armazenado.
 
-System::System() { m_value = 0; }
+System::System() { m_value = 0.0; }
 
 // Construtor que inicializa o valor do System
-System::System(double value) { m_value = value; }
+System::System(double value) { this->m_value = value; }
 
 System::~System() {}
 
 // Construtor de cópia: copia o valor armazenado
-System::System(const System &system) { m_value = system.m_value; }
+System::System(const System &other) { this->m_value = other.m_value; }
 
 // Operador de atribuição: copia o valor, protegendo contra self-assignment
-System &System::operator=(const System &system) {
-  if (this != &system) {
-    m_value = system.m_value;
+System &System::operator=(const System &other) {
+  if (this != &other) {
+    this->m_value = other.m_value;
   }
   return *this;
 }

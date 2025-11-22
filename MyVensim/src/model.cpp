@@ -11,21 +11,28 @@
 
 Model::Model() : m_time(0) {}
 
-Model::~Model() {}
+Model::~Model() {
+  for(unsigned int i =0; i < m_systems.size(); i++){ 
+    delete m_systems[i];
+  }
+  for(unsigned int i =0; i < m_flows.size(); i++){ 
+    delete m_flows[i];
+  }
+}
 
 // Construtor de cópia: copia estado e coleções (shallow copy dos ponteiros)
-Model::Model(const Model &model) {
-  m_time = model.m_time;
-  m_systems = model.m_systems;
-  m_flows = model.m_flows;
+Model::Model(const Model &other) {
+  this->m_time = other.m_time;
+  this->m_systems = other.m_systems;
+  this->m_flows = other.m_flows;
 }
 
 // Operador de atribuição: copia estado e coleções (shallow copy)
-Model &Model::operator=(const Model &model) {
-  if (this != &model) {
-    m_time = model.m_time;
-    m_systems = model.m_systems;
-    m_flows = model.m_flows;
+Model &Model::operator=(const Model &other) {
+  if (this != &other) {
+    this->m_time = other.m_time;
+    this->m_systems = other.m_systems;
+    this->m_flows = other.m_flows;
   }
   return *this;
 }
@@ -46,26 +53,26 @@ void Model::add(Flow *flow) { m_flows.push_back(flow); }
 //   valores calculados (comportamento equivalente a um integrador explícito simples).
 void Model::run(double start, double final, int increment) {
   // Vetor auxiliar que guarda o valor calculado por cada fluxo no passo atual
-  std::vector<double> lastValues(m_flows.size());
+  std::vector<double> auxiliar(m_flows.size());
   // Loop principal de tempo
   for (m_time = start; m_time < final; m_time += increment) {
-    // 1) calcula a taxa (equation) de cada fluxo e armazena em lastValues
-    for (long long unsigned int i = 0; i < m_flows.size(); i++) {
-      lastValues[i] = m_flows[i]->equation();
+    // 1) calcula a taxa (equation) de cada fluxo e armazena em auxiliar
+    for(unsigned int i=0; i < m_flows.size(); i++){
+      auxiliar[i] = m_flows[i]->equation();
     }
 
     // 2) aplica todas as taxas: remove da fonte e adiciona ao destino
-    for (long long unsigned int i = 0; i < m_flows.size(); i++) {
+    for (unsigned int i = 0; i < m_flows.size(); i++) {
       // Subtrai o valor do fluxo da System fonte (se existir)
       System *source = m_flows[i]->getSource();
       if (source != nullptr) {
-        source->setValue(source->getValue() - lastValues[i]);
+        source->setValue(source->getValue() - auxiliar[i]);
       }
 
       // Adiciona o valor do fluxo à System alvo (se existir)
       System *target = m_flows[i]->getTarget();
       if (target != nullptr) {
-        target->setValue(target->getValue() + lastValues[i]);
+        target->setValue(target->getValue() + auxiliar[i]);
       }
     }
   }

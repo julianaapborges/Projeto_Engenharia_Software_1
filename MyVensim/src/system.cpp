@@ -24,9 +24,6 @@ System &System::operator=(const System &other) {
   return *this;
 }
 
-// Imprime o valor atual no stdout (útil para debug)
-void System::print() { std::cout << m_value << std::endl; }
-
 // Define o valor do System (substitui o valor atual)
 void System::setValue(double value) { m_value = value; }
 

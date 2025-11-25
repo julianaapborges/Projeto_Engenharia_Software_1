@@ -1,0 +1,234 @@
+\doxysection{Flow Class Reference}
+\hypertarget{class_flow}{}\label{class_flow}\index{Flow@{Flow}}
+
+
+Classe base abstrata para fluxos (transferências entre sistemas).  
+
+
+
+
+{\ttfamily \#include $<$flow.\+hpp$>$}
+
+
+
+Collaboration diagram for Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. Inicializa ponteiros como NULL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_ae2fdffd0f4836deced45fb73a2874479}{Flow}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_a27af85e46a53aa5ff8c8016f012b0c24}{Flow}} (const \mbox{\hyperlink{class_flow}{Flow}} \&flow)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow}{Flow}} \& \mbox{\hyperlink{class_flow_a6d7fa924063215269af2d61b7425cc22}{operator=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&flow)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_a250fc53158862fc0db77b323a33e48a3}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source)
+\begin{DoxyCompactList}\small\item\em Define a origem do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_ab69903880174e5bcdc0d815b5de7b3e0}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Define o destino do fluxo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_ad3414435f50a4ff1621092420a2f33a3}{get\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro da origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_a11974680143b3294b4d909f8a5839612}{get\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro do destino. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
+\begin{DoxyCompactList}\small\item\em Método virtual puro para a equação do fluxo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_a256f5e15bf1fa88507da1d3f7d0bd2ce}{m\+\_\+source}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de origem (quem perde valor). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_a4e19b9378c6f7a8b1a0abf183e9760f5}{m\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de destino (quem ganha valor). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe base abstrata para fluxos (transferências entre sistemas). 
+
+
+\begin{DoxyItemize}
+\item Um fluxo conecta dois estoques (Source e Target) e transfere valores entre eles baseado em uma equação definida nas subclasses. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_flow_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flow_ac9975e144e606242748197798e87dd32}\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_flow_ac9975e144e606242748197798e87dd32} 
+Flow\+::\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construtor padrão. Inicializa ponteiros como NULL. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_flow_ac9975e144e606242748197798e87dd32_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_ae2fdffd0f4836deced45fb73a2874479}\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_flow_ae2fdffd0f4836deced45fb73a2874479} 
+Flow\+::\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{source}{, }\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})}
+
+
+
+Construtor parametrizado. 
+
+\texorpdfstring{$\ast$}{*}
+\begin{DoxyParams}{Parameters}
+{\em source} & Sistema de origem. \\
+\hline
+{\em target} & Sistema de destino. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_flow_a27af85e46a53aa5ff8c8016f012b0c24}\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_flow_a27af85e46a53aa5ff8c8016f012b0c24} 
+Flow\+::\+Flow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow}{Flow}} \&}]{flow}{}\end{DoxyParamCaption})}
+
+
+
+Construtor de cópia. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_flow_a27af85e46a53aa5ff8c8016f012b0c24_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_a5991efa6e8cf88c4ef2125cc727db333}\index{Flow@{Flow}!````~Flow@{\texorpdfstring{$\sim$}{\string~}Flow}}
+\index{````~Flow@{\texorpdfstring{$\sim$}{\string~}Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Flow()}{\string~Flow()}}
+{\footnotesize\ttfamily \label{class_flow_a5991efa6e8cf88c4ef2125cc727db333} 
+Flow\+::\texorpdfstring{$\sim$}{\string~}\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor virtual. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_flow_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2}\index{Flow@{Flow}!equation@{equation}}
+\index{equation@{equation}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily \label{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2} 
+virtual double Flow\+::equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Método virtual puro para a equação do fluxo. 
+
+\begin{DoxyReturn}{Returns}
+O valor calculado da taxa de transferência no passo atual. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Deve ser implementado pelas subclasses concretas. 
+\end{DoxyNote}
+\Hypertarget{class_flow_ad3414435f50a4ff1621092420a2f33a3}\index{Flow@{Flow}!getSource@{getSource}}
+\index{getSource@{getSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{class_flow_ad3414435f50a4ff1621092420a2f33a3} 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o ponteiro da origem. 
+
+\Hypertarget{class_flow_a11974680143b3294b4d909f8a5839612}\index{Flow@{Flow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \label{class_flow_a11974680143b3294b4d909f8a5839612} 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o ponteiro do destino. 
+
+\Hypertarget{class_flow_a6d7fa924063215269af2d61b7425cc22}\index{Flow@{Flow}!operator=@{operator=}}
+\index{operator=@{operator=}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_flow_a6d7fa924063215269af2d61b7425cc22} 
+\mbox{\hyperlink{class_flow}{Flow}} \& Flow\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow}{Flow}} \&}]{flow}{}\end{DoxyParamCaption})}
+
+
+
+Operador de atribuição. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_flow_a6d7fa924063215269af2d61b7425cc22_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_a250fc53158862fc0db77b323a33e48a3}\index{Flow@{Flow}!setSource@{setSource}}
+\index{setSource@{setSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{class_flow_a250fc53158862fc0db77b323a33e48a3} 
+void Flow\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})}
+
+
+
+Define a origem do fluxo. 
+
+\Hypertarget{class_flow_ab69903880174e5bcdc0d815b5de7b3e0}\index{Flow@{Flow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily \label{class_flow_ab69903880174e5bcdc0d815b5de7b3e0} 
+void Flow\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})}
+
+
+
+Define o destino do fluxo. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_flow_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_flow_a256f5e15bf1fa88507da1d3f7d0bd2ce}\index{Flow@{Flow}!m\_source@{m\_source}}
+\index{m\_source@{m\_source}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{m\_source}{m\_source}}
+{\footnotesize\ttfamily \label{class_flow_a256f5e15bf1fa88507da1d3f7d0bd2ce} 
+\mbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*} Flow\+::m\+\_\+source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o sistema de origem (quem perde valor). 
+
+\Hypertarget{class_flow_a4e19b9378c6f7a8b1a0abf183e9760f5}\index{Flow@{Flow}!m\_target@{m\_target}}
+\index{m\_target@{m\_target}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{m\_target}{m\_target}}
+{\footnotesize\ttfamily \label{class_flow_a4e19b9378c6f7a8b1a0abf183e9760f5} 
+\mbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*} Flow\+::m\+\_\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o sistema de destino (quem ganha valor). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{flow_8hpp}{flow.\+hpp}}\item 
+src/\mbox{\hyperlink{flow_8cpp}{flow.\+cpp}}\end{DoxyCompactItemize}

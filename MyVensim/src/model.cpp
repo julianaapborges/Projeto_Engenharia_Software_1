@@ -77,3 +77,21 @@ void Model::run(double start, double final, int increment) {
     }
   }
 }
+
+/** @brief Implementação dos Iteradores de System */
+Model::systemIterator Model::beginSystems() {
+    return m_systems.begin();
+}
+
+Model::systemIterator Model::endSystems() {
+    return m_systems.end();
+}
+
+/** @brief Implementação dos Iteradores de Flow */
+Model::flowIterator Model::beginFlows() {
+    return m_flows.begin();
+}
+
+Model::flowIterator Model::endFlows() {
+    return m_flows.end();
+}

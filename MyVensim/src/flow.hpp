@@ -51,7 +51,6 @@ public:
     /**
      * @brief Método virtual puro para a equação do fluxo.
      * @return O valor calculado da taxa de transferência no passo atual.
-     * @note Deve ser implementado pelas subclasses concretas.
      */
     virtual double equation() = 0; // must be implemented by concrete flows
 };

@@ -11,8 +11,7 @@ Responsável por gerenciar e executar a simulação.
 
 
 
-Collaboration diagram for Model\+:
-\nopagebreak
+Collaboration diagram for Model\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -44,11 +43,11 @@ void \mbox{\hyperlink{class_model_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\mbo
 void \mbox{\hyperlink{class_model_a0c5351af6e75610424dafd111b290206}{run}} (double start, double final, int increment)
 \begin{DoxyCompactList}\small\item\em Executa a simulação. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \mbox{\hyperlink{class_model_a79fe15fb9d2fbd880eaaf38b0f03e17e}{begin\+Systems}} ()
-\begin{DoxyCompactList}\small\item\em Métodos para retornar o início e o fim da lista de SISTEMAS. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Implementação dos Iteradores de \doxylink{class_system}{System}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \mbox{\hyperlink{class_model_a815cd0c70ae9cb2344cc7256e2dda35f}{end\+Systems}} ()
 \item 
 \mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} \mbox{\hyperlink{class_model_a2c1ca83c40f2dea05e01275651a476b1}{begin\+Flows}} ()
-\begin{DoxyCompactList}\small\item\em Métodos para retornar o início e o fim da lista de FLUXOS. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Implementação dos Iteradores de \doxylink{class_flow}{Flow}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} \mbox{\hyperlink{class_model_abfae233cbcbc3b9875ee87698f1e140c}{end\+Flows}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
@@ -57,7 +56,7 @@ void \mbox{\hyperlink{class_model_a0c5351af6e75610424dafd111b290206}{run}} (doub
 double \mbox{\hyperlink{class_model_a963afe8fe301fdb06f1586218bf939ee}{m\+\_\+time}}
 \begin{DoxyCompactList}\small\item\em Tempo atual da simulação. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_ab88554e5d930d0fae3c0f92ff42b5e4b}{m\+\_\+systems}}
-\begin{DoxyCompactList}\small\item\em Contêiner de ponteiros para os Sistemas. \end{DoxyCompactList}\item 
+\item 
 std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_a0c5ef413cf34a40020c8318f1f4593fb}{m\+\_\+flows}}
 \begin{DoxyCompactList}\small\item\em Contêiner de ponteiros para os Fluxos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -163,6 +162,13 @@ void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}
 
 Adiciona um Sistema ao modelo. 
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_model_a2c1ca83c40f2dea05e01275651a476b1}\index{Model@{Model}!beginFlows@{beginFlows}}
 \index{beginFlows@{beginFlows}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{beginFlows()}{beginFlows()}}
@@ -171,9 +177,12 @@ Adiciona um Sistema ao modelo.
 
 
 
-Métodos para retornar o início e o fim da lista de FLUXOS. 
+Implementação dos Iteradores de \doxylink{class_flow}{Flow}. 
 
-Implementação dos Iteradores de \doxylink{class_flow}{Flow}. \Hypertarget{class_model_a79fe15fb9d2fbd880eaaf38b0f03e17e}\index{Model@{Model}!beginSystems@{beginSystems}}
+\begin{DoxyReturn}{Returns}
+Iterador apontando para o primeiro elemento do vetor de fluxos. 
+\end{DoxyReturn}
+\Hypertarget{class_model_a79fe15fb9d2fbd880eaaf38b0f03e17e}\index{Model@{Model}!beginSystems@{beginSystems}}
 \index{beginSystems@{beginSystems}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{beginSystems()}{beginSystems()}}
 {\footnotesize\ttfamily \label{class_model_a79fe15fb9d2fbd880eaaf38b0f03e17e} 
@@ -181,20 +190,29 @@ Implementação dos Iteradores de \doxylink{class_flow}{Flow}. \Hypertarget{clas
 
 
 
-Métodos para retornar o início e o fim da lista de SISTEMAS. 
+Implementação dos Iteradores de \doxylink{class_system}{System}. 
 
-Implementação dos Iteradores de \doxylink{class_system}{System}. \Hypertarget{class_model_abfae233cbcbc3b9875ee87698f1e140c}\index{Model@{Model}!endFlows@{endFlows}}
+\begin{DoxyReturn}{Returns}
+Iterador apontando para o primeiro elemento do vetor de sistemas. 
+\end{DoxyReturn}
+\Hypertarget{class_model_abfae233cbcbc3b9875ee87698f1e140c}\index{Model@{Model}!endFlows@{endFlows}}
 \index{endFlows@{endFlows}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{endFlows()}{endFlows()}}
 {\footnotesize\ttfamily \label{class_model_abfae233cbcbc3b9875ee87698f1e140c} 
 \mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{Model\+::flow\+Iterator}} Model\+::end\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+\begin{DoxyReturn}{Returns}
+Iterador apontando para a posição final (após o último elemento) do vetor. 
+\end{DoxyReturn}
 \Hypertarget{class_model_a815cd0c70ae9cb2344cc7256e2dda35f}\index{Model@{Model}!endSystems@{endSystems}}
 \index{endSystems@{endSystems}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{endSystems()}{endSystems()}}
 {\footnotesize\ttfamily \label{class_model_a815cd0c70ae9cb2344cc7256e2dda35f} 
 \mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{Model\+::system\+Iterator}} Model\+::end\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+\begin{DoxyReturn}{Returns}
+Iterador apontando para a posição final (após o último elemento) do vetor. 
+\end{DoxyReturn}
 \Hypertarget{class_model_aaa76b9c72b66fa245f6b7b92d1ecc032}\index{Model@{Model}!operator=@{operator=}}
 \index{operator=@{operator=}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
@@ -238,6 +256,13 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=271pt]{class_model_a0c5351af6e75610424dafd111b290206_cgraph}
 \end{center}
 \end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a0c5351af6e75610424dafd111b290206_icgraph}
+\end{center}
+\end{figure}
 
 
 \label{doc-variable-members}
@@ -258,10 +283,6 @@ Contêiner de ponteiros para os Fluxos.
 \doxysubsubsection{\texorpdfstring{m\_systems}{m\_systems}}
 {\footnotesize\ttfamily \label{class_model_ab88554e5d930d0fae3c0f92ff42b5e4b} 
 std\+::vector$<$\mbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*}$>$ Model\+::m\+\_\+systems\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-Contêiner de ponteiros para os Sistemas. 
 
 \Hypertarget{class_model_a963afe8fe301fdb06f1586218bf939ee}\index{Model@{Model}!m\_time@{m\_time}}
 \index{m\_time@{m\_time}!Model@{Model}}

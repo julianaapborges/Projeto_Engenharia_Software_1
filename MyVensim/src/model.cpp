@@ -11,14 +11,7 @@
 
 Model::Model() : m_time(0) {}
 
-Model::~Model() {
-  for(unsigned int i =0; i < m_systems.size(); i++){ 
-    delete m_systems[i];
-  }
-  for(unsigned int i =0; i < m_flows.size(); i++){ 
-    delete m_flows[i];
-  }
-}
+Model::~Model() {}
 
 // Construtor de cópia: copia estado e coleções (shallow copy dos ponteiros)
 Model::Model(const Model &other) {

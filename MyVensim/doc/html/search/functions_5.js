@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['model_1',['Model',['../class_model.html#ae3b375de5f6df4faf74a95d64748e048',1,'Model::Model()'],['../class_model.html#a48858e5f328ba822b430d86a76a6ceeb',1,'Model::Model(const Model &amp;other)']]]
+  ['getsource_0',['getSource',['../class_flow.html#ad3414435f50a4ff1621092420a2f33a3',1,'Flow']]],
+  ['gettarget_1',['getTarget',['../class_flow.html#a11974680143b3294b4d909f8a5839612',1,'Flow']]],
+  ['getvalue_2',['getValue',['../class_system.html#ac6f5cf5f07a414398ac2ef5843531d1b',1,'System']]]
 ];

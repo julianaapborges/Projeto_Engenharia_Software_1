@@ -128,10 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c5351af6e75610424dafd111b290206" id="r_a0c5351af6e75610424dafd111b290206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c5351af6e75610424dafd111b290206">run</a> (double start, double final, int increment)</td></tr>
 <tr class="memdesc:a0c5351af6e75610424dafd111b290206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa a simulação.  <br /></td></tr>
 <tr class="memitem:a79fe15fb9d2fbd880eaaf38b0f03e17e" id="r_a79fe15fb9d2fbd880eaaf38b0f03e17e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79fe15fb9d2fbd880eaaf38b0f03e17e">beginSystems</a> ()</td></tr>
-<tr class="memdesc:a79fe15fb9d2fbd880eaaf38b0f03e17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Métodos para retornar o início e o fim da lista de SISTEMAS.  <br /></td></tr>
+<tr class="memdesc:a79fe15fb9d2fbd880eaaf38b0f03e17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementação dos Iteradores de <a class="el" href="class_system.html" title="Representa um Estoque (Variável de Nível) na simulação.">System</a>.  <br /></td></tr>
 <tr class="memitem:a815cd0c70ae9cb2344cc7256e2dda35f" id="r_a815cd0c70ae9cb2344cc7256e2dda35f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a815cd0c70ae9cb2344cc7256e2dda35f">endSystems</a> ()</td></tr>
 <tr class="memitem:a2c1ca83c40f2dea05e01275651a476b1" id="r_a2c1ca83c40f2dea05e01275651a476b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c1ca83c40f2dea05e01275651a476b1">beginFlows</a> ()</td></tr>
-<tr class="memdesc:a2c1ca83c40f2dea05e01275651a476b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Métodos para retornar o início e o fim da lista de FLUXOS.  <br /></td></tr>
+<tr class="memdesc:a2c1ca83c40f2dea05e01275651a476b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementação dos Iteradores de <a class="el" href="class_flow.html" title="Classe base abstrata para fluxos (transferências entre sistemas).">Flow</a>.  <br /></td></tr>
 <tr class="memitem:abfae233cbcbc3b9875ee87698f1e140c" id="r_abfae233cbcbc3b9875ee87698f1e140c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfae233cbcbc3b9875ee87698f1e140c">endFlows</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -139,7 +139,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a963afe8fe301fdb06f1586218bf939ee" id="r_a963afe8fe301fdb06f1586218bf939ee"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a963afe8fe301fdb06f1586218bf939ee">m_time</a></td></tr>
 <tr class="memdesc:a963afe8fe301fdb06f1586218bf939ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tempo atual da simulação.  <br /></td></tr>
 <tr class="memitem:ab88554e5d930d0fae3c0f92ff42b5e4b" id="r_ab88554e5d930d0fae3c0f92ff42b5e4b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab88554e5d930d0fae3c0f92ff42b5e4b">m_systems</a></td></tr>
-<tr class="memdesc:ab88554e5d930d0fae3c0f92ff42b5e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contêiner de ponteiros para os Sistemas.  <br /></td></tr>
 <tr class="memitem:a0c5ef413cf34a40020c8318f1f4593fb" id="r_a0c5ef413cf34a40020c8318f1f4593fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c5ef413cf34a40020c8318f1f4593fb">m_flows</a></td></tr>
 <tr class="memdesc:a0c5ef413cf34a40020c8318f1f4593fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contêiner de ponteiros para os Fluxos.  <br /></td></tr>
 </table>
@@ -303,6 +302,24 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Adiciona um Sistema ao modelo. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph.png" border="0" usemap="#aclass_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph" id="aclass_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph">
+<area shape="rect" title="Adiciona um Sistema ao modelo." alt="" coords="323,56,408,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
+<area shape="poly" title=" " alt="" coords="306,53,238,35,238,30,311,53"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
+<area shape="poly" title=" " alt="" coords="305,70,276,72,275,67,310,69"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="110,107,268,133"/>
+<area shape="poly" title=" " alt="" coords="311,85,238,109,237,104,306,86"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="123,38,104,47,56,63,54,58,102,41,127,35"/>
+<area shape="poly" title=" " alt="" coords="85,71,56,72,54,67,89,68"/>
+<area shape="poly" title=" " alt="" coords="122,102,102,97,55,81,55,75,104,92,128,101"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -321,8 +338,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Métodos para retornar o início e o fim da lista de FLUXOS. </p>
 <p>Implementação dos Iteradores de <a class="el" href="class_flow.html" title="Classe base abstrata para fluxos (transferências entre sistemas).">Flow</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Iterador apontando para o primeiro elemento do vetor de fluxos. </dd></dl>
 
 </div>
 </div>
@@ -341,8 +358,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Métodos para retornar o início e o fim da lista de SISTEMAS. </p>
 <p>Implementação dos Iteradores de <a class="el" href="class_system.html" title="Representa um Estoque (Variável de Nível) na simulação.">System</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Iterador apontando para o primeiro elemento do vetor de sistemas. </dd></dl>
 
 </div>
 </div>
@@ -360,6 +377,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Iterador apontando para a posição final (após o último elemento) do vetor. </dd></dl>
 
 </div>
 </div>
@@ -377,6 +395,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Iterador apontando para a posição final (após o último elemento) do vetor. </dd></dl>
 
 </div>
 </div>
@@ -454,6 +473,24 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="88,48,123,56,118,57,88,54"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_a0c5351af6e75610424dafd111b290206_icgraph.png" border="0" usemap="#aclass_model_a0c5351af6e75610424dafd111b290206_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model_a0c5351af6e75610424dafd111b290206_icgraph" id="aclass_model_a0c5351af6e75610424dafd111b290206_icgraph">
+<area shape="rect" title="Executa a simulação." alt="" coords="323,56,405,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
+<area shape="poly" title=" " alt="" coords="305,54,238,35,238,30,311,53"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
+<area shape="poly" title=" " alt="" coords="304,70,276,72,275,67,310,69"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="110,107,268,133"/>
+<area shape="poly" title=" " alt="" coords="311,85,238,109,237,103,305,86"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="123,38,104,47,56,63,54,58,102,41,127,35"/>
+<area shape="poly" title=" " alt="" coords="85,71,56,72,54,67,89,68"/>
+<area shape="poly" title=" " alt="" coords="122,102,102,97,55,81,55,75,104,92,128,101"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -501,8 +538,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Contêiner de ponteiros para os Sistemas. </p>
 
 </div>
 </div>

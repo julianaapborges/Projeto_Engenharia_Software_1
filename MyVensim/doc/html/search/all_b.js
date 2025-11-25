@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['🛠️_20como_20compilar_0',['🛠️ Como Compilar',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['run_1',['run',['../class_model.html#a0c5351af6e75610424dafd111b290206',1,'Model']]]
 ];

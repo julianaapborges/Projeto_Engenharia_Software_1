@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7eflow_0',['~Flow',['../class_flow.html#a5991efa6e8cf88c4ef2125cc727db333',1,'Flow']]],
-  ['_7emodel_1',['~Model',['../class_model.html#ad6ebd2062a0b823db841a0b88baac4c0',1,'Model']]],
-  ['_7esystem_2',['~System',['../class_system.html#a3be70bb338e3f062f821173fd15680d0',1,'System']]]
+  ['o_20projeto_0',['🚀 Sobre o Projeto',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['operator_3d_1',['operator=',['../class_flow.html#a6d7fa924063215269af2d61b7425cc22',1,'Flow::operator=()'],['../class_model.html#aaa76b9c72b66fa245f6b7b92d1ecc032',1,'Model::operator=()'],['../class_system.html#ac6422081d08c3ac145a6d7c6d9f5bae7',1,'System::operator=()']]]
 ];

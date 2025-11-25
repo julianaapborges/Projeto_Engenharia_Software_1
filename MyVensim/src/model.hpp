@@ -23,10 +23,10 @@ class Model {
 protected:
     /** @brief Tempo atual da simulação. */
     double m_time;
-    /** @brief Contêiner de ponteiros para os Sistemas. */
-    std::vector<System*> m_systems; // coloquei em protected pois nao sei se vai ter iteradores, se precisar passo para public
+    /** @brief */
+    std::vector<System*> m_systems; 
     /** @brief Contêiner de ponteiros para os Fluxos. */
-    std::vector<Flow*> m_flows; // coloquei em protected pois nao sei se vai ter iteradores, se precisar passo para public
+    std::vector<Flow*> m_flows; 
 
 public:
   /** @brief Construtor padrão. Inicializa tempo em 0. */
@@ -54,12 +54,24 @@ public:
   typedef std::vector<System*>::iterator systemIterator;
   typedef std::vector<Flow*>::iterator flowIterator;
 
-  /** @brief Métodos para retornar o início e o fim da lista de SISTEMAS */
+  /**
+     * @return Iterador apontando para o primeiro elemento do vetor de sistemas.
+     */
   systemIterator beginSystems(); 
+
+  /**
+     * @return Iterador apontando para a posição final (após o último elemento) do vetor.
+     */
   systemIterator endSystems();   
 
-  /** @brief Métodos para retornar o início e o fim da lista de FLUXOS */
+  /**
+     * @return Iterador apontando para o primeiro elemento do vetor de fluxos.
+     */
   flowIterator beginFlows(); 
+
+  /**
+     * @return Iterador apontando para a posição final (após o último elemento) do vetor.
+     */
   flowIterator endFlows();
 };
 

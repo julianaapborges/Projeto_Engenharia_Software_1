@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_0',['run',['../class_model.html#a0c5351af6e75610424dafd111b290206',1,'Model']]]
+  ['logisticalfunctionaltest_0',['logisticalFunctionalTest',['../funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68',1,'logisticalFunctionalTest():&#160;funcional_tests.cpp'],['../funcional__tests_8hpp.html#a873703af6cfeefd5cfd67aef5493ea68',1,'logisticalFunctionalTest():&#160;funcional_tests.cpp']]]
 ];

@@ -4,7 +4,6 @@
 #include "../../src/system.hpp"
 #include <cassert>
 #include <cmath>
-#include <cstdint>
 
 void exponentialFunctionalTest() {
   class exponential : public Flow {

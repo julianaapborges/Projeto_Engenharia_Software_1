@@ -1,0 +1,41 @@
+\doxysection{My\+Vensim Directory Reference}
+\hypertarget{dir_ada5c03dfad4073e4e3629528318a961}{}\label{dir_ada5c03dfad4073e4e3629528318a961}\index{MyVensim Directory Reference@{MyVensim Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md0}{}\doxysubsection{\texorpdfstring{Framework de Simulação C++ (Dinâmica de Sistemas)}{Framework de Simulação C++ (Dinâmica de Sistemas)}}\label{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md0}
+Repositório criado para a disciplina de Engenharia de Software I (BCC322), do Prof. Tiago Garcia de Senna Carneiro.\hypertarget{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md1}{}\doxysubsection{\texorpdfstring{🚀 Sobre o Projeto}{🚀 Sobre o Projeto}}\label{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md1}
+O objetivo deste projeto é projetar, especificar (UML) e implementar uma API (framework) em C++ para a construção de simulações baseadas na {\bfseries{Dinâmica de Sistemas}}.
+
+A API permitirá ao modelador criar "{}sistemas"{} (estoques de energia/matéria) e "{}fluxos"{} (que transportam essa energia/matéria), permitindo a simulação de modelos dinâmicos conforme a Teoria Geral de Sistemas. O loop de simulação principal seguirá o algoritmo geral descrito na Figura 5 do trabalho.\hypertarget{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md2}{}\doxysubsubsection{\texorpdfstring{Funcionalidades (Casos de Uso)}{Funcionalidades (Casos de Uso)}}\label{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md2}
+O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Testes) para implementar os seguintes modelos de validação\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Modelo 1\+:}} Crescimento Populacional Exponencial
+\item {\bfseries{Modelo 2\+:}} Crescimento Populacional Logístico
+\item {\bfseries{Modelo 3\+:}} Crescimento Populacional Complexo
+\end{DoxyItemize}\hypertarget{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md3}{}\doxysubsection{\texorpdfstring{📁 Estrutura de Diretórios}{📁 Estrutura de Diretórios}}\label{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{├──\ src/\ \#\ Código\ fonte\ (.cpp,\ .hpp)\ }
+\DoxyCodeLine{├──\ include/\ \#\ Arquivos\ de\ header\ (se\ separados)\ }
+\DoxyCodeLine{├──\ bin/\ \#\ Binários\ compilados\ (ignorados\ pelo\ .gitignore)\ }
+\DoxyCodeLine{├──\ test/\ \#\ Códigos\ de\ teste\ (TDD)\ }
+\DoxyCodeLine{├──\ doc/\ \#\ Documentação\ }
+\DoxyCodeLine{├──\ .gitignore\ \#\ Arquivos\ ignorados\ pelo\ Git\ }
+\DoxyCodeLine{├──\ Makefile\ \#\ Arquivo\ de\ compilação\ }
+\DoxyCodeLine{└──\ readme.md\ \#\ Este\ arquivo}
+
+\end{DoxyCode}
+\hypertarget{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md4}{}\doxysubsection{\texorpdfstring{🛠️ Como Compilar}{🛠️ Como Compilar}}\label{dir_ada5c03dfad4073e4e3629528318a961_autotoc_md4}
+{\bfseries{Compilar o programa principal (Exemplo de uso)\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+\DoxyCodeLine{}
+\DoxyCodeLine{**Compilar\ os\ testes\ de\ validação\ (TDD):**}
+
+\end{DoxyCode}
+ bash make test ou make func ou make unit
+
+{\bfseries{Executar os testes (validação dos modelos)\+:}} \`{}\`{}\`{}bash ./bin/teste\+Regressivo.exe ou ./bin/teste\+Funcional.exe ou ./bin/teste\+Unitario.exe 

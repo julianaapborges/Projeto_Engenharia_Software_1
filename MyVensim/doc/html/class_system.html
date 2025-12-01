@@ -88,147 +88,50 @@ $(function(){initNavTree('class_system.html','','class_system-members'); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">System Class Reference</div></div>
+  <div class="headertitle"><div class="title">System Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Representa um Estoque (Variável de Nível) na simulação.  
+<p>Interface que representa um Sistema (Estoque) na teoria de sistemas.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="system_8hpp_source.html">system.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for System:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_system__inherit__graph.png" border="0" usemap="#a_system_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_system_inherit__map" id="a_system_inherit__map">
+<area shape="rect" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="39,5,124,117"/>
+<area shape="rect" href="class_system__implement.html" title="Implementação concreta da interface System." alt="" coords="5,165,157,363"/>
+<area shape="poly" title=" " alt="" coords="82,130,84,166,79,165,81,135"/>
+</map>
+</div>
 <div class="dynheader">
 Collaboration diagram for System:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_system__coll__graph.png" border="0" usemap="#a_system_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_system_coll__map" id="a_system_coll__map">
-<area shape="rect" title="Representa um Estoque (Variável de Nível) na simulação." alt="" coords="5,5,92,203"/>
+<area shape="rect" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="5,5,90,117"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae317936c9bcf1374d61745572e0f2f8a" id="r_ae317936c9bcf1374d61745572e0f2f8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae317936c9bcf1374d61745572e0f2f8a">System</a> ()</td></tr>
-<tr class="memdesc:ae317936c9bcf1374d61745572e0f2f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor padrão. Inicializa o valor com 0.0.  <br /></td></tr>
-<tr class="memitem:ad3b5426a629c54eecbfe46b687100fb2" id="r_ad3b5426a629c54eecbfe46b687100fb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3b5426a629c54eecbfe46b687100fb2">System</a> (double value)</td></tr>
-<tr class="memdesc:ad3b5426a629c54eecbfe46b687100fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor com valor inicial.  <br /></td></tr>
-<tr class="memitem:ae95d7374f80fdfaee096e95c1abc438c" id="r_ae95d7374f80fdfaee096e95c1abc438c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae95d7374f80fdfaee096e95c1abc438c">System</a> (const <a class="el" href="class_system.html">System</a> &amp;other)</td></tr>
-<tr class="memdesc:ae95d7374f80fdfaee096e95c1abc438c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor de cópia.  <br /></td></tr>
-<tr class="memitem:ac6422081d08c3ac145a6d7c6d9f5bae7" id="r_ac6422081d08c3ac145a6d7c6d9f5bae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6422081d08c3ac145a6d7c6d9f5bae7">operator=</a> (const <a class="el" href="class_system.html">System</a> &amp;other)</td></tr>
-<tr class="memdesc:ac6422081d08c3ac145a6d7c6d9f5bae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de atribuição.  <br /></td></tr>
-<tr class="memitem:a3be70bb338e3f062f821173fd15680d0" id="r_a3be70bb338e3f062f821173fd15680d0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be70bb338e3f062f821173fd15680d0">~System</a> ()</td></tr>
-<tr class="memdesc:a3be70bb338e3f062f821173fd15680d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
-<tr class="memitem:a5343de0a45485edd88bc87f338fe9a19" id="r_a5343de0a45485edd88bc87f338fe9a19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5343de0a45485edd88bc87f338fe9a19">setValue</a> (double value)</td></tr>
-<tr class="memdesc:a5343de0a45485edd88bc87f338fe9a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o valor armazenado no sistema.  <br /></td></tr>
-<tr class="memitem:ac6f5cf5f07a414398ac2ef5843531d1b" id="r_ac6f5cf5f07a414398ac2ef5843531d1b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f5cf5f07a414398ac2ef5843531d1b">getValue</a> ()</td></tr>
-<tr class="memdesc:ac6f5cf5f07a414398ac2ef5843531d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor atual do sistema.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a212b9904bd67a0476d59063523cc6a0f" id="r_a212b9904bd67a0476d59063523cc6a0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a212b9904bd67a0476d59063523cc6a0f">m_value</a></td></tr>
-<tr class="memdesc:a212b9904bd67a0476d59063523cc6a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valor atual armazenado no sistema.  <br /></td></tr>
+<tr class="memitem:a2fc0f34023977cab9b628aa9f734d88c" id="r_a2fc0f34023977cab9b628aa9f734d88c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc0f34023977cab9b628aa9f734d88c">~System</a> ()</td></tr>
+<tr class="memdesc:a2fc0f34023977cab9b628aa9f734d88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
+<tr class="memitem:a7421d2e6970a0c4169a2febe254f2060" id="r_a7421d2e6970a0c4169a2febe254f2060"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7421d2e6970a0c4169a2febe254f2060">setValue</a> (double value)=0</td></tr>
+<tr class="memdesc:a7421d2e6970a0c4169a2febe254f2060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o valor numérico do sistema.  <br /></td></tr>
+<tr class="memitem:a41b673faa6c199eb8e4f204639fab4f2" id="r_a41b673faa6c199eb8e4f204639fab4f2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41b673faa6c199eb8e4f204639fab4f2">getValue</a> () const =0</td></tr>
+<tr class="memdesc:a41b673faa6c199eb8e4f204639fab4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o valor atual do sistema.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Representa um Estoque (Variável de Nível) na simulação. </p>
+<div class="textblock"><p>Interface que representa um Sistema (Estoque) na teoria de sistemas. </p>
 <ul>
-<li>A classe <a class="el" href="class_system.html" title="Representa um Estoque (Variável de Nível) na simulação.">System</a> armazena o valor de energia/matéria acumulado. Ela é alterada pelos fluxos ao longo do tempo. </li>
+<li>Um sistema armazena um valor (energia, matéria, população) que varia com o tempo através da ação de fluxos. Esta é uma classe abstrata pura. </li>
 </ul>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae317936c9bcf1374d61745572e0f2f8a" name="ae317936c9bcf1374d61745572e0f2f8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae317936c9bcf1374d61745572e0f2f8a">&#9670;&#160;</a></span>System() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">System::System </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construtor padrão. Inicializa o valor com 0.0. </p>
-<ul>
-<li></li>
-</ul>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_system_ae317936c9bcf1374d61745572e0f2f8a_icgraph.png" border="0" usemap="#aclass_system_ae317936c9bcf1374d61745572e0f2f8a_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_system_ae317936c9bcf1374d61745572e0f2f8a_icgraph" id="aclass_system_ae317936c9bcf1374d61745572e0f2f8a_icgraph">
-<area shape="rect" title="Construtor padrão. Inicializa o valor com 0.0." alt="" coords="183,31,302,57"/>
-<area shape="rect" href="class_system.html#ac6422081d08c3ac145a6d7c6d9f5bae7" title="Operador de atribuição." alt="" coords="5,5,135,32"/>
-<area shape="poly" title=" " alt="" coords="165,34,135,31,135,26,170,32"/>
-<area shape="rect" href="class_system.html#ae95d7374f80fdfaee096e95c1abc438c" title="Construtor de cópia." alt="" coords="10,56,130,83"/>
-<area shape="poly" title=" " alt="" coords="165,55,131,63,130,58,170,55"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad3b5426a629c54eecbfe46b687100fb2" name="ad3b5426a629c54eecbfe46b687100fb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b5426a629c54eecbfe46b687100fb2">&#9670;&#160;</a></span>System() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">System::System </td>
-          <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construtor com valor inicial. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>Valor numérico inicial do sistema. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae95d7374f80fdfaee096e95c1abc438c" name="ae95d7374f80fdfaee096e95c1abc438c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae95d7374f80fdfaee096e95c1abc438c">&#9670;&#160;</a></span>System() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">System::System </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_system.html">System</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construtor de cópia. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">system</td><td>Objeto a ser copiado. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_system_ae95d7374f80fdfaee096e95c1abc438c_cgraph.png" border="0" usemap="#aclass_system_ae95d7374f80fdfaee096e95c1abc438c_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_system_ae95d7374f80fdfaee096e95c1abc438c_cgraph" id="aclass_system_ae95d7374f80fdfaee096e95c1abc438c_cgraph">
-<area shape="rect" title="Construtor de cópia." alt="" coords="5,5,125,32"/>
-<area shape="rect" href="class_system.html#ae317936c9bcf1374d61745572e0f2f8a" title="Construtor padrão. Inicializa o valor com 0.0." alt="" coords="173,5,292,32"/>
-<area shape="poly" title=" " alt="" coords="125,16,160,18,155,19,125,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3be70bb338e3f062f821173fd15680d0" name="a3be70bb338e3f062f821173fd15680d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3be70bb338e3f062f821173fd15680d0">&#9670;&#160;</a></span>~System()</h2>
+<a id="a2fc0f34023977cab9b628aa9f734d88c" name="a2fc0f34023977cab9b628aa9f734d88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc0f34023977cab9b628aa9f734d88c">&#9670;&#160;</a></span>~System()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +140,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">System::~System </td>
+          <td class="memname">virtual System::~System </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -245,146 +148,18 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destrutor virtual. </p>
-<ul>
-<li></li>
-</ul>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ac6f5cf5f07a414398ac2ef5843531d1b" name="ac6f5cf5f07a414398ac2ef5843531d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6f5cf5f07a414398ac2ef5843531d1b">&#9670;&#160;</a></span>getValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double System::getValue </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retorna o valor atual do sistema. </p>
-<dl class="section return"><dt>Returns</dt><dd>O valor armazenado (double). </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_system_ac6f5cf5f07a414398ac2ef5843531d1b_icgraph.png" border="0" usemap="#aclass_system_ac6f5cf5f07a414398ac2ef5843531d1b_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_system_ac6f5cf5f07a414398ac2ef5843531d1b_icgraph" id="aclass_system_ac6f5cf5f07a414398ac2ef5843531d1b_icgraph">
-<area shape="rect" title="Retorna o valor atual do sistema." alt="" coords="453,56,578,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
-<area shape="poly" title=" " alt="" coords="476,48,443,34,405,21,334,13,267,13,266,8,335,7,406,16,445,29,481,48"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
-<area shape="poly" title=" " alt="" coords="435,70,275,72,275,67,440,69"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="110,107,268,133"/>
-<area shape="poly" title=" " alt="" coords="441,81,268,110,267,105,436,81"/>
-<area shape="rect" href="class_model.html#a0c5351af6e75610424dafd111b290206" title="Executa a simulação." alt="" coords="323,31,405,57"/>
-<area shape="poly" title=" " alt="" coords="435,56,406,54,406,48,441,56"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="123,38,104,47,56,63,54,58,102,41,127,35"/>
-<area shape="poly" title=" " alt="" coords="85,71,56,72,54,67,89,68"/>
-<area shape="poly" title=" " alt="" coords="122,102,102,97,55,81,55,75,104,92,128,101"/>
-<area shape="poly" title=" " alt="" coords="305,36,267,33,267,27,310,35"/>
-<area shape="poly" title=" " alt="" coords="305,53,276,59,275,54,310,52"/>
-<area shape="poly" title=" " alt="" coords="332,65,276,97,244,109,243,103,274,92,326,67"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac6422081d08c3ac145a6d7c6d9f5bae7" name="ac6422081d08c3ac145a6d7c6d9f5bae7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6422081d08c3ac145a6d7c6d9f5bae7">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> &amp; System::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_system.html">System</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Operador de atribuição. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">system</td><td>Sistema a ser copiado. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Referência para o próprio objeto. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_system_ac6422081d08c3ac145a6d7c6d9f5bae7_cgraph.png" border="0" usemap="#aclass_system_ac6422081d08c3ac145a6d7c6d9f5bae7_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_system_ac6422081d08c3ac145a6d7c6d9f5bae7_cgraph" id="aclass_system_ac6422081d08c3ac145a6d7c6d9f5bae7_cgraph">
-<area shape="rect" title="Operador de atribuição." alt="" coords="5,5,135,32"/>
-<area shape="rect" href="class_system.html#ae317936c9bcf1374d61745572e0f2f8a" title="Construtor padrão. Inicializa o valor com 0.0." alt="" coords="183,5,302,32"/>
-<area shape="poly" title=" " alt="" coords="135,16,169,18,164,19,135,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5343de0a45485edd88bc87f338fe9a19" name="a5343de0a45485edd88bc87f338fe9a19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5343de0a45485edd88bc87f338fe9a19">&#9670;&#160;</a></span>setValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void System::setValue </td>
-          <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Define o valor armazenado no sistema. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>Novo valor a ser atribuído. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_system_a5343de0a45485edd88bc87f338fe9a19_icgraph.png" border="0" usemap="#aclass_system_a5343de0a45485edd88bc87f338fe9a19_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_system_a5343de0a45485edd88bc87f338fe9a19_icgraph" id="aclass_system_a5343de0a45485edd88bc87f338fe9a19_icgraph">
-<area shape="rect" title="Define o valor armazenado no sistema." alt="" coords="453,56,578,83"/>
-<area shape="rect" href="class_model.html#a0c5351af6e75610424dafd111b290206" title="Executa a simulação." alt="" coords="323,56,405,83"/>
-<area shape="poly" title=" " alt="" coords="435,70,406,72,406,67,441,69"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
-<area shape="poly" title=" " alt="" coords="305,54,238,35,238,30,311,53"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
-<area shape="poly" title=" " alt="" coords="304,70,276,72,275,67,310,69"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="110,107,268,133"/>
-<area shape="poly" title=" " alt="" coords="311,85,238,109,237,103,305,86"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="123,38,104,47,56,63,54,58,102,41,127,35"/>
-<area shape="poly" title=" " alt="" coords="85,71,56,72,54,67,89,68"/>
-<area shape="poly" title=" " alt="" coords="122,102,102,97,55,81,55,75,104,92,128,101"/>
-</map>
-</div>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a212b9904bd67a0476d59063523cc6a0f" name="a212b9904bd67a0476d59063523cc6a0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a212b9904bd67a0476d59063523cc6a0f">&#9670;&#160;</a></span>m_value</h2>
+<a id="a41b673faa6c199eb8e4f204639fab4f2" name="a41b673faa6c199eb8e4f204639fab4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b673faa6c199eb8e4f204639fab4f2">&#9670;&#160;</a></span>getValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,23 +168,93 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double System::m_value</td>
+          <td class="memname">virtual double System::getValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Valor atual armazenado no sistema. </p>
+<p>Obtém o valor atual do sistema. </p>
+<dl class="section return"><dt>Returns</dt><dd>O valor numérico atual (double). </dd></dl>
+
+<p>Implemented in <a class="el" href="class_system__implement.html#a4a7e531d43b2f3159969f73ee5b23778">System_implement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_system_a41b673faa6c199eb8e4f204639fab4f2_icgraph.png" border="0" usemap="#aclass_system_a41b673faa6c199eb8e4f204639fab4f2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_system_a41b673faa6c199eb8e4f204639fab4f2_icgraph" id="aclass_system_a41b673faa6c199eb8e4f204639fab4f2_icgraph">
+<area shape="rect" title="Obtém o valor atual do sistema." alt="" coords="323,81,447,108"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
+<area shape="poly" title=" " alt="" coords="341,75,274,46,241,35,241,30,276,42,346,74"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
+<area shape="poly" title=" " alt="" coords="305,85,276,83,275,78,310,84"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="110,107,268,133"/>
+<area shape="poly" title=" " alt="" coords="305,105,269,112,268,107,310,104"/>
+<area shape="rect" href="class_model__implement.html#af8a653c8e0c2a6186e536580e44767d5" title="Executa a simulação." alt="" coords="114,157,264,184"/>
+<area shape="poly" title=" " alt="" coords="346,114,276,148,242,159,241,154,274,143,341,116"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="123,39,104,47,56,63,54,58,102,41,127,35"/>
+<area shape="poly" title=" " alt="" coords="85,71,56,72,54,67,89,68"/>
+<area shape="poly" title=" " alt="" coords="122,103,102,97,55,81,55,75,104,92,128,101"/>
+</map>
+</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a id="a7421d2e6970a0c4169a2febe254f2060" name="a7421d2e6970a0c4169a2febe254f2060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7421d2e6970a0c4169a2febe254f2060">&#9670;&#160;</a></span>setValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void System::setValue </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define o valor numérico do sistema. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>O valor a ser atribuído. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_system__implement.html#a982be7eab75ccbfa458fd580c7ba00f0">System_implement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_system_a7421d2e6970a0c4169a2febe254f2060_icgraph.png" border="0" usemap="#aclass_system_a7421d2e6970a0c4169a2febe254f2060_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_system_a7421d2e6970a0c4169a2febe254f2060_icgraph" id="aclass_system_a7421d2e6970a0c4169a2febe254f2060_icgraph">
+<area shape="rect" title="Define o valor numérico do sistema." alt="" coords="203,5,327,32"/>
+<area shape="rect" href="class_model__implement.html#af8a653c8e0c2a6186e536580e44767d5" title="Executa a simulação." alt="" coords="5,5,155,32"/>
+<area shape="poly" title=" " alt="" coords="184,19,155,21,155,16,190,19"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="system_8hpp_source.html">system.hpp</a></li>
-<li>src/<a class="el" href="system_8cpp.html">system.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

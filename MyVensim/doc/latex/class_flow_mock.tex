@@ -1,0 +1,192 @@
+\doxysection{Flow\+Mock Class Reference}
+\hypertarget{class_flow_mock}{}\label{class_flow_mock}\index{FlowMock@{FlowMock}}
+
+
+Implementação mock de um fluxo para testes.  
+
+
+
+
+{\ttfamily \#include $<$flow\+\_\+mock.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+Mock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_flow_mock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Mock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_flow_mock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143}{Flow\+Mock}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. Inicializa o fluxo com valor de equação igual a 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911}{Flow\+Mock}} (double result)
+\begin{DoxyCompactList}\small\item\em Construtor que define o valor que será retornado pela equação. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_mock_a109200d11747b3fc031a6be715f67e8e}{Flow\+Mock}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}t, double result=0.\+0)
+\begin{DoxyCompactList}\small\item\em Construtor completo que permite definir source, target e valor da equação. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_flow_mock_a0b34cfe64dd8db67455054f60521a343}{equation}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o valor mockado da equação. Esta implementação ignora completamente informações dos sistemas, retornando sempre o valor definido em {\ttfamily \doxylink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\+\_\+result}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow__implement}{Flow\+\_\+implement}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow__implement_a16fd383af7e3bd73d88ed9120366d9a5}{Flow\+\_\+implement}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. Inicializa ponteiros como NULL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow__implement_a0825dedd521a339cab5f1e95832e3a3d}{Flow\+\_\+implement}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow__implement_ad8ce24940e3558673a099c2b7da7088a}{Flow\+\_\+implement}} (const \mbox{\hyperlink{class_flow__implement}{Flow\+\_\+implement}} \&other)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow__implement}{Flow\+\_\+implement}} \& \mbox{\hyperlink{class_flow__implement_aa3d492ca25a0669ba88e6596be184b1c}{operator=}} (const \mbox{\hyperlink{class_flow__implement}{Flow\+\_\+implement}} \&other)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow__implement_a2d0ec3c8ef055497d9577bc3368c9597}{\texorpdfstring{$\sim$}{\string~}\+Flow\+\_\+implement}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow__implement_aded334cba1adbb907a79e5efd2dca3e4}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source)
+\begin{DoxyCompactList}\small\item\em Define a origem do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow__implement_af8968ecc4e80ec0873619b943cdb11a0}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Define o destino do fluxo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__implement_ae8f4f70c44c569ea3c6b1a5bcff5651f}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro da origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__implement_a4afbd04c3d289374c8f809882723c23e}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro do destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\+\_\+result}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_flow__implement}{Flow\+\_\+implement}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__implement_a36e699004b6b39db7520147ea9994965}{m\+\_\+source}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de origem (quem perde valor). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__implement_abb8d718fde5952ab026e9a950d3b9dbf}{m\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de destino (quem ganha valor). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação mock de um fluxo para testes. 
+
+A classe permite definir manualmente o valor retornado pela função {\ttfamily \doxylink{class_flow_mock_a0b34cfe64dd8db67455054f60521a343}{equation()}}, facilitando a validação do comportamento dos sistemas sem depender de cálculos reais. 
+
+\label{doc-constructors}
+\Hypertarget{class_flow_mock_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143}\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
+\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
+\doxysubsubsection{\texorpdfstring{FlowMock()}{FlowMock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143} 
+Flow\+Mock\+::\+Flow\+Mock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor padrão. Inicializa o fluxo com valor de equação igual a 0. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911}\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
+\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
+\doxysubsubsection{\texorpdfstring{FlowMock()}{FlowMock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911} 
+Flow\+Mock\+::\+Flow\+Mock (\begin{DoxyParamCaption}\item[{double}]{result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor que define o valor que será retornado pela equação. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Valor desejado para o retorno de {\ttfamily \doxylink{class_flow_mock_a0b34cfe64dd8db67455054f60521a343}{equation()}}. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_mock_a109200d11747b3fc031a6be715f67e8e}\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
+\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
+\doxysubsubsection{\texorpdfstring{FlowMock()}{FlowMock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_flow_mock_a109200d11747b3fc031a6be715f67e8e} 
+Flow\+Mock\+::\+Flow\+Mock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{t}{, }\item[{double}]{result}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor completo que permite definir source, target e valor da equação. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Ponteiro para o sistema de origem (Source). \\
+\hline
+{\em t} & Ponteiro para o sistema de destino (Target). \\
+\hline
+{\em result} & Valor que a equação irá retornar. (Padrão\+: 0.\+0) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_flow_mock_a109200d11747b3fc031a6be715f67e8e_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_flow_mock_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flow_mock_a0b34cfe64dd8db67455054f60521a343}\index{FlowMock@{FlowMock}!equation@{equation}}
+\index{equation@{equation}!FlowMock@{FlowMock}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily \label{class_flow_mock_a0b34cfe64dd8db67455054f60521a343} 
+double Flow\+Mock\+::equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Retorna o valor mockado da equação. Esta implementação ignora completamente informações dos sistemas, retornando sempre o valor definido em {\ttfamily \doxylink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\+\_\+result}}. 
+
+\begin{DoxyReturn}{Returns}
+Valor da equação mockada. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow__implement_a5c9b34c767f4f14a233a4d16d5d918eb}{Flow\+\_\+implement}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_flow_mock_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}\index{FlowMock@{FlowMock}!m\_result@{m\_result}}
+\index{m\_result@{m\_result}!FlowMock@{FlowMock}}
+\doxysubsubsection{\texorpdfstring{m\_result}{m\_result}}
+{\footnotesize\ttfamily \label{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342} 
+double Flow\+Mock\+::m\+\_\+result\hspace{0.3cm}{\ttfamily [private]}}
+
+Valor pré-\/definido que a equação irá retornar. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/unit/\mbox{\hyperlink{flow__mock_8hpp}{flow\+\_\+mock.\+hpp}}\end{DoxyCompactItemize}

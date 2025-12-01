@@ -1,60 +1,39 @@
 /**
  * @file system.hpp
- * @brief Declaração da classe System.
- * @author Juliana Aparecida Borges
- * @date 2025
+ * @brief Interface para a classe System.
+* @author Juliana Aparecida Borges 
+* @date 2025-12-01
  */
 
 #ifndef SYSTEM_HPP
 #define SYSTEM_HPP
 
+#include <iostream>
+#include <string> 
+
 /**
  * @class System
- * @brief Representa um Estoque (Variável de Nível) na simulação.
- * * A classe System armazena o valor de energia/matéria acumulado.
- * Ela é alterada pelos fluxos ao longo do tempo.
+ * @brief Interface que representa um Sistema (Estoque) na teoria de sistemas.
+ * * Um sistema armazena um valor (energia, matéria, população) que varia com o tempo
+ * através da ação de fluxos. Esta é uma classe abstrata pura.
  */
-
 class System {
-protected:
-    /** @brief Valor atual armazenado no sistema. */
-    double m_value;
-
 public:
-  /** * @brief Construtor padrão. 
-  * Inicializa o valor com 0.0.
-  */
-  System();
-  /**
-     * @brief Construtor com valor inicial.
-     * @param value Valor numérico inicial do sistema.
+    /** @brief Destrutor virtual. */
+    virtual ~System() {}
+    
+    // Métodos puramente virtuais (= 0)
+    /**
+     * @brief Define o valor numérico do sistema.
+     * @param value O valor a ser atribuído.
      */
-  System(double value);
-  /**
-     * @brief Construtor de cópia.
-     * @param system Objeto a ser copiado.
+    virtual void setValue(double value) = 0;
+
+    /**
+     * @brief Obtém o valor atual do sistema.
+     * @return O valor numérico atual (double).
      */
-  System(const System &other);
-  /**
-     * @brief Operador de atribuição.
-     * @param system Sistema a ser copiado.
-     * @return Referência para o próprio objeto.
-     */
-  System &operator=(const System &other);
-  /** * @brief Destrutor virtual. 
-     */
-  virtual ~System();
-  
-  /**
-     * @brief Define o valor armazenado no sistema.
-     * @param value Novo valor a ser atribuído.
-     */
-  void setValue(double value);
-  /**
-     * @brief Retorna o valor atual do sistema.
-     * @return O valor armazenado (double).
-     */
-  double getValue();
+    virtual double getValue() const = 0; // const é boa prática em getters
 };
 
 #endif // SYSTEM_HPP

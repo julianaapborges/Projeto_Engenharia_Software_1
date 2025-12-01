@@ -1,16 +1,13 @@
 <map id="logisticalFunctionalTest" name="logisticalFunctionalTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,107,163,133"/>
-<area shape="rect" id="Node000002" href="$class_model.html#a302d4ed93c6e6f9a0f728e021a91f821" title="Adiciona um Sistema ao modelo." alt="" coords="224,5,309,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,104,209,42,222,38,218,41,212,46,108,108"/>
-<area shape="rect" id="Node000003" href="$class_flow.html#aa1ad5f820c1f10f9e19c555af8bf69f2" title="Método virtual puro para a equação do fluxo." alt="" coords="213,56,320,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,104,203,86,199,89,136,108"/>
-<area shape="rect" id="Node000004" href="$class_flow.html#a11974680143b3294b4d909f8a5839612" title="Retorna o ponteiro do destino." alt="" coords="211,107,322,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,117,198,119,193,121,164,123"/>
-<area shape="rect" id="Node000005" href="$class_system.html#ac6f5cf5f07a414398ac2ef5843531d1b" title="Retorna o valor atual do sistema." alt="" coords="370,157,494,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="149,131,211,143,357,162,352,165,210,148,149,137"/>
-<area shape="rect" id="Node000006" href="$class_model.html#a0c5351af6e75610424dafd111b290206" title="Executa a simulação." alt="" coords="225,208,308,235"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="111,131,230,199,225,202,109,136"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="307,206,369,189,374,189,309,211"/>
-<area shape="rect" id="Node000007" href="$class_system.html#a5343de0a45485edd88bc87f338fe9a19" title="Define o valor armazenado no sistema." alt="" coords="370,208,494,235"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="308,219,357,221,352,221,308,224"/>
+<area shape="rect" id="Node000002" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao modelo." alt="" coords="230,5,316,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,104,152,74,209,42,224,37,220,40,212,46,155,79,108,108"/>
+<area shape="rect" id="Node000003" href="$class_flow.html#aa1ad5f820c1f10f9e19c555af8bf69f2" title="Calcula a taxa de transferência do fluxo." alt="" coords="220,56,326,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,104,208,86,204,89,138,108"/>
+<area shape="rect" id="Node000004" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Obtém o sistema de destino (Target)." alt="" coords="217,107,328,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,117,204,119,199,121,164,123"/>
+<area shape="rect" id="Node000005" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="211,157,335,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="137,131,208,152,203,154,137,137"/>
+<area shape="rect" id="Node000006" href="$class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="232,208,314,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="107,131,155,161,212,194,225,202,219,201,209,198,152,166,106,137"/>
 </map>

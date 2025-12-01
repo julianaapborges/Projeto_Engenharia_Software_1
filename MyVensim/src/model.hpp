@@ -1,10 +1,9 @@
 /**
  * @file model.hpp
- * @brief Declaração da classe Model (Motor da simulação).
+ * @brief Interface para a classe Model.
  * @author Juliana Aparecida Borges
- * @date 2025
+ * @date 2025-12-01
  */
-
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
@@ -14,65 +13,45 @@
 
 /**
  * @class Model
- * @brief Responsável por gerenciar e executar a simulação.
- * * O Model armazena todos os Sistemas e Fluxos, controla o tempo
- * e executa os cálculos passo-a-passo.
+ * @brief Interface que representa o Motor de Simulação.
+ * * O Model gerencia a execução da simulação, controlando o tempo
+ * e a interação entre sistemas e fluxos.
  */
-
 class Model {
-protected:
-    /** @brief Tempo atual da simulação. */
-    double m_time;
-    /** @brief */
-    std::vector<System*> m_systems; 
-    /** @brief Contêiner de ponteiros para os Fluxos. */
-    std::vector<Flow*> m_flows; 
-
 public:
-  /** @brief Construtor padrão. Inicializa tempo em 0. */
-  Model();
-  /** @brief Destrutor. Limpa a memória dos sistemas e fluxos alocados. */
-  virtual ~Model();
-  /** @brief Construtor de cópia. */
-  Model(const Model &other);
-  /** @brief Operador de atribuição. */
-  Model &operator=(const Model &other);
-  
-  /** @brief Adiciona um Sistema ao modelo. */
-  void add(System *system);
-  /** @brief Adiciona um Fluxo ao modelo. */
-  void add(Flow *flow);
-  /**
+    /** @brief Destrutor virtual padrão. */
+    virtual ~Model() {}
+
+    // Métodos virtuais puros
+    /**
      * @brief Executa a simulação.
      * @param start Tempo inicial.
      * @param final Tempo final.
-     * @param increment Passo de tempo (delta t).
+     * @param increment Passo de incremento do tempo.
      */
-  void run(double start, double final, int increment);
+    virtual void run(double start, double final, int increment) = 0;
 
-  /** @brief Iteradores para sistemas e fluxos */
-  typedef std::vector<System*>::iterator systemIterator;
-  typedef std::vector<Flow*>::iterator flowIterator;
+    /** @brief Adiciona um Sistema ao modelo. */
+    virtual void add(System *system) = 0;
 
-  /**
-     * @return Iterador apontando para o primeiro elemento do vetor de sistemas.
-     */
-  systemIterator beginSystems(); 
+    /** @brief Adiciona um Fluxo ao modelo. */
+    virtual void add(Flow *flow) = 0;
 
-  /**
-     * @return Iterador apontando para a posição final (após o último elemento) do vetor.
-     */
-  systemIterator endSystems();   
+    // Definição dos tipos de iteradores (necessário para a interface expor o acesso)
+    typedef std::vector<System*>::iterator systemIterator;
+    typedef std::vector<Flow*>::iterator flowIterator;
 
-  /**
-     * @return Iterador apontando para o primeiro elemento do vetor de fluxos.
-     */
-  flowIterator beginFlows(); 
+    /** @brief Retorna um iterador para o início dos sistemas. */
+    virtual systemIterator beginSystems() = 0;
 
-  /**
-     * @return Iterador apontando para a posição final (após o último elemento) do vetor.
-     */
-  flowIterator endFlows();
+    /** @brief Retorna um iterador para o fim dos sistemas. */
+    virtual systemIterator endSystems() = 0;
+
+    /** @brief Retorna um iterador para o início dos fluxos. */
+    virtual flowIterator beginFlows() = 0;
+    
+    /** @brief Retorna um iterador para o fim dos fluxos. */
+    virtual flowIterator endFlows() = 0;
 };
 
 #endif // MODEL_HPP

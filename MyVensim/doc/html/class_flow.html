@@ -92,149 +92,54 @@ $(function(){initNavTree('class_flow.html','','class_flow-members'); });
 </div><!--header-->
 <div class="contents">
 
-<p>Classe base abstrata para fluxos (transferências entre sistemas).  
+<p>Interface que representa um Fluxo na teoria de sistemas.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="flow_8hpp_source.html">flow.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Flow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow__inherit__graph.png" border="0" usemap="#a_flow_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_flow_inherit__map" id="a_flow_inherit__map">
+<area shape="rect" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="27,5,118,181"/>
+<area shape="rect" href="class_flow__implement.html" title="Implementação base para fluxos." alt="" coords="5,229,140,512"/>
+<area shape="poly" title=" " alt="" coords="73,194,75,230,70,229,73,199"/>
+<area shape="rect" href="class_flow_mock.html" title="Implementação mock de um fluxo para testes." alt="" coords="27,560,119,693"/>
+<area shape="poly" title=" " alt="" coords="74,524,75,561,70,560,72,529"/>
+</map>
+</div>
 <div class="dynheader">
 Collaboration diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__coll__graph.png" border="0" usemap="#a_flow_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_flow_coll__map" id="a_flow_coll__map">
-<area shape="rect" title="Classe base abstrata para fluxos (transferências entre sistemas)." alt="" coords="5,296,96,557"/>
-<area shape="rect" href="class_system.html" title="Representa um Estoque (Variável de Nível) na simulação." alt="" coords="7,5,94,203"/>
-<area shape="poly" title=" " alt="" coords="51,200,53,279,48,279,51,205"/>
+<area shape="rect" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,5,96,181"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac9975e144e606242748197798e87dd32" id="r_ac9975e144e606242748197798e87dd32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9975e144e606242748197798e87dd32">Flow</a> ()</td></tr>
-<tr class="memdesc:ac9975e144e606242748197798e87dd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor padrão. Inicializa ponteiros como NULL.  <br /></td></tr>
-<tr class="memitem:ae2fdffd0f4836deced45fb73a2874479" id="r_ae2fdffd0f4836deced45fb73a2874479"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2fdffd0f4836deced45fb73a2874479">Flow</a> (<a class="el" href="class_system.html">System</a> *source, <a class="el" href="class_system.html">System</a> *target)</td></tr>
-<tr class="memdesc:ae2fdffd0f4836deced45fb73a2874479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor parametrizado.  <br /></td></tr>
-<tr class="memitem:a27af85e46a53aa5ff8c8016f012b0c24" id="r_a27af85e46a53aa5ff8c8016f012b0c24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27af85e46a53aa5ff8c8016f012b0c24">Flow</a> (const <a class="el" href="class_flow.html">Flow</a> &amp;flow)</td></tr>
-<tr class="memdesc:a27af85e46a53aa5ff8c8016f012b0c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor de cópia.  <br /></td></tr>
-<tr class="memitem:a6d7fa924063215269af2d61b7425cc22" id="r_a6d7fa924063215269af2d61b7425cc22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d7fa924063215269af2d61b7425cc22">operator=</a> (const <a class="el" href="class_flow.html">Flow</a> &amp;flow)</td></tr>
-<tr class="memdesc:a6d7fa924063215269af2d61b7425cc22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de atribuição.  <br /></td></tr>
-<tr class="memitem:a5991efa6e8cf88c4ef2125cc727db333" id="r_a5991efa6e8cf88c4ef2125cc727db333"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5991efa6e8cf88c4ef2125cc727db333">~Flow</a> ()</td></tr>
-<tr class="memdesc:a5991efa6e8cf88c4ef2125cc727db333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
-<tr class="memitem:a250fc53158862fc0db77b323a33e48a3" id="r_a250fc53158862fc0db77b323a33e48a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a250fc53158862fc0db77b323a33e48a3">setSource</a> (<a class="el" href="class_system.html">System</a> *source)</td></tr>
-<tr class="memdesc:a250fc53158862fc0db77b323a33e48a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a origem do fluxo.  <br /></td></tr>
-<tr class="memitem:ab69903880174e5bcdc0d815b5de7b3e0" id="r_ab69903880174e5bcdc0d815b5de7b3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69903880174e5bcdc0d815b5de7b3e0">setTarget</a> (<a class="el" href="class_system.html">System</a> *target)</td></tr>
-<tr class="memdesc:ab69903880174e5bcdc0d815b5de7b3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o destino do fluxo.  <br /></td></tr>
-<tr class="memitem:ad3414435f50a4ff1621092420a2f33a3" id="r_ad3414435f50a4ff1621092420a2f33a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3414435f50a4ff1621092420a2f33a3">getSource</a> ()</td></tr>
-<tr class="memdesc:ad3414435f50a4ff1621092420a2f33a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o ponteiro da origem.  <br /></td></tr>
-<tr class="memitem:a11974680143b3294b4d909f8a5839612" id="r_a11974680143b3294b4d909f8a5839612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11974680143b3294b4d909f8a5839612">getTarget</a> ()</td></tr>
-<tr class="memdesc:a11974680143b3294b4d909f8a5839612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o ponteiro do destino.  <br /></td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
+<tr class="memitem:a42ce99a961622788ae59bb73abad3bb3" id="r_a42ce99a961622788ae59bb73abad3bb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ce99a961622788ae59bb73abad3bb3">setSource</a> (<a class="el" href="class_system.html">System</a> *source)=0</td></tr>
+<tr class="memdesc:a42ce99a961622788ae59bb73abad3bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o sistema de origem (Source).  <br /></td></tr>
+<tr class="memitem:a6121cf6e400af1aa8b4c9f9f2dc8e68b" id="r_a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6121cf6e400af1aa8b4c9f9f2dc8e68b">setTarget</a> (<a class="el" href="class_system.html">System</a> *target)=0</td></tr>
+<tr class="memdesc:a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o sistema de destino (Target).  <br /></td></tr>
+<tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8" id="r_abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a> () const =0</td></tr>
+<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o sistema de origem (Source).  <br /></td></tr>
+<tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787" id="r_afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a> () const =0</td></tr>
+<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o sistema de destino (Target).  <br /></td></tr>
 <tr class="memitem:aa1ad5f820c1f10f9e19c555af8bf69f2" id="r_aa1ad5f820c1f10f9e19c555af8bf69f2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ad5f820c1f10f9e19c555af8bf69f2">equation</a> ()=0</td></tr>
-<tr class="memdesc:aa1ad5f820c1f10f9e19c555af8bf69f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método virtual puro para a equação do fluxo.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a256f5e15bf1fa88507da1d3f7d0bd2ce" id="r_a256f5e15bf1fa88507da1d3f7d0bd2ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a256f5e15bf1fa88507da1d3f7d0bd2ce">m_source</a></td></tr>
-<tr class="memdesc:a256f5e15bf1fa88507da1d3f7d0bd2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponteiro para o sistema de origem (quem perde valor).  <br /></td></tr>
-<tr class="memitem:a4e19b9378c6f7a8b1a0abf183e9760f5" id="r_a4e19b9378c6f7a8b1a0abf183e9760f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e19b9378c6f7a8b1a0abf183e9760f5">m_target</a></td></tr>
-<tr class="memdesc:a4e19b9378c6f7a8b1a0abf183e9760f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponteiro para o sistema de destino (quem ganha valor).  <br /></td></tr>
+<tr class="memdesc:aa1ad5f820c1f10f9e19c555af8bf69f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a taxa de transferência do fluxo.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Classe base abstrata para fluxos (transferências entre sistemas). </p>
+<div class="textblock"><p>Interface que representa um Fluxo na teoria de sistemas. </p>
 <ul>
-<li>Um fluxo conecta dois estoques (Source e Target) e transfere valores entre eles baseado em uma equação definida nas subclasses. </li>
+<li>Um fluxo conecta dois sistemas (Origem e Destino) e transporta valores entre eles baseado em uma equação matemática. </li>
 </ul>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac9975e144e606242748197798e87dd32" name="ac9975e144e606242748197798e87dd32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9975e144e606242748197798e87dd32">&#9670;&#160;</a></span>Flow() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construtor padrão. Inicializa ponteiros como NULL. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_flow_ac9975e144e606242748197798e87dd32_icgraph.png" border="0" usemap="#aclass_flow_ac9975e144e606242748197798e87dd32_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_ac9975e144e606242748197798e87dd32_icgraph" id="aclass_flow_ac9975e144e606242748197798e87dd32_icgraph">
-<area shape="rect" title="Construtor padrão. Inicializa ponteiros como NULL." alt="" coords="166,31,251,57"/>
-<area shape="rect" href="class_flow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Construtor de cópia." alt="" coords="19,5,104,32"/>
-<area shape="poly" title=" " alt="" coords="148,35,104,29,104,23,153,33"/>
-<area shape="rect" href="class_flow.html#a6d7fa924063215269af2d61b7425cc22" title="Operador de atribuição." alt="" coords="5,56,118,83"/>
-<area shape="poly" title=" " alt="" coords="148,54,118,62,117,57,153,53"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae2fdffd0f4836deced45fb73a2874479" name="ae2fdffd0f4836deced45fb73a2874479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2fdffd0f4836deced45fb73a2874479">&#9670;&#160;</a></span>Flow() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_system.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_system.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construtor parametrizado. </p>
-<p>*</p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>Sistema de origem. </td></tr>
-    <tr><td class="paramname">target</td><td>Sistema de destino. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a27af85e46a53aa5ff8c8016f012b0c24" name="a27af85e46a53aa5ff8c8016f012b0c24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27af85e46a53aa5ff8c8016f012b0c24">&#9670;&#160;</a></span>Flow() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_flow.html">Flow</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>flow</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construtor de cópia. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_flow_a27af85e46a53aa5ff8c8016f012b0c24_cgraph.png" border="0" usemap="#aclass_flow_a27af85e46a53aa5ff8c8016f012b0c24_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_a27af85e46a53aa5ff8c8016f012b0c24_cgraph" id="aclass_flow_a27af85e46a53aa5ff8c8016f012b0c24_cgraph">
-<area shape="rect" title="Construtor de cópia." alt="" coords="5,5,91,32"/>
-<area shape="rect" href="class_flow.html#ac9975e144e606242748197798e87dd32" title="Construtor padrão. Inicializa ponteiros como NULL." alt="" coords="139,5,224,32"/>
-<area shape="poly" title=" " alt="" coords="91,16,126,18,120,19,91,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5991efa6e8cf88c4ef2125cc727db333" name="a5991efa6e8cf88c4ef2125cc727db333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5991efa6e8cf88c4ef2125cc727db333">&#9670;&#160;</a></span>~Flow()</h2>
+<a id="a325d284a50ca3274b126b21f5c39b9af" name="a325d284a50ca3274b126b21f5c39b9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325d284a50ca3274b126b21f5c39b9af">&#9670;&#160;</a></span>~Flow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +148,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Flow::~Flow </td>
+          <td class="memname">virtual Flow::~Flow </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -251,7 +156,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -284,14 +189,17 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Método virtual puro para a equação do fluxo. </p>
-<dl class="section return"><dt>Returns</dt><dd>O valor calculado da taxa de transferência no passo atual. </dd></dl>
+<p>Calcula a taxa de transferência do fluxo. </p>
+<dl class="section return"><dt>Returns</dt><dd>O valor a ser transferido neste passo de tempo. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Este método é abstrato puro e DEVE ser implementado pelo usuário. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow__implement.html#a5c9b34c767f4f14a233a4d16d5d918eb">Flow_implement</a>, and <a class="el" href="class_flow_mock.html#a0b34cfe64dd8db67455054f60521a343">FlowMock</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph.png" border="0" usemap="#aclass_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph" loading="lazy" alt=""/></div>
 <map name="aclass_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph" id="aclass_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph">
-<area shape="rect" title="Método virtual puro para a equação do fluxo." alt="" coords="323,56,429,83"/>
+<area shape="rect" title="Calcula a taxa de transferência do fluxo." alt="" coords="323,56,429,83"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
 <area shape="poly" title=" " alt="" coords="307,52,241,35,241,30,312,51"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
@@ -307,28 +215,38 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad3414435f50a4ff1621092420a2f33a3" name="ad3414435f50a4ff1621092420a2f33a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3414435f50a4ff1621092420a2f33a3">&#9670;&#160;</a></span>getSource()</h2>
+<a id="abf0f3dbb285fe82e5ba6449de06b97c8" name="abf0f3dbb285fe82e5ba6449de06b97c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0f3dbb285fe82e5ba6449de06b97c8">&#9670;&#160;</a></span>getSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::getSource </td>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Flow::getSource </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Retorna o ponteiro da origem. </p>
+<p>Obtém o sistema de origem (Source). </p>
+
+<p>Implemented in <a class="el" href="class_flow__implement.html#ae8f4f70c44c569ea3c6b1a5bcff5651f">Flow_implement</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_flow_ad3414435f50a4ff1621092420a2f33a3_icgraph.png" border="0" usemap="#aclass_flow_ad3414435f50a4ff1621092420a2f33a3_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_ad3414435f50a4ff1621092420a2f33a3_icgraph" id="aclass_flow_ad3414435f50a4ff1621092420a2f33a3_icgraph">
-<area shape="rect" title="Retorna o ponteiro da origem." alt="" coords="323,31,439,57"/>
+<div class="center"><img src="class_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph.png" border="0" usemap="#aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" id="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph">
+<area shape="rect" title="Obtém o sistema de origem (Source)." alt="" coords="323,31,439,57"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
 <area shape="poly" title=" " alt="" coords="305,34,267,32,267,26,310,34"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
@@ -341,28 +259,38 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a11974680143b3294b4d909f8a5839612" name="a11974680143b3294b4d909f8a5839612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11974680143b3294b4d909f8a5839612">&#9670;&#160;</a></span>getTarget()</h2>
+<a id="afb9b8d93ea0fc81868b8e02dd382a787" name="afb9b8d93ea0fc81868b8e02dd382a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9b8d93ea0fc81868b8e02dd382a787">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::getTarget </td>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Flow::getTarget </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Retorna o ponteiro do destino. </p>
+<p>Obtém o sistema de destino (Target). </p>
+
+<p>Implemented in <a class="el" href="class_flow__implement.html#a4afbd04c3d289374c8f809882723c23e">Flow_implement</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_flow_a11974680143b3294b4d909f8a5839612_icgraph.png" border="0" usemap="#aclass_flow_a11974680143b3294b4d909f8a5839612_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_a11974680143b3294b4d909f8a5839612_icgraph" id="aclass_flow_a11974680143b3294b4d909f8a5839612_icgraph">
-<area shape="rect" title="Retorna o ponteiro do destino." alt="" coords="308,5,419,32"/>
+<div class="center"><img src="class_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph.png" border="0" usemap="#aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" id="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph">
+<area shape="rect" title="Obtém o sistema de destino (Target)." alt="" coords="308,5,419,32"/>
 <area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="103,5,260,32"/>
 <area shape="poly" title=" " alt="" coords="290,19,260,21,260,16,295,19"/>
 <area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
@@ -372,125 +300,66 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6d7fa924063215269af2d61b7425cc22" name="a6d7fa924063215269af2d61b7425cc22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7fa924063215269af2d61b7425cc22">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a42ce99a961622788ae59bb73abad3bb3" name="a42ce99a961622788ae59bb73abad3bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ce99a961622788ae59bb73abad3bb3">&#9670;&#160;</a></span>setSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_flow.html">Flow</a> &amp; Flow::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_flow.html">Flow</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>flow</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Operador de atribuição. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_flow_a6d7fa924063215269af2d61b7425cc22_cgraph.png" border="0" usemap="#aclass_flow_a6d7fa924063215269af2d61b7425cc22_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_a6d7fa924063215269af2d61b7425cc22_cgraph" id="aclass_flow_a6d7fa924063215269af2d61b7425cc22_cgraph">
-<area shape="rect" title="Operador de atribuição." alt="" coords="5,5,118,32"/>
-<area shape="rect" href="class_flow.html#ac9975e144e606242748197798e87dd32" title="Construtor padrão. Inicializa ponteiros como NULL." alt="" coords="166,5,251,32"/>
-<area shape="poly" title=" " alt="" coords="118,16,152,18,147,19,118,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a250fc53158862fc0db77b323a33e48a3" name="a250fc53158862fc0db77b323a33e48a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250fc53158862fc0db77b323a33e48a3">&#9670;&#160;</a></span>setSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Flow::setSource </td>
+          <td class="memname">virtual void Flow::setSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Define a origem do fluxo. </p>
+<p>Define o sistema de origem (Source). </p>
+
+<p>Implemented in <a class="el" href="class_flow__implement.html#aded334cba1adbb907a79e5efd2dca3e4">Flow_implement</a>.</p>
 
 </div>
 </div>
-<a id="ab69903880174e5bcdc0d815b5de7b3e0" name="ab69903880174e5bcdc0d815b5de7b3e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69903880174e5bcdc0d815b5de7b3e0">&#9670;&#160;</a></span>setTarget()</h2>
+<a id="a6121cf6e400af1aa8b4c9f9f2dc8e68b" name="a6121cf6e400af1aa8b4c9f9f2dc8e68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6121cf6e400af1aa8b4c9f9f2dc8e68b">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setTarget </td>
+          <td class="memname">virtual void Flow::setTarget </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>Define o destino do fluxo. </p>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a256f5e15bf1fa88507da1d3f7d0bd2ce" name="a256f5e15bf1fa88507da1d3f7d0bd2ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a256f5e15bf1fa88507da1d3f7d0bd2ce">&#9670;&#160;</a></span>m_source</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a>* Flow::m_source</td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ponteiro para o sistema de origem (quem perde valor). </p>
+<p>Define o sistema de destino (Target). </p>
+
+<p>Implemented in <a class="el" href="class_flow__implement.html#af8968ecc4e80ec0873619b943cdb11a0">Flow_implement</a>.</p>
 
 </div>
 </div>
-<a id="a4e19b9378c6f7a8b1a0abf183e9760f5" name="a4e19b9378c6f7a8b1a0abf183e9760f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e19b9378c6f7a8b1a0abf183e9760f5">&#9670;&#160;</a></span>m_target</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a>* Flow::m_target</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Ponteiro para o sistema de destino (quem ganha valor). </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="flow_8hpp_source.html">flow.hpp</a></li>
-<li>src/<a class="el" href="flow_8cpp.html">flow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

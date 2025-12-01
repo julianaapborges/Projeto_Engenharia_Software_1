@@ -1,0 +1,9 @@
+<map id="unit_Model_assignmentOperator" name="unit_Model_assignmentOperator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,214,83"/>
+<area shape="rect" id="Node000002" href="$class_model__implement.html#a8b95e7bae943c9ac306a302e8180cd66" title="Adiciona um Sistema ao modelo." alt="" coords="293,5,445,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,53,285,34,280,37,182,58"/>
+<area shape="rect" id="Node000003" href="$class_model__implement.html#afed58226f1b4d3a145d02010de312f30" title="Implementação dos Iteradores de System." alt="" coords="262,56,476,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,67,249,69,243,70,214,72"/>
+<area shape="rect" id="Node000004" href="$class_model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108" title=" " alt="" coords="267,107,471,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,81,285,102,280,104,181,86"/>
+</map>

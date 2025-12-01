@@ -1,0 +1,36 @@
+\doxysection{flow\+\_\+mock.\+hpp}
+\hypertarget{flow__mock_8hpp_source}{}\label{flow__mock_8hpp_source}\index{test/unit/flow\_mock.hpp@{test/unit/flow\_mock.hpp}}
+\mbox{\hyperlink{flow__mock_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ FLOW\_MOCK\_HPP}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ FLOW\_MOCK\_HPP}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{flow__implement_8hpp}{../../src/flow\_implement.hpp}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{system_8hpp}{../../src/system.hpp}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ Classe\ Mock\ reutilizável\ para\ testes}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143}{FlowMock}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_flow__implement_a16fd383af7e3bd73d88ed9120366d9a5}{Flow\_implement}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\_result}};\ \textcolor{comment}{//\ Valor\ que\ a\ equação\ vai\ retornar}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Construtor\ Padrão\ (retorna\ 0)}}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143}{FlowMock}}()\ :\ \mbox{\hyperlink{class_flow__implement_a16fd383af7e3bd73d88ed9120366d9a5}{Flow\_implement}}(),\ \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\_result}}(0.0)\ \{\}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Construtor\ com\ valor\ personalizado\ (Ex:\ quero\ que\ retorne\ 1.0)}}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911}{FlowMock}}(\textcolor{keywordtype}{double}\ result)\ :\ \mbox{\hyperlink{class_flow__implement_a16fd383af7e3bd73d88ed9120366d9a5}{Flow\_implement}}(),\ \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\_result}}(result)\ \{\}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ Construtor\ completo\ (Source,\ Target\ e\ Resultado)}}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_flow_mock_a109200d11747b3fc031a6be715f67e8e}{FlowMock}}(\mbox{\hyperlink{class_system}{System}}\ *s,\ \mbox{\hyperlink{class_system}{System}}\ *t,\ \textcolor{keywordtype}{double}\ result\ =\ 0.0)\ :\ \mbox{\hyperlink{class_flow__implement_a16fd383af7e3bd73d88ed9120366d9a5}{Flow\_implement}}(s,\ t),\ \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\_result}}(result)\ \{\}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ A\ equação\ retorna\ o\ que\ configuramos}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_mock_a0b34cfe64dd8db67455054f60521a343}{equation}}()\ \{\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\_result}};\ }
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FLOW\_MOCK\_HPP}}
+
+\end{DoxyCode}

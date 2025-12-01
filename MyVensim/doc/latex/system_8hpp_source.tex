@@ -7,22 +7,19 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SYSTEM\_HPP}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SYSTEM\_HPP}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}\ \{}
-\DoxyCodeLine{00019\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_system_a212b9904bd67a0476d59063523cc6a0f}{m\_value}};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}();}
-\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}(\textcolor{keywordtype}{double}\ value);}
-\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}\ \&other);}
-\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}\ \&\mbox{\hyperlink{class_system_ac6422081d08c3ac145a6d7c6d9f5bae7}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_system_ae317936c9bcf1374d61745572e0f2f8a}{System}}\ \&other);}
-\DoxyCodeLine{00046\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_system_a3be70bb338e3f062f821173fd15680d0}{\string~System}}();}
-\DoxyCodeLine{00047\ \ \ }
-\DoxyCodeLine{00052\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_system_a5343de0a45485edd88bc87f338fe9a19}{setValue}}(\textcolor{keywordtype}{double}\ value);}
-\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_system_ac6f5cf5f07a414398ac2ef5843531d1b}{getValue}}();}
-\DoxyCodeLine{00058\ \};}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SYSTEM\_HPP}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_system}{System}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_system_a2fc0f34023977cab9b628aa9f734d88c}{\string~System}}()\ \{\}}
+\DoxyCodeLine{00024\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Métodos\ puramente\ virtuais\ (=\ 0)}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_system_a7421d2e6970a0c4169a2febe254f2060}{setValue}}(\textcolor{keywordtype}{double}\ value)\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ \textcolor{keyword}{const}\ =\ 0;\ \textcolor{comment}{//\ const\ é\ boa\ prática\ em\ getters}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SYSTEM\_HPP}}
 
 \end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="System_implement::System_implement" name="System_implement::System_implement">
+<area shape="rect" id="Node000001" title="Construtor padrão. Inicializa o valor com 0.0." alt="" coords="250,27,436,69"/>
+<area shape="rect" id="Node000002" href="$class_system__implement.html#a4ef1f18776e6702031b627040077b5dc" title="Operador de atribuição." alt="" coords="5,5,202,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,35,202,33,202,28,237,34"/>
+<area shape="rect" id="Node000003" href="$class_system__implement.html#a2913f4f1489800ec84d3a519f5cefbcb" title="Construtor de cópia." alt="" coords="10,56,197,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,62,198,69,197,63,237,61"/>
+</map>

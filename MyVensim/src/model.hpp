@@ -7,10 +7,10 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
-#include "flow.hpp"
-#include "system.hpp"
 #include <vector>
 
+class System;
+class Flow;
 /**
  * @class Model
  * @brief Interface que representa o Motor de Simulação.
@@ -31,10 +31,10 @@ public:
      */
     virtual void run(double start, double final, int increment) = 0;
 
-    /** @brief Adiciona um Sistema ao modelo. */
+    /** @brief Adiciona um Sistema ao Modelo. */
     virtual void add(System *system) = 0;
 
-    /** @brief Adiciona um Fluxo ao modelo. */
+    /** @brief Adiciona um Fluxo ao Modelo. */
     virtual void add(Flow *flow) = 0;
 
     // Definição dos tipos de iteradores (necessário para a interface expor o acesso)

@@ -1,25 +1,29 @@
 #include "funcional_tests.hpp"
+#include "../../src/flow_impl.hpp"
+#include "../../src/model_impl.hpp"
+#include "../../src/system_impl.hpp"
 #include "../../src/flow.hpp"
 #include "../../src/model.hpp"
-#include "../../src/system.hpp"
+
 #include <cassert>
 #include <cmath>
 
+/** @brief Teste funcional para o crescimento exponencial */
 void exponentialFunctionalTest() {
-  class exponential : public Flow {
+  class Exponential : public Flow_impl {
   public:
     double equation() { return 0.01 * getSource()->getValue(); }
   };
 
-  System *pop1 = new System(100);
-  System *pop2 = new System(0);
+  System *pop1 = new System_impl(100);
+  System *pop2 = new System_impl(0);
 
-  exponential *exp = new exponential();
+  Exponential *exp = new Exponential();
 
   exp->setSource(pop1);
   exp->setTarget(pop2);
 
-  Model *model = new Model();
+  Model *model = new Model_impl();
 
   model->add(pop1);
   model->add(pop2);
@@ -33,8 +37,9 @@ void exponentialFunctionalTest() {
   delete model;
 }
 
+/** @brief Teste funcional para o crescimento logístico */
 void logisticalFunctionalTest() {
-  class logistical : public Flow {
+  class Logistical : public Flow_impl {
   public:
     double equation() {
       return 0.01 * getTarget()->getValue() *
@@ -42,15 +47,15 @@ void logisticalFunctionalTest() {
     }
   };
 
-  System *p1 = new System(100);
-  System *p2 = new System(10);
+  System *p1 = new System_impl(100);
+  System *p2 = new System_impl(10);
 
-  logistical *log = new logistical();
+  Logistical *log = new Logistical();
 
   log->setSource(p1);
   log->setTarget(p2);
 
-  Model *model = new Model();
+  Model *model = new Model_impl();
 
   model->add(p1);
   model->add(p2);
@@ -64,26 +69,27 @@ void logisticalFunctionalTest() {
   delete model;
 }
 
+/** @brief Teste funcional para um cenário complexo */
 void complexFunctionalTest() {
-  class complex : public Flow {
+  class Complex : public Flow_impl {
   public:
     double equation() { return 0.01 * getSource()->getValue(); }
   };
 
-  Model *model = new Model();
+  Model *model = new Model_impl();
 
-  complex *f = new complex();
-  complex *g = new complex();
-  complex *r = new complex();
-  complex *t = new complex();
-  complex *u = new complex();
-  complex *v = new complex();
+  Complex *f = new Complex();
+  Complex *g = new Complex();
+  Complex *r = new Complex();
+  Complex *t = new Complex();
+  Complex *u = new Complex();
+  Complex *v = new Complex();
 
-  System *q1 = new System(100);
-  System *q2 = new System(0);
-  System *q3 = new System(100);
-  System *q4 = new System(0);
-  System *q5 = new System(0);
+  System *q1 = new System_impl(100);
+  System *q2 = new System_impl(0);
+  System *q3 = new System_impl(100);
+  System *q4 = new System_impl(0);
+  System *q5 = new System_impl(0);
 
   f->setSource(q1);
   f->setTarget(q2);

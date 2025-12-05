@@ -101,11 +101,15 @@ Inheritance diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__inherit__graph.png" border="0" usemap="#a_flow_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_flow_inherit__map" id="a_flow_inherit__map">
-<area shape="rect" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="27,5,118,181"/>
-<area shape="rect" href="class_flow__implement.html" title="Implementação base para fluxos." alt="" coords="5,229,140,512"/>
-<area shape="poly" title=" " alt="" coords="73,194,75,230,70,229,73,199"/>
-<area shape="rect" href="class_flow_mock.html" title="Implementação mock de um fluxo para testes." alt="" coords="27,560,119,693"/>
-<area shape="poly" title=" " alt="" coords="74,524,75,561,70,560,72,529"/>
+<area shape="rect" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="182,5,274,181"/>
+<area shape="rect" href="class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="178,229,278,512"/>
+<area shape="poly" title=" " alt="" coords="229,194,231,230,225,229,227,199"/>
+<area shape="rect" href="class_flow_destructor_spy.html" title=" " alt="" coords="5,571,157,683"/>
+<area shape="poly" title=" " alt="" coords="173,469,115,572,111,569,169,472"/>
+<area shape="rect" href="class_flow_mock.html" title="Implementação mock de um fluxo para testes." alt="" coords="182,560,274,693"/>
+<area shape="poly" title=" " alt="" coords="229,524,230,561,226,559,227,529"/>
+<area shape="rect" href="class_flow_spy.html" title=" " alt="" coords="298,571,390,683"/>
+<area shape="poly" title=" " alt="" coords="285,491,322,571,316,570,282,496"/>
 </map>
 </div>
 <div class="dynheader">
@@ -193,25 +197,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>O valor a ser transferido neste passo de tempo. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Este método é abstrato puro e DEVE ser implementado pelo usuário. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_flow__implement.html#a5c9b34c767f4f14a233a4d16d5d918eb">Flow_implement</a>, and <a class="el" href="class_flow_mock.html#a0b34cfe64dd8db67455054f60521a343">FlowMock</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph.png" border="0" usemap="#aclass_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph" id="aclass_flow_aa1ad5f820c1f10f9e19c555af8bf69f2_icgraph">
-<area shape="rect" title="Calcula a taxa de transferência do fluxo." alt="" coords="323,56,429,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
-<area shape="poly" title=" " alt="" coords="307,52,241,35,241,30,312,51"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
-<area shape="poly" title=" " alt="" coords="305,70,276,72,275,67,310,69"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="110,107,268,133"/>
-<area shape="poly" title=" " alt="" coords="312,87,242,109,240,103,307,88"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="123,38,104,47,56,63,54,58,102,41,127,35"/>
-<area shape="poly" title=" " alt="" coords="85,71,56,72,54,67,89,68"/>
-<area shape="poly" title=" " alt="" coords="122,102,102,97,55,81,55,75,104,92,128,101"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="class_flow__impl.html#ae00b58b8aba6a0b4fc69fb47bad18876">Flow_impl</a>, <a class="el" href="class_flow_destructor_spy.html#a90189d88b707f72d09497fe56d459d3f">FlowDestructorSpy</a>, <a class="el" href="class_flow_mock.html#a0b34cfe64dd8db67455054f60521a343">FlowMock</a>, and <a class="el" href="class_flow_spy.html#a0d48c29e58d69b61785adfcd859a0e53">FlowSpy</a>.</p>
 
 </div>
 </div>
@@ -240,22 +226,7 @@ Here is the caller graph for this function:</div>
 
 <p>Obtém o sistema de origem (Source). </p>
 
-<p>Implemented in <a class="el" href="class_flow__implement.html#ae8f4f70c44c569ea3c6b1a5bcff5651f">Flow_implement</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph.png" border="0" usemap="#aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" id="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph">
-<area shape="rect" title="Obtém o sistema de origem (Source)." alt="" coords="323,31,439,57"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="111,5,266,32"/>
-<area shape="poly" title=" " alt="" coords="305,34,267,32,267,26,310,34"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="103,56,275,83"/>
-<area shape="poly" title=" " alt="" coords="310,53,276,61,275,55,305,54"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
-<area shape="poly" title=" " alt="" coords="94,35,56,43,54,38,98,32"/>
-<area shape="poly" title=" " alt="" coords="85,54,55,50,55,45,90,52"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="class_flow__impl.html#a5276f60a3a8e889740f3091e9e9ecf0a">Flow_impl</a>.</p>
 
 </div>
 </div>
@@ -284,19 +255,7 @@ Here is the caller graph for this function:</div>
 
 <p>Obtém o sistema de destino (Target). </p>
 
-<p>Implemented in <a class="el" href="class_flow__implement.html#a4afbd04c3d289374c8f809882723c23e">Flow_implement</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph.png" border="0" usemap="#aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" id="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph">
-<area shape="rect" title="Obtém o sistema de destino (Target)." alt="" coords="308,5,419,32"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="103,5,260,32"/>
-<area shape="poly" title=" " alt="" coords="290,19,260,21,260,16,295,19"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="class_flow__impl.html#abcc5b318972ee1a136def46a6ae5ae13">Flow_impl</a>.</p>
 
 </div>
 </div>
@@ -325,7 +284,7 @@ Here is the caller graph for this function:</div>
 
 <p>Define o sistema de origem (Source). </p>
 
-<p>Implemented in <a class="el" href="class_flow__implement.html#aded334cba1adbb907a79e5efd2dca3e4">Flow_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_flow__impl.html#af972bc754c715026f3966ed93dfdcadc">Flow_impl</a>.</p>
 
 </div>
 </div>
@@ -354,7 +313,7 @@ Here is the caller graph for this function:</div>
 
 <p>Define o sistema de destino (Target). </p>
 
-<p>Implemented in <a class="el" href="class_flow__implement.html#af8968ecc4e80ec0873619b943cdb11a0">Flow_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_flow__impl.html#abbe0241196ea58816815b295bb5d619b">Flow_impl</a>.</p>
 
 </div>
 </div>

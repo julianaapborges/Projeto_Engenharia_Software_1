@@ -1,0 +1,9 @@
+<map id="unit_Model::unit_model_run" name="unit_Model::unit_model_run">
+<area shape="rect" id="Node000001" title="Testa o método run do Model_impl." alt="" coords="5,56,186,83"/>
+<area shape="rect" id="Node000002" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao Modelo." alt="" coords="269,5,354,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,53,256,31,251,33,156,58"/>
+<area shape="rect" id="Node000003" href="$class_system__impl.html#a810bee0fb6296a3882ed7c3d7b8b0218" title="Retorna o valor atual do sistema." alt="" coords="234,56,389,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,67,220,69,215,70,186,72"/>
+<area shape="rect" id="Node000004" href="$class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="270,107,352,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,81,257,106,252,108,155,86"/>
+</map>

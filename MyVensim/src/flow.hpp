@@ -7,7 +7,7 @@
 #ifndef FLOW_HPP
 #define FLOW_HPP
 
-#include "system.hpp" 
+class System;
 
 /**
  * @class Flow

@@ -1,8 +1,8 @@
-<map id="src/model.cpp" name="src/model.cpp">
+<map id="src/Model.cpp" name="src/Model.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="60,5,164,32"/>
-<area shape="rect" id="Node000002" href="$model_8hpp.html" title="Declaração da classe Model (Motor da simulação)." alt="" coords="71,80,153,107"/>
+<area shape="rect" id="Node000002" href="$Model_8hpp.html" title="Declaração da classe Model (Motor da simulação)." alt="" coords="71,80,153,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,30,115,65,109,64,111,35"/>
-<area shape="rect" id="Node000003" href="$flow_8hpp.html" title="Declaração da classe Flow (Abstrata)." alt="" coords="5,155,75,181"/>
+<area shape="rect" id="Node000003" href="$Flow_8hpp.html" title="Declaração da classe Flow (Abstrata)." alt="" coords="5,155,75,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,110,65,145,61,142,101,105"/>
 <area shape="rect" id="Node000004" href="$system_8hpp.html" title="Declaração da classe System." alt="" coords="31,229,121,256"/>
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="112,107,85,215,80,213,106,108"/>

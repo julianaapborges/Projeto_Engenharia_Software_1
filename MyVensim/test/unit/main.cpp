@@ -9,18 +9,21 @@
 
 int main() {
     // Chama os testes do Flow
-    std::cout << "Rodando testes de Flow..." << std::endl;
-    run_unit_tests_Flow();
+    std::cout << "Rodando testes unitários de Flow..." << std::endl;
+    unit_Flow uf;
+    uf.run_unit_tests_Flow();
     std::cout << "OK!" << std::endl;
 
     // Chama os testes do Model
-    std::cout << "Rodando testes de Model..." << std::endl;
-    run_unit_tests_Model();
+    std::cout << "Rodando testes unitários de Model..." << std::endl;
+    unit_Model um;
+    um.run_unit_tests_Model();
     std::cout << "OK!" << std::endl;
 
     // Chama os testes do System
-    std::cout << "Rodando testes de System..." << std::endl;
-    run_unit_tests_System();
+    std::cout << "Rodando testes unitários de System..." << std::endl;
+    unit_System us;
+    us.run_unit_tests_System();
     std::cout << "OK!" << std::endl;
 
     return 0;

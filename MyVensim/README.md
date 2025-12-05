@@ -6,11 +6,11 @@ Repositório criado para a disciplina de Engenharia de Software I (BCC322), do P
 
 O objetivo deste projeto é projetar, especificar (UML) e implementar uma API (framework) em C++ para a construção de simulações baseadas na **Dinâmica de Sistemas**.
 
-A API permitirá ao modelador criar "sistemas" (estoques de energia/matéria) e "fluxos" (que transportam essa energia/matéria), permitindo a simulação de modelos dinâmicos conforme a Teoria Geral de Sistemas. O loop de simulação principal seguirá o algoritmo geral descrito na Figura 5 do trabalho.
+A API permitirá ao Modelador criar "sistemas" (estoques de energia/matéria) e "fluxos" (que transportam essa energia/matéria), permitindo a simulação de Modelos dinâmicos conforme a Teoria Geral de Sistemas. O loop de simulação principal seguirá o algoritmo geral descrito na Figura 5 do trabalho.
 
 ### Funcionalidades (Casos de Uso)
 
-O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Testes) para implementar os seguintes modelos de validação:
+O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Testes) para implementar os seguintes Modelos de validação:
 
 * **Modelo 1:** Crescimento Populacional Exponencial 
 * **Modelo 2:** Crescimento Populacional Logístico 
@@ -42,7 +42,7 @@ make func
     ou
 make unit
 
-**Executar os testes (validação dos modelos):**
+**Executar os testes (validação dos Modelos):**
 ```bash
 ./bin/testeRegressivo.exe
     ou

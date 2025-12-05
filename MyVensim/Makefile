@@ -25,10 +25,10 @@ all: $(APP_TARGET)
 test: $(TEST_TARGET)
 
 func: $(FUNC_TARGET)
-	@echo "Executando testes funcionais..."
 	@./$(FUNC_TARGET)
 
 unit: $(UNIT_TARGET)
+	@./$(UNIT_TARGET)
 
 test-all: test func unit
 
@@ -54,4 +54,3 @@ clean:
 	rm -f $(BIN_DIR)/*.so
 	rm -f $(BIN_DIR)/*.dll
 	rm -f $(BIN_DIR)/*.a
-	

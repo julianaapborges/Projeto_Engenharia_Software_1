@@ -1,5 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="5,5,72,32"/>
-<area shape="rect" id="Node000001" href="$class_system__implement.html" title="Implementação concreta da interface System." alt="" coords="120,5,253,32"/>
-<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="87,16,122,18,117,19,87,21"/>
+<area shape="rect" id="Node000000" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="5,31,72,57"/>
+<area shape="rect" id="Node000001" href="$class_system__impl.html" title="Implementação concreta da interface System." alt="" coords="120,31,217,57"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="87,41,122,43,117,45,87,47"/>
+<area shape="rect" id="Node000002" href="$class_system_destructor_spy.html" title=" " alt="" coords="265,5,415,32"/>
+<area shape="poly" id="edge7_Node000001_Node000002" title=" " alt="" coords="232,32,267,29,262,30,233,37"/>
+<area shape="rect" id="Node000003" href="$class_system_spy.html" title=" " alt="" coords="296,56,385,83"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="232,51,298,63,292,63,232,56"/>
 </map>

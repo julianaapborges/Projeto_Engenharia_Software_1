@@ -1,4 +1,4 @@
-var flow__implement_8hpp =
+var Flow__implement_8hpp =
 [
-    [ "Flow_implement", "class_flow__implement.html", "class_flow__implement" ]
+    [ "Flow_impl", "class_Flow__implement.html", "class_Flow__implement" ]
 ];

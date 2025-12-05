@@ -15,7 +15,7 @@ Inheritance diagram for Model\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=187pt]{class_model__inherit__graph}
+\includegraphics[width=166pt]{class_model__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -42,9 +42,9 @@ virtual \mbox{\hyperlink{class_model_af032d8433c87a0a3a431faf6563a1f03}{\texorpd
 virtual void \mbox{\hyperlink{class_model_a76f5202c3ccdf6092c77a2a4ae6f3484}{run}} (double start, double final, int increment)=0
 \begin{DoxyCompactList}\small\item\em Executa a simulação. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{add}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}system)=0
-\begin{DoxyCompactList}\small\item\em Adiciona um Sistema ao modelo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adiciona um Sistema ao Modelo. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_model_ab7df81041f62f049cfc6e4d50dcaf721}{add}} (\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}flow)=0
-\begin{DoxyCompactList}\small\item\em Adiciona um Fluxo ao modelo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adiciona um Fluxo ao Modelo. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \mbox{\hyperlink{class_model_af44c12bce2645f91b796e750ddbacbd2}{begin\+Systems}} ()=0
 \begin{DoxyCompactList}\small\item\em Retorna um iterador para o início dos sistemas. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \mbox{\hyperlink{class_model_a251f709667f7ca6aedc45dd7431e40c1}{end\+Systems}} ()=0
@@ -106,11 +106,11 @@ virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class
 
 
 
-Adiciona um Fluxo ao modelo. 
+Adiciona um Fluxo ao Modelo. 
 
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_a420a4f4fa69fd8215a0f4889302ff8cd}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_aecfce1651b66d03eb00a03dbbbf82c2b}{Model\+\_\+impl}}.
 
 \Hypertarget{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}\index{Model@{Model}!add@{add}}
 \index{add@{add}!Model@{Model}}
@@ -120,11 +120,11 @@ virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class
 
 
 
-Adiciona um Sistema ao modelo. 
+Adiciona um Sistema ao Modelo. 
 
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_a8b95e7bae943c9ac306a302e8180cd66}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_a2b1d37ab3f74fed4d27c66875e7fa9c2}{Model\+\_\+impl}}.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -145,7 +145,7 @@ Retorna um iterador para o início dos fluxos.
 
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_ae97e36706bb37f96b0b96249f4138bc1}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_a09286137c9cc479317969d6693d96278}{Model\+\_\+impl}}.
 
 \Hypertarget{class_model_af44c12bce2645f91b796e750ddbacbd2}\index{Model@{Model}!beginSystems@{beginSystems}}
 \index{beginSystems@{beginSystems}!Model@{Model}}
@@ -159,7 +159,7 @@ Retorna um iterador para o início dos sistemas.
 
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_afed58226f1b4d3a145d02010de312f30}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_aa7892f9c3387859484b6cc45a1f58c6e}{Model\+\_\+impl}}.
 
 \Hypertarget{class_model_a27d6c506e46555299b4b4c8ae0990a7c}\index{Model@{Model}!endFlows@{endFlows}}
 \index{endFlows@{endFlows}!Model@{Model}}
@@ -173,7 +173,7 @@ Retorna um iterador para o fim dos fluxos.
 
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_a7459c6727b9ba0087fb125e19817a39b}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_ae5365ecc7ef6004e8144bd5e425440b9}{Model\+\_\+impl}}.
 
 \Hypertarget{class_model_a251f709667f7ca6aedc45dd7431e40c1}\index{Model@{Model}!endSystems@{endSystems}}
 \index{endSystems@{endSystems}!Model@{Model}}
@@ -187,7 +187,7 @@ Retorna um iterador para o fim dos sistemas.
 
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_ac66dee879b0a2740f7a64aa4a7b5e108}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_aae3f41e54ffc2f42616e83997d91158e}{Model\+\_\+impl}}.
 
 \Hypertarget{class_model_a76f5202c3ccdf6092c77a2a4ae6f3484}\index{Model@{Model}!run@{run}}
 \index{run@{run}!Model@{Model}}
@@ -210,7 +210,7 @@ Executa a simulação.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{class_model__implement_af8a653c8e0c2a6186e536580e44767d5}{Model\+\_\+implement}}.
+Implemented in \mbox{\hyperlink{class_model__impl_afdeedc161d0a2f1f263983a273661a90}{Model\+\_\+impl}}.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]

@@ -1,4 +1,4 @@
-var model__implement_8hpp =
+var Model__implement_8hpp =
 [
-    [ "Model_implement", "class_model__implement.html", "class_model__implement" ]
+    [ "Model_impl", "class_Model__implement.html", "class_Model__implement" ]
 ];

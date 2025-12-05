@@ -1,39 +1,34 @@
 <map id="test/unit/unit_model.cpp" name="test/unit/unit_model.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="496,5,656,32"/>
-<area shape="rect" id="Node000002" href="$unit__model_8hpp.html" title=" " alt="" coords="5,80,115,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="495,33,134,83,132,83,128,78,133,77,496,28"/>
-<area shape="rect" id="Node000003" href="$model__implement_8hpp.html" title="Declaração da classe Model_implement (Motor da simulação)." alt="" coords="412,80,606,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="566,31,533,71,529,67,562,34"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="279,379,350,405"/>
-<area shape="poly" id="edge21_Node000001_Node000007" title=" " alt="" coords="493,32,390,53,278,82,229,100,190,120,164,143,157,154,155,167,155,244,158,266,166,286,178,305,194,321,231,349,270,372,265,372,228,354,190,325,174,308,161,289,152,267,149,244,149,166,152,153,160,139,187,116,227,95,277,77,389,48,498,30"/>
-<area shape="rect" id="Node000010" href="$system__implement_8hpp.html" title="Declaração da classe concreta System_implement." alt="" coords="190,155,392,181"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="522,34,464,54,401,82,354,114,316,146,312,142,351,109,399,78,463,49,527,31"/>
-<area shape="rect" id="Node000011" href="$flow__implement_8hpp.html" title="Declaração da classe Flow_implement (Abstrata)." alt="" coords="675,155,858,181"/>
-<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="588,30,625,65,671,105,733,147,728,147,668,109,622,69,588,35"/>
-<area shape="rect" id="Node000012" href="$flow__mock_8hpp.html" title="Declaração da classe FlowMock utilizada para testes unitários." alt="" coords="681,80,791,107"/>
-<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="604,30,697,73,692,74,604,35"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="814,80,879,107"/>
-<area shape="poly" id="edge22_Node000001_Node000013" title=" " alt="" coords="624,30,802,79,797,80,624,35"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="903,80,961,107"/>
-<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="653,30,761,50,891,79,885,80,760,55,654,35"/>
-<area shape="rect" id="Node000004" href="$model_8hpp.html" title="Interface para a classe Model." alt="" coords="518,155,599,181"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="519,105,544,142,539,141,517,110"/>
-<area shape="rect" id="Node000005" href="$flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="601,229,671,256"/>
-<area shape="poly" id="edge11_Node000003_Node000005" title=" " alt="" coords="545,105,582,124,614,153,629,183,636,215,631,213,624,185,610,156,579,128,544,110"/>
-<area shape="rect" id="Node000006" href="$system_8hpp.html" title="Interface para a classe System." alt="" coords="518,304,607,331"/>
-<area shape="poly" id="edge10_Node000003_Node000006" title=" " alt="" coords="501,105,480,137,460,174,453,195,450,215,451,236,458,255,479,278,508,298,503,297,476,282,454,257,446,237,444,215,448,193,455,172,476,134,497,109"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="467,229,525,256"/>
-<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="510,105,501,215,496,213,506,109"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="573,179,614,219,609,218,571,184"/>
-<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="561,180,564,290,560,287,557,184"/>
-<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="550,180,518,220,515,215,546,183"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="626,255,588,295,585,291,621,258"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="522,331,366,379,365,373,517,331"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="536,379,589,405"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="565,329,565,365,561,361,561,333"/>
-<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="306,179,353,215,412,254,461,277,512,299,506,298,459,282,409,258,349,220,305,184"/>
-<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="746,181,673,224,671,219,741,183"/>
-<area shape="poly" id="edge17_Node000011_Node000006" title=" " alt="" coords="759,180,728,219,684,258,647,281,610,300,608,295,645,277,681,254,724,215,755,183"/>
-<area shape="poly" id="edge20_Node000012_Node000006" title=" " alt="" coords="791,104,828,116,859,133,870,143,877,155,878,168,873,183,850,213,821,238,789,259,755,276,686,299,623,312,622,307,684,294,753,271,787,254,818,234,846,209,868,180,873,168,872,157,866,147,856,137,826,121,791,110"/>
-<area shape="poly" id="edge19_Node000012_Node000011" title=" " alt="" coords="742,105,758,141,753,139,740,110"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="352,5,513,32"/>
+<area shape="rect" id="Node000002" href="$unit__model_8hpp.html" title=" " alt="" coords="90,80,199,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="381,35,211,78,209,73,384,31"/>
+<area shape="rect" id="Node000003" href="$model__impl_8hpp.html" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="5,155,164,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="399,34,287,82,129,150,126,146,285,78,404,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="457,304,528,331"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="457,30,490,50,527,77,563,112,590,154,595,174,595,195,589,215,579,234,552,268,522,296,520,292,548,265,574,231,584,213,589,194,590,175,585,156,559,115,524,81,487,54,457,35"/>
+<area shape="rect" id="Node000009" href="$system__impl_8hpp.html" title="Declaração da classe concreta System_impl." alt="" coords="409,155,576,181"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="439,30,484,141,479,140,436,35"/>
+<area shape="rect" id="Node000010" href="$flow__impl_8hpp.html" title="Declaração da classe Flow_impl (Abstrata)." alt="" coords="188,155,336,181"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="392,34,354,54,314,82,291,111,274,142,270,139,287,108,311,78,351,49,397,31"/>
+<area shape="rect" id="Node000011" href="$flow__mock_8hpp.html" title="Declaração da classe FlowMock utilizada para testes unitários." alt="" coords="324,80,434,107"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="425,31,399,69,395,66,421,34"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="650,80,714,107"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="476,30,637,78,632,79,476,35"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="738,80,796,107"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="502,30,726,79,721,81,502,35"/>
+<area shape="rect" id="Node000004" href="$model_8hpp.html" title="Interface para a classe Model." alt="" coords="64,229,145,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,179,100,215,94,214,87,184"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="37,304,94,331"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="74,184,64,204,54,230,52,260,58,290,53,289,47,261,49,229,59,202,76,179"/>
+<area shape="rect" id="Node000006" href="$system_8hpp.html" title="Interface para a classe System." alt="" coords="328,229,417,256"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="135,179,314,224,310,228,135,185"/>
+<area shape="rect" id="Node000008" href="$flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="208,229,278,256"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="112,179,204,221,199,224,112,185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="100,255,82,292,78,289,96,258"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="394,254,461,296,456,295,393,259"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="474,181,408,223,405,219,469,183"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="282,179,343,220,338,221,281,184"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="260,180,252,216,248,213,257,184"/>
+<area shape="poly" id="edge16_Node000011_Node000006" title=" " alt="" coords="381,105,376,215,371,213,377,109"/>
+<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="356,109,296,149,294,144,361,106"/>
 </map>

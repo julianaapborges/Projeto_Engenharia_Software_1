@@ -92,9 +92,9 @@ $(function(){initNavTree('unit__model_8cpp.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="unit__model_8hpp_source.html">unit_model.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="model__implement_8hpp_source.html">../../src/model_implement.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="system__implement_8hpp_source.html">../../src/system_implement.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="flow__implement_8hpp_source.html">../../src/flow_implement.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="model__impl_8hpp_source.html">../../src/model_impl.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="system__impl_8hpp_source.html">../../src/system_impl.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="flow__impl_8hpp_source.html">../../src/flow_impl.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="flow__mock_8hpp_source.html">flow_mock.hpp</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
@@ -104,329 +104,78 @@ Include dependency graph for unit_model.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="unit__model_8cpp__incl.png" border="0" usemap="#atest_2unit_2unit__model_8cpp" loading="lazy" alt=""/></div>
 <map name="atest_2unit_2unit__model_8cpp" id="atest_2unit_2unit__model_8cpp">
-<area shape="rect" title=" " alt="" coords="496,5,656,32"/>
-<area shape="rect" href="unit__model_8hpp.html" title=" " alt="" coords="5,80,115,107"/>
-<area shape="poly" title=" " alt="" coords="495,33,134,83,132,83,128,78,133,77,496,28"/>
-<area shape="rect" href="model__implement_8hpp.html" title="Declaração da classe Model_implement (Motor da simulação)." alt="" coords="412,80,606,107"/>
-<area shape="poly" title=" " alt="" coords="566,31,533,71,529,67,562,34"/>
-<area shape="rect" title=" " alt="" coords="279,379,350,405"/>
-<area shape="poly" title=" " alt="" coords="493,32,390,53,278,82,229,100,190,120,164,143,157,154,155,167,155,244,158,266,166,286,178,305,194,321,231,349,270,372,265,372,228,354,190,325,174,308,161,289,152,267,149,244,149,166,152,153,160,139,187,116,227,95,277,77,389,48,498,30"/>
-<area shape="rect" href="system__implement_8hpp.html" title="Declaração da classe concreta System_implement." alt="" coords="190,155,392,181"/>
-<area shape="poly" title=" " alt="" coords="522,34,464,54,401,82,354,114,316,146,312,142,351,109,399,78,463,49,527,31"/>
-<area shape="rect" href="flow__implement_8hpp.html" title="Declaração da classe Flow_implement (Abstrata)." alt="" coords="675,155,858,181"/>
-<area shape="poly" title=" " alt="" coords="588,30,625,65,671,105,733,147,728,147,668,109,622,69,588,35"/>
-<area shape="rect" href="flow__mock_8hpp.html" title="Declaração da classe FlowMock utilizada para testes unitários." alt="" coords="681,80,791,107"/>
-<area shape="poly" title=" " alt="" coords="604,30,697,73,692,74,604,35"/>
-<area shape="rect" title=" " alt="" coords="814,80,879,107"/>
-<area shape="poly" title=" " alt="" coords="624,30,802,79,797,80,624,35"/>
-<area shape="rect" title=" " alt="" coords="903,80,961,107"/>
-<area shape="poly" title=" " alt="" coords="653,30,761,50,891,79,885,80,760,55,654,35"/>
-<area shape="rect" href="model_8hpp.html" title="Interface para a classe Model." alt="" coords="518,155,599,181"/>
-<area shape="poly" title=" " alt="" coords="519,105,544,142,539,141,517,110"/>
-<area shape="rect" href="flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="601,229,671,256"/>
-<area shape="poly" title=" " alt="" coords="545,105,582,124,614,153,629,183,636,215,631,213,624,185,610,156,579,128,544,110"/>
-<area shape="rect" href="system_8hpp.html" title="Interface para a classe System." alt="" coords="518,304,607,331"/>
-<area shape="poly" title=" " alt="" coords="501,105,480,137,460,174,453,195,450,215,451,236,458,255,479,278,508,298,503,297,476,282,454,257,446,237,444,215,448,193,455,172,476,134,497,109"/>
-<area shape="rect" title=" " alt="" coords="467,229,525,256"/>
-<area shape="poly" title=" " alt="" coords="510,105,501,215,496,213,506,109"/>
-<area shape="poly" title=" " alt="" coords="573,179,614,219,609,218,571,184"/>
-<area shape="poly" title=" " alt="" coords="561,180,564,290,560,287,557,184"/>
-<area shape="poly" title=" " alt="" coords="550,180,518,220,515,215,546,183"/>
-<area shape="poly" title=" " alt="" coords="626,255,588,295,585,291,621,258"/>
-<area shape="poly" title=" " alt="" coords="522,331,366,379,365,373,517,331"/>
-<area shape="rect" title=" " alt="" coords="536,379,589,405"/>
-<area shape="poly" title=" " alt="" coords="565,329,565,365,561,361,561,333"/>
-<area shape="poly" title=" " alt="" coords="306,179,353,215,412,254,461,277,512,299,506,298,459,282,409,258,349,220,305,184"/>
-<area shape="poly" title=" " alt="" coords="746,181,673,224,671,219,741,183"/>
-<area shape="poly" title=" " alt="" coords="759,180,728,219,684,258,647,281,610,300,608,295,645,277,681,254,724,215,755,183"/>
-<area shape="poly" title=" " alt="" coords="791,104,828,116,859,133,870,143,877,155,878,168,873,183,850,213,821,238,789,259,755,276,686,299,623,312,622,307,684,294,753,271,787,254,818,234,846,209,868,180,873,168,872,157,866,147,856,137,826,121,791,110"/>
-<area shape="poly" title=" " alt="" coords="742,105,758,141,753,139,740,110"/>
+<area shape="rect" title=" " alt="" coords="352,5,513,32"/>
+<area shape="rect" href="unit__model_8hpp.html" title=" " alt="" coords="90,80,199,107"/>
+<area shape="poly" title=" " alt="" coords="381,35,211,78,209,73,384,31"/>
+<area shape="rect" href="model__impl_8hpp.html" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="5,155,164,181"/>
+<area shape="poly" title=" " alt="" coords="399,34,287,82,129,150,126,146,285,78,404,31"/>
+<area shape="rect" title=" " alt="" coords="457,304,528,331"/>
+<area shape="poly" title=" " alt="" coords="457,30,490,50,527,77,563,112,590,154,595,174,595,195,589,215,579,234,552,268,522,296,520,292,548,265,574,231,584,213,589,194,590,175,585,156,559,115,524,81,487,54,457,35"/>
+<area shape="rect" href="system__impl_8hpp.html" title="Declaração da classe concreta System_impl." alt="" coords="409,155,576,181"/>
+<area shape="poly" title=" " alt="" coords="439,30,484,141,479,140,436,35"/>
+<area shape="rect" href="flow__impl_8hpp.html" title="Declaração da classe Flow_impl (Abstrata)." alt="" coords="188,155,336,181"/>
+<area shape="poly" title=" " alt="" coords="392,34,354,54,314,82,291,111,274,142,270,139,287,108,311,78,351,49,397,31"/>
+<area shape="rect" href="flow__mock_8hpp.html" title="Declaração da classe FlowMock utilizada para testes unitários." alt="" coords="324,80,434,107"/>
+<area shape="poly" title=" " alt="" coords="425,31,399,69,395,66,421,34"/>
+<area shape="rect" title=" " alt="" coords="650,80,714,107"/>
+<area shape="poly" title=" " alt="" coords="476,30,637,78,632,79,476,35"/>
+<area shape="rect" title=" " alt="" coords="738,80,796,107"/>
+<area shape="poly" title=" " alt="" coords="502,30,726,79,721,81,502,35"/>
+<area shape="rect" href="model_8hpp.html" title="Interface para a classe Model." alt="" coords="64,229,145,256"/>
+<area shape="poly" title=" " alt="" coords="89,179,100,215,94,214,87,184"/>
+<area shape="rect" title=" " alt="" coords="37,304,94,331"/>
+<area shape="poly" title=" " alt="" coords="74,184,64,204,54,230,52,260,58,290,53,289,47,261,49,229,59,202,76,179"/>
+<area shape="rect" href="system_8hpp.html" title="Interface para a classe System." alt="" coords="328,229,417,256"/>
+<area shape="poly" title=" " alt="" coords="135,179,314,224,310,228,135,185"/>
+<area shape="rect" href="flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="208,229,278,256"/>
+<area shape="poly" title=" " alt="" coords="112,179,204,221,199,224,112,185"/>
+<area shape="poly" title=" " alt="" coords="100,255,82,292,78,289,96,258"/>
+<area shape="poly" title=" " alt="" coords="394,254,461,296,456,295,393,259"/>
+<area shape="poly" title=" " alt="" coords="474,181,408,223,405,219,469,183"/>
+<area shape="poly" title=" " alt="" coords="282,179,343,220,338,221,281,184"/>
+<area shape="poly" title=" " alt="" coords="260,180,252,216,248,213,257,184"/>
+<area shape="poly" title=" " alt="" coords="381,105,376,215,371,213,377,109"/>
+<area shape="poly" title=" " alt="" coords="356,109,296,149,294,144,361,106"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a33c89b15c9a9fa91b3753cba55af695b" id="r_a33c89b15c9a9fa91b3753cba55af695b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33c89b15c9a9fa91b3753cba55af695b">unit_Model_constructor</a> ()</td></tr>
-<tr class="memitem:a70af8f6763c09dd3ff71d65394614447" id="r_a70af8f6763c09dd3ff71d65394614447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70af8f6763c09dd3ff71d65394614447">unit_Model_add</a> ()</td></tr>
-<tr class="memitem:a37286918320acd70d56642498fa32c18" id="r_a37286918320acd70d56642498fa32c18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37286918320acd70d56642498fa32c18">unit_Model_run</a> ()</td></tr>
-<tr class="memitem:ad20d65aa1d997b6863b07b60ea9e113d" id="r_ad20d65aa1d997b6863b07b60ea9e113d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20d65aa1d997b6863b07b60ea9e113d">unit_Model_copy_constructor</a> ()</td></tr>
-<tr class="memitem:a3f45e055e9d0421a9d364d36ad1140d6" id="r_a3f45e055e9d0421a9d364d36ad1140d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f45e055e9d0421a9d364d36ad1140d6">unit_Model_assignmentOperator</a> ()</td></tr>
-<tr class="memitem:a8a49913008ee3aede79ca904bcb8cd51" id="r_a8a49913008ee3aede79ca904bcb8cd51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a49913008ee3aede79ca904bcb8cd51">run_unit_tests_Model</a> ()</td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:SystemSpy" id="r_SystemSpy"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_spy.html">SystemSpy</a></td></tr>
+<tr class="memitem:FlowSpy" id="r_FlowSpy"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_spy.html">FlowSpy</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afa7d523fd85937824276eff0752038f3" id="r_afa7d523fd85937824276eff0752038f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa7d523fd85937824276eff0752038f3">sys_destructor_calls</a> = 0</td></tr>
+<tr class="memitem:a7b07fd0db440c0ed92fb676f3a42bbf9" id="r_a7b07fd0db440c0ed92fb676f3a42bbf9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b07fd0db440c0ed92fb676f3a42bbf9">flow_destructor_calls</a> = 0</td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a8a49913008ee3aede79ca904bcb8cd51" name="a8a49913008ee3aede79ca904bcb8cd51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a49913008ee3aede79ca904bcb8cd51">&#9670;&#160;</a></span>run_unit_tests_Model()</h2>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a7b07fd0db440c0ed92fb676f3a42bbf9" name="a7b07fd0db440c0ed92fb676f3a42bbf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b07fd0db440c0ed92fb676f3a42bbf9">&#9670;&#160;</a></span>flow_destructor_calls</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void run_unit_tests_Model </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">int flow_destructor_calls = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph.png" border="0" usemap="#aunit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph" id="aunit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,151,133"/>
-<area shape="rect" href="unit__model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title=" " alt="" coords="247,5,359,32"/>
-<area shape="poly" title=" " alt="" coords="95,104,140,73,198,42,234,31,230,34,200,46,143,77,99,108"/>
-<area shape="rect" href="unit__model_8cpp.html#a3f45e055e9d0421a9d364d36ad1140d6" title=" " alt="" coords="199,157,407,184"/>
-<area shape="poly" title=" " alt="" coords="140,131,228,152,224,155,141,137"/>
-<area shape="rect" href="unit__model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="225,208,381,235"/>
-<area shape="poly" title=" " alt="" coords="97,131,143,163,200,194,220,203,215,204,198,198,140,167,97,136"/>
-<area shape="rect" href="unit__model_8cpp.html#ad20d65aa1d997b6863b07b60ea9e113d" title=" " alt="" coords="207,107,398,133"/>
-<area shape="poly" title=" " alt="" coords="150,118,194,119,189,121,152,122"/>
-<area shape="rect" href="unit__model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="248,56,358,83"/>
-<area shape="poly" title=" " alt="" coords="139,104,235,83,231,87,142,108"/>
-<area shape="rect" href="class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao modelo." alt="" coords="520,5,605,32"/>
-<area shape="poly" title=" " alt="" coords="359,16,506,17,501,20,360,21"/>
-<area shape="rect" href="class_model__implement.html#a8b95e7bae943c9ac306a302e8180cd66" title="Adiciona um Sistema ao modelo." alt="" coords="486,107,638,133"/>
-<area shape="poly" title=" " alt="" coords="374,154,478,136,473,138,376,159"/>
-<area shape="rect" href="class_model__implement.html#afed58226f1b4d3a145d02010de312f30" title="Implementação dos Iteradores de System." alt="" coords="455,208,669,235"/>
-<area shape="poly" title=" " alt="" coords="375,182,478,204,473,205,375,187"/>
-<area shape="rect" href="class_model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108" title=" " alt="" coords="460,157,664,184"/>
-<area shape="poly" title=" " alt="" coords="407,168,447,170,442,171,408,173"/>
-<area shape="poly" title=" " alt="" coords="381,219,442,221,437,222,382,224"/>
-<area shape="poly" title=" " alt="" coords="374,205,478,187,473,188,376,210"/>
-<area shape="rect" href="class_model__implement.html#ae97e36706bb37f96b0b96249f4138bc1" title="Implementação dos Iteradores de Flow." alt="" coords="464,309,661,336"/>
-<area shape="poly" title=" " alt="" coords="328,233,386,264,456,295,481,305,476,305,454,300,383,268,327,238"/>
-<area shape="rect" href="class_model__implement.html#a7459c6727b9ba0087fb125e19817a39b" title=" " alt="" coords="468,259,656,285"/>
-<area shape="poly" title=" " alt="" coords="375,233,478,255,473,255,375,238"/>
-<area shape="poly" title=" " alt="" coords="399,117,473,119,468,121,400,123"/>
-<area shape="poly" title=" " alt="" coords="381,131,408,143,424,156,433,169,442,182,456,194,469,202,464,202,454,198,438,186,429,172,420,159,406,148,381,136"/>
-<area shape="poly" title=" " alt="" coords="375,131,478,153,473,154,375,137"/>
-<area shape="poly" title=" " alt="" coords="357,56,507,28,502,31,359,61"/>
-<area shape="rect" href="class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="521,56,603,83"/>
-<area shape="poly" title=" " alt="" coords="357,67,508,68,503,71,358,72"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_icgraph.png" border="0" usemap="#aunit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_icgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_icgraph" id="aunit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_icgraph">
-<area shape="rect" title=" " alt="" coords="103,5,248,32"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a70af8f6763c09dd3ff71d65394614447" name="a70af8f6763c09dd3ff71d65394614447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70af8f6763c09dd3ff71d65394614447">&#9670;&#160;</a></span>unit_Model_add()</h2>
+<a id="afa7d523fd85937824276eff0752038f3" name="afa7d523fd85937824276eff0752038f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7d523fd85937824276eff0752038f3">&#9670;&#160;</a></span>sys_destructor_calls</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Model_add </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">int sys_destructor_calls = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_cgraph.png" border="0" usemap="#aunit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_cgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_cgraph" id="aunit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,118,32"/>
-<area shape="rect" href="class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao modelo." alt="" coords="166,5,251,32"/>
-<area shape="poly" title=" " alt="" coords="118,16,152,18,147,19,118,21"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_icgraph.png" border="0" usemap="#aunit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_icgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_icgraph" id="aunit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_icgraph">
-<area shape="rect" title=" " alt="" coords="296,5,408,32"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,5,248,32"/>
-<area shape="poly" title=" " alt="" coords="278,19,249,21,249,16,283,19"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3f45e055e9d0421a9d364d36ad1140d6" name="a3f45e055e9d0421a9d364d36ad1140d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f45e055e9d0421a9d364d36ad1140d6">&#9670;&#160;</a></span>unit_Model_assignmentOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unit_Model_assignmentOperator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_cgraph.png" border="0" usemap="#aunit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_cgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_cgraph" id="aunit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,214,83"/>
-<area shape="rect" href="class_model__implement.html#a8b95e7bae943c9ac306a302e8180cd66" title="Adiciona um Sistema ao modelo." alt="" coords="293,5,445,32"/>
-<area shape="poly" title=" " alt="" coords="181,53,285,34,280,37,182,58"/>
-<area shape="rect" href="class_model__implement.html#afed58226f1b4d3a145d02010de312f30" title="Implementação dos Iteradores de System." alt="" coords="262,56,476,83"/>
-<area shape="poly" title=" " alt="" coords="214,67,249,69,243,70,214,72"/>
-<area shape="rect" href="class_model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108" title=" " alt="" coords="267,107,471,133"/>
-<area shape="poly" title=" " alt="" coords="182,81,285,102,280,104,181,86"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_icgraph.png" border="0" usemap="#aunit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_icgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_icgraph" id="aunit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_icgraph">
-<area shape="rect" title=" " alt="" coords="296,5,504,32"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,5,248,32"/>
-<area shape="poly" title=" " alt="" coords="278,19,249,21,249,16,283,19"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a33c89b15c9a9fa91b3753cba55af695b" name="a33c89b15c9a9fa91b3753cba55af695b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c89b15c9a9fa91b3753cba55af695b">&#9670;&#160;</a></span>unit_Model_constructor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unit_Model_constructor </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph.png" border="0" usemap="#aunit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph" id="aunit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,162,108"/>
-<area shape="rect" href="class_model__implement.html#ae97e36706bb37f96b0b96249f4138bc1" title="Implementação dos Iteradores de Flow." alt="" coords="218,5,416,32"/>
-<area shape="poly" title=" " alt="" coords="114,78,209,41,239,35,234,37,211,47,116,83"/>
-<area shape="rect" href="class_model__implement.html#afed58226f1b4d3a145d02010de312f30" title="Implementação dos Iteradores de System." alt="" coords="210,56,424,83"/>
-<area shape="poly" title=" " alt="" coords="162,84,196,82,191,84,163,89"/>
-<area shape="rect" href="class_model__implement.html#a7459c6727b9ba0087fb125e19817a39b" title=" " alt="" coords="223,107,410,133"/>
-<area shape="poly" title=" " alt="" coords="162,101,210,107,205,109,163,106"/>
-<area shape="rect" href="class_model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108" title=" " alt="" coords="215,157,419,184"/>
-<area shape="poly" title=" " alt="" coords="116,106,211,143,239,153,234,153,209,148,115,111"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_icgraph.png" border="0" usemap="#aunit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_icgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_icgraph" id="aunit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_icgraph">
-<area shape="rect" title=" " alt="" coords="296,5,452,32"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,5,248,32"/>
-<area shape="poly" title=" " alt="" coords="278,19,248,21,248,16,283,19"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad20d65aa1d997b6863b07b60ea9e113d" name="ad20d65aa1d997b6863b07b60ea9e113d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20d65aa1d997b6863b07b60ea9e113d">&#9670;&#160;</a></span>unit_Model_copy_constructor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unit_Model_copy_constructor </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_cgraph.png" border="0" usemap="#aunit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_cgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_cgraph" id="aunit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,197,83"/>
-<area shape="rect" href="class_model__implement.html#a8b95e7bae943c9ac306a302e8180cd66" title="Adiciona um Sistema ao modelo." alt="" coords="276,5,428,32"/>
-<area shape="poly" title=" " alt="" coords="170,53,270,35,265,37,171,58"/>
-<area shape="rect" href="class_model__implement.html#afed58226f1b4d3a145d02010de312f30" title="Implementação dos Iteradores de System." alt="" coords="245,56,459,83"/>
-<area shape="poly" title=" " alt="" coords="197,67,232,69,226,70,198,72"/>
-<area shape="rect" href="class_model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108" title=" " alt="" coords="250,107,454,133"/>
-<area shape="poly" title=" " alt="" coords="171,81,270,102,265,104,171,86"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_icgraph.png" border="0" usemap="#aunit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_icgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_icgraph" id="aunit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_icgraph">
-<area shape="rect" title=" " alt="" coords="296,5,487,32"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,5,248,32"/>
-<area shape="poly" title=" " alt="" coords="277,19,248,21,248,16,283,19"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a37286918320acd70d56642498fa32c18" name="a37286918320acd70d56642498fa32c18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37286918320acd70d56642498fa32c18">&#9670;&#160;</a></span>unit_Model_run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unit_Model_run </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph.png" border="0" usemap="#aunit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph" id="aunit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,115,57"/>
-<area shape="rect" href="class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao modelo." alt="" coords="163,5,248,32"/>
-<area shape="poly" title=" " alt="" coords="115,32,150,28,145,30,116,37"/>
-<area shape="rect" href="class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="164,56,246,83"/>
-<area shape="poly" title=" " alt="" coords="115,51,151,59,146,60,115,56"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__model_8cpp_a37286918320acd70d56642498fa32c18_icgraph.png" border="0" usemap="#aunit__model_8cpp_a37286918320acd70d56642498fa32c18_icgraph" loading="lazy" alt=""/></div>
-<map name="aunit__model_8cpp_a37286918320acd70d56642498fa32c18_icgraph" id="aunit__model_8cpp_a37286918320acd70d56642498fa32c18_icgraph">
-<area shape="rect" title=" " alt="" coords="296,5,405,32"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,5,248,32"/>
-<area shape="poly" title=" " alt="" coords="278,19,248,21,248,16,283,19"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
-</map>
-</div>
+<p>Contadores para verificar chamadas de destrutores em testes </p>
 
 </div>
 </div>

@@ -1,0 +1,119 @@
+\doxysection{Flow\+Spy Class Reference}
+\hypertarget{class_flow_spy}{}\label{class_flow_spy}\index{FlowSpy@{FlowSpy}}
+
+
+Inheritance diagram for Flow\+Spy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_flow_spy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Spy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_flow_spy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_spy_af29e1d5f1ce3c4e215b658bdef7bba2e}{Flow\+Spy}} ()
+\item 
+\mbox{\hyperlink{class_flow_spy_a8087830ffa27e341caded48d6a369daa}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Spy}} ()
+\item 
+double \mbox{\hyperlink{class_flow_spy_a0d48c29e58d69b61785adfcd859a0e53}{equation}} ()
+\begin{DoxyCompactList}\small\item\em Método virtual puro para a equação do fluxo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow__impl_abf4dd386b62757d0edf11a4ff3401e66}{Flow\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. Inicializa ponteiros como NULL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow__impl_aca57a16fdcc0858ddc3d28ea965f047c}{Flow\+\_\+impl}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow__impl_af0590fdae42d7a0806e891f5c8020a1d}{Flow\+\_\+impl}} (const \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}} \&other)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}} \& \mbox{\hyperlink{class_flow__impl_ab4e49eabca208809487c2a719eec51a3}{operator=}} (const \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}} \&other)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow__impl_a6edbe9e956a3b7845a63c3352737ceb7}{\texorpdfstring{$\sim$}{\string~}\+Flow\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow__impl_af972bc754c715026f3966ed93dfdcadc}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source)
+\begin{DoxyCompactList}\small\item\em Define a origem do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow__impl_abbe0241196ea58816815b295bb5d619b}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Define o destino do fluxo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_a5276f60a3a8e889740f3091e9e9ecf0a}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro da origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_abcc5b318972ee1a136def46a6ae5ae13}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro do destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_a2cae0c3867cfb6b46e99108fa8dece99}{m\+\_\+source}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de origem (quem perde valor). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_a1ecaf2b241f15bd0ddf040683a55dc27}{m\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de destino (quem ganha valor). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe espiã para \doxylink{class_flow__impl}{Flow\+\_\+impl} que incrementa contador no destrutor 
+
+\label{doc-constructors}
+\Hypertarget{class_flow_spy_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flow_spy_af29e1d5f1ce3c4e215b658bdef7bba2e}\index{FlowSpy@{FlowSpy}!FlowSpy@{FlowSpy}}
+\index{FlowSpy@{FlowSpy}!FlowSpy@{FlowSpy}}
+\doxysubsubsection{\texorpdfstring{FlowSpy()}{FlowSpy()}}
+{\footnotesize\ttfamily \label{class_flow_spy_af29e1d5f1ce3c4e215b658bdef7bba2e} 
+Flow\+Spy\+::\+Flow\+Spy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_flow_spy_af29e1d5f1ce3c4e215b658bdef7bba2e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_spy_a8087830ffa27e341caded48d6a369daa}\index{FlowSpy@{FlowSpy}!````~FlowSpy@{\texorpdfstring{$\sim$}{\string~}FlowSpy}}
+\index{````~FlowSpy@{\texorpdfstring{$\sim$}{\string~}FlowSpy}!FlowSpy@{FlowSpy}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FlowSpy()}{\string~FlowSpy()}}
+{\footnotesize\ttfamily \label{class_flow_spy_a8087830ffa27e341caded48d6a369daa} 
+Flow\+Spy\+::\texorpdfstring{$\sim$}{\string~}\+Flow\+Spy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_flow_spy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flow_spy_a0d48c29e58d69b61785adfcd859a0e53}\index{FlowSpy@{FlowSpy}!equation@{equation}}
+\index{equation@{equation}!FlowSpy@{FlowSpy}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily \label{class_flow_spy_a0d48c29e58d69b61785adfcd859a0e53} 
+double Flow\+Spy\+::equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Método virtual puro para a equação do fluxo. 
+
+\begin{DoxyReturn}{Returns}
+O valor calculado da taxa de transferência no passo atual. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow__impl_ae00b58b8aba6a0b4fc69fb47bad18876}{Flow\+\_\+impl}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/unit/\mbox{\hyperlink{unit__model_8cpp}{unit\+\_\+model.\+cpp}}\end{DoxyCompactItemize}

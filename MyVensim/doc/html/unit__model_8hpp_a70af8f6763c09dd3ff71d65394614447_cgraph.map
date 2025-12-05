@@ -1,5 +1,5 @@
 <map id="unit_Model_add" name="unit_Model_add">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,118,32"/>
-<area shape="rect" id="Node000002" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao modelo." alt="" coords="166,5,251,32"/>
+<area shape="rect" id="Node000002" href="$class_Model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao Modelo." alt="" coords="166,5,251,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,152,18,147,19,118,21"/>
 </map>

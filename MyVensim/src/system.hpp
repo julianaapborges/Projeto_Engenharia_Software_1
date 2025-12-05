@@ -9,7 +9,6 @@
 #define SYSTEM_HPP
 
 #include <iostream>
-#include <string> 
 
 /**
  * @class System

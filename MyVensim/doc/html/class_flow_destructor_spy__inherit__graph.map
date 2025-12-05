@@ -1,0 +1,7 @@
+<map id="FlowDestructorSpy" name="FlowDestructorSpy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,560,157,672"/>
+<area shape="rect" id="Node000002" href="$class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="32,229,131,512"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,524,84,561,79,560,80,529"/>
+<area shape="rect" id="Node000003" href="$class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="36,5,127,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,194,84,230,79,229,81,199"/>
+</map>

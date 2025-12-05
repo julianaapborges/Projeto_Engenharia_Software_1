@@ -2,6 +2,7 @@
 #define MAIN_FUNCIONAL_TESTS
 
 #include "funcional_tests.hpp"
+#include <iostream>
 
 int main() {
 

@@ -1,0 +1,7 @@
+<map id="unit_Flow::unit_flow_assignmentOperator" name="unit_Flow::unit_flow_assignmentOperator">
+<area shape="rect" id="Node000001" title="Teste para o operador de atribuição da classe Flow." alt="" coords="5,23,151,65"/>
+<area shape="rect" id="Node000002" href="$class_flow__impl.html#a5276f60a3a8e889740f3091e9e9ecf0a" title="Retorna o ponteiro da origem." alt="" coords="199,5,346,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,32,186,30,181,31,152,37"/>
+<area shape="rect" id="Node000003" href="$class_flow__impl.html#abcc5b318972ee1a136def46a6ae5ae13" title="Retorna o ponteiro do destino." alt="" coords="201,56,344,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,51,188,58,183,58,151,56"/>
+</map>

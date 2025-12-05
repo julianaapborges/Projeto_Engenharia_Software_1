@@ -1,9 +1,9 @@
 \doxysection{test/unit/unit\+\_\+model.cpp File Reference}
 \hypertarget{unit__model_8cpp}{}\label{unit__model_8cpp}\index{test/unit/unit\_model.cpp@{test/unit/unit\_model.cpp}}
 {\ttfamily \#include "{}unit\+\_\+model.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../src/model\+\_\+implement.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../src/system\+\_\+implement.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../src/flow\+\_\+implement.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/model\+\_\+impl.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/system\+\_\+impl.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/flow\+\_\+impl.\+hpp"{}}\newline
 {\ttfamily \#include "{}flow\+\_\+mock.\+hpp"{}}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$cassert$>$}\newline
@@ -15,143 +15,35 @@ Include dependency graph for unit\+\_\+model.\+cpp\+:\nopagebreak
 \includegraphics[width=350pt]{unit__model_8cpp__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Functions}
+\doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b}{unit\+\_\+\+Model\+\_\+constructor}} ()
+class \mbox{\hyperlink{class_system_spy}{System\+Spy}}
 \item 
-void \mbox{\hyperlink{unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447}{unit\+\_\+\+Model\+\_\+add}} ()
+class \mbox{\hyperlink{class_flow_spy}{Flow\+Spy}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{unit__model_8cpp_a37286918320acd70d56642498fa32c18}{unit\+\_\+\+Model\+\_\+run}} ()
+int \mbox{\hyperlink{unit__model_8cpp_afa7d523fd85937824276eff0752038f3}{sys\+\_\+destructor\+\_\+calls}} = 0
 \item 
-void \mbox{\hyperlink{unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d}{unit\+\_\+\+Model\+\_\+copy\+\_\+constructor}} ()
-\item 
-void \mbox{\hyperlink{unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6}{unit\+\_\+\+Model\+\_\+assignment\+Operator}} ()
-\item 
-void \mbox{\hyperlink{unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51}{run\+\_\+unit\+\_\+tests\+\_\+\+Model}} ()
+int \mbox{\hyperlink{unit__model_8cpp_a7b07fd0db440c0ed92fb676f3a42bbf9}{flow\+\_\+destructor\+\_\+calls}} = 0
 \end{DoxyCompactItemize}
 
 
-\label{doc-func-members}
-\Hypertarget{unit__model_8cpp_doc-func-members}
-\doxysubsection{Function Documentation}
-\Hypertarget{unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51}\index{unit\_model.cpp@{unit\_model.cpp}!run\_unit\_tests\_Model@{run\_unit\_tests\_Model}}
-\index{run\_unit\_tests\_Model@{run\_unit\_tests\_Model}!unit\_model.cpp@{unit\_model.cpp}}
-\doxysubsubsection{\texorpdfstring{run\_unit\_tests\_Model()}{run\_unit\_tests\_Model()}}
-{\footnotesize\ttfamily \label{unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51} 
-void run\+\_\+unit\+\_\+tests\+\_\+\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+\label{doc-var-members}
+\Hypertarget{unit__model_8cpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{unit__model_8cpp_a7b07fd0db440c0ed92fb676f3a42bbf9}\index{unit\_model.cpp@{unit\_model.cpp}!flow\_destructor\_calls@{flow\_destructor\_calls}}
+\index{flow\_destructor\_calls@{flow\_destructor\_calls}!unit\_model.cpp@{unit\_model.cpp}}
+\doxysubsubsection{\texorpdfstring{flow\_destructor\_calls}{flow\_destructor\_calls}}
+{\footnotesize\ttfamily \label{unit__model_8cpp_a7b07fd0db440c0ed92fb676f3a42bbf9} 
+int flow\+\_\+destructor\+\_\+calls = 0}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=262pt]{unit__model_8cpp_a8a49913008ee3aede79ca904bcb8cd51_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447}\index{unit\_model.cpp@{unit\_model.cpp}!unit\_Model\_add@{unit\_Model\_add}}
-\index{unit\_Model\_add@{unit\_Model\_add}!unit\_model.cpp@{unit\_model.cpp}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_add()}{unit\_Model\_add()}}
-{\footnotesize\ttfamily \label{unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447} 
-void unit\+\_\+\+Model\+\_\+add (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+\Hypertarget{unit__model_8cpp_afa7d523fd85937824276eff0752038f3}\index{unit\_model.cpp@{unit\_model.cpp}!sys\_destructor\_calls@{sys\_destructor\_calls}}
+\index{sys\_destructor\_calls@{sys\_destructor\_calls}!unit\_model.cpp@{unit\_model.cpp}}
+\doxysubsubsection{\texorpdfstring{sys\_destructor\_calls}{sys\_destructor\_calls}}
+{\footnotesize\ttfamily \label{unit__model_8cpp_afa7d523fd85937824276eff0752038f3} 
+int sys\+\_\+destructor\+\_\+calls = 0}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=264pt]{unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a70af8f6763c09dd3ff71d65394614447_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6}\index{unit\_model.cpp@{unit\_model.cpp}!unit\_Model\_assignmentOperator@{unit\_Model\_assignmentOperator}}
-\index{unit\_Model\_assignmentOperator@{unit\_Model\_assignmentOperator}!unit\_model.cpp@{unit\_model.cpp}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_assignmentOperator()}{unit\_Model\_assignmentOperator()}}
-{\footnotesize\ttfamily \label{unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6} 
-void unit\+\_\+\+Model\+\_\+assignment\+Operator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a3f45e055e9d0421a9d364d36ad1140d6_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b}\index{unit\_model.cpp@{unit\_model.cpp}!unit\_Model\_constructor@{unit\_Model\_constructor}}
-\index{unit\_Model\_constructor@{unit\_Model\_constructor}!unit\_model.cpp@{unit\_model.cpp}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_constructor()}{unit\_Model\_constructor()}}
-{\footnotesize\ttfamily \label{unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b} 
-void unit\+\_\+\+Model\+\_\+constructor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a33c89b15c9a9fa91b3753cba55af695b_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d}\index{unit\_model.cpp@{unit\_model.cpp}!unit\_Model\_copy\_constructor@{unit\_Model\_copy\_constructor}}
-\index{unit\_Model\_copy\_constructor@{unit\_Model\_copy\_constructor}!unit\_model.cpp@{unit\_model.cpp}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_copy\_constructor()}{unit\_Model\_copy\_constructor()}}
-{\footnotesize\ttfamily \label{unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d} 
-void unit\+\_\+\+Model\+\_\+copy\+\_\+constructor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_ad20d65aa1d997b6863b07b60ea9e113d_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{unit__model_8cpp_a37286918320acd70d56642498fa32c18}\index{unit\_model.cpp@{unit\_model.cpp}!unit\_Model\_run@{unit\_Model\_run}}
-\index{unit\_Model\_run@{unit\_Model\_run}!unit\_model.cpp@{unit\_model.cpp}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_run()}{unit\_Model\_run()}}
-{\footnotesize\ttfamily \label{unit__model_8cpp_a37286918320acd70d56642498fa32c18} 
-void unit\+\_\+\+Model\+\_\+run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=262pt]{unit__model_8cpp_a37286918320acd70d56642498fa32c18_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{unit__model_8cpp_a37286918320acd70d56642498fa32c18_icgraph}
-\end{center}
-\end{figure}
+Contadores para verificar chamadas de destrutores em testes 

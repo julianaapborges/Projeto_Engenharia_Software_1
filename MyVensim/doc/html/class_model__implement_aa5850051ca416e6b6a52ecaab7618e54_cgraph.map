@@ -1,5 +1,5 @@
-<map id="Model_implement::operator=" name="Model_implement::operator=">
+<map id="Model_impl::operator=" name="Model_impl::operator=">
 <area shape="rect" id="Node000001" title="Operador de atribuição." alt="" coords="5,13,192,40"/>
-<area shape="rect" id="Node000002" href="$class_model__implement.html#a68b2517c12d42aa8c335fe4661c97f96" title="Construtor padrão. Inicializa tempo em 0." alt="" coords="240,5,406,48"/>
+<area shape="rect" id="Node000002" href="$class_Model__implement.html#a68b2517c12d42aa8c335fe4661c97f96" title="Construtor padrão. Inicializa tempo em 0." alt="" coords="240,5,406,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,24,227,26,222,27,192,29"/>
 </map>

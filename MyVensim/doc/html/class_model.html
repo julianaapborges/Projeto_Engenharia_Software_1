@@ -101,9 +101,9 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__inherit__graph.png" border="0" usemap="#a_model_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_model_inherit__map" id="a_model_inherit__map">
-<area shape="rect" title="Interface que representa o Motor de Simulação." alt="" coords="19,5,134,224"/>
-<area shape="rect" href="class_model__implement.html" title="Implementação concreta do Modelo." alt="" coords="5,272,147,597"/>
-<area shape="poly" title=" " alt="" coords="77,236,79,273,74,272,76,242"/>
+<area shape="rect" title="Interface que representa o Motor de Simulação." alt="" coords="5,5,120,224"/>
+<area shape="rect" href="class_model__impl.html" title="Implementação concreta do Modelo." alt="" coords="5,272,120,597"/>
+<area shape="poly" title=" " alt="" coords="63,236,65,272,60,272,63,242"/>
 </map>
 </div>
 <div class="dynheader">
@@ -127,9 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76f5202c3ccdf6092c77a2a4ae6f3484" id="r_a76f5202c3ccdf6092c77a2a4ae6f3484"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76f5202c3ccdf6092c77a2a4ae6f3484">run</a> (double start, double final, int increment)=0</td></tr>
 <tr class="memdesc:a76f5202c3ccdf6092c77a2a4ae6f3484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa a simulação.  <br /></td></tr>
 <tr class="memitem:afde6c25ab942f2eec7aedeaf8eec53fd" id="r_afde6c25ab942f2eec7aedeaf8eec53fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afde6c25ab942f2eec7aedeaf8eec53fd">add</a> (<a class="el" href="class_system.html">System</a> *system)=0</td></tr>
-<tr class="memdesc:afde6c25ab942f2eec7aedeaf8eec53fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um Sistema ao modelo.  <br /></td></tr>
+<tr class="memdesc:afde6c25ab942f2eec7aedeaf8eec53fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um Sistema ao Modelo.  <br /></td></tr>
 <tr class="memitem:ab7df81041f62f049cfc6e4d50dcaf721" id="r_ab7df81041f62f049cfc6e4d50dcaf721"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7df81041f62f049cfc6e4d50dcaf721">add</a> (<a class="el" href="class_flow.html">Flow</a> *flow)=0</td></tr>
-<tr class="memdesc:ab7df81041f62f049cfc6e4d50dcaf721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um Fluxo ao modelo.  <br /></td></tr>
+<tr class="memdesc:ab7df81041f62f049cfc6e4d50dcaf721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um Fluxo ao Modelo.  <br /></td></tr>
 <tr class="memitem:af44c12bce2645f91b796e750ddbacbd2" id="r_af44c12bce2645f91b796e750ddbacbd2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a> ()=0</td></tr>
 <tr class="memdesc:af44c12bce2645f91b796e750ddbacbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna um iterador para o início dos sistemas.  <br /></td></tr>
 <tr class="memitem:a251f709667f7ca6aedc45dd7431e40c1" id="r_a251f709667f7ca6aedc45dd7431e40c1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a> ()=0</td></tr>
@@ -225,9 +225,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adiciona um Fluxo ao modelo. </p>
+<p>Adiciona um Fluxo ao Modelo. </p>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#a420a4f4fa69fd8215a0f4889302ff8cd">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#aecfce1651b66d03eb00a03dbbbf82c2b">Model_impl</a>.</p>
 
 </div>
 </div>
@@ -254,34 +254,37 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adiciona um Sistema ao modelo. </p>
+<p>Adiciona um Sistema ao Modelo. </p>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#a8b95e7bae943c9ac306a302e8180cd66">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a2b1d37ab3f74fed4d27c66875e7fa9c2">Model_impl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph.png" border="0" usemap="#aclass_model_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph" loading="lazy" alt=""/></div>
 <map name="aclass_model_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph" id="aclass_model_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph">
-<area shape="rect" title="Adiciona um Sistema ao modelo." alt="" coords="516,107,602,133"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="304,5,460,32"/>
-<area shape="poly" title=" " alt="" coords="532,95,503,71,467,46,442,35,442,30,470,42,506,67,537,96"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="296,56,468,83"/>
-<area shape="poly" title=" " alt="" coords="499,104,431,86,431,80,504,103"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="304,107,461,133"/>
-<area shape="poly" title=" " alt="" coords="498,120,462,123,461,117,503,120"/>
-<area shape="rect" href="unit__model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title=" " alt="" coords="326,157,438,184"/>
-<area shape="poly" title=" " alt="" coords="504,136,432,159,430,154,499,137"/>
-<area shape="rect" href="unit__model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="328,208,437,235"/>
-<area shape="poly" title=" " alt="" coords="537,143,506,173,470,198,438,212,437,206,467,194,503,169,532,145"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
-<area shape="poly" title=" " alt="" coords="308,38,201,66,199,61,312,35"/>
-<area shape="poly" title=" " alt="" coords="278,71,201,72,200,67,283,68"/>
-<area shape="poly" title=" " alt="" coords="307,104,200,78,200,73,312,101"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,183,248,209"/>
-<area shape="poly" title=" " alt="" coords="308,180,249,190,248,184,313,179"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,183,55,209"/>
-<area shape="poly" title=" " alt="" coords="85,197,55,199,54,193,89,195"/>
-<area shape="poly" title=" " alt="" coords="309,213,248,208,248,202,315,213"/>
+<area shape="rect" title="Adiciona um Sistema ao Modelo." alt="" coords="520,132,606,159"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="303,5,458,32"/>
+<area shape="poly" title=" " alt="" coords="543,119,512,82,493,63,471,46,449,35,449,30,474,42,496,59,516,78,548,120"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="294,56,467,83"/>
+<area shape="poly" title=" " alt="" coords="525,124,471,97,440,86,440,81,473,92,531,124"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title="Teste funcional para o crescimento logístico." alt="" coords="302,107,459,133"/>
+<area shape="poly" title=" " alt="" coords="502,138,460,134,460,128,508,137"/>
+<area shape="rect" href="classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do Model_impl." alt="" coords="289,157,472,184"/>
+<area shape="poly" title=" " alt="" coords="502,154,473,160,472,155,508,153"/>
+<area shape="rect" href="classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do Model_impl." alt="" coords="303,208,458,251"/>
+<area shape="poly" title=" " alt="" coords="529,166,473,198,446,210,444,205,471,194,524,168"/>
+<area shape="rect" href="classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do Model_impl." alt="" coords="290,275,471,301"/>
+<area shape="poly" title=" " alt="" coords="550,171,519,221,498,245,474,265,451,277,449,272,471,260,494,241,515,217,545,174"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="147,56,196,83"/>
+<area shape="poly" title=" " alt="" coords="306,38,198,66,196,61,310,34"/>
+<area shape="poly" title=" " alt="" coords="277,71,198,72,196,67,282,68"/>
+<area shape="poly" title=" " alt="" coords="306,104,197,78,197,73,310,101"/>
+<area shape="rect" href="classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,208,241,251"/>
+<area shape="poly" title=" " alt="" coords="313,189,290,199,242,212,240,207,288,193,318,188"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,216,55,243"/>
+<area shape="poly" title=" " alt="" coords="85,231,56,232,54,227,89,228"/>
+<area shape="poly" title=" " alt="" coords="285,230,242,232,241,227,290,229"/>
+<area shape="poly" title=" " alt="" coords="312,270,288,265,241,252,241,246,290,260,318,270"/>
 </map>
 </div>
 
@@ -312,7 +315,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o início dos fluxos. </p>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#ae97e36706bb37f96b0b96249f4138bc1">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a09286137c9cc479317969d6693d96278">Model_impl</a>.</p>
 
 </div>
 </div>
@@ -341,7 +344,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o início dos sistemas. </p>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#afed58226f1b4d3a145d02010de312f30">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#aa7892f9c3387859484b6cc45a1f58c6e">Model_impl</a>.</p>
 
 </div>
 </div>
@@ -370,7 +373,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o fim dos fluxos. </p>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#a7459c6727b9ba0087fb125e19817a39b">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#ae5365ecc7ef6004e8144bd5e425440b9">Model_impl</a>.</p>
 
 </div>
 </div>
@@ -399,7 +402,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o fim dos sistemas. </p>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#aae3f41e54ffc2f42616e83997d91158e">Model_impl</a>.</p>
 
 </div>
 </div>
@@ -445,29 +448,29 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model__implement.html#af8a653c8e0c2a6186e536580e44767d5">Model_implement</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#afdeedc161d0a2f1f263983a273661a90">Model_impl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_a76f5202c3ccdf6092c77a2a4ae6f3484_icgraph.png" border="0" usemap="#aclass_model_a76f5202c3ccdf6092c77a2a4ae6f3484_icgraph" loading="lazy" alt=""/></div>
 <map name="aclass_model_a76f5202c3ccdf6092c77a2a4ae6f3484_icgraph" id="aclass_model_a76f5202c3ccdf6092c77a2a4ae6f3484_icgraph">
-<area shape="rect" title="Executa a simulação." alt="" coords="516,81,599,108"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title=" " alt="" coords="304,5,460,32"/>
-<area shape="poly" title=" " alt="" coords="520,73,467,46,437,35,437,30,469,42,525,73"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title=" " alt="" coords="296,56,468,83"/>
-<area shape="poly" title=" " alt="" coords="498,87,469,85,469,79,503,86"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title=" " alt="" coords="304,107,461,133"/>
-<area shape="poly" title=" " alt="" coords="498,103,462,111,461,106,503,102"/>
-<area shape="rect" href="unit__model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="328,157,437,184"/>
-<area shape="poly" title=" " alt="" coords="525,116,469,148,438,159,437,154,467,143,520,117"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
-<area shape="poly" title=" " alt="" coords="307,38,201,66,199,61,312,35"/>
-<area shape="poly" title=" " alt="" coords="278,70,201,72,200,67,283,68"/>
-<area shape="poly" title=" " alt="" coords="307,103,200,78,200,73,312,101"/>
-<area shape="rect" href="unit__model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,157,248,184"/>
-<area shape="poly" title=" " alt="" coords="309,171,248,173,248,168,315,171"/>
+<area shape="rect" title="Executa a simulação." alt="" coords="517,81,600,108"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="302,5,457,32"/>
+<area shape="poly" title=" " alt="" coords="521,73,468,46,437,35,437,30,470,42,526,73"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="293,56,465,83"/>
+<area shape="poly" title=" " alt="" coords="499,87,466,84,466,79,505,87"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title="Teste funcional para o crescimento logístico." alt="" coords="300,107,458,133"/>
+<area shape="poly" title=" " alt="" coords="499,103,459,111,458,106,505,102"/>
+<area shape="rect" href="classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do Model_impl." alt="" coords="289,157,469,184"/>
+<area shape="poly" title=" " alt="" coords="526,116,470,148,438,159,437,154,468,143,521,117"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="147,56,196,83"/>
+<area shape="poly" title=" " alt="" coords="304,38,198,66,196,61,309,35"/>
+<area shape="poly" title=" " alt="" coords="275,70,198,72,197,67,280,68"/>
+<area shape="poly" title=" " alt="" coords="304,103,197,78,197,73,309,101"/>
+<area shape="rect" href="classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,149,241,192"/>
+<area shape="poly" title=" " alt="" coords="271,171,241,173,241,168,276,171"/>
 <area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,157,55,184"/>
-<area shape="poly" title=" " alt="" coords="85,172,55,173,55,168,90,170"/>
+<area shape="poly" title=" " alt="" coords="85,172,55,173,55,168,89,170"/>
 </map>
 </div>
 

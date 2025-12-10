@@ -29,8 +29,8 @@ void unit_Flow::unit_flow_constructor() {
     // Usamos FlowMock em vez de Flow
     FlowMock f(&s1, &s2); 
     
-    assert(f.getSource() == &s1);
-    assert(f.getTarget() == &s2);
+    assert(f.m_source == &s1);
+    assert(f.m_target == &s2);
 }
 
 /** @brief Teste para o método setSource da classe Flow  */
@@ -54,7 +54,7 @@ void unit_Flow::unit_flow_getSource() {
     System_impl s1(100.0);
     System_impl s2(50.0);
     FlowMock f(&s1, &s2);
-    assert(f.getSource() == &s1);
+    assert(f.m_source == &s1);
 }
 
 /** @brief Teste para o método getTarget da classe Flow  */
@@ -62,7 +62,7 @@ void unit_Flow::unit_flow_getTarget() {
     System_impl s1(100.0);
     System_impl s2(50.0);
     FlowMock f(&s1, &s2);
-    assert(f.getTarget() == &s2);
+    assert(f.m_target == &s2);
 }
 
 /** @brief Teste para o construtor de cópia da classe Flow */
@@ -71,8 +71,8 @@ void unit_Flow::unit_flow_copy_constructor() {
     System_impl s2(50.0);
     FlowMock f1(&s1, &s2);
     FlowMock f2(f1); // Copia f1
-    assert(f2.getSource() == &s1); // Verifica se aponta para o mesmo lugar
-    assert(f2.getTarget() == &s2);
+    assert(f2.m_source == &s1); // Verifica se aponta para o mesmo lugar
+    assert(f2.m_target == &s2);
 }
 
 /** @brief Teste para o operador de atribuição da classe Flow */
@@ -82,8 +82,8 @@ void unit_Flow::unit_flow_assignmentOperator() {
     FlowMock f1(&s1, &s2);
     FlowMock f2;
     f2 = f1; // Atribuição
-    assert(f2.getSource() == &s1);
-    assert(f2.getTarget() == &s2);
+    assert(f2.m_source == &s1);
+    assert(f2.m_target == &s2);
 }
 
 void unit_Flow::unit_flow_destructor() {

@@ -32,8 +32,13 @@ public:
 /** @brief Testa o construtor padrão do Model_impl */
 void unit_Model::unit_model_constructor() {
     Model_impl m;
-    assert(m.beginSystems() == m.endSystems());
-    assert(m.beginFlows() == m.endFlows());
+    // Acesso direto à memória via friend:
+    // Verificamos se os vetores internos foram inicializados vazios
+    assert(m.m_systems.size() == 0);
+    assert(m.m_flows.size() == 0);
+    
+    // Também podemos checar se o tempo começou em 0
+    assert(m.m_time == 0.0);
 }
 
 /** @brief Testa o método add do Model_impl */

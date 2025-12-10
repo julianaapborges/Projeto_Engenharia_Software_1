@@ -1,5 +1,0 @@
-<map id="System_impl" name="System_impl">
-<area shape="rect" id="Node000001" title="Implementação concreta da interface System." alt="" coords="5,165,157,363"/>
-<area shape="rect" id="Node000002" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="39,5,124,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,130,84,166,79,165,81,135"/>
-</map>

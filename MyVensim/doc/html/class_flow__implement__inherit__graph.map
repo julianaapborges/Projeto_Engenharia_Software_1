@@ -1,7 +1,0 @@
-<map id="Flow_impl" name="Flow_impl">
-<area shape="rect" id="Node000001" title="Implementação base para fluxos." alt="" coords="5,229,140,512"/>
-<area shape="rect" id="Node000003" href="$class_Flow_mock.html" title="Implementação mock de um fluxo para testes." alt="" coords="27,560,119,693"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,524,75,561,70,560,72,529"/>
-<area shape="rect" id="Node000002" href="$class_Flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="27,5,118,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,194,75,230,70,229,73,199"/>
-</map>

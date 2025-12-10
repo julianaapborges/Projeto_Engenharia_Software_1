@@ -1,9 +1,0 @@
-<map id="unit_Model_copy_constructor" name="unit_Model_copy_constructor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,197,83"/>
-<area shape="rect" id="Node000002" href="$class_Model__implement.html#a8b95e7bae943c9ac306a302e8180cd66" title="Adiciona um Sistema ao Modelo." alt="" coords="276,5,428,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,53,270,35,265,37,171,58"/>
-<area shape="rect" id="Node000003" href="$class_Model__implement.html#afed58226f1b4d3a145d02010de312f30" title="Implementação dos Iteradores de System." alt="" coords="245,56,459,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,67,232,69,226,70,198,72"/>
-<area shape="rect" id="Node000004" href="$class_Model__implement.html#ac66dee879b0a2740f7a64aa4a7b5e108" title=" " alt="" coords="250,107,454,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,81,270,102,265,104,171,86"/>
-</map>

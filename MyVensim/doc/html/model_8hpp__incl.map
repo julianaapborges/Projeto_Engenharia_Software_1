@@ -1,5 +1,5 @@
-<map id="src/model.hpp" name="src/model.hpp">
-<area shape="rect" id="Node000001" title="Interface para a classe Model." alt="" coords="5,5,109,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="28,80,86,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,30,60,65,54,64,55,35"/>
+<map id="src/lib/model.hpp" name="src/lib/model.hpp">
+<area shape="rect" id="Node000001" title="Interface para a classe Model." alt="" coords="5,5,126,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="37,80,94,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,31,68,65,63,64,64,35"/>
 </map>

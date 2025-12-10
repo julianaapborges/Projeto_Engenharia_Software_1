@@ -1,10 +1,9 @@
 #include "funcional_tests.hpp"
-#include "../../src/flow_impl.hpp"
-#include "../../src/model_impl.hpp"
-#include "../../src/system_impl.hpp"
-#include "../../src/flow.hpp"
-#include "../../src/model.hpp"
-
+#include "../../src/lib/flow_impl.hpp"
+#include "../../src/lib/model_impl.hpp"
+#include "../../src/lib/system_impl.hpp"
+#include "../../src/lib/flow.hpp"
+#include "../../src/lib/model.hpp"
 #include <cassert>
 #include <cmath>
 

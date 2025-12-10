@@ -1,5 +1,5 @@
 #include "unit_system.hpp"
-#include "../../src/system_impl.hpp" 
+#include "../../src/lib/system_impl.hpp" 
 #include <iostream>
 #include <cassert>
 #include <cmath> 
@@ -28,7 +28,7 @@ void unit_System::unit_system_constructor() {
 void unit_System::unit_system_setValue() {
     System_impl s;
     s.setValue(100.0);
-    assert(s.getValue() == 100.0);
+    assert(s.m_value == 100.0);
 }
 
 /** @brief Teste para o método getValue da classe System */

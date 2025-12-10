@@ -1,6 +1,6 @@
 #include "unit_flow.hpp"
-#include "../../src/flow_impl.hpp"
-#include "../../src/system_impl.hpp"
+#include "../../src/lib/flow_impl.hpp"
+#include "../../src/lib/system_impl.hpp"
 #include "flow_mock.hpp"
 #include <iostream>
 #include <cassert>
@@ -38,7 +38,7 @@ void unit_Flow::unit_flow_setSource() {
     System_impl s1(100.0);
     FlowMock f;
     f.setSource(&s1);
-    assert(f.getSource() == &s1);
+    assert(f.m_source == &s1);
 }
 
 /** @brief Teste para o método setTarget da classe Flow  */
@@ -46,7 +46,7 @@ void unit_Flow::unit_flow_setTarget() {
     System_impl s2(50.0);
     FlowMock f;
     f.setTarget(&s2);
-    assert(f.getTarget() == &s2);
+    assert(f.m_target == &s2);
 }
 
 /** @brief Teste para o método getSource da classe Flow  */

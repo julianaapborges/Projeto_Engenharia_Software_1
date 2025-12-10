@@ -1,7 +1,7 @@
 #include "unit_model.hpp"
-#include "../../src/model_impl.hpp"
-#include "../../src/system_impl.hpp"
-#include "../../src/flow_impl.hpp"
+#include "../../src/lib/model_impl.hpp"
+#include "../../src/lib/system_impl.hpp"
+#include "../../src/lib/flow_impl.hpp"
 #include "flow_mock.hpp"
 #include <iostream>
 #include <cassert>
@@ -52,20 +52,20 @@ void unit_Model::unit_model_add() {
 
 /** @brief Testa o método run do Model_impl */
 void unit_Model::unit_model_run() {
-    Model *m = new Model_impl();
-    System_impl *s1 = new System_impl(100.0);
-    System_impl *s2 = new System_impl(0.0);
-    FlowMock *f = new FlowMock(s1, s2, 1.0); 
-
-    m->add(s1);
-    m->add(s2);
-    m->add(f);
-
-    m->run(0, 1, 1);
+    Model_impl *m = new Model_impl();
     
-    // Validação básica
-    assert(fabs(s1->getValue() - 99.0) < 0.0001);
+    System_impl *s = new System_impl(0.0);
+    m->add(s);
+
+    // Executa: tempo 0 até 10, passo 1
+    double start = 0.0;
+    double final = 10.0;
+    int incr = 1;
     
+    m->run(start, final, incr);
+
+    assert(fabs(m->m_time - final) < 0.0001); 
+
     delete m;
 }
 

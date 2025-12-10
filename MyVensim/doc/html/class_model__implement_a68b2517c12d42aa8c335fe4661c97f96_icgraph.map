@@ -1,7 +1,0 @@
-<map id="Model_impl::Model_impl" name="Model_impl::Model_impl">
-<area shape="rect" id="Node000001" title="Construtor padrão. Inicializa tempo em 0." alt="" coords="240,35,406,77"/>
-<area shape="rect" id="Node000002" href="$class_Model__implement.html#af3438ee87d8d89f6e2dd09bbe33705b6" title="Construtor de cópia." alt="" coords="15,5,182,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,44,182,40,182,35,227,43"/>
-<area shape="rect" id="Node000003" href="$class_Model__implement.html#aa5850051ca416e6b6a52ecaab7618e54" title="Operador de atribuição." alt="" coords="5,72,192,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,69,193,76,192,70,227,68"/>
-</map>

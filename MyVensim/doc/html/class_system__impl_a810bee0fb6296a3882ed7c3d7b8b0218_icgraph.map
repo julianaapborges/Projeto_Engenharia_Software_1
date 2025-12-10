@@ -1,26 +1,18 @@
 <map id="System_impl::getValue" name="System_impl::getValue">
-<area shape="rect" id="Node000001" title="Retorna o valor atual do sistema." alt="" coords="527,164,683,191"/>
-<area shape="rect" id="Node000002" href="$classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do Model_impl." alt="" coords="299,5,479,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="584,151,540,99,511,70,478,46,455,35,455,30,481,42,514,66,544,95,589,152"/>
-<area shape="rect" id="Node000005" href="$classunit___system.html#aaf0f098024e4633419b2cce3384f02e0" title="Teste para o operador de atribuição da classe System." alt="" coords="302,56,476,99"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="564,156,478,113,452,102,452,97,480,108,570,156"/>
-<area shape="rect" id="Node000007" href="$classunit___system.html#a1bf74cc30f79d91d4e040987a90279a3" title="Teste para o construtor da classe System." alt="" coords="302,123,476,165"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="509,163,477,160,476,155,514,163"/>
-<area shape="rect" id="Node000008" href="$classunit___system.html#a939104102dd552e4f4dbe2245f19074a" title="Teste para o construtor de cópia da classe System." alt="" coords="302,189,476,232"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="509,192,477,200,476,195,514,191"/>
-<area shape="rect" id="Node000009" href="$classunit___system.html#a9e32d4a60c6509316b26f88dd921ad6e" title="Teste para o método getValue da classe System." alt="" coords="302,256,476,299"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="570,198,480,246,453,258,451,253,478,242,564,200"/>
-<area shape="rect" id="Node000010" href="$classunit___system.html#a5f966bd92232d30056c229bce609116f" title="Teste para o método setValue da classe System." alt="" coords="302,323,476,365"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="588,202,543,259,513,288,481,313,460,325,458,319,478,308,510,284,539,255,583,204"/>
-<area shape="rect" id="Node000003" href="$classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="108,44,246,87"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,37,248,52,245,48,313,34"/>
-<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,131,55,157"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="121,97,57,133,53,129,123,92"/>
-<area shape="rect" id="Node000006" href="$classunit___system.html#a521c0a0a4b3dca5cf11a4335d763dbb4" title="Função para executar todos os testes unitários da classe System." alt="" coords="103,156,251,199"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="309,106,300,113,216,158,213,153,298,108,314,104"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="85,159,56,152,54,147,90,155"/>
-<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="285,161,252,168,251,163,289,159"/>
-<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="284,195,252,192,251,186,289,194"/>
-<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="309,250,298,246,214,202,215,197,300,242,314,250"/>
-<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="304,315,297,313,264,286,235,256,192,202,194,197,239,253,268,282,301,308,309,316"/>
+<area shape="rect" id="Node000001" title="Retorna o valor atual do sistema." alt="" coords="520,113,676,140"/>
+<area shape="rect" id="Node000002" href="$classunit___system.html#aaf0f098024e4633419b2cce3384f02e0" title="Teste para o operador de atribuição da classe System." alt="" coords="299,5,472,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="557,105,471,62,446,51,446,46,473,58,562,105"/>
+<area shape="rect" id="Node000005" href="$classunit___system.html#a1bf74cc30f79d91d4e040987a90279a3" title="Teste para o construtor da classe System." alt="" coords="299,72,472,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="502,112,473,110,473,104,508,112"/>
+<area shape="rect" id="Node000006" href="$classunit___system.html#a939104102dd552e4f4dbe2245f19074a" title="Teste para o construtor de cópia da classe System." alt="" coords="299,139,472,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="502,142,473,149,472,144,507,141"/>
+<area shape="rect" id="Node000007" href="$classunit___system.html#a9e32d4a60c6509316b26f88dd921ad6e" title="Teste para o método getValue da classe System." alt="" coords="299,205,472,248"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="562,147,473,196,446,207,445,202,471,191,557,149"/>
+<area shape="rect" id="Node000003" href="$classunit___system.html#a521c0a0a4b3dca5cf11a4335d763dbb4" title="Função para executar todos os testes unitários da classe System." alt="" coords="103,105,251,148"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,56,300,62,216,107,213,103,298,58,313,53"/>
+<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,113,55,140"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,128,56,129,54,124,89,125"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="281,110,252,117,251,112,286,109"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="281,144,252,141,251,136,286,143"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="308,198,298,196,214,151,215,146,300,191,314,199"/>
 </map>

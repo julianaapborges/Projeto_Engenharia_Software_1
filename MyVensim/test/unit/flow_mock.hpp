@@ -10,8 +10,8 @@
 #ifndef FLOW_MOCK_HPP
 #define FLOW_MOCK_HPP
 
-#include "../../src/flow_impl.hpp"
-#include "../../src/system.hpp"
+#include "../../src/lib/flow_impl.hpp"
+#include "../../src/lib/system.hpp"
 
 /**
  * @class FlowMock

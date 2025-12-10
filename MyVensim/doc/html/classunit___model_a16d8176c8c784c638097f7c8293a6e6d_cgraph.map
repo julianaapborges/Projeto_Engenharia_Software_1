@@ -1,9 +1,11 @@
 <map id="unit_Model::unit_model_run" name="unit_Model::unit_model_run">
-<area shape="rect" id="Node000001" title="Testa o método run do Model_impl." alt="" coords="5,56,186,83"/>
-<area shape="rect" id="Node000002" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao Modelo." alt="" coords="269,5,354,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,53,256,31,251,33,156,58"/>
-<area shape="rect" id="Node000003" href="$class_system__impl.html#a810bee0fb6296a3882ed7c3d7b8b0218" title="Retorna o valor atual do sistema." alt="" coords="234,56,389,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,67,220,69,215,70,186,72"/>
-<area shape="rect" id="Node000004" href="$class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="270,107,352,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,81,257,106,252,108,155,86"/>
+<area shape="rect" id="Node000001" title="Testa o método run do Model_impl." alt="" coords="5,31,186,57"/>
+<area shape="rect" id="Node000002" href="$class_model__impl.html#a2b1d37ab3f74fed4d27c66875e7fa9c2" title="Adiciona um Sistema ao Modelo." alt="" coords="234,5,350,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,30,221,27,216,29,187,35"/>
+<area shape="rect" id="Node000003" href="$class_model__impl.html#afdeedc161d0a2f1f263983a273661a90" title="Executa a simulação." alt="" coords="235,56,348,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,53,222,60,217,60,186,58"/>
+<area shape="rect" id="Node000004" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="398,31,522,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="348,58,380,56,385,55,349,63"/>
+<area shape="rect" id="Node000005" href="$class_system.html#a7421d2e6970a0c4169a2febe254f2060" title="Define o valor numérico do sistema." alt="" coords="398,81,522,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="349,75,385,83,380,83,349,81"/>
 </map>

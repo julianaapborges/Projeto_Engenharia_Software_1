@@ -1,56 +1,23 @@
-CXX = g++
-CXXFLAGS = -Iinclude -Isrc -Wall -std=c++11
+DLL:
+	g++ -shared -fPIC -o ./bin/libbib.so ./src/lib/*.cpp
 
-BIN_DIR = bin
-SRC_DIR = src
-TEST_DIR = test
-FUNC_DIR = $(TEST_DIR)/funcional
-UNIT_DIR = $(TEST_DIR)/unit
+BUILD_APP:
+	g++ ./src/*.cpp -Lbin -lbib -o ./bin/testeRegressivo.exe
 
-SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp)
-SRCS_NO_MAIN = $(filter-out $(SRC_DIR)/main.cpp, $(SRC_FILES))
-TEST_FILES = $(wildcard $(TEST_DIR)/*.cpp)
-FUNC_FILES = $(wildcard $(FUNC_DIR)/*.cpp)
-UNIT_FILES = $(wildcard $(UNIT_DIR)/*.cpp)
+APP:
+	LD_LIBRARY_PATH=./bin ./bin/testeRegressivo.exe
 
-APP_TARGET = $(BIN_DIR)/app.exe
-TEST_TARGET = $(BIN_DIR)/testeRegressivo.exe
-FUNC_TARGET = $(BIN_DIR)/testeFuncional.exe
-UNIT_TARGET = $(BIN_DIR)/testeUnitario.exe
+BUILD_UNIT_TEST:
+	g++ ./test/unit/*.cpp -Lbin -lbib -o ./bin/testeUnitario.exe
 
-.PHONY: all test func unit test-all clean
+RUN_UNIT_TEST:
+	LD_LIBRARY_PATH=./bin ./bin/testeUnitario.exe
 
-all: $(APP_TARGET)
+BUILD_FUNC_TEST:
+	g++ ./test/funcional/*.cpp -Lbin -lbib -o ./bin/testeFuncional.exe
 
-test: $(TEST_TARGET)
+RUN_FUNC_TEST:
+	LD_LIBRARY_PATH=./bin ./bin/testeFuncional.exe
 
-func: $(FUNC_TARGET)
-	@./$(FUNC_TARGET)
-
-unit: $(UNIT_TARGET)
-	@./$(UNIT_TARGET)
-
-test-all: test func unit
-
-$(APP_TARGET): $(SRC_FILES)
-	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-$(TEST_TARGET): $(TEST_FILES) $(SRCS_NO_MAIN)
-	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-$(FUNC_TARGET): $(FUNC_FILES) $(SRCS_NO_MAIN)
-	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-$(UNIT_TARGET): $(UNIT_FILES) $(SRCS_NO_MAIN)
-	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-clean:
-	rm -f $(BIN_DIR)/*.exe
-	rm -f $(BIN_DIR)/*.o
-	rm -f $(BIN_DIR)/*.so
-	rm -f $(BIN_DIR)/*.dll
-	rm -f $(BIN_DIR)/*.a
+CLEAN:
+	rm -rf ./bin/*

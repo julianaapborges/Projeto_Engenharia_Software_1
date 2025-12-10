@@ -1,7 +1,0 @@
-<map id="Model::run" name="Model::run">
-<area shape="rect" id="Node000001" title="Executa a simulação." alt="" coords="5,31,88,57"/>
-<area shape="rect" id="Node000002" href="$class_system.html#ac6f5cf5f07a414398ac2ef5843531d1b" title="Retorna o valor atual do sistema." alt="" coords="136,5,260,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,35,123,30,118,33,89,40"/>
-<area shape="rect" id="Node000003" href="$class_system.html#a5343de0a45485edd88bc87f338fe9a19" title="Define o valor armazenado no sistema." alt="" coords="136,56,260,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,48,123,56,118,57,88,54"/>
-</map>

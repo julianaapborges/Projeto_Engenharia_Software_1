@@ -1,18 +1,21 @@
 <map id="Model_impl::add" name="Model_impl::add">
-<area shape="rect" id="Node000001" title="Adiciona um Sistema ao Modelo." alt="" coords="492,113,609,140"/>
-<area shape="rect" id="Node000002" href="$classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="289,5,444,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="514,104,443,62,421,51,421,46,446,58,520,104"/>
-<area shape="rect" id="Node000005" href="$classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="289,72,444,115"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="474,114,445,110,445,105,479,113"/>
-<area shape="rect" id="Node000006" href="$classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="289,139,444,181"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="474,141,445,148,444,143,479,139"/>
-<area shape="rect" id="Node000007" href="$classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="289,205,444,248"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="519,148,446,196,422,207,420,202,443,191,514,150"/>
-<area shape="rect" id="Node000003" href="$classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,105,241,148"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,56,290,62,210,107,207,103,288,58,302,54"/>
-<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,113,55,140"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,128,56,129,54,124,89,125"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="271,110,242,117,241,112,276,108"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="271,145,242,141,241,136,277,144"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="297,198,288,196,208,151,209,146,290,191,302,199"/>
+<area shape="rect" id="Node000001" title="Adiciona um Sistema ao Modelo." alt="" coords="517,147,634,173"/>
+<area shape="rect" id="Node000002" href="$classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="302,5,457,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="551,135,514,99,468,62,448,51,448,46,471,58,518,95,556,135"/>
+<area shape="rect" id="Node000005" href="$classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="302,72,457,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="517,141,444,118,444,113,522,141"/>
+<area shape="rect" id="Node000006" href="$classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="302,139,457,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="500,160,458,163,457,157,505,160"/>
+<area shape="rect" id="Node000007" href="$classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="302,205,457,248"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="522,178,445,207,444,202,517,179"/>
+<area shape="rect" id="Node000008" href="$classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do Model_impl." alt="" coords="289,272,469,299"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="556,184,519,226,471,262,444,274,443,269,468,258,515,222,552,186"/>
+<area shape="rect" id="Node000003" href="$classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,139,241,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,57,290,62,237,101,195,140,192,136,234,97,288,58,300,54"/>
+<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,147,55,173"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,162,56,162,54,158,89,158"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="294,121,242,140,240,136,299,119"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="283,161,242,163,241,157,288,159"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="294,201,241,185,241,179,299,200"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="299,266,288,262,233,224,192,184,194,179,236,220,290,258,304,266"/>
 </map>

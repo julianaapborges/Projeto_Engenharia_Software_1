@@ -22,3 +22,8 @@ void System_impl::setValue(double value) {
 double System_impl::getValue() const {
     return m_value;
 }
+
+// Implementação da Fábrica
+System* System::createSystem(double value) {
+    return new System_impl(value);
+}

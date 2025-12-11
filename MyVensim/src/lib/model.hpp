@@ -53,6 +53,9 @@ public:
     
     /** @brief Retorna um iterador para o fim dos fluxos. */
     virtual flowIterator endFlows() = 0;
+
+    /** @brief Cria uma instância de Model. */
+    static Model* createModel(double start = 0, double final = 0);
 };
 
 #endif // MODEL_HPP

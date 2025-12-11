@@ -102,3 +102,10 @@ Model_impl::flowIterator Model_impl::beginFlows() {
 Model_impl::flowIterator Model_impl::endFlows() {
     return m_flows.end();
 }
+
+// Implementação da Fábrica
+Model* Model::createModel(double start, double final) {
+    Model_impl* m = new Model_impl(); 
+    
+    return m;
+}

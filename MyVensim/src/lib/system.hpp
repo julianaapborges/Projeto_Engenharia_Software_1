@@ -33,6 +33,9 @@ public:
      * @return O valor numérico atual (double).
      */
     virtual double getValue() const = 0; // const é boa prática em getters
+
+    /** @brief Cria uma instância de System. */
+    static System* createSystem(double value = 0.0);
 };
 
 #endif // SYSTEM_HPP

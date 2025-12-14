@@ -6,11 +6,11 @@ Repositório criado para a disciplina de Engenharia de Software I (BCC322), do P
 
 O objetivo deste projeto é projetar, especificar (UML) e implementar uma API (framework) em C++ para a construção de simulações baseadas na **Dinâmica de Sistemas**.
 
-A API permitirá ao modelador criar "sistemas" (estoques de energia/matéria) e "fluxos" (que transportam essa energia/matéria), permitindo a simulação de modelos dinâmicos conforme a Teoria Geral de Sistemas. O loop de simulação principal seguirá o algoritmo geral descrito na Figura 5 do trabalho.
+A API permitirá ao Modelador criar "sistemas" (estoques de energia/matéria) e "fluxos" (que transportam essa energia/matéria), permitindo a simulação de Modelos dinâmicos conforme a Teoria Geral de Sistemas. O loop de simulação principal seguirá o algoritmo geral descrito na Figura 5 do trabalho.
 
 ### Funcionalidades (Casos de Uso)
 
-O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Testes) para implementar os seguintes modelos de validação:
+O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Testes) para implementar os seguintes Modelos de validação:
 
 * **Modelo 1:** Crescimento Populacional Exponencial 
 * **Modelo 2:** Crescimento Populacional Logístico 
@@ -30,14 +30,30 @@ O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Tes
 
 ## 🛠️ Como Compilar
 
-**Compilar o programa principal (Exemplo de uso):**
+**Gerar a biblioteca compartilhada (DLL):**
 ```bash
-make
+make DLL
+```
+Gera a biblioteca compartilhada `libmyvensim.so` em `bin/`, utilizada pelos executáveis do projeto.
+
+**Limpar arquivos de build (CLEAN):**
+```bash
+make CLEAN
+```
+Remove todos os arquivos gerados em `bin/`, limpando o ambiente de compilação.
 
 **Compilar os testes de validação (TDD):**
 ```bash
-make test
+make BUILD_APP
+    ou
+make BUILD_FUNC_TEST
+    ou
+make BUILD_UNIT_TEST
 
-**Executar os testes (validação dos modelos):**
+**Executar os testes (validação dos Modelos):**
 ```bash
-./bin/testeRegressivo.exe
+make APP
+    ou
+make RUN_FUNC_TEST
+    ou
+make RUN_UNIT_TEST

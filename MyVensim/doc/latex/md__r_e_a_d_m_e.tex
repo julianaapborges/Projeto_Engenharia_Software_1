@@ -29,13 +29,29 @@ O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Tes
 
 \end{DoxyCode}
 \hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{🛠️ Como Compilar}{🛠️ Como Compilar}}\label{md__r_e_a_d_m_e_autotoc_md4}
-{\bfseries{Compilar o programa principal (Exemplo de uso)\+:}} 
+{\bfseries{Gerar a biblioteca compartilhada (DLL)\+:}} 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{make}
-\DoxyCodeLine{}
-\DoxyCodeLine{**Compilar\ os\ testes\ de\ validação\ (TDD):**}
+\DoxyCodeLine{make\ DLL}
 
 \end{DoxyCode}
- bash make test ou make func ou make unit
+ Gera a biblioteca compartilhada {\ttfamily libmyvensim.\+so} em {\ttfamily bin/}, utilizada pelos executáveis do projeto.
 
-{\bfseries{Executar os testes (validação dos Modelos)\+:}} \`{}\`{}\`{}bash ./bin/teste\+Regressivo.exe ou ./bin/teste\+Funcional.exe ou ./bin/teste\+Unitario.exe 
+{\bfseries{Limpar arquivos de build (CLEAN)\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ CLEAN}
+
+\end{DoxyCode}
+ Remove todos os arquivos gerados em {\ttfamily bin/}, limpando o ambiente de compilação.
+
+{\bfseries{Compilar os testes de validação (TDD)\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ BUILD\_APP}
+\DoxyCodeLine{\ \ \ \ ou}
+\DoxyCodeLine{make\ BUILD\_FUNC\_TEST}
+\DoxyCodeLine{\ \ \ \ ou}
+\DoxyCodeLine{make\ BUILD\_UNIT\_TEST}
+\DoxyCodeLine{}
+\DoxyCodeLine{**Executar\ os\ testes\ (validação\ dos\ Modelos):**}
+
+\end{DoxyCode}
+ bash make APP ou make RUN\+\_\+\+FUNC\+\_\+\+TEST ou make RUN\+\_\+\+UNIT\+\_\+\+TEST 

@@ -30,22 +30,30 @@ O framework será desenvolvido utilizando TDD (Desenvolvimento Orientado por Tes
 
 ## 🛠️ Como Compilar
 
-**Compilar o programa principal (Exemplo de uso):**
+**Gerar a biblioteca compartilhada (DLL):**
 ```bash
-make
+make DLL
+```
+Gera a biblioteca compartilhada `libmyvensim.so` em `bin/`, utilizada pelos executáveis do projeto.
+
+**Limpar arquivos de build (CLEAN):**
+```bash
+make CLEAN
+```
+Remove todos os arquivos gerados em `bin/`, limpando o ambiente de compilação.
 
 **Compilar os testes de validação (TDD):**
 ```bash
-make test
+make BUILD_APP
     ou
-make func
+make BUILD_FUNC_TEST
     ou
-make unit
+make BUILD_UNIT_TEST
 
 **Executar os testes (validação dos Modelos):**
 ```bash
-./bin/testeRegressivo.exe
+make APP
     ou
-./bin/testeFuncional.exe
+make RUN_FUNC_TEST
     ou
-./bin/testeUnitario.exe
+make RUN_UNIT_TEST

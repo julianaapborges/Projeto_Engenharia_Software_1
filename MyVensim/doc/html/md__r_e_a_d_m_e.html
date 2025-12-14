@@ -117,11 +117,18 @@ Funcionalidades (Casos de Uso)</h2>
 <div class="line">└── readme.md # Este arquivo</div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 🛠️ Como Compilar</h1>
-<p><b>Compilar o programa principal (Exemplo de uso):</b> </p><div class="fragment"><div class="line">make</div>
+<p><b>Gerar a biblioteca compartilhada (DLL):</b> </p><div class="fragment"><div class="line">make DLL</div>
+</div><!-- fragment --><p> Gera a biblioteca compartilhada <span class="tt">libmyvensim.so</span> em <span class="tt">bin/</span>, utilizada pelos executáveis do projeto.</p>
+<p><b>Limpar arquivos de build (CLEAN):</b> </p><div class="fragment"><div class="line">make CLEAN</div>
+</div><!-- fragment --><p> Remove todos os arquivos gerados em <span class="tt">bin/</span>, limpando o ambiente de compilação.</p>
+<p><b>Compilar os testes de validação (TDD):</b> </p><div class="fragment"><div class="line">make BUILD_APP</div>
+<div class="line">    ou</div>
+<div class="line">make BUILD_FUNC_TEST</div>
+<div class="line">    ou</div>
+<div class="line">make BUILD_UNIT_TEST</div>
 <div class="line"> </div>
-<div class="line">**Compilar os testes de validação (TDD):**</div>
-</div><!-- fragment --><p> bash make test ou make func ou make unit</p>
-<p><b>Executar os testes (validação dos Modelos):</b> ```bash ./bin/testeRegressivo.exe ou ./bin/testeFuncional.exe ou ./bin/testeUnitario.exe </p>
+<div class="line">**Executar os testes (validação dos Modelos):**</div>
+</div><!-- fragment --><p> bash make APP ou make RUN_FUNC_TEST ou make RUN_UNIT_TEST </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

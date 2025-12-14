@@ -1,5 +1,5 @@
 <map id="unit_Model::unit_model_add" name="unit_Model::unit_model_add">
 <area shape="rect" id="Node000001" title="Testa o método add do Model_impl." alt="" coords="5,5,189,32"/>
-<area shape="rect" id="Node000002" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao Modelo." alt="" coords="237,5,322,32"/>
+<area shape="rect" id="Node000002" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="237,5,353,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,16,224,19,219,19,189,21"/>
 </map>

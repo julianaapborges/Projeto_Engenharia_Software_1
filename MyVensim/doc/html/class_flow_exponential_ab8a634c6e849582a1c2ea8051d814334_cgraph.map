@@ -1,0 +1,7 @@
+<map id="FlowExponential::equation" name="FlowExponential::equation">
+<area shape="rect" id="Node000001" title="Método virtual puro para a equação do fluxo." alt="" coords="5,31,180,57"/>
+<area shape="rect" id="Node000002" href="$class_flow__impl.html#a5276f60a3a8e889740f3091e9e9ecf0a" title="Retorna o ponteiro da origem." alt="" coords="228,5,375,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,215,29,210,30,181,36"/>
+<area shape="rect" id="Node000003" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="239,56,364,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,52,226,60,221,60,180,57"/>
+</map>

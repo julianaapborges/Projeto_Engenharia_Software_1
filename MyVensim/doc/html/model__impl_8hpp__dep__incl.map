@@ -1,9 +1,7 @@
 <map id="src/lib/model_impl.hpp" name="src/lib/model_impl.hpp">
-<area shape="rect" id="Node000001" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="183,5,334,32"/>
-<area shape="rect" id="Node000002" href="$model__impl_8cpp.html" title=" " alt="" coords="5,88,157,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,41,110,90,107,85,215,37"/>
-<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html" title=" " alt="" coords="181,80,336,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,46,261,81,256,78,256,50"/>
-<area shape="rect" id="Node000004" href="$unit__model_8cpp.html" title=" " alt="" coords="360,88,520,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="301,36,414,87,409,88,300,41"/>
+<area shape="rect" id="Node000001" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="95,5,246,32"/>
+<area shape="rect" id="Node000002" href="$model__impl_8cpp.html" title=" " alt="" coords="5,80,157,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,42,98,82,95,77,140,43"/>
+<area shape="rect" id="Node000003" href="$unit__model_8cpp.html" title=" " alt="" coords="181,80,341,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,39,248,80,243,80,197,44"/>
 </map>

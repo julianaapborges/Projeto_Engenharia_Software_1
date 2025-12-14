@@ -7,6 +7,8 @@ var class_model =
     [ "add", "class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd", null ],
     [ "beginFlows", "class_model.html#a4c21fa615edc5d7b8a9696fe090707a4", null ],
     [ "beginSystems", "class_model.html#af44c12bce2645f91b796e750ddbacbd2", null ],
+    [ "createFlow", "class_model.html#a7c6092ff27c8cda63f33448964564edc", null ],
+    [ "createSystem", "class_model.html#aa21004cfb0ec573a372451d12374cd09", null ],
     [ "endFlows", "class_model.html#a27d6c506e46555299b4b4c8ae0990a7c", null ],
     [ "endSystems", "class_model.html#a251f709667f7ca6aedc45dd7431e40c1", null ],
     [ "run", "class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484", null ]

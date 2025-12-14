@@ -9,6 +9,7 @@
 #include "model.hpp"
 #include "system.hpp"
 #include "flow.hpp"
+#include "system_impl.hpp"
 #include <vector>
 
 /**
@@ -26,6 +27,12 @@ protected:
     /** @brief Contêiner de ponteiros para os Fluxos. */
     std::vector<Flow*> m_flows; 
 
+    // Métodos internos
+    /** @brief Adiciona um Sistema ao Modelo (implementação interna). */
+    void add(System* system) override;
+    /** @brief Adiciona um Fluxo ao Modelo (implementação interna). */
+    void add(Flow* flow) override;
+
 public:
    /** @brief Construtor padrão. Inicializa tempo em 0. */
    Model_impl();
@@ -38,12 +45,10 @@ public:
 
    /** @brief Operador de atribuição. */
    Model_impl &operator=(const Model_impl &other);
-   
-   /** @brief Adiciona um Sistema ao Modelo. */
-   void add(System *system);
 
-   /** @brief Adiciona um Fluxo ao Modelo. */
-   void add(Flow *flow);
+   // Implementação da Fábrica de Sistemas
+   /** @brief Cria e adiciona um Sistema ao Modelo. */
+   System* createSystem(double value) override;
    
    /**
       * @brief Executa a simulação.
@@ -51,7 +56,7 @@ public:
       * @param final Tempo final.
       * @param increment Passo de tempo (delta t).
       */
-   void run(double start, double final, int increment);
+   void run(double start, double final, int increment) override;
 
    /** @brief Iteradores para sistemas e fluxos */
    typedef std::vector<System*>::iterator systemIterator;
@@ -60,22 +65,22 @@ public:
    /**
       * @return Iterador apontando para o primeiro elemento do vetor de sistemas.
       */
-   systemIterator beginSystems(); 
+   systemIterator beginSystems() override; 
 
    /**
       * @return Iterador apontando para a posição final (após o último elemento) do vetor.
       */
-   systemIterator endSystems();   
+   systemIterator endSystems() override;   
 
    /**
       * @return Iterador apontando para o primeiro elemento do vetor de fluxos.
       */
-   flowIterator beginFlows(); 
+   flowIterator beginFlows() override; 
 
    /**
       * @return Iterador apontando para a posição final (após o último elemento) do vetor.
       */
-   flowIterator endFlows();
+   flowIterator endFlows() override;
 
    /** @brief Permite que a classe unit_Model acesse membros privados/protegidos. */
    friend class unit_Model; // unit_Model pode acessar membros privados/protegidos

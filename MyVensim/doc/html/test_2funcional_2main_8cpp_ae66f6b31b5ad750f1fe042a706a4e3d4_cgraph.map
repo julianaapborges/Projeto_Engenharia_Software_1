@@ -1,30 +1,35 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,157,55,184"/>
-<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="111,208,266,235"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,177,104,193,128,202,122,204,102,199,55,182"/>
-<area shape="rect" id="Node000008" href="$funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="103,157,275,184"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="54,168,89,169,85,172,56,173"/>
-<area shape="rect" id="Node000009" href="$funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title="Teste funcional para o crescimento logístico." alt="" coords="110,107,268,133"/>
-<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="54,160,102,143,127,137,123,140,104,148,56,164"/>
-<area shape="rect" id="Node000003" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Adiciona um Sistema ao Modelo." alt="" coords="354,56,439,83"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="256,205,273,194,284,182,291,170,297,145,303,119,310,106,321,93,338,85,342,82,325,97,314,109,308,121,302,146,296,172,289,185,277,198,258,210"/>
-<area shape="rect" id="Node000004" href="$class_flow__impl.html#ae00b58b8aba6a0b4fc69fb47bad18876" title="Método virtual puro para a equação do fluxo." alt="" coords="328,107,465,133"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="250,205,274,194,288,182,297,169,306,156,321,143,329,141,334,139,325,148,310,160,301,172,292,185,276,198,252,210"/>
-<area shape="rect" id="Node000005" href="$class_flow__impl.html#a5276f60a3a8e889740f3091e9e9ecf0a" title="Retorna o ponteiro da origem." alt="" coords="323,259,470,285"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="247,233,327,254,322,255,246,238"/>
-<area shape="rect" id="Node000006" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="334,157,459,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="246,205,327,187,322,189,247,210"/>
-<area shape="rect" id="Node000007" href="$class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="356,208,438,235"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="267,219,343,221,338,222,267,224"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="250,154,274,143,288,131,297,119,306,106,321,92,342,84,337,87,325,97,310,109,301,122,292,135,276,148,252,159"/>
-<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="246,154,327,136,322,139,248,159"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="251,182,276,194,292,207,301,220,310,232,325,244,334,252,329,251,321,249,306,236,297,223,288,210,274,198,251,187"/>
-<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="275,168,322,170,317,171,276,173"/>
-<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="247,182,343,207,338,208,247,187"/>
-<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="246,104,341,82,337,85,248,109"/>
-<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="267,117,315,119,310,121,268,123"/>
-<area shape="poly" id="edge17_Node000009_Node000006" title=" " alt="" coords="247,131,327,152,322,154,247,137"/>
-<area shape="poly" id="edge18_Node000009_Node000007" title=" " alt="" coords="251,131,276,143,292,156,301,169,310,181,325,194,344,206,339,205,321,198,306,185,297,172,288,160,274,148,251,137"/>
-<area shape="rect" id="Node000010" href="$class_flow__impl.html#abcc5b318972ee1a136def46a6ae5ae13" title="Retorna o ponteiro do destino." alt="" coords="326,5,468,32"/>
-<area shape="poly" id="edge16_Node000009_Node000010" title=" " alt="" coords="210,104,260,74,322,42,340,36,335,39,324,46,263,78,213,108"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,55,133"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="111,56,266,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,109,102,92,127,86,123,89,104,97,56,113"/>
+<area shape="rect" id="Node000011" href="$funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="103,107,275,133"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="54,118,89,118,85,122,56,122"/>
+<area shape="rect" id="Node000012" href="$funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title="Teste funcional para o crescimento logístico." alt="" coords="110,157,268,184"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="55,126,104,143,128,152,122,153,102,148,55,131"/>
+<area shape="rect" id="Node000003" href="$class_model.html#a7c6092ff27c8cda63f33448964564edc" title=" " alt="" coords="332,56,460,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,67,319,68,314,70,267,72"/>
+<area shape="rect" id="Node000007" href="$class_model.html#accd28300871325fce68d551cebf27220" title="Cria uma instância concreta do Model_impl." alt="" coords="328,107,463,133"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="246,81,326,102,321,103,247,86"/>
+<area shape="rect" id="Node000008" href="$class_model.html#aa21004cfb0ec573a372451d12374cd09" title=" " alt="" coords="323,157,468,184"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="251,81,276,92,292,105,301,118,310,131,325,143,334,151,329,150,321,148,306,134,297,121,288,109,274,97,251,86"/>
+<area shape="rect" id="Node000009" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="334,208,458,235"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="257,81,277,93,289,105,296,119,302,144,308,170,314,182,325,194,330,200,325,199,321,198,310,185,303,172,297,146,291,120,284,109,273,97,257,86"/>
+<area shape="rect" id="Node000010" href="$class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484" title="Executa a simulação." alt="" coords="354,5,437,32"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="246,53,342,31,337,34,247,58"/>
+<area shape="rect" id="Node000004" href="$class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd" title=" " alt="" coords="532,5,617,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="445,53,519,34,514,36,446,58"/>
+<area shape="rect" id="Node000005" href="$class_flow.html#a42ce99a961622788ae59bb73abad3bb3" title="Define o sistema de origem (Source)." alt="" coords="516,56,633,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="460,67,503,69,498,70,460,72"/>
+<area shape="rect" id="Node000006" href="$class_flow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b" title="Define o sistema de destino (Target)." alt="" coords="519,107,630,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="446,81,513,102,508,102,445,86"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="246,103,326,86,321,88,247,109"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="275,117,315,119,310,121,276,123"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="247,131,326,153,321,154,246,137"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="251,131,276,143,292,156,301,169,310,181,325,194,334,202,329,201,321,198,306,185,297,172,288,160,274,148,251,137"/>
+<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="250,104,274,92,288,80,297,68,306,55,321,42,342,34,338,36,325,46,310,59,301,71,292,84,276,97,252,108"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="250,154,274,143,288,131,297,119,306,106,321,92,329,91,334,88,325,97,310,109,301,122,292,135,276,148,252,159"/>
+<area shape="poly" id="edge18_Node000012_Node000007" title=" " alt="" coords="246,154,326,137,321,138,247,159"/>
+<area shape="poly" id="edge19_Node000012_Node000008" title=" " alt="" coords="268,168,310,170,305,171,268,173"/>
+<area shape="poly" id="edge20_Node000012_Node000009" title=" " alt="" coords="247,182,326,204,321,204,246,187"/>
+<area shape="poly" id="edge21_Node000012_Node000010" title=" " alt="" coords="256,154,273,143,284,131,291,120,297,94,303,68,310,55,321,42,338,34,342,31,325,46,314,58,308,70,302,96,296,121,289,135,277,147,258,159"/>
 </map>

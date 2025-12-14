@@ -1,9 +1,9 @@
 <map id="unit_Model::unit_model_copy_constructor" name="unit_Model::unit_model_copy_constructor">
 <area shape="rect" id="Node000001" title="Testa o construtor de cópia do Model_impl." alt="" coords="5,48,161,91"/>
-<area shape="rect" id="Node000002" href="$class_model__impl.html#a2b1d37ab3f74fed4d27c66875e7fa9c2" title="Adiciona um Sistema ao Modelo." alt="" coords="240,5,356,32"/>
+<area shape="rect" id="Node000002" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="240,5,356,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,48,227,35,222,37,162,54"/>
-<area shape="rect" id="Node000003" href="$class_model__impl.html#aa7892f9c3387859484b6cc45a1f58c6e" title="Implementação dos Iteradores de System." alt="" coords="209,56,387,83"/>
+<area shape="rect" id="Node000003" href="$class_model__impl.html#a76e2fcf3b2ba8a45d18b4c2fec351082" title="Implementação dos Iteradores de System." alt="" coords="209,56,387,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,196,69,190,70,161,72"/>
-<area shape="rect" id="Node000004" href="$class_model__impl.html#aae3f41e54ffc2f42616e83997d91158e" title=" " alt="" coords="214,107,382,133"/>
+<area shape="rect" id="Node000004" href="$class_model__impl.html#a7a29bfa029470ce0063c3f560f737a70" title=" " alt="" coords="214,107,382,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,85,226,102,221,103,161,90"/>
 </map>

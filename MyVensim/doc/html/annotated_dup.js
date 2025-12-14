@@ -2,7 +2,10 @@ var annotated_dup =
 [
     [ "Flow", "class_flow.html", "class_flow" ],
     [ "Flow_impl", "class_flow__impl.html", "class_flow__impl" ],
+    [ "FlowComplexo", "class_flow_complexo.html", "class_flow_complexo" ],
     [ "FlowDestructorSpy", "class_flow_destructor_spy.html", "class_flow_destructor_spy" ],
+    [ "FlowExponential", "class_flow_exponential.html", "class_flow_exponential" ],
+    [ "FlowLogistical", "class_flow_logistical.html", "class_flow_logistical" ],
     [ "FlowMock", "class_flow_mock.html", "class_flow_mock" ],
     [ "FlowSpy", "class_flow_spy.html", "class_flow_spy" ],
     [ "Model", "class_model.html", "class_model" ],

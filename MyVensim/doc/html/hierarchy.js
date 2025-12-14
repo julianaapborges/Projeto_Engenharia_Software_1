@@ -2,7 +2,10 @@ var hierarchy =
 [
     [ "Flow", "class_flow.html", [
       [ "Flow_impl", "class_flow__impl.html", [
+        [ "FlowComplexo", "class_flow_complexo.html", null ],
         [ "FlowDestructorSpy", "class_flow_destructor_spy.html", null ],
+        [ "FlowExponential", "class_flow_exponential.html", null ],
+        [ "FlowLogistical", "class_flow_logistical.html", null ],
         [ "FlowMock", "class_flow_mock.html", null ],
         [ "FlowSpy", "class_flow_spy.html", null ]
       ] ]

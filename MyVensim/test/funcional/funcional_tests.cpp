@@ -2,168 +2,118 @@
 #include "../../src/lib/flow.hpp"
 #include "../../src/lib/model.hpp"
 #include "../../src/lib/system.hpp"
+#include "../../src/lib/flow_impl.hpp"
 #include <cassert>
 #include <cmath>
 
+// Fluxo Exponencial
+class FlowExponential : public Flow_impl {
+public:
+    // Construtor repassa para o pai (Flow_impl)
+    FlowExponential() : Flow_impl() {}
+    
+    double equation() override {
+        if (getSource() != NULL)
+            return 0.01 * getSource()->getValue();
+        return 0.0;
+    }
+};
+
+// Fluxo Logístico
+class FlowLogistical : public Flow_impl {
+public:
+    FlowLogistical() : Flow_impl() {}
+    
+    double equation() override{
+        if (getTarget() != NULL) {
+            double p = getTarget()->getValue();
+            return 0.01 * p * (1 - p / 70);
+        }
+        return 0.0;
+    }
+};
+
+// Fluxo Complexo (Mesma equação do Exponencial, mas usado em outro contexto)
+class FlowComplexo : public Flow_impl {
+public:
+    FlowComplexo() : Flow_impl() {}
+    
+    double equation() override{
+        if (getSource() != NULL)
+            return 0.01 * getSource()->getValue();
+        return 0.0;
+    }
+};
+
 /** @brief Teste funcional para o crescimento exponencial */
 void exponentialFunctionalTest() {
-  class Exponential : public Flow {
-    System *source = nullptr;
-    System *target = nullptr;
-  public:
-      // Precisamos implementar os métodos da interface Flow manualmente
-      void setSource(System *s) override { source = s; }
-      void setTarget(System *t) override { target = t; }
-      System* getSource() const override { return source; }
-      System* getTarget() const override { return target; }
+  // 1. Cria Modelo
+    Model *model = Model::createModel();
 
-      // A equação continua a mesma
-      double equation() override { 
-          if(source != nullptr)
-              return 0.01 * source->getValue(); 
-          return 0.0;
-      }
-  };
+    // 2. Cria Sistemas (Removido o nome "pop1", apenas valor)
+    System *pop1 = model->createSystem(100.0);
+    System *pop2 = model->createSystem(0.0);
 
-  // USANDO FÁBRICA (Factory Method)
-  // Em vez de: System *pop1 = new System_impl(100);
-  System *pop1 = System::createSystem(100);
-  System *pop2 = System::createSystem(0);
+    // 3. Cria Fluxo (Removido o nome "exponencial")
+    model->createFlow<FlowExponential>(pop1, pop2);
 
-  Exponential *exp = new Exponential();
-  exp->setSource(pop1);
-  exp->setTarget(pop2);
+    // 4. Executa
+    model->run(0, 100, 1);
 
-  // USANDO FÁBRICA
-  // Em vez de: Model *model = new Model_impl();
-  Model *model = Model::createModel(0.0, 100.0); // Assumindo que mudamos a factory para receber tempo
+    // 5. Valida
+    assert(fabs(pop1->getValue() - 36.6032) < 0.0001);
+    assert(fabs(pop2->getValue() - 63.3968) < 0.0001);
 
-  model->add(pop1);
-  model->add(pop2);
-  model->add(exp);
-  
-  model->run(0, 100, 1);
-
-  assert(abs(pop1->getValue() - 36.6032) < 0.0001);
-  assert(abs(pop2->getValue() - 63.3968) < 0.0001);
-
-  // Lembre-se: O destrutor do Model deleta os Systems e Flows adicionados?
-  // Se sim, apenas delete model. Se não, delete tudo.
-  // Pela sua implementação anterior, o Model deleta tudo.
-  delete model;
+    // 6. Limpa
+    delete model;
 }
 
 /** @brief Teste funcional para o crescimento logístico */
 void logisticalFunctionalTest() {
-  class Logistical : public Flow {
-    System *source = nullptr;
-    System *target = nullptr;
-  public:
-      void setSource(System *s) override { source = s; }
-      void setTarget(System *t) override { target = t; }
-      System* getSource() const override { return source; }
-      System* getTarget() const override { return target; }
-
-      double equation() override {
-          if(target != nullptr)
-              return 0.01 * target->getValue() * (1 - target->getValue() / 70);
-          return 0.0;
-      }
-  };
-
-  System *p1 = System::createSystem(100);
-  System *p2 = System::createSystem(10);
-
-  Logistical *log = new Logistical();
-  log->setSource(p1);
-  log->setTarget(p2);
-
   Model *model = Model::createModel();
 
-  model->add(p1);
-  model->add(p2);
-  model->add(log);
-  
-  model->run(0, 100, 1);
+    // CORREÇÃO AQUI: Removido "p1" e "p2"
+    System *p1 = model->createSystem(100.0);
+    System *p2 = model->createSystem(10.0);
 
-  assert(abs(p1->getValue() - 88.2167) < 0.0001);
-  assert(abs(p2->getValue() - 21.7833) < 0.0001);
+    // CORREÇÃO AQUI: Removido nome do fluxo
+    model->createFlow<FlowLogistical>(p1, p2);
 
-  delete model;
+    model->run(0, 100, 1);
+
+    assert(fabs(p1->getValue() - 88.2167) < 0.0001);
+    assert(fabs(p2->getValue() - 21.7833) < 0.0001);
+
+    delete model;
 }
 
 /** @brief Teste funcional para um cenário complexo */
 void complexFunctionalTest() {
-  class Complex : public Flow {
-    System *source = nullptr;
-    System *target = nullptr;
-  public:
-      void setSource(System *s) override { source = s; }
-      void setTarget(System *t) override { target = t; }
-      System* getSource() const override { return source; }
-      System* getTarget() const override { return target; }
+  Model *model = Model::createModel();
 
-      double equation() override {
-          if(source != nullptr)
-              return 0.01 * source->getValue();
-          return 0.0;
-      }
-  };
+    // CORREÇÃO AQUI: Removidos nomes "Q1"..."Q5"
+    System *q1 = model->createSystem(100.0);
+    System *q2 = model->createSystem(0.0);
+    System *q3 = model->createSystem(100.0);
+    System *q4 = model->createSystem(0.0);
+    System *q5 = model->createSystem(0.0);
 
-  Model *model = Model::createModel(0.0, 100.0);
+    // CORREÇÃO AQUI: Removidos nomes "f", "g", "r", etc.
+    model->createFlow<FlowComplexo>(q1, q2); // f
+    model->createFlow<FlowComplexo>(q1, q3); // g
+    model->createFlow<FlowComplexo>(q2, q5); // r
+    model->createFlow<FlowComplexo>(q2, q3); // t
+    model->createFlow<FlowComplexo>(q3, q4); // u
+    model->createFlow<FlowComplexo>(q4, q1); // v
 
-  Complex *f = new Complex();
-  Complex *g = new Complex();
-  Complex *r = new Complex();
-  Complex *t = new Complex();
-  Complex *u = new Complex();
-  Complex *v = new Complex();
+    model->run(0, 100, 1);
 
-  System *q1 = System::createSystem(100);
-  System *q2 = System::createSystem(0);
-  System *q3 = System::createSystem(100);
-  System *q4 = System::createSystem(0);
-  System *q5 = System::createSystem(0);
+    // Validação
+    assert(fabs(q1->getValue() - 31.8513) < 0.0001);
+    assert(fabs(q2->getValue() - 18.4003) < 0.0001);
+    assert(fabs(q3->getValue() - 77.1143) < 0.0001);
+    assert(fabs(q4->getValue() - 56.1728) < 0.0001);
+    assert(fabs(q5->getValue() - 16.4612) < 0.0001);
 
-  f->setSource(q1);
-  f->setTarget(q2);
-
-  g->setSource(q1);
-  g->setTarget(q3);
-
-  r->setSource(q2);
-  r->setTarget(q5);
-
-  t->setSource(q2);
-  t->setTarget(q3);
-
-  u->setSource(q3);
-  u->setTarget(q4);
-
-  v->setSource(q4);
-  v->setTarget(q1);
-
-  model->add(q1);
-  model->add(q2);
-  model->add(q3);
-  model->add(q4);
-  model->add(q5);
-
-  model->add(f);
-  model->add(g);
-  model->add(r);
-  model->add(t);
-  model->add(u);
-  model->add(v);
-
-  model->run(0, 100, 1);
-
-  // Validação rigorosa com abs
-  assert(std::abs(q1->getValue() - 31.8513) < 0.0001);
-  assert(std::abs(q2->getValue() - 18.4003) < 0.0001);
-  assert(std::abs(q3->getValue() - 77.1143) < 0.0001);
-  assert(std::abs(q4->getValue() - 56.1728) < 0.0001);
-  assert(std::abs(q5->getValue() - 16.4612) < 0.0001);
-
-  delete model;
+    delete model;
 }

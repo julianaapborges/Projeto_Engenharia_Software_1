@@ -1,6 +1,7 @@
 #include "model_impl.hpp"
 #include "system.hpp"
 #include "flow.hpp"
+#include "system_impl.hpp"
 
 // Implementação da classe Model_impl.
 // O Model_impl mantém coleções de `System` e `Flow` e executa a simulação
@@ -11,6 +12,12 @@
 //    e adicionando ao destino. Esse procedimento evita atualizações parciais
 //    dentro do mesmo passo de tempo.
 
+// Implementação da Fábrica Estática (Cria o Modelo)
+/** @brief Cria uma instância concreta do Model_impl. */
+Model* Model::createModel() {
+    return new Model_impl;
+}
+
 Model_impl::Model_impl() : m_time(0) {}
 
 Model_impl::~Model_impl() {
@@ -19,13 +26,21 @@ Model_impl::~Model_impl() {
     for (auto flow : m_flows) {
         delete flow;
     }
-    m_flows.clear();
-
     // Percorre o vetor de sistemas e deleta um por um
     for (auto system : m_systems) {
         delete system;
     }
-    m_systems.clear();
+}
+
+// Implementação da Fábrica de Sistemas
+/** @brief Cria e adiciona um Sistema ao Modelo. */
+System* Model_impl::createSystem(double value) {
+    // Cria a implementação concreta
+    System* s = new System_impl(value);
+    // Adiciona ao vetor interno
+    add(s);
+    // Retorna a interface
+    return s;
 }
 
 // Construtor de cópia: copia estado e coleções (shallow copy dos ponteiros)
@@ -101,11 +116,4 @@ Model_impl::flowIterator Model_impl::beginFlows() {
 
 Model_impl::flowIterator Model_impl::endFlows() {
     return m_flows.end();
-}
-
-// Implementação da Fábrica
-Model* Model::createModel(double start, double final) {
-    Model_impl* m = new Model_impl(); 
-    
-    return m;
 }

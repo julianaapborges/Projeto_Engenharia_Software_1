@@ -16,7 +16,7 @@ int flow_destructor_calls = 0;
 /** Classe espiã para System_impl que incrementa contador no destrutor */
 class SystemSpy : public System_impl {
 public:
-    SystemSpy() : System_impl() {}
+    SystemSpy(double value = 0.0) : System_impl(value) {}
     ~SystemSpy() { sys_destructor_calls++; }
 };
 
@@ -25,7 +25,7 @@ class FlowSpy : public Flow_impl {
 public:
     FlowSpy() : Flow_impl() {}
     ~FlowSpy() { flow_destructor_calls++; }
-    double equation() { return 0; }
+    double equation() override { return 0; }
 };
 
 // --- TESTES ---
@@ -43,35 +43,49 @@ void unit_Model::unit_model_constructor() {
 
 /** @brief Testa o método add do Model_impl */
 void unit_Model::unit_model_add() {
-    Model *m = new Model_impl();
+    // CORREÇÃO: Usar Model_impl* em vez de Model*
+    // O compilador precisa saber que é Model_impl para liberar o acesso 'protected' via friend
+    Model_impl *m = new Model_impl(); 
+    
+    // Construtores SEM NOME
     System_impl *s = new System_impl(100.0);
     FlowMock *f = new FlowMock(); 
 
-    m->add(s);
+    m->add(s); 
     m->add(f);
-    
-    // Precisamos deletar m para não vazar memória, 
-    // mas o destrutor agora limpa s e f, então está seguro.
-    delete m; 
+
+    // Verifica se realmente adicionou
+    assert(m->m_systems.size() == 1);
+    assert(m->m_flows.size() == 1);
+
+    delete m;
 }
 
 /** @brief Testa o método run do Model_impl */
 void unit_Model::unit_model_run() {
-    Model_impl *m = new Model_impl();
+    // 1. Setup
+    Model_impl m; 
     
-    System_impl *s = new System_impl(0.0);
-    m->add(s);
-
-    // Executa: tempo 0 até 10, passo 1
-    double start = 0.0;
-    double final = 10.0;
-    int incr = 1;
+    System_impl *s1 = new System_impl(100.0); // Fonte com 100
+    System_impl *s2 = new System_impl(0.0);   // Destino com 0
     
-    m->run(start, final, incr);
+    m.add(s1);
+    m.add(s2);
 
-    assert(fabs(m->m_time - final) < 0.0001); 
+    // 2. Mocking
+    // Criamos um fluxo que conecta s1 -> s2 e retorna SEMPRE 10.0
+    double valor_fixo = 10.0;
+    FlowMock *f = new FlowMock(s1, s2, valor_fixo);
+    m.add(f);
 
-    delete m;
+    // 3. Execução (1 passo de tempo)
+    m.run(0, 1, 1);
+
+    // 4. Verificação
+    // s1: 100 - 10 = 90
+    assert(std::abs(s1->getValue() - 90.0) < 0.0001);
+    // s2: 0 + 10 = 10
+    assert(std::abs(s2->getValue() - 10.0) < 0.0001);
 }
 
 /** @brief Testa o construtor de cópia do Model_impl */
@@ -114,19 +128,21 @@ void unit_Model::unit_model_assignmentOperator() {
 
 /** @brief Testa o destrutor do Model_impl */
 void unit_Model::unit_model_destructor() {
+    // Reset dos contadores
     sys_destructor_calls = 0;
     flow_destructor_calls = 0;
 
-    // Cria modelo com 2 sistemas e 1 fluxo
-    Model *m = new Model_impl();
-    m->add(new SystemSpy());
-    m->add(new SystemSpy());
+    // Usamos Model_impl diretamente para acessar o destrutor e o add
+    Model_impl *m = new Model_impl();
+
+    // Adiciona Spies (Sem nomes, apenas valores quando necessário)
+    m->add(new SystemSpy(10.0));
+    m->add(new SystemSpy(20.0));
     m->add(new FlowSpy());
 
-    // Deleta modelo, o que deve disparar os destrutores
+    // Ao deletar o modelo, ele deve deletar os filhos
     delete m;
 
-    // Verifica se os destrutores foram chamados corretamente
     assert(sys_destructor_calls == 2);
     assert(flow_destructor_calls == 1);
 }
@@ -134,21 +150,16 @@ void unit_Model::unit_model_destructor() {
 /** @brief Teste para verificar o funcionamento dos iteradores de System */
 void unit_Model::unit_model_iterator_systems() {
     Model_impl m;
-    System_impl *s = new System_impl(100.0);
+    System_impl *s = new System_impl(100.0); // Sem nome
 
-    // Teste Vazio: begin deve ser igual a end
+    // Vazio
     assert(m.beginSystems() == m.endSystems());
 
-    // Adiciona elemento
     m.add(s);
 
-    // Teste Preenchido: begin deve ser diferente de end
+    // Preenchido
     assert(m.beginSystems() != m.endSystems());
-
-    // Teste de Acesso: O conteúdo apontado é o correto?
     assert(*m.beginSystems() == s);
-    
-    // O destrutor de 'm' vai limpar 's' ao sair do escopo
 }
 
 /** @brief Teste para verificar o funcionamento dos iteradores de Flow */
@@ -156,19 +167,14 @@ void unit_Model::unit_model_iterator_flows() {
     Model_impl m;
     FlowMock *f = new FlowMock();
 
-    // Teste Vazio
+    // Vazio
     assert(m.beginFlows() == m.endFlows());
 
-    // Adiciona elemento
     m.add(f);
 
-    // Teste Preenchido
+    // Preenchido
     assert(m.beginFlows() != m.endFlows());
-
-    // Teste de Acesso
     assert(*m.beginFlows() == f);
-    
-    // O destrutor de 'm' vai limpar 'f' ao sair do escopo
 }
 
 /** @brief Executa todos os testes unitários do Model_impl */

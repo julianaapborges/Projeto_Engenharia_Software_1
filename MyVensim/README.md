@@ -49,6 +49,7 @@ make BUILD_APP
 make BUILD_FUNC_TEST
     ou
 make BUILD_UNIT_TEST
+```
 
 **Executar os testes (validação dos Modelos):**
 ```bash

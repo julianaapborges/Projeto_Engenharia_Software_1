@@ -24,33 +24,38 @@
 \DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba}{add}}(\mbox{\hyperlink{class_flow}{Flow}}*\ flow)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00035\ }
 \DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00038\ \ \ \ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}();}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00041\ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_model__impl_acd04d91f127207fcedc16bf393cbdac0}{\string~Model\_impl}}();}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00044\ \ \ \ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}\ \&other);}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00047\ \ \ \ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}\ \&\mbox{\hyperlink{class_model__impl_a73451014262e8c3f2306748af3722480}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}\ \&other);}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \textcolor{comment}{//\ Implementação\ da\ Fábrica\ de\ Sistemas}}
-\DoxyCodeLine{00051\ \ \ \ \mbox{\hyperlink{class_system}{System}}*\ \mbox{\hyperlink{class_model__impl_a4d9e34e50ba9d2d1332cf8dfb0eb5a90}{createSystem}}(\textcolor{keywordtype}{double}\ value)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00052\ \ \ \ }
-\DoxyCodeLine{00059\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model__impl_a56f41629f62e1829bd28d85c9de23b51}{run}}(\textcolor{keywordtype}{double}\ start,\ \textcolor{keywordtype}{double}\ \textcolor{keyword}{final},\ \textcolor{keywordtype}{int}\ increment)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00062\ \ \ \ \textcolor{keyword}{typedef}\ std::vector<System*>::iterator\ \mbox{\hyperlink{class_model__impl_a461e78ff5f3cb5685fe5cabd5cccfcd8}{systemIterator}};}
-\DoxyCodeLine{00063\ \ \ \ \textcolor{keyword}{typedef}\ std::vector<Flow*>::iterator\ \mbox{\hyperlink{class_model__impl_aaaf99083adbb5e2c1ef05f1580f4bea1}{flowIterator}};}
-\DoxyCodeLine{00064\ \ \ \ }
-\DoxyCodeLine{00068\ \ \ \ \mbox{\hyperlink{class_model__impl_a461e78ff5f3cb5685fe5cabd5cccfcd8}{systemIterator}}\ \mbox{\hyperlink{class_model__impl_a76e2fcf3b2ba8a45d18b4c2fec351082}{beginSystems}}()\ \textcolor{keyword}{override};\ }
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00073\ \ \ \ \mbox{\hyperlink{class_model__impl_a461e78ff5f3cb5685fe5cabd5cccfcd8}{systemIterator}}\ \mbox{\hyperlink{class_model__impl_a7a29bfa029470ce0063c3f560f737a70}{endSystems}}()\ \textcolor{keyword}{override};\ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ MUDANÇA\ AQUI:\ STATIC\ -\/-\/-\/}}
+\DoxyCodeLine{00038\ \ \ \ \textcolor{comment}{//\ Este\ vetor\ guarda\ TODOS\ os\ modelos\ criados.\ }}
+\DoxyCodeLine{00039\ \ \ \ \textcolor{comment}{//\ Tem\ que\ ser\ static\ para\ o\ createModel\ (que\ também\ é\ static)\ conseguir\ acessar.}}
+\DoxyCodeLine{00040\ \ \ \ \textcolor{keyword}{static}\ std::vector<Model*>\ \mbox{\hyperlink{class_model__impl_a9d319efe490bbf4a97f56878ceda0dc4}{m\_models}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \ \ \ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00046\ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_model__impl_acd04d91f127207fcedc16bf393cbdac0}{\string~Model\_impl}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00049\ \ \ \ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}\ \&other);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00052\ \ \ \ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}\ \&\mbox{\hyperlink{class_model__impl_a73451014262e8c3f2306748af3722480}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_model__impl_ad5c79567398cdeaf871654d7ffbd82f0}{Model\_impl}}\ \&other);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \textcolor{comment}{//\ Implementação\ da\ Fábrica\ de\ Sistemas}}
+\DoxyCodeLine{00056\ \ \ \ \mbox{\hyperlink{class_system}{System}}*\ \mbox{\hyperlink{class_model__impl_a4d9e34e50ba9d2d1332cf8dfb0eb5a90}{createSystem}}(\textcolor{keywordtype}{double}\ value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model__impl_a56f41629f62e1829bd28d85c9de23b51}{run}}(\textcolor{keywordtype}{double}\ start,\ \textcolor{keywordtype}{double}\ \textcolor{keyword}{final},\ \textcolor{keywordtype}{int}\ increment)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \textcolor{keyword}{typedef}\ std::vector<System*>::iterator\ \mbox{\hyperlink{class_model__impl_a461e78ff5f3cb5685fe5cabd5cccfcd8}{systemIterator}};}
+\DoxyCodeLine{00068\ \ \ \ \textcolor{keyword}{typedef}\ std::vector<Flow*>::iterator\ \mbox{\hyperlink{class_model__impl_aaaf99083adbb5e2c1ef05f1580f4bea1}{flowIterator}};}
+\DoxyCodeLine{00069\ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \mbox{\hyperlink{class_model__impl_a461e78ff5f3cb5685fe5cabd5cccfcd8}{systemIterator}}\ \mbox{\hyperlink{class_model__impl_a76e2fcf3b2ba8a45d18b4c2fec351082}{beginSystems}}()\ \textcolor{keyword}{override};\ }
 \DoxyCodeLine{00074\ }
-\DoxyCodeLine{00078\ \ \ \ \mbox{\hyperlink{class_model__impl_aaaf99083adbb5e2c1ef05f1580f4bea1}{flowIterator}}\ \mbox{\hyperlink{class_model__impl_a6d13156fdf794d1bdbf99050c07ab5dc}{beginFlows}}()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00078\ \ \ \ \mbox{\hyperlink{class_model__impl_a461e78ff5f3cb5685fe5cabd5cccfcd8}{systemIterator}}\ \mbox{\hyperlink{class_model__impl_a7a29bfa029470ce0063c3f560f737a70}{endSystems}}()\ \textcolor{keyword}{override};\ \ \ }
 \DoxyCodeLine{00079\ }
-\DoxyCodeLine{00083\ \ \ \ \mbox{\hyperlink{class_model__impl_aaaf99083adbb5e2c1ef05f1580f4bea1}{flowIterator}}\ \mbox{\hyperlink{class_model__impl_ad827f91270a836e6bdc9878a53e11cbf}{endFlows}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ \ \ \ \mbox{\hyperlink{class_model__impl_aaaf99083adbb5e2c1ef05f1580f4bea1}{flowIterator}}\ \mbox{\hyperlink{class_model__impl_a6d13156fdf794d1bdbf99050c07ab5dc}{beginFlows}}()\ \textcolor{keyword}{override};\ }
 \DoxyCodeLine{00084\ }
-\DoxyCodeLine{00086\ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_model__impl_a6eac0ca2a815734ddd311ff3578f1715}{unit\_Model}};\ \textcolor{comment}{//\ unit\_Model\ pode\ acessar\ membros\ privados/protegidos}}
-\DoxyCodeLine{00087\ \};}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MODEL\_IMPL\_HPP}}
+\DoxyCodeLine{00088\ \ \ \ \mbox{\hyperlink{class_model__impl_aaaf99083adbb5e2c1ef05f1580f4bea1}{flowIterator}}\ \mbox{\hyperlink{class_model__impl_ad827f91270a836e6bdc9878a53e11cbf}{endFlows}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00091\ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_model__impl_a6eac0ca2a815734ddd311ff3578f1715}{unit\_Model}};\ \textcolor{comment}{//\ unit\_Model\ pode\ acessar\ membros\ privados/protegidos}}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MODEL\_IMPL\_HPP}}
 
 \end{DoxyCode}

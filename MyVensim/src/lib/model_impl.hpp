@@ -34,6 +34,11 @@ protected:
     void add(Flow* flow) override;
 
 public:
+   // --- MUDANÇA AQUI: STATIC ---
+   // Este vetor guarda TODOS os modelos criados. 
+   // Tem que ser static para o createModel (que também é static) conseguir acessar.
+   static std::vector<Model*> m_models;
+
    /** @brief Construtor padrão. Inicializa tempo em 0. */
    Model_impl();
 

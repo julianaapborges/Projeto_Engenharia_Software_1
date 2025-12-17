@@ -63,28 +63,21 @@ void unit_Model::unit_model_add() {
 
 /** @brief Testa o método run do Model_impl */
 void unit_Model::unit_model_run() {
-    // 1. Setup
-    Model_impl m; 
-    
-    System_impl *s1 = new System_impl(100.0); // Fonte com 100
-    System_impl *s2 = new System_impl(0.0);   // Destino com 0
-    
-    m.add(s1);
-    m.add(s2);
+    Model_impl m;
 
-    // 2. Mocking
-    // Criamos um fluxo que conecta s1 -> s2 e retorna SEMPRE 10.0
-    double valor_fixo = 10.0;
-    FlowMock *f = new FlowMock(s1, s2, valor_fixo);
-    m.add(f);
+    System_impl *s1 = new System_impl(100.0);
+    System_impl *s2 = new System_impl(0.0);
 
-    // 3. Execução (1 passo de tempo)
+    FlowMock *f = new FlowMock(s1, s2, 10.0);
+
+    m.m_systems.push_back(s1);
+    m.m_systems.push_back(s2);
+    m.m_flows.push_back(f);
+
     m.run(0, 1, 1);
 
-    // 4. Verificação
-    // s1: 100 - 10 = 90
+    // Verifica
     assert(std::abs(s1->getValue() - 90.0) < 0.0001);
-    // s2: 0 + 10 = 10
     assert(std::abs(s2->getValue() - 10.0) < 0.0001);
 }
 

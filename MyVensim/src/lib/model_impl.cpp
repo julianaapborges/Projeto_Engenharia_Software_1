@@ -12,10 +12,16 @@
 //    e adicionando ao destino. Esse procedimento evita atualizações parciais
 //    dentro do mesmo passo de tempo.
 
+// --- INICIALIZAÇÃO DA VARIÁVEL ESTÁTICA ---
+std::vector<Model*> Model_impl::m_models;
+
+// --- CORREÇÃO DO createModel ---
 // Implementação da Fábrica Estática (Cria o Modelo)
 /** @brief Cria uma instância concreta do Model_impl. */
 Model* Model::createModel() {
-    return new Model_impl;
+    Model_impl* m = new Model_impl();
+    Model_impl::m_models.push_back(m);
+    return m;
 }
 
 Model_impl::Model_impl() : m_time(0) {}

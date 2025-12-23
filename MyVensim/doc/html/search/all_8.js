@@ -12,7 +12,7 @@ var searchData=
   ['main_2ecpp_9',['main.cpp',['../src_2main_8cpp.html',1,'(Global Namespace)'],['../test_2funcional_2main_8cpp.html',1,'(Global Namespace)'],['../test_2unit_2main_8cpp.html',1,'(Global Namespace)']]],
   ['main_5ffuncional_5ftests_10',['MAIN_FUNCIONAL_TESTS',['../test_2funcional_2main_8cpp.html#a376d82a01ef72d56eafec1a5f6a661f0',1,'main.cpp']]],
   ['main_5funit_5fcpp_11',['MAIN_UNIT_CPP',['../test_2unit_2main_8cpp.html#a8e67a4da8c63368398868e4e59ee90fc',1,'main.cpp']]],
-  ['model_12',['Model',['../class_model.html',1,'']]],
+  ['model_12',['Model',['../class_model.html',1,'Model'],['../class_model__impl.html#a2bf2a0e9b454c55aa5dcb5aa4698697b',1,'Model_impl::Model()']]],
   ['model_2ehpp_13',['model.hpp',['../model_8hpp.html',1,'']]],
   ['model_5fimpl_14',['Model_impl',['../class_model__impl.html',1,'Model_impl'],['../class_model__impl.html#ad5c79567398cdeaf871654d7ffbd82f0',1,'Model_impl::Model_impl()'],['../class_model__impl.html#a8bad82fe1fc0a31ca9dbc22464b0c19e',1,'Model_impl::Model_impl(const Model_impl &amp;other)']]],
   ['model_5fimpl_2ecpp_15',['model_impl.cpp',['../model__impl_8cpp.html',1,'']]],

@@ -14,6 +14,7 @@ var class_model__impl =
     [ "endSystems", "class_model__impl.html#a7a29bfa029470ce0063c3f560f737a70", null ],
     [ "operator=", "class_model__impl.html#a73451014262e8c3f2306748af3722480", null ],
     [ "run", "class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51", null ],
+    [ "Model", "class_model__impl.html#a2bf2a0e9b454c55aa5dcb5aa4698697b", null ],
     [ "unit_Model", "class_model__impl.html#a6eac0ca2a815734ddd311ff3578f1715", null ],
     [ "m_flows", "class_model__impl.html#a28c3b06ab56df28f1facf9f0fbffa6d1", null ],
     [ "m_systems", "class_model__impl.html#a4d2d2a72f4c620a5326c504879110aa4", null ],

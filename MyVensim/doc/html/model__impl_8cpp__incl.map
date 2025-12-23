@@ -1,13 +1,15 @@
 <map id="src/lib/model_impl.cpp" name="src/lib/model_impl.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="265,5,416,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="314,5,466,32"/>
 <area shape="rect" id="Node000002" href="$model__impl_8hpp.html" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="139,80,252,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,34,236,75,233,70,317,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,34,245,76,242,72,358,31"/>
 <area shape="rect" id="Node000006" href="$flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="165,229,234,256"/>
-<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="335,32,218,218,213,214,330,33"/>
+<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="382,33,221,220,218,216,377,32"/>
 <area shape="rect" id="Node000007" href="$system_8hpp.html" title="Interface para a classe System." alt="" coords="345,229,435,256"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="359,30,415,79,443,114,464,154,468,168,464,182,449,205,428,223,426,218,445,201,460,180,463,168,460,156,439,117,411,83,358,35"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="400,30,435,82,452,117,465,154,468,168,464,182,449,205,428,223,426,218,445,201,460,180,462,168,459,155,447,119,430,85,399,35"/>
 <area shape="rect" id="Node000009" href="$system__impl_8hpp.html" title="Declaração da classe concreta System_impl." alt="" coords="330,155,450,181"/>
-<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="346,30,384,140,378,140,344,35"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="392,30,392,140,388,138,388,35"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="525,80,599,107"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="420,30,521,73,515,74,420,35"/>
 <area shape="rect" id="Node000003" href="$model_8hpp.html" title="Interface para a classe Model." alt="" coords="72,155,153,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,109,140,146,136,142,183,105"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,229,63,256"/>

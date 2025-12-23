@@ -73,11 +73,6 @@ virtual \mbox{\hyperlink{class_model_af032d8433c87a0a3a431faf6563a1f03}{\texorpd
 \begin{DoxyCompactList}\small\item\em Destrutor virtual padrão. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T\+\_\+\+FLOW$>$ }\\\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_model_a7c6092ff27c8cda63f33448964564edc}{create\+Flow}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Static Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-static std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model__impl_a9d319efe490bbf4a97f56878ceda0dc4}{m\+\_\+models}}
-\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -85,6 +80,11 @@ void \mbox{\hyperlink{class_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba}{add}}
 \begin{DoxyCompactList}\small\item\em Adiciona um Sistema ao Modelo (implementação interna). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_model__impl_a1354a27d69a4051305dfc0ca4392e1b6}{add}} (\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}flow) override
 \begin{DoxyCompactList}\small\item\em Adiciona um Fluxo ao Modelo (implementação interna). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_model__impl_a503cdf8474d5d8344163f58104bbb917}{add}} (\mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*}model)
+\begin{DoxyCompactList}\small\item\em Adiciona modelo. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -94,11 +94,18 @@ std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}
 \begin{DoxyCompactList}\small\item\em Contêiner de ponteiros para os Sistemas. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model__impl_a28c3b06ab56df28f1facf9f0fbffa6d1}{m\+\_\+flows}}
 \begin{DoxyCompactList}\small\item\em Contêiner de ponteiros para os Fluxos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model__impl_a9d319efe490bbf4a97f56878ceda0dc4}{m\+\_\+models}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_model__impl_a6eac0ca2a815734ddd311ff3578f1715}{unit\+\_\+\+Model}}
-\begin{DoxyCompactList}\small\item\em Permite que a classe \doxylink{classunit___model}{unit\+\_\+\+Model} acesse membros privados/protegidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Permite que a classe \doxylink{classunit___model}{unit\+\_\+\+Model} acesse membros privados/protegidos. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_model__impl_a2bf2a0e9b454c55aa5dcb5aa4698697b}{Model}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_model}{Model}}}
 \begin{DoxyCompactItemize}
@@ -190,7 +197,7 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_model__impl_a1354a27d69a4051305dfc0ca4392e1b6}\index{Model\_impl@{Model\_impl}!add@{add}}
 \index{add@{add}!Model\_impl@{Model\_impl}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \label{class_model__impl_a1354a27d69a4051305dfc0ca4392e1b6} 
 void Model\+\_\+impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
@@ -202,9 +209,27 @@ Adiciona um Fluxo ao Modelo (implementação interna).
 
 Implements \mbox{\hyperlink{class_model_ab7df81041f62f049cfc6e4d50dcaf721}{Model}}.
 
+\Hypertarget{class_model__impl_a503cdf8474d5d8344163f58104bbb917}\index{Model\_impl@{Model\_impl}!add@{add}}
+\index{add@{add}!Model\_impl@{Model\_impl}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_model__impl_a503cdf8474d5d8344163f58104bbb917} 
+void Model\+\_\+impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*}}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Adiciona modelo. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_model__impl_a503cdf8474d5d8344163f58104bbb917_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba}\index{Model\_impl@{Model\_impl}!add@{add}}
 \index{add@{add}!Model\_impl@{Model\_impl}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{class_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba} 
 void Model\+\_\+impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{system}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
@@ -392,6 +417,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \label{doc-related-members}
 \Hypertarget{class_model__impl_doc-related-members}
 \doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_model__impl_a2bf2a0e9b454c55aa5dcb5aa4698697b}\index{Model\_impl@{Model\_impl}!Model@{Model}}
+\index{Model@{Model}!Model\_impl@{Model\_impl}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily \label{class_model__impl_a2bf2a0e9b454c55aa5dcb5aa4698697b} 
+friend class \mbox{\hyperlink{class_model}{Model}}\hspace{0.3cm}{\ttfamily [friend]}}
+
 \Hypertarget{class_model__impl_a6eac0ca2a815734ddd311ff3578f1715}\index{Model\_impl@{Model\_impl}!unit\_Model@{unit\_Model}}
 \index{unit\_Model@{unit\_Model}!Model\_impl@{Model\_impl}}
 \doxysubsubsection{\texorpdfstring{unit\_Model}{unit\_Model}}
@@ -421,7 +452,7 @@ Contêiner de ponteiros para os Fluxos.
 \index{m\_models@{m\_models}!Model\_impl@{Model\_impl}}
 \doxysubsubsection{\texorpdfstring{m\_models}{m\_models}}
 {\footnotesize\ttfamily \label{class_model__impl_a9d319efe490bbf4a97f56878ceda0dc4} 
-std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} $>$ Model\+\_\+impl\+::m\+\_\+models\hspace{0.3cm}{\ttfamily [static]}}
+std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} $>$ Model\+\_\+impl\+::m\+\_\+models\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
 
 \Hypertarget{class_model__impl_a4d2d2a72f4c620a5326c504879110aa4}\index{Model\_impl@{Model\_impl}!m\_systems@{m\_systems}}
 \index{m\_systems@{m\_systems}!Model\_impl@{Model\_impl}}

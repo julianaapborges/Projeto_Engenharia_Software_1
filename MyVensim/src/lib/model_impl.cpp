@@ -2,6 +2,7 @@
 #include "system.hpp"
 #include "flow.hpp"
 #include "system_impl.hpp"
+#include <algorithm>
 
 // Implementação da classe Model_impl.
 // O Model_impl mantém coleções de `System` e `Flow` e executa a simulação
@@ -15,12 +16,14 @@
 // --- INICIALIZAÇÃO DA VARIÁVEL ESTÁTICA ---
 std::vector<Model*> Model_impl::m_models;
 
+void Model_impl::add(Model *model) { m_models.push_back(model); }
+
 // --- CORREÇÃO DO createModel ---
 // Implementação da Fábrica Estática (Cria o Modelo)
 /** @brief Cria uma instância concreta do Model_impl. */
 Model* Model::createModel() {
     Model_impl* m = new Model_impl();
-    Model_impl::m_models.push_back(m);
+    Model_impl::add(m);  // Adiciona o modelo criado ao vetor estático
     return m;
 }
 
@@ -35,6 +38,11 @@ Model_impl::~Model_impl() {
     // Percorre o vetor de sistemas e deleta um por um
     for (auto system : m_systems) {
         delete system;
+    }
+    // Remove este modelo do vetor estático
+    auto it = std::find(m_models.begin(), m_models.end(), this);
+    if (it != m_models.end()) {
+        m_models.erase(it);
     }
 }
 
@@ -71,6 +79,7 @@ void Model_impl::add(System *system) { m_systems.push_back(system); }
 
 // Adiciona um Flow ao Modelo (ponteiro armazenado)
 void Model_impl::add(Flow *flow) { m_flows.push_back(flow); }
+
 
 // Executa a simulação do tempo `start` até `final` com passo `increment`.
 // Observações importantes:

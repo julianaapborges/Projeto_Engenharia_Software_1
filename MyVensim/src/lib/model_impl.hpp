@@ -26,18 +26,20 @@ protected:
     std::vector<System*> m_systems; 
     /** @brief Contêiner de ponteiros para os Fluxos. */
     std::vector<Flow*> m_flows; 
+    // --- MUDANÇA AQUI: STATIC ---
+    // Este vetor guarda TODOS os modelos criados. 
+    // Tem que ser static para o createModel (que também é static) conseguir acessar.
+    static std::vector<Model*> m_models;
 
     // Métodos internos
     /** @brief Adiciona um Sistema ao Modelo (implementação interna). */
     void add(System* system) override;
     /** @brief Adiciona um Fluxo ao Modelo (implementação interna). */
     void add(Flow* flow) override;
+    /** @brief Adiciona modelo */
+    static void add(Model* model);
 
 public:
-   // --- MUDANÇA AQUI: STATIC ---
-   // Este vetor guarda TODOS os modelos criados. 
-   // Tem que ser static para o createModel (que também é static) conseguir acessar.
-   static std::vector<Model*> m_models;
 
    /** @brief Construtor padrão. Inicializa tempo em 0. */
    Model_impl();
@@ -89,6 +91,7 @@ public:
 
    /** @brief Permite que a classe unit_Model acesse membros privados/protegidos. */
    friend class unit_Model; // unit_Model pode acessar membros privados/protegidos
+   friend class Model; // Model pode acessar membros privados/protegidos
 };
 
 #endif // MODEL_IMPL_HPP

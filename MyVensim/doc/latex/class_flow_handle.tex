@@ -1,0 +1,204 @@
+\doxysection{Flow\+Handle Class Reference}
+\hypertarget{class_flow_handle}{}\label{class_flow_handle}\index{FlowHandle@{FlowHandle}}
+
+
+Classe que representa o handle para \doxylink{class_flow_body}{Flow\+Body}.  
+
+
+
+
+{\ttfamily \#include $<$flow\+\_\+handle.\+hpp$>$}
+
+
+
+Inheritance diagram for Flow\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_flow_handle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_flow_handle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2}{Flow\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o \doxylink{class_flow_handle}{Flow\+Handle}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_handle_a0f82d8ef772931c44f4eb352b70fc02d}{Flow\+Handle}} (const \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}} \&hd)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia que incrementa o contador de handles. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow_handle_acec255198c28118981e7bb62194fe9e2}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor que atualiza o contador global. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_handle_a24bd92b9d17cc644b9a6ef890592ef70}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s) override
+\begin{DoxyCompactList}\small\item\em Define o \doxylink{class_system}{System} de origem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_handle_a01b989d7d723d221c4da641fa3266f44}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}t) override
+\begin{DoxyCompactList}\small\item\em Define o \doxylink{class_system}{System} de destino. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle_a9ced76b3e7b67f47c8651dd4e8e6ff17}{get\+Source}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o \doxylink{class_system}{System} de origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle_a660808cc3bcc0ecc404e5e43ee2df5d9}{get\+Target}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o \doxylink{class_system}{System} de destino. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_flow_handle_a1b506d6662f8f70055fa97426f29b440}{equation}} ()=0
+\begin{DoxyCompactList}\small\item\em Método que representa a equação do fluxo, pode ser sobrescrito. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handle}{Handle$<$ Flow\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\item 
+virtual \mbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{Handle}}$<$ \mbox{\hyperlink{class_flow_body}{Flow\+Body}} $>$ \& \mbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (const \mbox{\hyperlink{class_handle}{Handle}} \&hd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handle}{Handle$<$ Flow\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_body}{Flow\+Body}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em referência para a implementação \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa o handle para \doxylink{class_flow_body}{Flow\+Body}. 
+
+\label{doc-constructors}
+\Hypertarget{class_flow_handle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2}\index{FlowHandle@{FlowHandle}!FlowHandle@{FlowHandle}}
+\index{FlowHandle@{FlowHandle}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{FlowHandle()}{FlowHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2} 
+Flow\+Handle\+::\+Flow\+Handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor que inicializa o \doxylink{class_flow_handle}{Flow\+Handle}. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_handle_a0f82d8ef772931c44f4eb352b70fc02d}\index{FlowHandle@{FlowHandle}!FlowHandle@{FlowHandle}}
+\index{FlowHandle@{FlowHandle}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{FlowHandle()}{FlowHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_flow_handle_a0f82d8ef772931c44f4eb352b70fc02d} 
+Flow\+Handle\+::\+Flow\+Handle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}} \&}]{hd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor de cópia que incrementa o contador de handles. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_handle_a0f82d8ef772931c44f4eb352b70fc02d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flow_handle_acec255198c28118981e7bb62194fe9e2}\index{FlowHandle@{FlowHandle}!````~FlowHandle@{\texorpdfstring{$\sim$}{\string~}FlowHandle}}
+\index{````~FlowHandle@{\texorpdfstring{$\sim$}{\string~}FlowHandle}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FlowHandle()}{\string~FlowHandle()}}
+{\footnotesize\ttfamily \label{class_flow_handle_acec255198c28118981e7bb62194fe9e2} 
+virtual Flow\+Handle\+::\texorpdfstring{$\sim$}{\string~}\+Flow\+Handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destrutor que atualiza o contador global. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_flow_handle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flow_handle_a1b506d6662f8f70055fa97426f29b440}\index{FlowHandle@{FlowHandle}!equation@{equation}}
+\index{equation@{equation}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily \label{class_flow_handle_a1b506d6662f8f70055fa97426f29b440} 
+virtual double Flow\+Handle\+::equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Método que representa a equação do fluxo, pode ser sobrescrito. 
+
+
+
+Implements \mbox{\hyperlink{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2}{Flow}}.
+
+\Hypertarget{class_flow_handle_a9ced76b3e7b67f47c8651dd4e8e6ff17}\index{FlowHandle@{FlowHandle}!getSource@{getSource}}
+\index{getSource@{getSource}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{class_flow_handle_a9ced76b3e7b67f47c8651dd4e8e6ff17} 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Flow\+Handle\+::get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o \doxylink{class_system}{System} de origem. 
+
+
+
+Implements \mbox{\hyperlink{class_flow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+\Hypertarget{class_flow_handle_a660808cc3bcc0ecc404e5e43ee2df5d9}\index{FlowHandle@{FlowHandle}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \label{class_flow_handle_a660808cc3bcc0ecc404e5e43ee2df5d9} 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Flow\+Handle\+::get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o \doxylink{class_system}{System} de destino. 
+
+
+
+Implements \mbox{\hyperlink{class_flow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+\Hypertarget{class_flow_handle_a24bd92b9d17cc644b9a6ef890592ef70}\index{FlowHandle@{FlowHandle}!setSource@{setSource}}
+\index{setSource@{setSource}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{class_flow_handle_a24bd92b9d17cc644b9a6ef890592ef70} 
+void Flow\+Handle\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Define o \doxylink{class_system}{System} de origem. 
+
+
+
+Implements \mbox{\hyperlink{class_flow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+\Hypertarget{class_flow_handle_a01b989d7d723d221c4da641fa3266f44}\index{FlowHandle@{FlowHandle}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!FlowHandle@{FlowHandle}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily \label{class_flow_handle_a01b989d7d723d221c4da641fa3266f44} 
+void Flow\+Handle\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Define o \doxylink{class_system}{System} de destino. 
+
+
+
+Implements \mbox{\hyperlink{class_flow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{flow__handle_8hpp}{flow\+\_\+handle.\+hpp}}\end{DoxyCompactItemize}

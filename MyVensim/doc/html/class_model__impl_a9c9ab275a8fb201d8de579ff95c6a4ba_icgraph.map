@@ -1,38 +1,24 @@
 <map id="Model_impl::add" name="Model_impl::add">
-<area shape="rect" id="Node000001" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="554,249,671,276"/>
-<area shape="rect" id="Node000002" href="$class_model.html#accd28300871325fce68d551cebf27220" title="Cria uma instância concreta do Model_impl." alt="" coords="347,56,482,83"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="599,234,585,203,564,166,538,128,505,97,483,85,483,79,508,93,542,125,569,163,589,201,604,236"/>
-<area shape="rect" id="Node000007" href="$class_model__impl.html#a4d9e34e50ba9d2d1332cf8dfb0eb5a90" title="Cria e adiciona um Sistema ao Modelo." alt="" coords="326,107,503,133"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="592,236,555,191,532,168,505,148,483,137,482,131,508,143,535,164,559,188,597,237"/>
-<area shape="rect" id="Node000008" href="$classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do Model_impl." alt="" coords="323,157,506,184"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="578,240,545,219,505,198,475,187,475,182,507,194,547,215,584,240"/>
-<area shape="rect" id="Node000011" href="$classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="337,208,492,251"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="537,251,493,245,492,240,542,250"/>
-<area shape="rect" id="Node000012" href="$classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="337,275,492,317"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="537,276,493,285,492,280,542,274"/>
-<area shape="rect" id="Node000013" href="$classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do Model_impl." alt="" coords="337,341,492,384"/>
-<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="582,284,508,332,481,343,479,338,505,327,578,286"/>
-<area shape="rect" id="Node000014" href="$classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="337,408,492,451"/>
-<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="598,288,562,345,537,373,508,398,488,410,486,405,505,394,533,369,557,341,594,291"/>
-<area shape="rect" id="Node000015" href="$classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="337,475,492,517"/>
-<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="605,289,593,330,573,376,545,423,508,465,491,477,489,472,505,461,540,420,568,374,588,328,602,293"/>
-<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="111,5,266,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,53,252,35,251,30,339,51"/>
-<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="103,56,275,83"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="329,71,276,72,274,67,334,68"/>
-<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title="Teste funcional para o crescimento logístico." alt="" coords="110,107,268,133"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="335,88,253,108,250,104,339,85"/>
-<area shape="rect" id="Node000004" href="$test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,39,104,47,57,62,53,59,102,41,127,35"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="85,71,57,71,53,67,89,67"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="123,103,102,97,56,80,54,76,104,92,127,100"/>
-<area shape="rect" id="Node000009" href="$classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="120,308,258,351"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="332,192,324,198,289,224,256,253,208,309,204,306,252,250,285,220,322,194,336,189"/>
-<area shape="rect" id="Node000010" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,316,55,343"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="102,331,56,332,54,327,106,327"/>
-<area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="335,258,324,265,232,310,230,305,322,260,340,255"/>
-<area shape="poly" id="edge15_Node000012_Node000009" title=" " alt="" coords="319,311,259,322,258,317,324,309"/>
-<area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="319,350,259,342,258,337,324,348"/>
-<area shape="poly" id="edge19_Node000014_Node000009" title=" " alt="" coords="335,402,322,398,231,354,231,349,324,394,340,402"/>
-<area shape="poly" id="edge21_Node000015_Node000009" title=" " alt="" coords="328,467,322,465,286,438,254,408,206,354,208,349,257,404,289,434,324,460,333,468"/>
+<area shape="rect" id="Node000001" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="520,164,637,191"/>
+<area shape="rect" id="Node000002" href="$classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do Model_impl." alt="" coords="289,5,472,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="560,150,524,98,500,70,471,46,450,35,450,30,474,42,503,66,529,94,566,151"/>
+<area shape="rect" id="Node000005" href="$classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="303,56,458,99"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="543,155,471,113,446,102,446,96,474,108,549,155"/>
+<area shape="rect" id="Node000006" href="$classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="303,123,458,165"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="503,165,459,160,458,154,508,165"/>
+<area shape="rect" id="Node000007" href="$classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do Model_impl." alt="" coords="303,189,458,232"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="503,190,459,200,458,195,508,189"/>
+<area shape="rect" id="Node000008" href="$classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="303,256,458,299"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="548,199,474,246,447,258,445,253,471,242,543,201"/>
+<area shape="rect" id="Node000009" href="$classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="303,323,458,365"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="565,203,528,259,503,288,474,313,454,325,452,320,471,309,499,284,523,256,560,206"/>
+<area shape="rect" id="Node000003" href="$classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,156,241,199"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,40,290,46,258,71,230,101,188,157,184,154,226,98,254,67,288,42,301,37"/>
+<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,164,55,191"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,179,56,180,53,175,89,176"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="299,106,290,113,209,158,206,153,288,108,304,104"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="285,160,242,169,241,164,290,158"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="285,197,242,191,241,186,290,195"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="299,250,288,246,207,202,208,196,290,242,304,250"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="293,314,287,313,255,286,227,256,186,202,188,197,231,253,259,282,291,309,298,315"/>
 </map>

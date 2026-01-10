@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,55,83"/>
+<area shape="rect" id="Node000002" href="$class_model_handle.html#a53da2eb75da9062bf261c5423987724b" title="Cria um novo System com um valor inicial." alt="" coords="103,5,289,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,58,102,41,129,35,125,38,103,47,56,63"/>
+<area shape="rect" id="Node000003" href="$class_system_handle.html#a5c59a67c5a07cdd4f6c60488aea4075a" title="Obtém o valor armazenado no SystemHandle." alt="" coords="113,56,278,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,67,99,68,95,71,56,72"/>
+<area shape="rect" id="Node000004" href="$class_system.html#a7421d2e6970a0c4169a2febe254f2060" title="Define o valor numérico do sistema." alt="" coords="134,107,258,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,76,103,92,129,102,124,102,102,97,55,81"/>
+</map>

@@ -101,9 +101,11 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__inherit__graph.png" border="0" usemap="#a_model_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_model_inherit__map" id="a_model_inherit__map">
-<area shape="rect" title="Interface que representa o Motor de Simulação." alt="" coords="5,5,120,288"/>
-<area shape="rect" href="class_model__impl.html" title="Implementação concreta do Modelo." alt="" coords="5,336,120,725"/>
-<area shape="poly" title=" " alt="" coords="63,300,65,336,60,336,63,306"/>
+<area shape="rect" title="Interface que representa o Motor de Simulação." alt="" coords="75,5,190,288"/>
+<area shape="rect" href="class_model_handle.html" title="Classe que representa o handle para ModelBody." alt="" coords="5,389,121,672"/>
+<area shape="poly" title=" " alt="" coords="105,300,91,390,86,389,104,305"/>
+<area shape="rect" href="class_model__impl.html" title="Implementação concreta do Modelo." alt="" coords="146,336,261,725"/>
+<area shape="poly" title=" " alt="" coords="162,300,170,336,165,336,161,305"/>
 </map>
 </div>
 <div class="dynheader">
@@ -141,7 +143,6 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:accd28300871325fce68d551cebf27220" id="r_accd28300871325fce68d551cebf27220"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accd28300871325fce68d551cebf27220">createModel</a> ()</td></tr>
-<tr class="memdesc:accd28300871325fce68d551cebf27220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma instância concreta do <a class="el" href="class_model__impl.html" title="Implementação concreta do Modelo.">Model_impl</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -234,7 +235,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a1354a27d69a4051305dfc0ca4392e1b6">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a1354a27d69a4051305dfc0ca4392e1b6">Model_impl</a>, and <a class="el" href="class_model_handle.html#a2933227c778ebac15ec01ba83355b39a">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -261,7 +262,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba">Model_impl</a>, and <a class="el" href="class_model_handle.html#a8be4061afed9ea571e49e25c3e0e5f3d">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -310,7 +311,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o início dos fluxos. </p>
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a6d13156fdf794d1bdbf99050c07ab5dc">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a43c7c6a347d1e86c45c7d539b01aa896">Model_impl</a>, and <a class="el" href="class_model_handle.html#ab0b65368ab557d73fc4250f38c97a36a">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -339,7 +340,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o início dos sistemas. </p>
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a76e2fcf3b2ba8a45d18b4c2fec351082">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a1484cc48179d33dcb673b5d8f6351c2d">Model_impl</a>, and <a class="el" href="class_model_handle.html#a4bea52e982c6ca64d4a5b62754bd9227">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -428,24 +429,12 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Cria uma instância concreta do <a class="el" href="class_model__impl.html" title="Implementação concreta do Modelo.">Model_impl</a>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_model_accd28300871325fce68d551cebf27220_cgraph.png" border="0" usemap="#aclass_model_accd28300871325fce68d551cebf27220_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model_accd28300871325fce68d551cebf27220_cgraph" id="aclass_model_accd28300871325fce68d551cebf27220_cgraph">
-<area shape="rect" title="Cria uma instância concreta do Model_impl." alt="" coords="5,5,141,32"/>
-<area shape="rect" href="class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="189,5,305,32"/>
-<area shape="poly" title=" " alt="" coords="141,16,176,18,170,19,141,21"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_accd28300871325fce68d551cebf27220_icgraph.png" border="0" usemap="#aclass_model_accd28300871325fce68d551cebf27220_icgraph" loading="lazy" alt=""/></div>
 <map name="aclass_model_accd28300871325fce68d551cebf27220_icgraph" id="aclass_model_accd28300871325fce68d551cebf27220_icgraph">
-<area shape="rect" title="Cria uma instância concreta do Model_impl." alt="" coords="323,56,458,83"/>
+<area shape="rect" title=" " alt="" coords="323,56,458,83"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="111,5,266,32"/>
 <area shape="poly" title=" " alt="" coords="317,52,245,35,245,30,322,51"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="103,56,275,83"/>
@@ -484,7 +473,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a4d9e34e50ba9d2d1332cf8dfb0eb5a90">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a4d9e34e50ba9d2d1332cf8dfb0eb5a90">Model_impl</a>, and <a class="el" href="class_model_handle.html#a53da2eb75da9062bf261c5423987724b">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -531,7 +520,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o fim dos fluxos. </p>
 
-<p>Implemented in <a class="el" href="class_model__impl.html#ad827f91270a836e6bdc9878a53e11cbf">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a7d86d17f5a79ddba980cb40570fa6abb">Model_impl</a>, and <a class="el" href="class_model_handle.html#a764484c7acf746145d885d2c297425bc">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -560,7 +549,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna um iterador para o fim dos sistemas. </p>
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a7a29bfa029470ce0063c3f560f737a70">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a002b185410a2468b03df530b46adcf5c">Model_impl</a>, and <a class="el" href="class_model_handle.html#a82e3947b39d2082be21a9a33d466da0f">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -606,7 +595,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51">Model_impl</a>.</p>
+<p>Implemented in <a class="el" href="class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51">Model_impl</a>, and <a class="el" href="class_model_handle.html#a4db2fc970fdf643e78e15d33d4007c82">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

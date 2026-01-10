@@ -19,18 +19,18 @@
 <area shape="rect" id="Node000003" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="454,135,570,161"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,30,376,42,438,81,488,124,483,124,435,85,374,46,347,35"/>
 <area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="360,143,441,146,436,148,362,148"/>
-<area shape="rect" id="Node000005" href="$class_model__impl.html#a76e2fcf3b2ba8a45d18b4c2fec351082" title="Implementação dos Iteradores de System." alt="" coords="423,240,601,267"/>
+<area shape="rect" id="Node000005" href="$class_model__impl.html#a1484cc48179d33dcb673b5d8f6351c2d" title=" " alt="" coords="423,240,601,267"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="354,163,377,175,392,188,401,201,410,214,424,226,436,233,431,234,422,230,406,218,397,205,388,192,373,180,355,169"/>
-<area shape="rect" id="Node000006" href="$class_model__impl.html#a7a29bfa029470ce0063c3f560f737a70" title=" " alt="" coords="428,189,596,216"/>
+<area shape="rect" id="Node000006" href="$class_model__impl.html#a002b185410a2468b03df530b46adcf5c" title=" " alt="" coords="428,189,596,216"/>
 <area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="361,161,445,184,440,186,362,167"/>
 <area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="360,187,448,165,444,167,362,192"/>
 <area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="361,222,424,236,419,237,362,228"/>
 <area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="360,205,415,205,410,207,362,210"/>
 <area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="355,97,454,129,449,131,355,102"/>
 <area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="359,320,373,309,386,293,392,276,396,243,400,210,408,192,421,175,442,164,438,167,425,179,412,195,405,211,401,244,397,278,390,295,377,313,362,324"/>
-<area shape="rect" id="Node000011" href="$class_model__impl.html#a6d13156fdf794d1bdbf99050c07ab5dc" title="Implementação dos Iteradores de Flow." alt="" coords="432,356,593,383"/>
+<area shape="rect" id="Node000011" href="$class_model__impl.html#a43c7c6a347d1e86c45c7d539b01aa896" title=" " alt="" coords="432,356,593,383"/>
 <area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="361,350,418,358,413,359,361,355"/>
-<area shape="rect" id="Node000012" href="$class_model__impl.html#ad827f91270a836e6bdc9878a53e11cbf" title=" " alt="" coords="436,305,588,332"/>
+<area shape="rect" id="Node000012" href="$class_model__impl.html#a7d86d17f5a79ddba980cb40570fa6abb" title=" " alt="" coords="436,305,588,332"/>
 <area shape="poly" id="edge17_Node000010_Node000012" title=" " alt="" coords="361,333,424,328,418,330,362,338"/>
 <area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="355,253,373,242,388,226,396,209,405,192,421,175,442,166,437,169,425,179,409,195,401,212,393,229,377,246,358,258"/>
 <area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="360,267,410,263,405,265,362,272"/>
@@ -39,8 +39,4 @@
 <area shape="poly" id="edge23_Node000014_Node000015" title=" " alt="" coords="374,477,422,484,416,484,374,482"/>
 <area shape="rect" id="Node000016" href="$class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51" title="Executa a simulação." alt="" coords="456,431,569,457"/>
 <area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="374,457,443,452,438,452,374,462"/>
-<area shape="rect" id="Node000017" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="649,405,774,432"/>
-<area shape="poly" id="edge25_Node000016_Node000017" title=" " alt="" coords="569,434,631,429,637,428,570,439"/>
-<area shape="rect" id="Node000018" href="$class_system.html#a7421d2e6970a0c4169a2febe254f2060" title="Define o valor numérico do sistema." alt="" coords="649,456,774,483"/>
-<area shape="poly" id="edge26_Node000016_Node000018" title=" " alt="" coords="569,449,637,460,631,460,569,454"/>
 </map>

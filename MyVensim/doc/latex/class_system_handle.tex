@@ -1,0 +1,164 @@
+\doxysection{System\+Handle Class Reference}
+\hypertarget{class_system_handle}{}\label{class_system_handle}\index{SystemHandle@{SystemHandle}}
+
+
+Classe que representa o handle para \doxylink{class_system_body}{System\+Body}.  
+
+
+
+
+{\ttfamily \#include $<$system\+\_\+handle.\+hpp$>$}
+
+
+
+Inheritance diagram for System\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{class_system_handle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_system_handle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a}{System\+Handle}} (double value=0.\+0)
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o valor do \doxylink{class_system_handle}{System\+Handle}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system_handle_af5f1a33ea1a32d15a9404b5b063be908}{System\+Handle}} (const \mbox{\hyperlink{class_system_handle}{System\+Handle}} \&hd)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia que incrementa o contador de handles. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_system_handle_a4b917da05a077c741b5ddddadf2f5d95}{\texorpdfstring{$\sim$}{\string~}\+System\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor que atualiza o contador global. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_system_handle_ab4d71f14764d5d0c95a29fcb0e4a792d}{set\+Value}} (double value) override
+\begin{DoxyCompactList}\small\item\em Define o valor armazenado no \doxylink{class_system_handle}{System\+Handle}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_system_handle_a5c59a67c5a07cdd4f6c60488aea4075a}{get\+Value}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o valor armazenado no \doxylink{class_system_handle}{System\+Handle}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_system}{System}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_system_a2fc0f34023977cab9b628aa9f734d88c}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handle}{Handle$<$ System\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\item 
+virtual \mbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{Handle}}$<$ \mbox{\hyperlink{class_system_body}{System\+Body}} $>$ \& \mbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (const \mbox{\hyperlink{class_handle}{Handle}} \&hd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handle}{Handle$<$ System\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_body}{System\+Body}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em referência para a implementação \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa o handle para \doxylink{class_system_body}{System\+Body}. 
+
+\label{doc-constructors}
+\Hypertarget{class_system_handle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a}\index{SystemHandle@{SystemHandle}!SystemHandle@{SystemHandle}}
+\index{SystemHandle@{SystemHandle}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{SystemHandle()}{SystemHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a} 
+System\+Handle\+::\+System\+Handle (\begin{DoxyParamCaption}\item[{double}]{value}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor que inicializa o valor do \doxylink{class_system_handle}{System\+Handle}. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_system_handle_af5f1a33ea1a32d15a9404b5b063be908}\index{SystemHandle@{SystemHandle}!SystemHandle@{SystemHandle}}
+\index{SystemHandle@{SystemHandle}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{SystemHandle()}{SystemHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_system_handle_af5f1a33ea1a32d15a9404b5b063be908} 
+System\+Handle\+::\+System\+Handle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_handle}{System\+Handle}} \&}]{hd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor de cópia que incrementa o contador de handles. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_handle_af5f1a33ea1a32d15a9404b5b063be908_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_system_handle_a4b917da05a077c741b5ddddadf2f5d95}\index{SystemHandle@{SystemHandle}!````~SystemHandle@{\texorpdfstring{$\sim$}{\string~}SystemHandle}}
+\index{````~SystemHandle@{\texorpdfstring{$\sim$}{\string~}SystemHandle}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SystemHandle()}{\string~SystemHandle()}}
+{\footnotesize\ttfamily \label{class_system_handle_a4b917da05a077c741b5ddddadf2f5d95} 
+virtual System\+Handle\+::\texorpdfstring{$\sim$}{\string~}\+System\+Handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destrutor que atualiza o contador global. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_system_handle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_system_handle_a5c59a67c5a07cdd4f6c60488aea4075a}\index{SystemHandle@{SystemHandle}!getValue@{getValue}}
+\index{getValue@{getValue}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_system_handle_a5c59a67c5a07cdd4f6c60488aea4075a} 
+double System\+Handle\+::get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o valor armazenado no \doxylink{class_system_handle}{System\+Handle}. 
+
+
+
+Implements \mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{System}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_system_handle_a5c59a67c5a07cdd4f6c60488aea4075a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_system_handle_ab4d71f14764d5d0c95a29fcb0e4a792d}\index{SystemHandle@{SystemHandle}!setValue@{setValue}}
+\index{setValue@{setValue}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_system_handle_ab4d71f14764d5d0c95a29fcb0e4a792d} 
+void System\+Handle\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Define o valor armazenado no \doxylink{class_system_handle}{System\+Handle}. 
+
+
+
+Implements \mbox{\hyperlink{class_system_a7421d2e6970a0c4169a2febe254f2060}{System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{system__handle_8hpp}{system\+\_\+handle.\+hpp}}\end{DoxyCompactItemize}

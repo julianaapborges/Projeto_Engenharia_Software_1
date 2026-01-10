@@ -1,0 +1,7 @@
+<map id="FlowBody" name="FlowBody">
+<area shape="rect" id="Node000001" title="Classe concreta que representa o corpo de um Flow." alt="" coords="54,296,152,493"/>
+<area shape="rect" id="Node000002" href="$class_body.html" title=" " alt="" coords="5,5,92,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,215,88,296,82,296,69,220"/>
+<area shape="rect" id="Node000003" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="117,48,202,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,157,128,280,123,279,148,162"/>
+</map>

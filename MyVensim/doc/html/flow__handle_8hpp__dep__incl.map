@@ -1,0 +1,7 @@
+<map id="src/lib/flow_handle.hpp" name="src/lib/flow_handle.hpp">
+<area shape="rect" id="Node000001" title="Declaração da classe FlowHandle que implementa o padrão Handle&#45;Body para Flow." alt="" coords="69,5,223,32"/>
+<area shape="rect" id="Node000002" href="$flow__impl_8cpp.html" title=" " alt="" coords="5,80,146,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,42,89,82,86,78,121,44"/>
+<area shape="rect" id="Node000003" href="$src_2main_8cpp.html" title=" " alt="" coords="170,80,266,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,41,208,80,203,79,168,46"/>
+</map>

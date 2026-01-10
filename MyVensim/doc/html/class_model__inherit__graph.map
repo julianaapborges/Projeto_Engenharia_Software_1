@@ -1,5 +1,7 @@
 <map id="Model" name="Model">
-<area shape="rect" id="Node000001" title="Interface que representa o Motor de Simulação." alt="" coords="5,5,120,288"/>
-<area shape="rect" id="Node000002" href="$class_model__impl.html" title="Implementação concreta do Modelo." alt="" coords="5,336,120,725"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,300,65,336,60,336,63,306"/>
+<area shape="rect" id="Node000001" title="Interface que representa o Motor de Simulação." alt="" coords="75,5,190,288"/>
+<area shape="rect" id="Node000002" href="$class_model_handle.html" title="Classe que representa o handle para ModelBody." alt="" coords="5,389,121,672"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,300,91,390,86,389,104,305"/>
+<area shape="rect" id="Node000003" href="$class_model__impl.html" title="Implementação concreta do Modelo." alt="" coords="146,336,261,725"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,300,170,336,165,336,161,305"/>
 </map>

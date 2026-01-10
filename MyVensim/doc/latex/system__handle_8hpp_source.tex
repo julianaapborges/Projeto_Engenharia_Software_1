@@ -1,0 +1,37 @@
+\doxysection{system\+\_\+handle.\+hpp}
+\hypertarget{system__handle_8hpp_source}{}\label{system__handle_8hpp_source}\index{src/lib/system\_handle.hpp@{src/lib/system\_handle.hpp}}
+\mbox{\hyperlink{system__handle_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ SYSTEM\_HANDLE\_HPP}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ SYSTEM\_HANDLE\_HPP}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{system_8hpp}{system.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{system__body_8hpp}{system\_body.hpp}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{flow__handle_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{flow__handle_8hpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a}{SystemHandle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_system}{System}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}}<SystemBody>\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a}{SystemHandle}}(\textcolor{keywordtype}{double}\ value\ =\ 0.0)\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setValue(value);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{system__handle_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}++;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_system_handle_af5f1a33ea1a32d15a9404b5b063be908}{SystemHandle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_system_handle_ae68847eaca2090fd99b4aeeb608beb6a}{SystemHandle}}\&\ hd)\ :\ \mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}}<\mbox{\hyperlink{class_system_body}{SystemBody}}>(hd)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{system__handle_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}++;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_system_handle_a4b917da05a077c741b5ddddadf2f5d95}{\string~SystemHandle}}()\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{system__handle_8hpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}}++;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_system_handle_ab4d71f14764d5d0c95a29fcb0e4a792d}{setValue}}(\textcolor{keywordtype}{double}\ value)\textcolor{keyword}{\ override\ }\{\ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setValue(value);\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_system_handle_a5c59a67c5a07cdd4f6c60488aea4075a}{getValue}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getValue();\ \}}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

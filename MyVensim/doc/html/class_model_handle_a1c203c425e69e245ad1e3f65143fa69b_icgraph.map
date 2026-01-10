@@ -1,0 +1,5 @@
+<map id="ModelHandle::ModelHandle" name="ModelHandle::ModelHandle">
+<area shape="rect" id="Node000001" title="Construtor que inicializa o ModelHandle." alt="" coords="235,5,416,32"/>
+<area shape="rect" id="Node000002" href="$class_model_handle.html#aa9bfcc45942a655b4589ea2525e1955e" title="Construtor de cópia que incrementa o contador de handles." alt="" coords="5,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,19,187,21,187,16,222,19"/>
+</map>

@@ -130,8 +130,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5c79567398cdeaf871654d7ffbd82f0" id="r_ad5c79567398cdeaf871654d7ffbd82f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5c79567398cdeaf871654d7ffbd82f0">Model_impl</a> ()</td></tr>
 <tr class="memdesc:ad5c79567398cdeaf871654d7ffbd82f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor padrão. Inicializa tempo em 0.  <br /></td></tr>
-<tr class="memitem:acd04d91f127207fcedc16bf393cbdac0" id="r_acd04d91f127207fcedc16bf393cbdac0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd04d91f127207fcedc16bf393cbdac0">~Model_impl</a> ()</td></tr>
-<tr class="memdesc:acd04d91f127207fcedc16bf393cbdac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor. Limpa a memória dos sistemas e fluxos alocados.  <br /></td></tr>
+<tr class="memitem:a779d822f09147086e8d57bae8fae39b8" id="r_a779d822f09147086e8d57bae8fae39b8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a779d822f09147086e8d57bae8fae39b8">~Model_impl</a> ()</td></tr>
+<tr class="memdesc:a779d822f09147086e8d57bae8fae39b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor. Limpa a memória dos sistemas e fluxos alocados.  <br /></td></tr>
 <tr class="memitem:a8bad82fe1fc0a31ca9dbc22464b0c19e" id="r_a8bad82fe1fc0a31ca9dbc22464b0c19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bad82fe1fc0a31ca9dbc22464b0c19e">Model_impl</a> (const <a class="el" href="class_model__impl.html">Model_impl</a> &amp;other)</td></tr>
 <tr class="memdesc:a8bad82fe1fc0a31ca9dbc22464b0c19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor de cópia.  <br /></td></tr>
 <tr class="memitem:a73451014262e8c3f2306748af3722480" id="r_a73451014262e8c3f2306748af3722480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model__impl.html">Model_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73451014262e8c3f2306748af3722480">operator=</a> (const <a class="el" href="class_model__impl.html">Model_impl</a> &amp;other)</td></tr>
@@ -140,12 +140,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4d9e34e50ba9d2d1332cf8dfb0eb5a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria e adiciona um Sistema ao Modelo.  <br /></td></tr>
 <tr class="memitem:a56f41629f62e1829bd28d85c9de23b51" id="r_a56f41629f62e1829bd28d85c9de23b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56f41629f62e1829bd28d85c9de23b51">run</a> (double start, double final, int increment) override</td></tr>
 <tr class="memdesc:a56f41629f62e1829bd28d85c9de23b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa a simulação.  <br /></td></tr>
-<tr class="memitem:a76e2fcf3b2ba8a45d18b4c2fec351082" id="r_a76e2fcf3b2ba8a45d18b4c2fec351082"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76e2fcf3b2ba8a45d18b4c2fec351082">beginSystems</a> () override</td></tr>
-<tr class="memdesc:a76e2fcf3b2ba8a45d18b4c2fec351082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementação dos Iteradores de <a class="el" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas.">System</a>.  <br /></td></tr>
-<tr class="memitem:a7a29bfa029470ce0063c3f560f737a70" id="r_a7a29bfa029470ce0063c3f560f737a70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a29bfa029470ce0063c3f560f737a70">endSystems</a> () override</td></tr>
-<tr class="memitem:a6d13156fdf794d1bdbf99050c07ab5dc" id="r_a6d13156fdf794d1bdbf99050c07ab5dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">flowIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d13156fdf794d1bdbf99050c07ab5dc">beginFlows</a> () override</td></tr>
-<tr class="memdesc:a6d13156fdf794d1bdbf99050c07ab5dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementação dos Iteradores de <a class="el" href="class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas.">Flow</a>.  <br /></td></tr>
-<tr class="memitem:ad827f91270a836e6bdc9878a53e11cbf" id="r_ad827f91270a836e6bdc9878a53e11cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">flowIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad827f91270a836e6bdc9878a53e11cbf">endFlows</a> () override</td></tr>
+<tr class="memitem:a1484cc48179d33dcb673b5d8f6351c2d" id="r_a1484cc48179d33dcb673b5d8f6351c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1484cc48179d33dcb673b5d8f6351c2d">beginSystems</a> () override</td></tr>
+<tr class="memitem:a002b185410a2468b03df530b46adcf5c" id="r_a002b185410a2468b03df530b46adcf5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">systemIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a002b185410a2468b03df530b46adcf5c">endSystems</a> () override</td></tr>
+<tr class="memitem:a43c7c6a347d1e86c45c7d539b01aa896" id="r_a43c7c6a347d1e86c45c7d539b01aa896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">flowIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c7c6a347d1e86c45c7d539b01aa896">beginFlows</a> () override</td></tr>
+<tr class="memitem:a7d86d17f5a79ddba980cb40570fa6abb" id="r_a7d86d17f5a79ddba980cb40570fa6abb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">flowIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d86d17f5a79ddba980cb40570fa6abb">endFlows</a> () override</td></tr>
 <tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_model')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
 <tr class="memitem:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_class_model" id="r_af032d8433c87a0a3a431faf6563a1f03"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
 <tr class="memdesc:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual padrão.  <br /></td></tr>
@@ -161,8 +159,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-static-methods" class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a503cdf8474d5d8344163f58104bbb917" id="r_a503cdf8474d5d8344163f58104bbb917"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a503cdf8474d5d8344163f58104bbb917">add</a> (<a class="el" href="class_model.html">Model</a> *model)</td></tr>
-<tr class="memdesc:a503cdf8474d5d8344163f58104bbb917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona modelo.  <br /></td></tr>
+<tr class="memitem:a4743f08aae62a54836b51fde62c883a6" id="r_a4743f08aae62a54836b51fde62c883a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4743f08aae62a54836b51fde62c883a6">add</a> (<a class="el" href="class_model.html">Model</a> *model)</td></tr>
+<tr class="memdesc:a4743f08aae62a54836b51fde62c883a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona modelo.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -175,7 +173,7 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-static-attribs" class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a9d319efe490bbf4a97f56878ceda0dc4" id="r_a9d319efe490bbf4a97f56878ceda0dc4"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="class_model.html">Model</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d319efe490bbf4a97f56878ceda0dc4">m_models</a></td></tr>
+<tr class="memitem:a847b3102dfaa2eb300474617cc7285f9" id="r_a847b3102dfaa2eb300474617cc7285f9"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="class_model.html">Model</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a847b3102dfaa2eb300474617cc7285f9">m_models</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -187,7 +185,6 @@ Friends</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_model"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_model')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
 <tr class="memitem:accd28300871325fce68d551cebf27220 inherit pub_static_methods_class_model" id="r_accd28300871325fce68d551cebf27220"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#accd28300871325fce68d551cebf27220">createModel</a> ()</td></tr>
-<tr class="memdesc:accd28300871325fce68d551cebf27220 inherit pub_static_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma instância concreta do <a class="el" href="class_model__impl.html" title="Implementação concreta do Modelo.">Model_impl</a>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementação concreta do Modelo. </p>
@@ -257,8 +254,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="acd04d91f127207fcedc16bf393cbdac0" name="acd04d91f127207fcedc16bf393cbdac0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd04d91f127207fcedc16bf393cbdac0">&#9670;&#160;</a></span>~Model_impl()</h2>
+<a id="a779d822f09147086e8d57bae8fae39b8" name="a779d822f09147086e8d57bae8fae39b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779d822f09147086e8d57bae8fae39b8">&#9670;&#160;</a></span>~Model_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +264,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Model_impl::~Model_impl </td>
+          <td class="memname">virtual Model_impl::~Model_impl </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -343,8 +340,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a503cdf8474d5d8344163f58104bbb917" name="a503cdf8474d5d8344163f58104bbb917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a503cdf8474d5d8344163f58104bbb917">&#9670;&#160;</a></span>add() <span class="overload">[2/3]</span></h2>
+<a id="a4743f08aae62a54836b51fde62c883a6" name="a4743f08aae62a54836b51fde62c883a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4743f08aae62a54836b51fde62c883a6">&#9670;&#160;</a></span>add() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,8 +367,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model__impl_a503cdf8474d5d8344163f58104bbb917_cgraph.png" border="0" usemap="#aclass_model__impl_a503cdf8474d5d8344163f58104bbb917_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_a503cdf8474d5d8344163f58104bbb917_cgraph" id="aclass_model__impl_a503cdf8474d5d8344163f58104bbb917_cgraph">
+<div class="center"><img src="class_model__impl_a4743f08aae62a54836b51fde62c883a6_cgraph.png" border="0" usemap="#aclass_model__impl_a4743f08aae62a54836b51fde62c883a6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model__impl_a4743f08aae62a54836b51fde62c883a6_cgraph" id="aclass_model__impl_a4743f08aae62a54836b51fde62c883a6_cgraph">
 <area shape="rect" title="Adiciona modelo." alt="" coords="5,29,122,56"/>
 <area shape="rect" href="class_model__impl.html#a2bf2a0e9b454c55aa5dcb5aa4698697b" title=" " alt="" coords="170,29,300,56"/>
 <area shape="poly" title=" " alt="" coords="122,40,157,42,152,43,122,45"/>
@@ -412,49 +409,35 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba_icgraph.png" border="0" usemap="#aclass_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba_icgraph" loading="lazy" alt=""/></div>
 <map name="aclass_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba_icgraph" id="aclass_model__impl_a9c9ab275a8fb201d8de579ff95c6a4ba_icgraph">
-<area shape="rect" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="554,249,671,276"/>
-<area shape="rect" href="class_model.html#accd28300871325fce68d551cebf27220" title="Cria uma instância concreta do Model_impl." alt="" coords="347,56,482,83"/>
-<area shape="poly" title=" " alt="" coords="599,234,585,203,564,166,538,128,505,97,483,85,483,79,508,93,542,125,569,163,589,201,604,236"/>
-<area shape="rect" href="class_model__impl.html#a4d9e34e50ba9d2d1332cf8dfb0eb5a90" title="Cria e adiciona um Sistema ao Modelo." alt="" coords="326,107,503,133"/>
-<area shape="poly" title=" " alt="" coords="592,236,555,191,532,168,505,148,483,137,482,131,508,143,535,164,559,188,597,237"/>
-<area shape="rect" href="classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do Model_impl." alt="" coords="323,157,506,184"/>
-<area shape="poly" title=" " alt="" coords="578,240,545,219,505,198,475,187,475,182,507,194,547,215,584,240"/>
-<area shape="rect" href="classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="337,208,492,251"/>
-<area shape="poly" title=" " alt="" coords="537,251,493,245,492,240,542,250"/>
-<area shape="rect" href="classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="337,275,492,317"/>
-<area shape="poly" title=" " alt="" coords="537,276,493,285,492,280,542,274"/>
-<area shape="rect" href="classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do Model_impl." alt="" coords="337,341,492,384"/>
-<area shape="poly" title=" " alt="" coords="582,284,508,332,481,343,479,338,505,327,578,286"/>
-<area shape="rect" href="classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="337,408,492,451"/>
-<area shape="poly" title=" " alt="" coords="598,288,562,345,537,373,508,398,488,410,486,405,505,394,533,369,557,341,594,291"/>
-<area shape="rect" href="classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="337,475,492,517"/>
-<area shape="poly" title=" " alt="" coords="605,289,593,330,573,376,545,423,508,465,491,477,489,472,505,461,540,420,568,374,588,328,602,293"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="111,5,266,32"/>
-<area shape="poly" title=" " alt="" coords="335,53,252,35,251,30,339,51"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="103,56,275,83"/>
-<area shape="poly" title=" " alt="" coords="329,71,276,72,274,67,334,68"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68" title="Teste funcional para o crescimento logístico." alt="" coords="110,107,268,133"/>
-<area shape="poly" title=" " alt="" coords="335,88,253,108,250,104,339,85"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="123,39,104,47,57,62,53,59,102,41,127,35"/>
-<area shape="poly" title=" " alt="" coords="85,71,57,71,53,67,89,67"/>
-<area shape="poly" title=" " alt="" coords="123,103,102,97,56,80,54,76,104,92,127,100"/>
-<area shape="rect" href="classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="120,308,258,351"/>
-<area shape="poly" title=" " alt="" coords="332,192,324,198,289,224,256,253,208,309,204,306,252,250,285,220,322,194,336,189"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,316,55,343"/>
-<area shape="poly" title=" " alt="" coords="102,331,56,332,54,327,106,327"/>
-<area shape="poly" title=" " alt="" coords="335,258,324,265,232,310,230,305,322,260,340,255"/>
-<area shape="poly" title=" " alt="" coords="319,311,259,322,258,317,324,309"/>
-<area shape="poly" title=" " alt="" coords="319,350,259,342,258,337,324,348"/>
-<area shape="poly" title=" " alt="" coords="335,402,322,398,231,354,231,349,324,394,340,402"/>
-<area shape="poly" title=" " alt="" coords="328,467,322,465,286,438,254,408,206,354,208,349,257,404,289,434,324,460,333,468"/>
+<area shape="rect" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="520,164,637,191"/>
+<area shape="rect" href="classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do Model_impl." alt="" coords="289,5,472,32"/>
+<area shape="poly" title=" " alt="" coords="560,150,524,98,500,70,471,46,450,35,450,30,474,42,503,66,529,94,566,151"/>
+<area shape="rect" href="classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="303,56,458,99"/>
+<area shape="poly" title=" " alt="" coords="543,155,471,113,446,102,446,96,474,108,549,155"/>
+<area shape="rect" href="classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="303,123,458,165"/>
+<area shape="poly" title=" " alt="" coords="503,165,459,160,458,154,508,165"/>
+<area shape="rect" href="classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do Model_impl." alt="" coords="303,189,458,232"/>
+<area shape="poly" title=" " alt="" coords="503,190,459,200,458,195,508,189"/>
+<area shape="rect" href="classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="303,256,458,299"/>
+<area shape="poly" title=" " alt="" coords="548,199,474,246,447,258,445,253,471,242,543,201"/>
+<area shape="rect" href="classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="303,323,458,365"/>
+<area shape="poly" title=" " alt="" coords="565,203,528,259,503,288,474,313,454,325,452,320,471,309,499,284,523,256,560,206"/>
+<area shape="rect" href="classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,156,241,199"/>
+<area shape="poly" title=" " alt="" coords="296,40,290,46,258,71,230,101,188,157,184,154,226,98,254,67,288,42,301,37"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,164,55,191"/>
+<area shape="poly" title=" " alt="" coords="85,179,56,180,53,175,89,176"/>
+<area shape="poly" title=" " alt="" coords="299,106,290,113,209,158,206,153,288,108,304,104"/>
+<area shape="poly" title=" " alt="" coords="285,160,242,169,241,164,290,158"/>
+<area shape="poly" title=" " alt="" coords="285,197,242,191,241,186,290,195"/>
+<area shape="poly" title=" " alt="" coords="299,250,288,246,207,202,208,196,290,242,304,250"/>
+<area shape="poly" title=" " alt="" coords="293,314,287,313,255,286,227,256,186,202,188,197,231,253,259,282,291,309,298,315"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6d13156fdf794d1bdbf99050c07ab5dc" name="a6d13156fdf794d1bdbf99050c07ab5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d13156fdf794d1bdbf99050c07ab5dc">&#9670;&#160;</a></span>beginFlows()</h2>
+<a id="a43c7c6a347d1e86c45c7d539b01aa896" name="a43c7c6a347d1e86c45c7d539b01aa896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c7c6a347d1e86c45c7d539b01aa896">&#9670;&#160;</a></span>beginFlows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +446,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">Model_impl::flowIterator</a> Model_impl::beginFlows </td>
+          <td class="memname"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">flowIterator</a> Model_impl::beginFlows </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -475,17 +458,15 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implementação dos Iteradores de <a class="el" href="class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas.">Flow</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterador apontando para o primeiro elemento do vetor de fluxos. </dd></dl>
 
 <p>Implements <a class="el" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">Model</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model__impl_a6d13156fdf794d1bdbf99050c07ab5dc_icgraph.png" border="0" usemap="#aclass_model__impl_a6d13156fdf794d1bdbf99050c07ab5dc_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_a6d13156fdf794d1bdbf99050c07ab5dc_icgraph" id="aclass_model__impl_a6d13156fdf794d1bdbf99050c07ab5dc_icgraph">
-<area shape="rect" title="Implementação dos Iteradores de Flow." alt="" coords="492,13,654,40"/>
+<div class="center"><img src="class_model__impl_a43c7c6a347d1e86c45c7d539b01aa896_icgraph.png" border="0" usemap="#aclass_model__impl_a43c7c6a347d1e86c45c7d539b01aa896_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model__impl_a43c7c6a347d1e86c45c7d539b01aa896_icgraph" id="aclass_model__impl_a43c7c6a347d1e86c45c7d539b01aa896_icgraph">
+<area shape="rect" title=" " alt="" coords="492,13,654,40"/>
 <area shape="rect" href="classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="289,5,444,48"/>
 <area shape="poly" title=" " alt="" coords="474,27,444,29,444,24,479,27"/>
 <area shape="rect" href="classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,5,241,48"/>
@@ -497,8 +478,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a76e2fcf3b2ba8a45d18b4c2fec351082" name="a76e2fcf3b2ba8a45d18b4c2fec351082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76e2fcf3b2ba8a45d18b4c2fec351082">&#9670;&#160;</a></span>beginSystems()</h2>
+<a id="a1484cc48179d33dcb673b5d8f6351c2d" name="a1484cc48179d33dcb673b5d8f6351c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1484cc48179d33dcb673b5d8f6351c2d">&#9670;&#160;</a></span>beginSystems()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,7 +488,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">Model_impl::systemIterator</a> Model_impl::beginSystems </td>
+          <td class="memname"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">systemIterator</a> Model_impl::beginSystems </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -519,17 +500,15 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implementação dos Iteradores de <a class="el" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas.">System</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterador apontando para o primeiro elemento do vetor de sistemas. </dd></dl>
 
 <p>Implements <a class="el" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">Model</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model__impl_a76e2fcf3b2ba8a45d18b4c2fec351082_icgraph.png" border="0" usemap="#aclass_model__impl_a76e2fcf3b2ba8a45d18b4c2fec351082_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_a76e2fcf3b2ba8a45d18b4c2fec351082_icgraph" id="aclass_model__impl_a76e2fcf3b2ba8a45d18b4c2fec351082_icgraph">
-<area shape="rect" title="Implementação dos Iteradores de System." alt="" coords="492,80,671,107"/>
+<div class="center"><img src="class_model__impl_a1484cc48179d33dcb673b5d8f6351c2d_icgraph.png" border="0" usemap="#aclass_model__impl_a1484cc48179d33dcb673b5d8f6351c2d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model__impl_a1484cc48179d33dcb673b5d8f6351c2d_icgraph" id="aclass_model__impl_a1484cc48179d33dcb673b5d8f6351c2d_icgraph">
+<area shape="rect" title=" " alt="" coords="492,80,671,107"/>
 <area shape="rect" href="classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="289,5,444,48"/>
 <area shape="poly" title=" " alt="" coords="518,75,438,51,438,46,524,75"/>
 <area shape="rect" href="classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="289,72,444,115"/>
@@ -573,21 +552,11 @@ Here is the caller graph for this function:</div>
 <p>Cria e adiciona um Sistema ao Modelo. </p>
 
 <p>Implements <a class="el" href="class_model.html#aa21004cfb0ec573a372451d12374cd09">Model</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_model__impl_a4d9e34e50ba9d2d1332cf8dfb0eb5a90_cgraph.png" border="0" usemap="#aclass_model__impl_a4d9e34e50ba9d2d1332cf8dfb0eb5a90_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_a4d9e34e50ba9d2d1332cf8dfb0eb5a90_cgraph" id="aclass_model__impl_a4d9e34e50ba9d2d1332cf8dfb0eb5a90_cgraph">
-<area shape="rect" title="Cria e adiciona um Sistema ao Modelo." alt="" coords="5,5,182,32"/>
-<area shape="rect" href="class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="230,5,346,32"/>
-<area shape="poly" title=" " alt="" coords="182,16,217,19,212,19,182,21"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="ad827f91270a836e6bdc9878a53e11cbf" name="ad827f91270a836e6bdc9878a53e11cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad827f91270a836e6bdc9878a53e11cbf">&#9670;&#160;</a></span>endFlows()</h2>
+<a id="a7d86d17f5a79ddba980cb40570fa6abb" name="a7d86d17f5a79ddba980cb40570fa6abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d86d17f5a79ddba980cb40570fa6abb">&#9670;&#160;</a></span>endFlows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,7 +565,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">Model_impl::flowIterator</a> Model_impl::endFlows </td>
+          <td class="memname"><a class="el" href="#aaaf99083adbb5e2c1ef05f1580f4bea1">flowIterator</a> Model_impl::endFlows </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -614,8 +583,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model__impl_ad827f91270a836e6bdc9878a53e11cbf_icgraph.png" border="0" usemap="#aclass_model__impl_ad827f91270a836e6bdc9878a53e11cbf_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_ad827f91270a836e6bdc9878a53e11cbf_icgraph" id="aclass_model__impl_ad827f91270a836e6bdc9878a53e11cbf_icgraph">
+<div class="center"><img src="class_model__impl_a7d86d17f5a79ddba980cb40570fa6abb_icgraph.png" border="0" usemap="#aclass_model__impl_a7d86d17f5a79ddba980cb40570fa6abb_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model__impl_a7d86d17f5a79ddba980cb40570fa6abb_icgraph" id="aclass_model__impl_a7d86d17f5a79ddba980cb40570fa6abb_icgraph">
 <area shape="rect" title=" " alt="" coords="492,13,644,40"/>
 <area shape="rect" href="classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="289,5,444,48"/>
 <area shape="poly" title=" " alt="" coords="474,27,445,29,445,24,480,27"/>
@@ -628,8 +597,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a7a29bfa029470ce0063c3f560f737a70" name="a7a29bfa029470ce0063c3f560f737a70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a29bfa029470ce0063c3f560f737a70">&#9670;&#160;</a></span>endSystems()</h2>
+<a id="a002b185410a2468b03df530b46adcf5c" name="a002b185410a2468b03df530b46adcf5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002b185410a2468b03df530b46adcf5c">&#9670;&#160;</a></span>endSystems()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -638,7 +607,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">Model_impl::systemIterator</a> Model_impl::endSystems </td>
+          <td class="memname"><a class="el" href="#a461e78ff5f3cb5685fe5cabd5cccfcd8">systemIterator</a> Model_impl::endSystems </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -656,8 +625,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model__impl_a7a29bfa029470ce0063c3f560f737a70_icgraph.png" border="0" usemap="#aclass_model__impl_a7a29bfa029470ce0063c3f560f737a70_icgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_a7a29bfa029470ce0063c3f560f737a70_icgraph" id="aclass_model__impl_a7a29bfa029470ce0063c3f560f737a70_icgraph">
+<div class="center"><img src="class_model__impl_a002b185410a2468b03df530b46adcf5c_icgraph.png" border="0" usemap="#aclass_model__impl_a002b185410a2468b03df530b46adcf5c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_model__impl_a002b185410a2468b03df530b46adcf5c_icgraph" id="aclass_model__impl_a002b185410a2468b03df530b46adcf5c_icgraph">
 <area shape="rect" title=" " alt="" coords="492,80,661,107"/>
 <area shape="rect" href="classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="289,5,444,48"/>
 <area shape="poly" title=" " alt="" coords="514,75,436,51,436,46,520,75"/>
@@ -749,18 +718,6 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484">Model</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_model__impl_a56f41629f62e1829bd28d85c9de23b51_cgraph.png" border="0" usemap="#aclass_model__impl_a56f41629f62e1829bd28d85c9de23b51_cgraph" loading="lazy" alt=""/></div>
-<map name="aclass_model__impl_a56f41629f62e1829bd28d85c9de23b51_cgraph" id="aclass_model__impl_a56f41629f62e1829bd28d85c9de23b51_cgraph">
-<area shape="rect" title="Executa a simulação." alt="" coords="5,31,119,57"/>
-<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="167,5,291,32"/>
-<area shape="poly" title=" " alt="" coords="118,33,154,30,149,31,120,38"/>
-<area shape="rect" href="class_system.html#a7421d2e6970a0c4169a2febe254f2060" title="Define o valor numérico do sistema." alt="" coords="167,56,291,83"/>
-<area shape="poly" title=" " alt="" coords="119,50,154,57,149,58,119,55"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__impl_a56f41629f62e1829bd28d85c9de23b51_icgraph.png" border="0" usemap="#aclass_model__impl_a56f41629f62e1829bd28d85c9de23b51_icgraph" loading="lazy" alt=""/></div>
@@ -849,8 +806,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9d319efe490bbf4a97f56878ceda0dc4" name="a9d319efe490bbf4a97f56878ceda0dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d319efe490bbf4a97f56878ceda0dc4">&#9670;&#160;</a></span>m_models</h2>
+<a id="a847b3102dfaa2eb300474617cc7285f9" name="a847b3102dfaa2eb300474617cc7285f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847b3102dfaa2eb300474617cc7285f9">&#9670;&#160;</a></span>m_models</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -859,7 +816,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_model.html">Model</a> * &gt; Model_impl::m_models</td>
+          <td class="memname">std::vector&lt;<a class="el" href="class_model.html">Model</a>*&gt; Model_impl::m_models</td>
         </tr>
       </table>
   </td>
@@ -919,9 +876,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/lib/<a class="el" href="model__impl_8hpp_source.html">model_impl.hpp</a></li>
-<li>src/lib/<a class="el" href="model__impl_8cpp.html">model_impl.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

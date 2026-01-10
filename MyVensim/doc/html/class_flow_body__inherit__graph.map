@@ -1,0 +1,5 @@
+<map id="FlowBody" name="FlowBody">
+<area shape="rect" id="Node000001" title="Classe concreta que representa o corpo de um Flow." alt="" coords="5,251,103,469"/>
+<area shape="rect" id="Node000002" href="$class_body.html" title=" " alt="" coords="11,5,98,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,215,57,251,52,251,54,221"/>
+</map>

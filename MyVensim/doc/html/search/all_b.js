@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['run_1',['run',['../class_model.html#a76f5202c3ccdf6092c77a2a4ae6f3484',1,'Model::run()'],['../class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51',1,'Model_impl::run()']]],
-  ['run_5funit_5ftests_5fflow_2',['run_unit_tests_Flow',['../classunit___flow.html#ad9a52828097689f9011d9b4840d9e715',1,'unit_Flow']]],
-  ['run_5funit_5ftests_5fmodel_3',['run_unit_tests_Model',['../classunit___model.html#aa5cda57376f740bb9a9ca67730440157',1,'unit_Model']]],
-  ['run_5funit_5ftests_5fsystem_4',['run_unit_tests_System',['../classunit___system.html#a521c0a0a4b3dca5cf11a4335d763dbb4',1,'unit_System']]]
+  ['o_20projeto_0',['🚀 Sobre o Projeto',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['operator_3d_1',['operator=',['../class_flow__impl.html#ab4e49eabca208809487c2a719eec51a3',1,'Flow_impl::operator=()'],['../class_handle.html#a52e146e2a1427c8e7d3a692e9378185a',1,'Handle::operator=()'],['../class_body.html#a09b11f8f6f2273daafb8c49ba92da170',1,'Body::operator=()'],['../class_model__impl.html#a73451014262e8c3f2306748af3722480',1,'Model_impl::operator=()'],['../class_system__impl.html#adaf4af6dea1a1f1dbb34e3680e290a25',1,'System_impl::operator=()']]]
 ];

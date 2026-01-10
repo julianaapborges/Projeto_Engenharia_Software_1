@@ -1,7 +1,5 @@
 <map id="src/lib/model_impl.hpp" name="src/lib/model_impl.hpp">
-<area shape="rect" id="Node000001" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="95,5,246,32"/>
-<area shape="rect" id="Node000002" href="$model__impl_8cpp.html" title=" " alt="" coords="5,80,157,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,42,98,82,95,77,140,43"/>
-<area shape="rect" id="Node000003" href="$unit__model_8cpp.html" title=" " alt="" coords="181,80,341,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,39,248,80,243,80,197,44"/>
+<area shape="rect" id="Node000001" title="Declaração da classe Model_impl (Motor da simulação)." alt="" coords="10,5,161,32"/>
+<area shape="rect" id="Node000002" href="$unit__model_8cpp.html" title=" " alt="" coords="5,80,166,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,46,88,81,83,79,84,50"/>
 </map>

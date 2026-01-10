@@ -1,0 +1,11 @@
+<map id="ModelHandle" name="ModelHandle">
+<area shape="rect" id="Node000001" title="Classe que representa o handle para ModelBody." alt="" coords="21,960,137,1243"/>
+<area shape="rect" id="Node000002" href="$class_model.html" title="Interface que representa o Motor de Simulação." alt="" coords="5,628,120,911"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,923,75,960,69,960,70,928"/>
+<area shape="rect" id="Node000003" href="$class_handle.html" title=" " alt="" coords="144,713,285,825"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,837,139,961,134,959,185,841"/>
+<area shape="rect" id="Node000004" href="$class_model_body.html" title="Classe concreta que representa o corpo de um Model." alt="" coords="157,252,272,556"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,553,217,697,212,696,214,559"/>
+<area shape="rect" id="Node000005" href="$class_body.html" title=" " alt="" coords="171,5,258,203"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="215,215,217,253,212,252,215,220"/>
+</map>

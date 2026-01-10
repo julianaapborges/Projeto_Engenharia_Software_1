@@ -1,0 +1,29 @@
+<map id="src/lib/handleBody.hpp" name="src/lib/handleBody.hpp">
+<area shape="rect" id="Node000001" title="Definição das classes Handle e Body para o padrão de projeto ponte (bridge)." alt="" coords="324,5,476,32"/>
+<area shape="rect" id="Node000002" href="$flow__body_8hpp.html" title="Declaração da classe FlowBody que implementa o padrão Handle&#45;Body para Flow." alt="" coords="126,80,269,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,39,234,82,231,77,352,36"/>
+<area shape="rect" id="Node000006" href="$model__body_8hpp.html" title="Declaração da classe ModelBody que implementa o padrão Handle&#45;Body para Body." alt="" coords="496,229,650,256"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="437,37,467,56,495,78,528,112,552,154,566,194,574,230,569,228,561,195,547,156,524,116,491,82,464,60,438,43"/>
+<area shape="rect" id="Node000009" href="$system__body_8hpp.html" title="Declaração da classe concreta System_body." alt="" coords="319,80,481,107"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="401,45,402,81,397,79,399,50"/>
+<area shape="rect" id="Node000003" href="$flow__handle_8hpp.html" title="Declaração da classe FlowHandle que implementa o padrão Handle&#45;Body para Flow." alt="" coords="5,155,160,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,117,104,156,101,152,166,113"/>
+<area shape="rect" id="Node000004" href="$flow__impl_8cpp.html" title=" " alt="" coords="91,229,231,256"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="192,120,167,230,162,228,189,124"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,190,150,228,145,230,107,195"/>
+<area shape="rect" id="Node000005" href="$src_2main_8cpp.html" title=" " alt="" coords="404,379,500,405"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="74,194,72,227,75,241,81,255,112,290,150,319,193,341,239,358,328,379,406,390,401,390,328,384,237,364,191,346,148,323,109,294,76,257,69,243,67,227,73,199"/>
+<area shape="rect" id="Node000007" href="$model__handle_8hpp.html" title="Definição da classe ModelHandle." alt="" coords="489,304,654,331"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="574,270,574,305,570,302,571,274"/>
+<area shape="rect" id="Node000008" href="$model__impl_8cpp.html" title=" " alt="" coords="570,379,721,405"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="622,261,649,279,669,303,674,323,672,344,655,380,652,376,666,343,669,324,664,305,645,282,621,266"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="541,338,474,381,472,376,536,340"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="597,339,635,379,630,377,594,344"/>
+<area shape="rect" id="Node000010" href="$system__handle_8hpp.html" title="Declaração da classe SystemHandle que implementa o padrão Handle&#45;Body para System." alt="" coords="364,155,537,181"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="418,117,444,155,439,154,417,122"/>
+<area shape="rect" id="Node000011" href="$system__impl_8cpp.html" title=" " alt="" coords="255,229,414,256"/>
+<area shape="poly" id="edge16_Node000009_Node000011" title=" " alt="" coords="378,117,354,156,342,195,337,230,333,228,337,194,349,154,374,120"/>
+<area shape="poly" id="edge15_Node000010_Node000005" title=" " alt="" coords="453,195,454,379,449,377,448,198"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="485,187,554,229,549,229,485,192"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="420,189,356,231,354,226,415,191"/>
+</map>

@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['logisticalfunctionaltest_0',['logisticalFunctionalTest',['../funcional__tests_8cpp.html#a873703af6cfeefd5cfd67aef5493ea68',1,'logisticalFunctionalTest():&#160;funcional_tests.cpp'],['../funcional__tests_8hpp.html#a873703af6cfeefd5cfd67aef5493ea68',1,'logisticalFunctionalTest():&#160;funcional_tests.cpp']]]
+  ['handle_0',['Handle',['../class_handle.html',1,'Handle&lt; T &gt;'],['../class_handle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../class_handle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]],
+  ['handle_3c_20flowbody_20_3e_1',['Handle&lt; FlowBody &gt;',['../class_handle.html',1,'']]],
+  ['handle_3c_20modelbody_20_3e_2',['Handle&lt; ModelBody &gt;',['../class_handle.html',1,'']]],
+  ['handle_3c_20systembody_20_3e_3',['Handle&lt; SystemBody &gt;',['../class_handle.html',1,'']]],
+  ['handlebody_2ehpp_4',['handleBody.hpp',['../handle_body_8hpp.html',1,'']]]
 ];

@@ -1,0 +1,19 @@
+<map id="src/lib/model_body.hpp" name="src/lib/model_body.hpp">
+<area shape="rect" id="Node000001" title="Declaração da classe ModelBody que implementa o padrão Handle&#45;Body para Body." alt="" coords="162,5,316,32"/>
+<area shape="rect" id="Node000002" href="$handle_body_8hpp.html" title="Definição das classes Handle e Body para o padrão de projeto ponte (bridge)." alt="" coords="5,229,119,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,35,87,55,56,67,37,82,29,97,25,114,26,149,36,185,50,215,44,216,31,186,21,150,19,113,24,95,33,78,53,63,85,50,165,31"/>
+<area shape="rect" id="Node000003" href="$system_8hpp.html" title="Interface para a classe System." alt="" coords="232,155,321,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,30,273,52,289,79,292,111,288,141,283,138,287,111,283,81,269,55,253,35"/>
+<area shape="rect" id="Node000005" href="$flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="205,80,274,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="241,30,242,65,237,63,238,35"/>
+<area shape="rect" id="Node000006" href="$system__handle_8hpp.html" title="Declaração da classe SystemHandle que implementa o padrão Handle&#45;Body para System." alt="" coords="47,80,181,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="216,34,150,74,147,70,219,31"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="349,80,407,107"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="264,30,343,72,338,73,263,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="241,229,312,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="279,180,279,215,274,212,275,184"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="143,105,237,147,232,149,142,110"/>
+<area shape="rect" id="Node000007" href="$system__body_8hpp.html" title="Declaração da classe concreta System_body." alt="" coords="50,155,173,181"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="115,105,115,140,110,138,112,110"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="105,181,81,218,77,215,100,183"/>
+</map>

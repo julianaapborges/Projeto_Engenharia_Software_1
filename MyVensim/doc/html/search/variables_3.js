@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unit_5fflow_5fdestructor_5fcount_0',['unit_flow_destructor_count',['../unit__flow_8cpp.html#abfdc1c88a787715964675aabc718c83f',1,'unit_flow.cpp']]],
-  ['unit_5fsystem_5fdestructor_5fcount_1',['unit_system_destructor_count',['../unit__system_8cpp.html#a51dbcadd56231a0014c569f02d4b54bc',1,'unit_system.cpp']]]
+  ['pimpl_5f_0',['pImpl_',['../class_handle.html#a16021e57596d7369dfa1a9fadc35c06f',1,'Handle']]]
 ];

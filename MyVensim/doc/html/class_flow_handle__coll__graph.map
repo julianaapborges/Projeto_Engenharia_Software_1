@@ -1,0 +1,13 @@
+<map id="FlowHandle" name="FlowHandle">
+<area shape="rect" id="Node000001" title="Classe que representa o handle para FlowBody." alt="" coords="12,791,121,1009"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,565,96,741"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,753,62,791,57,791,57,759"/>
+<area shape="rect" id="Node000003" href="$class_handle.html" title=" " alt="" coords="120,597,254,709"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,720,122,792,117,790,152,725"/>
+<area shape="rect" id="Node000004" href="$class_flow_body.html" title="Classe concreta que representa o corpo de um Flow." alt="" coords="138,296,236,493"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,491,189,581,184,580,186,496"/>
+<area shape="rect" id="Node000005" href="$class_body.html" title=" " alt="" coords="89,5,176,203"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="154,214,171,296,166,296,153,220"/>
+<area shape="rect" id="Node000006" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="200,48,285,160"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="233,157,212,280,206,279,232,162"/>
+</map>

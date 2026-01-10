@@ -1,0 +1,5 @@
+<map id="src/lib/system_body.hpp" name="src/lib/system_body.hpp">
+<area shape="rect" id="Node000001" title="Declaração da classe concreta System_body." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="Node000002" href="$handle_body_8hpp.html" title="Definição das classes Handle e Body para o padrão de projeto ponte (bridge)." alt="" coords="30,80,143,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,31,89,65,84,64,85,35"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="src/lib/flow_handle.hpp" name="src/lib/flow_handle.hpp">
+<area shape="rect" id="Node000001" title="Declaração da classe FlowHandle que implementa o padrão Handle&#45;Body para Flow." alt="" coords="18,5,172,32"/>
+<area shape="rect" id="Node000002" href="$flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="5,80,75,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,35,61,69,56,66,86,30"/>
+<area shape="rect" id="Node000003" href="$flow__body_8hpp.html" title="Declaração da classe FlowBody que implementa o padrão Handle&#45;Body para Flow." alt="" coords="98,80,203,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,30,134,67,129,68,104,35"/>
+<area shape="rect" id="Node000004" href="$handle_body_8hpp.html" title="Definição das classes Handle e Body para o padrão de projeto ponte (bridge)." alt="" coords="31,155,145,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="142,105,111,145,107,141,138,109"/>
+<area shape="rect" id="Node000005" href="$system_8hpp.html" title="Interface para a classe System." alt="" coords="169,155,258,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="162,105,195,143,190,143,161,110"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="178,229,249,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="215,180,216,215,211,212,211,184"/>
+</map>

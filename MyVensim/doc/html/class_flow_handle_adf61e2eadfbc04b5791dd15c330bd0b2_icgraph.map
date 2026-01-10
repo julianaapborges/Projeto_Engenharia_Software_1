@@ -1,0 +1,5 @@
+<map id="FlowHandle::FlowHandle" name="FlowHandle::FlowHandle">
+<area shape="rect" id="Node000001" title="Construtor que inicializa o FlowHandle." alt="" coords="221,5,388,32"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html#a0f82d8ef772931c44f4eb352b70fc02d" title="Construtor de cópia que incrementa o contador de handles." alt="" coords="5,5,173,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,19,173,21,173,16,208,19"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="src/lib/system_handle.hpp" name="src/lib/system_handle.hpp">
+<area shape="rect" id="Node000001" title="Declaração da classe SystemHandle que implementa o padrão Handle&#45;Body para System." alt="" coords="29,5,202,32"/>
+<area shape="rect" id="Node000002" href="$system_8hpp.html" title="Interface para a classe System." alt="" coords="5,80,95,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,35,73,70,69,67,105,30"/>
+<area shape="rect" id="Node000004" href="$system__body_8hpp.html" title="Declaração da classe concreta System_body." alt="" coords="119,80,242,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,30,162,68,157,69,126,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="14,155,86,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,105,53,140,47,138,48,109"/>
+<area shape="rect" id="Node000005" href="$handle_body_8hpp.html" title="Definição das classes Handle e Body para o padrão de projeto ponte (bridge)." alt="" coords="124,155,237,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="182,105,183,140,178,138,179,109"/>
+</map>

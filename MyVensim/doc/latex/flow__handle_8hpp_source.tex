@@ -1,0 +1,39 @@
+\doxysection{flow\+\_\+handle.\+hpp}
+\hypertarget{flow__handle_8hpp_source}{}\label{flow__handle_8hpp_source}\index{src/lib/flow\_handle.hpp@{src/lib/flow\_handle.hpp}}
+\mbox{\hyperlink{flow__handle_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ FLOW\_HANDLE\_HPP}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ FLOW\_HANDLE\_HPP}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{flow_8hpp}{flow.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{flow__body_8hpp}{flow\_body.hpp}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{flow__handle_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{flow__handle_8hpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2}{FlowHandle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_flow}{Flow}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}}<FlowBody>\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2}{FlowHandle}}()\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{flow__handle_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}++;}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_flow_handle_a0f82d8ef772931c44f4eb352b70fc02d}{FlowHandle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2}{FlowHandle}}\&\ hd)\ :\ \mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}}<\mbox{\hyperlink{class_flow_body}{FlowBody}}>(hd)\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{flow__handle_8hpp_aac78cb29dfe4a565da68073b0beebf2f}{numHandleCreated}}++;}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_flow_handle_acec255198c28118981e7bb62194fe9e2}{\string~FlowHandle}}()\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{flow__handle_8hpp_a01128a06118f949a0b24a3d080f515fd}{numHandleDeleted}}++;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flow_handle_a24bd92b9d17cc644b9a6ef890592ef70}{setSource}}(\mbox{\hyperlink{class_system}{System}}*\ s)\textcolor{keyword}{\ override\ }\{\ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setSource(s);\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flow_handle_a01b989d7d723d221c4da641fa3266f44}{setTarget}}(\mbox{\hyperlink{class_system}{System}}*\ t)\textcolor{keyword}{\ override\ }\{\ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>setTarget(t);\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}*\ \mbox{\hyperlink{class_flow_handle_a9ced76b3e7b67f47c8651dd4e8e6ff17}{getSource}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getSource();\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_system}{System}}*\ \mbox{\hyperlink{class_flow_handle_a660808cc3bcc0ecc404e5e43ee2df5d9}{getTarget}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>getTarget();\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_handle_a1b506d6662f8f70055fa97426f29b440}{equation}}()\ =\ 0;\ }
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+<map id="SystemHandle::SystemHandle" name="SystemHandle::SystemHandle">
+<area shape="rect" id="Node000001" title="Construtor que inicializa o valor do SystemHandle." alt="" coords="255,5,456,32"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html#af5f1a33ea1a32d15a9404b5b063be908" title="Construtor de cópia que incrementa o contador de handles." alt="" coords="5,5,207,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,19,207,21,207,16,242,19"/>
+</map>

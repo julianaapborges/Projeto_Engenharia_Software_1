@@ -1,0 +1,121 @@
+\doxysection{Handle\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_handle}{}\label{class_handle}\index{Handle$<$ T $>$@{Handle$<$ T $>$}}
+
+
+As classes \doxylink{class_handle}{Handle} e \doxylink{class_body}{Body} implementam o padrão de projeto "{}bridge"{} (também conhecido como "{}handle/body"{}).  
+
+
+
+
+{\ttfamily \#include $<$handle\+Body.\+hpp$>$}
+
+
+
+Collaboration diagram for Handle\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_handle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\item 
+virtual \mbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle_af304e7014a2e600e235140d246783f85}{Handle}} (const \mbox{\hyperlink{class_handle}{Handle}} \&hd)
+\item 
+\mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$ \& \mbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (const \mbox{\hyperlink{class_handle}{Handle}} \&hd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em referência para a implementação \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Handle$<$ T $>$}
+As classes \doxylink{class_handle}{Handle} e \doxylink{class_body}{Body} implementam o padrão de projeto "{}bridge"{} (também conhecido como "{}handle/body"{}). 
+
+\label{doc-constructors}
+\Hypertarget{class_handle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_handle_a6a72028918adf79c0ff8d9996e5e4107}\index{Handle$<$ T $>$@{Handle$<$ T $>$}!Handle@{Handle}}
+\index{Handle@{Handle}!Handle$<$ T $>$@{Handle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_handle_a6a72028918adf79c0ff8d9996e5e4107} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$\+::\+Handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_handle_a6a72028918adf79c0ff8d9996e5e4107_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_handle_addd59fdf43baa517a06d44e1125b5ab1}\index{Handle$<$ T $>$@{Handle$<$ T $>$}!````~Handle@{\texorpdfstring{$\sim$}{\string~}Handle}}
+\index{````~Handle@{\texorpdfstring{$\sim$}{\string~}Handle}!Handle$<$ T $>$@{Handle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Handle()}{\string~Handle()}}
+{\footnotesize\ttfamily \label{class_handle_addd59fdf43baa517a06d44e1125b5ab1} 
+template$<$class T$>$ \\
+virtual \mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_handle}{Handle}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destrutor. 
+
+\Hypertarget{class_handle_af304e7014a2e600e235140d246783f85}\index{Handle$<$ T $>$@{Handle$<$ T $>$}!Handle@{Handle}}
+\index{Handle@{Handle}!Handle$<$ T $>$@{Handle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_handle_af304e7014a2e600e235140d246783f85} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$\+::\+Handle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$ \&}]{hd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_handle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_handle_a52e146e2a1427c8e7d3a692e9378185a}\index{Handle$<$ T $>$@{Handle$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Handle$<$ T $>$@{Handle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_handle_a52e146e2a1427c8e7d3a692e9378185a} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$ \& \mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$ \&}]{hd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_handle_a52e146e2a1427c8e7d3a692e9378185a_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_handle_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_handle_a16021e57596d7369dfa1a9fadc35c06f}\index{Handle$<$ T $>$@{Handle$<$ T $>$}!pImpl\_@{pImpl\_}}
+\index{pImpl\_@{pImpl\_}!Handle$<$ T $>$@{Handle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pImpl\_}{pImpl\_}}
+{\footnotesize\ttfamily \label{class_handle_a16021e57596d7369dfa1a9fadc35c06f} 
+template$<$class T$>$ \\
+T\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle}{Handle}}$<$ T $>$\+::p\+Impl\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+referência para a implementação 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{handle_body_8hpp}{handle\+Body.\+hpp}}\end{DoxyCompactItemize}

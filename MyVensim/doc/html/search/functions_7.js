@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
-  ['model_5fimpl_1',['Model_impl',['../class_model__impl.html#ad5c79567398cdeaf871654d7ffbd82f0',1,'Model_impl::Model_impl()'],['../class_model__impl.html#a8bad82fe1fc0a31ca9dbc22464b0c19e',1,'Model_impl::Model_impl(const Model_impl &amp;other)']]]
+  ['handle_0',['Handle',['../class_handle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../class_handle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]]
 ];

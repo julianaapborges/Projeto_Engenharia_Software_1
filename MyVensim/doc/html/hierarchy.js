@@ -1,6 +1,12 @@
 var hierarchy =
 [
+    [ "Body", "class_body.html", [
+      [ "FlowBody", "class_flow_body.html", null ],
+      [ "ModelBody", "class_model_body.html", null ],
+      [ "SystemBody", "class_system_body.html", null ]
+    ] ],
     [ "Flow", "class_flow.html", [
+      [ "FlowHandle", "class_flow_handle.html", null ],
       [ "Flow_impl", "class_flow__impl.html", [
         [ "FlowComplexo", "class_flow_complexo.html", null ],
         [ "FlowDestructorSpy", "class_flow_destructor_spy.html", null ],
@@ -10,10 +16,22 @@ var hierarchy =
         [ "FlowSpy", "class_flow_spy.html", null ]
       ] ]
     ] ],
+    [ "Handle&lt; T &gt;", "class_handle.html", null ],
+    [ "Handle&lt; FlowBody &gt;", "class_handle.html", [
+      [ "FlowHandle", "class_flow_handle.html", null ]
+    ] ],
+    [ "Handle&lt; ModelBody &gt;", "class_handle.html", [
+      [ "ModelHandle", "class_model_handle.html", null ]
+    ] ],
+    [ "Handle&lt; SystemBody &gt;", "class_handle.html", [
+      [ "SystemHandle", "class_system_handle.html", null ]
+    ] ],
     [ "Model", "class_model.html", [
+      [ "ModelHandle", "class_model_handle.html", null ],
       [ "Model_impl", "class_model__impl.html", null ]
     ] ],
     [ "System", "class_system.html", [
+      [ "SystemHandle", "class_system_handle.html", null ],
       [ "System_impl", "class_system__impl.html", [
         [ "SystemDestructorSpy", "class_system_destructor_spy.html", null ],
         [ "SystemSpy", "class_system_spy.html", null ]

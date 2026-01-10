@@ -1,0 +1,277 @@
+\doxysection{Model\+Handle Class Reference}
+\hypertarget{class_model_handle}{}\label{class_model_handle}\index{ModelHandle@{ModelHandle}}
+
+
+Classe que representa o handle para \doxylink{class_model_body}{Model\+Body}.  
+
+
+
+
+{\ttfamily \#include $<$model\+\_\+handle.\+hpp$>$}
+
+
+
+Inheritance diagram for Model\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_model_handle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_model_handle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_handle_a1c203c425e69e245ad1e3f65143fa69b}{Model\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o \doxylink{class_model_handle}{Model\+Handle}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_handle_aa9bfcc45942a655b4589ea2525e1955e}{Model\+Handle}} (const \mbox{\hyperlink{class_model_handle}{Model\+Handle}} \&hd)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia que incrementa o contador de handles. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_model_handle_aa2813029166b0166dc9f20398d7e4bdb}{\texorpdfstring{$\sim$}{\string~}\+Model\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor que atualiza o contador global. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_model_handle_a53da2eb75da9062bf261c5423987724b}{create\+System}} (double value) override
+\begin{DoxyCompactList}\small\item\em Cria um novo \doxylink{class_system}{System} com um valor inicial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_handle_a4db2fc970fdf643e78e15d33d4007c82}{run}} (double start, double final, int increment) override
+\begin{DoxyCompactList}\small\item\em Executa o modelo no intervalo de tempo especificado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \mbox{\hyperlink{class_model_handle_a4bea52e982c6ca64d4a5b62754bd9227}{begin\+Systems}} () override
+\begin{DoxyCompactList}\small\item\em Obtém o iterador para o início dos Systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \mbox{\hyperlink{class_model_handle_a82e3947b39d2082be21a9a33d466da0f}{end\+Systems}} () override
+\begin{DoxyCompactList}\small\item\em Obtém o iterador para o fim dos Systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} \mbox{\hyperlink{class_model_handle_ab0b65368ab557d73fc4250f38c97a36a}{begin\+Flows}} () override
+\begin{DoxyCompactList}\small\item\em Obtém o iterador para o início dos Flows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} \mbox{\hyperlink{class_model_handle_a764484c7acf746145d885d2c297425bc}{end\+Flows}} () override
+\begin{DoxyCompactList}\small\item\em Obtém o iterador para o fim dos Flows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_model}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_model_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual padrão. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+\_\+\+FLOW$>$ }\\\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_model_a7c6092ff27c8cda63f33448964564edc}{create\+Flow}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handle}{Handle$<$ Model\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\item 
+virtual \mbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{Handle}}$<$ \mbox{\hyperlink{class_model_body}{Model\+Body}} $>$ \& \mbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (const \mbox{\hyperlink{class_handle}{Handle}} \&hd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d}{add}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s) override
+\begin{DoxyCompactList}\small\item\em Adiciona um \doxylink{class_system}{System} ao modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_handle_a2933227c778ebac15ec01ba83355b39a}{add}} (\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}f) override
+\begin{DoxyCompactList}\small\item\em Adiciona um \doxylink{class_flow}{Flow} ao modelo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_model}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_model}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_model}{Model}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_model_accd28300871325fce68d551cebf27220}{create\+Model}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handle}{Handle$<$ Model\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_body}{Model\+Body}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em referência para a implementação \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa o handle para \doxylink{class_model_body}{Model\+Body}. 
+
+\label{doc-constructors}
+\Hypertarget{class_model_handle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_model_handle_a1c203c425e69e245ad1e3f65143fa69b}\index{ModelHandle@{ModelHandle}!ModelHandle@{ModelHandle}}
+\index{ModelHandle@{ModelHandle}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{ModelHandle()}{ModelHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_handle_a1c203c425e69e245ad1e3f65143fa69b} 
+Model\+Handle\+::\+Model\+Handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor que inicializa o \doxylink{class_model_handle}{Model\+Handle}. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_handle_a1c203c425e69e245ad1e3f65143fa69b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_handle_aa9bfcc45942a655b4589ea2525e1955e}\index{ModelHandle@{ModelHandle}!ModelHandle@{ModelHandle}}
+\index{ModelHandle@{ModelHandle}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{ModelHandle()}{ModelHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_handle_aa9bfcc45942a655b4589ea2525e1955e} 
+Model\+Handle\+::\+Model\+Handle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_model_handle}{Model\+Handle}} \&}]{hd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor de cópia que incrementa o contador de handles. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_handle_aa9bfcc45942a655b4589ea2525e1955e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_handle_aa2813029166b0166dc9f20398d7e4bdb}\index{ModelHandle@{ModelHandle}!````~ModelHandle@{\texorpdfstring{$\sim$}{\string~}ModelHandle}}
+\index{````~ModelHandle@{\texorpdfstring{$\sim$}{\string~}ModelHandle}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ModelHandle()}{\string~ModelHandle()}}
+{\footnotesize\ttfamily \label{class_model_handle_aa2813029166b0166dc9f20398d7e4bdb} 
+virtual Model\+Handle\+::\texorpdfstring{$\sim$}{\string~}\+Model\+Handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destrutor que atualiza o contador global. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_model_handle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_handle_a2933227c778ebac15ec01ba83355b39a}\index{ModelHandle@{ModelHandle}!add@{add}}
+\index{add@{add}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_handle_a2933227c778ebac15ec01ba83355b39a} 
+void Model\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona um \doxylink{class_flow}{Flow} ao modelo. 
+
+
+
+Implements \mbox{\hyperlink{class_model_ab7df81041f62f049cfc6e4d50dcaf721}{Model}}.
+
+\Hypertarget{class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d}\index{ModelHandle@{ModelHandle}!add@{add}}
+\index{add@{add}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d} 
+void Model\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Adiciona um \doxylink{class_system}{System} ao modelo. 
+
+
+
+Implements \mbox{\hyperlink{class_model_afde6c25ab942f2eec7aedeaf8eec53fd}{Model}}.
+
+\Hypertarget{class_model_handle_ab0b65368ab557d73fc4250f38c97a36a}\index{ModelHandle@{ModelHandle}!beginFlows@{beginFlows}}
+\index{beginFlows@{beginFlows}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{beginFlows()}{beginFlows()}}
+{\footnotesize\ttfamily \label{class_model_handle_ab0b65368ab557d73fc4250f38c97a36a} 
+\mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} Model\+Handle\+::begin\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o iterador para o início dos Flows. 
+
+
+
+Implements \mbox{\hyperlink{class_model_a4c21fa615edc5d7b8a9696fe090707a4}{Model}}.
+
+\Hypertarget{class_model_handle_a4bea52e982c6ca64d4a5b62754bd9227}\index{ModelHandle@{ModelHandle}!beginSystems@{beginSystems}}
+\index{beginSystems@{beginSystems}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{beginSystems()}{beginSystems()}}
+{\footnotesize\ttfamily \label{class_model_handle_a4bea52e982c6ca64d4a5b62754bd9227} 
+\mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} Model\+Handle\+::begin\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o iterador para o início dos Systems. 
+
+
+
+Implements \mbox{\hyperlink{class_model_af44c12bce2645f91b796e750ddbacbd2}{Model}}.
+
+\Hypertarget{class_model_handle_a53da2eb75da9062bf261c5423987724b}\index{ModelHandle@{ModelHandle}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \label{class_model_handle_a53da2eb75da9062bf261c5423987724b} 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} Model\+Handle\+::create\+System (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Cria um novo \doxylink{class_system}{System} com um valor inicial. 
+
+
+
+Implements \mbox{\hyperlink{class_model_aa21004cfb0ec573a372451d12374cd09}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_model_handle_a53da2eb75da9062bf261c5423987724b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_handle_a764484c7acf746145d885d2c297425bc}\index{ModelHandle@{ModelHandle}!endFlows@{endFlows}}
+\index{endFlows@{endFlows}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{endFlows()}{endFlows()}}
+{\footnotesize\ttfamily \label{class_model_handle_a764484c7acf746145d885d2c297425bc} 
+\mbox{\hyperlink{class_model_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} Model\+Handle\+::end\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o iterador para o fim dos Flows. 
+
+
+
+Implements \mbox{\hyperlink{class_model_a27d6c506e46555299b4b4c8ae0990a7c}{Model}}.
+
+\Hypertarget{class_model_handle_a82e3947b39d2082be21a9a33d466da0f}\index{ModelHandle@{ModelHandle}!endSystems@{endSystems}}
+\index{endSystems@{endSystems}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{endSystems()}{endSystems()}}
+{\footnotesize\ttfamily \label{class_model_handle_a82e3947b39d2082be21a9a33d466da0f} 
+\mbox{\hyperlink{class_model_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} Model\+Handle\+::end\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém o iterador para o fim dos Systems. 
+
+
+
+Implements \mbox{\hyperlink{class_model_a251f709667f7ca6aedc45dd7431e40c1}{Model}}.
+
+\Hypertarget{class_model_handle_a4db2fc970fdf643e78e15d33d4007c82}\index{ModelHandle@{ModelHandle}!run@{run}}
+\index{run@{run}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_model_handle_a4db2fc970fdf643e78e15d33d4007c82} 
+void Model\+Handle\+::run (\begin{DoxyParamCaption}\item[{double}]{start}{, }\item[{double}]{final}{, }\item[{int}]{increment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executa o modelo no intervalo de tempo especificado. 
+
+
+
+Implements \mbox{\hyperlink{class_model_a76f5202c3ccdf6092c77a2a4ae6f3484}{Model}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{model__handle_8hpp}{model\+\_\+handle.\+hpp}}\end{DoxyCompactItemize}

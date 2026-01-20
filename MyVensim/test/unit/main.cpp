@@ -7,6 +7,12 @@
 
 #include <iostream>
 
+// Definição das variáveis globais necessárias para o Handle/Body funcionar
+int numHandleCreated = 0;
+int numHandleDeleted = 0;
+int numBodyCreated = 0;
+int numBodyDeleted = 0;
+
 int main() {
     // Chama os testes do Flow
     std::cout << "Rodando testes unitários de Flow..." << std::endl;

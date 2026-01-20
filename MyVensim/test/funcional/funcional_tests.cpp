@@ -2,15 +2,22 @@
 #include "../../src/lib/flow.hpp"
 #include "../../src/lib/model.hpp"
 #include "../../src/lib/system.hpp"
-#include "../../src/lib/flow_impl.hpp"
+#include "../../src/lib/flow_handle.hpp"
 #include <cassert>
 #include <cmath>
 
+// Definição das variáveis globais necessárias para o Handle/Body funcionar
+int numHandleCreated = 0;
+int numHandleDeleted = 0;
+int numBodyCreated = 0;
+int numBodyDeleted = 0;
+
 // Fluxo Exponencial
-class FlowExponential : public Flow_impl {
+/** @brief Fluxo exponencial usado em cenário exponencial */
+class FlowExponential : public FlowHandle {
 public:
-    // Construtor repassa para o pai (Flow_impl)
-    FlowExponential() : Flow_impl() {}
+    // Construtor repassa para o pai (FlowHandle)
+    FlowExponential() : FlowHandle() {}
     
     double equation() override {
         if (getSource() != NULL)
@@ -20,9 +27,10 @@ public:
 };
 
 // Fluxo Logístico
-class FlowLogistical : public Flow_impl {
+/** @brief Fluxo logístico usado em cenário logístico */
+class FlowLogistical : public FlowHandle {
 public:
-    FlowLogistical() : Flow_impl() {}
+    FlowLogistical() : FlowHandle() {}
     
     double equation() override{
         if (getTarget() != NULL) {
@@ -34,9 +42,10 @@ public:
 };
 
 // Fluxo Complexo (Mesma equação do Exponencial, mas usado em outro contexto)
-class FlowComplexo : public Flow_impl {
+/** @brief Fluxo complexo usado em cenário complexo */
+class FlowComplexo : public FlowHandle {
 public:
-    FlowComplexo() : Flow_impl() {}
+    FlowComplexo() : FlowHandle() {}
     
     double equation() override{
         if (getSource() != NULL)

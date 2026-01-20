@@ -32,6 +32,9 @@ public:
     void setValue(double value) { m_value = value; }
     /** @brief Obtém o valor armazenado no SystemBody */
     double getValue() const { return m_value; }
+
+    /** @brief Declaração de amizade para permitir acesso aos membros privados em testes unitários */
+    friend class unit_System;
 };
 
 #endif

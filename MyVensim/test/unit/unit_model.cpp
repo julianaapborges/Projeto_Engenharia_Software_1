@@ -1,7 +1,8 @@
 #include "unit_model.hpp"
-#include "../../src/lib/model_impl.hpp"
-#include "../../src/lib/system_impl.hpp"
-#include "../../src/lib/flow_impl.hpp"
+#include "../../src/lib/model_body.hpp"
+#include "../../src/lib/model_handle.hpp"
+#include "../../src/lib/system_body.hpp"
+#include "../../src/lib/flow_handle.hpp"
 #include "flow_mock.hpp"
 #include <iostream>
 #include <cassert>
@@ -13,66 +14,66 @@ int sys_destructor_calls = 0;
 int flow_destructor_calls = 0;
 
 // --- CLASSES ESPIÃS ---
-/** Classe espiã para System_impl que incrementa contador no destrutor */
-class SystemSpy : public System_impl {
+/** Classe espiã para SystemHandle que incrementa contador no destrutor */
+class SystemSpy : public SystemHandle {
 public:
-    SystemSpy(double value = 0.0) : System_impl(value) {}
+    SystemSpy(double value = 0.0) : SystemHandle(value) {}
     ~SystemSpy() { sys_destructor_calls++; }
 };
 
-/** Classe espiã para Flow_impl que incrementa contador no destrutor */
-class FlowSpy : public Flow_impl {
+/** Classe espiã para FlowHandle que incrementa contador no destrutor */
+class FlowSpy : public FlowHandle {
 public:
-    FlowSpy() : Flow_impl() {}
+    FlowSpy() : FlowHandle() {}
     ~FlowSpy() { flow_destructor_calls++; }
     double equation() override { return 0; }
 };
 
 // --- TESTES ---
-/** @brief Testa o construtor padrão do Model_impl */
+/** @brief Testa o construtor padrão do ModelHandle */
 void unit_Model::unit_model_constructor() {
-    Model_impl m;
+    ModelHandle m;
     // Acesso direto à memória via friend:
     // Verificamos se os vetores internos foram inicializados vazios
-    assert(m.m_systems.size() == 0);
-    assert(m.m_flows.size() == 0);
+    assert(m.pImpl_->m_systems.size() == 0);
+    assert(m.pImpl_->m_flows.size() == 0);
     
     // Também podemos checar se o tempo começou em 0
-    assert(m.m_time == 0.0);
+    assert(m.pImpl_->m_time == 0.0);
 }
 
-/** @brief Testa o método add do Model_impl */
+/** @brief Testa o método add do ModelHandle */
 void unit_Model::unit_model_add() {
-    // CORREÇÃO: Usar Model_impl* em vez de Model*
-    // O compilador precisa saber que é Model_impl para liberar o acesso 'protected' via friend
-    Model_impl *m = new Model_impl(); 
+    // CORREÇÃO: Usar ModelHandle* em vez de Model*
+    // O compilador precisa saber que é ModelHandle para liberar o acesso 'protected' via friend
+    ModelHandle *m = new ModelHandle(); 
     
     // Construtores SEM NOME
-    System_impl *s = new System_impl(100.0);
+    SystemHandle *s = new SystemHandle(100.0);
     FlowMock *f = new FlowMock(); 
 
     m->add(s); 
     m->add(f);
 
     // Verifica se realmente adicionou
-    assert(m->m_systems.size() == 1);
-    assert(m->m_flows.size() == 1);
+    assert(m->pImpl_->m_systems.size() == 1);
+    assert(m->pImpl_->m_flows.size() == 1);
 
     delete m;
 }
 
-/** @brief Testa o método run do Model_impl */
+/** @brief Testa o método run do ModelHandle */
 void unit_Model::unit_model_run() {
-    Model_impl m;
+    ModelHandle m;
 
-    System_impl *s1 = new System_impl(100.0);
-    System_impl *s2 = new System_impl(0.0);
+    SystemHandle *s1 = new SystemHandle(100.0);
+    SystemHandle *s2 = new SystemHandle(0.0);
 
     FlowMock *f = new FlowMock(s1, s2, 10.0);
 
-    m.m_systems.push_back(s1);
-    m.m_systems.push_back(s2);
-    m.m_flows.push_back(f);
+    m.pImpl_->m_systems.push_back(s1);
+    m.pImpl_->m_systems.push_back(s2);
+    m.pImpl_->m_flows.push_back(f);
 
     m.run(0, 1, 1);
 
@@ -81,16 +82,15 @@ void unit_Model::unit_model_run() {
     assert(std::abs(s2->getValue() - 10.0) < 0.0001);
 }
 
-/** @brief Testa o construtor de cópia do Model_impl */
+/** @brief Testa o construtor de cópia do ModelHandle */
 void unit_Model::unit_model_copy_constructor() {
     // Cria m1 e adiciona sistema
-    Model_impl m1;
-    System_impl *s = new System_impl(100.0);
+    ModelHandle m1;
+    SystemHandle *s = new SystemHandle(100.0);
     m1.add(s);
 
     // Cria m2 como cópia de m1 (Aponta para o mesmo 's')
-    Model_impl m2(m1);
-
+    ModelHandle m2(m1);
     // Verifica se a cópia funcionou
     assert(m2.beginSystems() != m2.endSystems());
 
@@ -98,35 +98,35 @@ void unit_Model::unit_model_copy_constructor() {
     // Como m1 e m2 apontam para o mesmo 's', se deixarmos ambos serem destruídos,
     // teremos double free. Vamos limpar o vetor de m2 manualmente para que ele
     // não delete o 's' quando sair do escopo. O m1 vai cuidar de deletar.
-    m2.m_systems.clear(); 
-    m2.m_flows.clear();
+    m2.pImpl_->m_systems.clear();
+    m2.pImpl_->m_flows.clear();
 }
 
-/** @brief Testa o operador de atribuição do Model_impl */
+/** @brief Testa o operador de atribuição do ModelHandle */
 void unit_Model::unit_model_assignmentOperator() {
-    Model_impl m1;
-    System_impl *s = new System_impl(100.0);
+    ModelHandle m1;
+    SystemHandle *s = new SystemHandle(100.0);
     m1.add(s);
 
-    Model_impl m2;
+    ModelHandle m2;
     m2 = m1; // Atribuição (Cópia rasa)
 
     assert(m2.beginSystems() != m2.endSystems());
 
     // --- CORREÇÃO DO SEGMENTATION FAULT ---
     // m2 esquece os ponteiros para não deletar o que é de m1
-    m2.m_systems.clear();
-    m2.m_flows.clear();
+    m2.pImpl_->m_systems.clear();
+    m2.pImpl_->m_flows.clear();
 }
 
-/** @brief Testa o destrutor do Model_impl */
+/** @brief Testa o destrutor do ModelHandle */
 void unit_Model::unit_model_destructor() {
     // Reset dos contadores
     sys_destructor_calls = 0;
     flow_destructor_calls = 0;
 
-    // Usamos Model_impl diretamente para acessar o destrutor e o add
-    Model_impl *m = new Model_impl();
+    // Usamos ModelHandle diretamente para acessar o destrutor e o add
+    ModelHandle *m = new ModelHandle();
 
     // Adiciona Spies (Sem nomes, apenas valores quando necessário)
     m->add(new SystemSpy(10.0));
@@ -142,8 +142,8 @@ void unit_Model::unit_model_destructor() {
 
 /** @brief Teste para verificar o funcionamento dos iteradores de System */
 void unit_Model::unit_model_iterator_systems() {
-    Model_impl m;
-    System_impl *s = new System_impl(100.0); // Sem nome
+    ModelHandle m;
+    SystemHandle *s = new SystemHandle(100.0); // Sem nome
 
     // Vazio
     assert(m.beginSystems() == m.endSystems());
@@ -157,7 +157,7 @@ void unit_Model::unit_model_iterator_systems() {
 
 /** @brief Teste para verificar o funcionamento dos iteradores de Flow */
 void unit_Model::unit_model_iterator_flows() {
-    Model_impl m;
+    ModelHandle m;
     FlowMock *f = new FlowMock();
 
     // Vazio

@@ -1,5 +1,5 @@
 <map id="FlowComplexo::FlowComplexo" name="FlowComplexo::FlowComplexo">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,209,32"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html#abf4dd386b62757d0edf11a4ff3401e66" title="Construtor padrão. Inicializa ponteiros como NULL." alt="" coords="257,5,404,32"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html#adf61e2eadfbc04b5791dd15c330bd0b2" title="Construtor que inicializa o FlowHandle." alt="" coords="257,5,424,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,16,244,19,238,19,209,21"/>
 </map>

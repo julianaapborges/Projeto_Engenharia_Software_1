@@ -35,6 +35,9 @@ public:
     void setValue(double value) override { pImpl_->setValue(value); }
     /** @brief Obtém o valor armazenado no SystemHandle */
     double getValue() const override { return pImpl_->getValue(); }
+
+    /** @brief Declaração de amizade para permitir acesso aos membros privados em testes unitários */
+    friend class unit_System;
 };
 
 #endif

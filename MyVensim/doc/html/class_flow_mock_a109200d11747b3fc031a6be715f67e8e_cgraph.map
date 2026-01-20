@@ -1,5 +1,9 @@
 <map id="FlowMock::FlowMock" name="FlowMock::FlowMock">
-<area shape="rect" id="Node000001" title="Construtor completo que permite definir source, target e valor da equação." alt="" coords="5,5,155,32"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html#abf4dd386b62757d0edf11a4ff3401e66" title="Construtor padrão. Inicializa ponteiros como NULL." alt="" coords="203,5,350,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,16,189,19,184,19,155,21"/>
+<area shape="rect" id="Node000001" title="Construtor completo que permite definir source, target e valor da equação." alt="" coords="5,56,155,83"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html#adf61e2eadfbc04b5791dd15c330bd0b2" title="Construtor que inicializa o FlowHandle." alt="" coords="203,5,370,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,53,216,35,212,38,138,58"/>
+<area shape="rect" id="Node000003" href="$class_flow_handle.html#a24bd92b9d17cc644b9a6ef890592ef70" title="Define o System de origem." alt="" coords="208,56,365,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,67,195,69,189,70,155,72"/>
+<area shape="rect" id="Node000004" href="$class_flow_handle.html#a01b989d7d723d221c4da641fa3266f44" title="Define o System de destino." alt="" coords="210,107,362,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,81,217,102,212,103,137,86"/>
 </map>

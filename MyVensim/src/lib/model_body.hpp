@@ -63,6 +63,9 @@ public:
     flowIterator beginFlows()     { return m_flows.begin(); }
     /** @brief Obtém o iterador para o fim dos Flows */ 
     flowIterator endFlows()       { return m_flows.end(); }
+
+    /** @brief Declaração de amizade para permitir acesso aos membros privados em testes unitários */
+    friend class unit_Model;
 };
 
 #endif

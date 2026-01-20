@@ -1,5 +1,5 @@
 <map id="SystemSpy::SystemSpy" name="SystemSpy::SystemSpy">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,171,32"/>
-<area shape="rect" id="Node000002" href="$class_system__impl.html#a4ca20b5c7675c5010a6097e30f554fe5" title="Construtor padrão. Inicializa o valor com 0.0." alt="" coords="219,5,400,32"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html#ae68847eaca2090fd99b4aeeb608beb6a" title="Construtor que inicializa o valor do SystemHandle." alt="" coords="219,5,420,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,16,206,19,200,19,171,21"/>
 </map>

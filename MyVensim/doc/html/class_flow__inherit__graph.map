@@ -1,19 +1,17 @@
 <map id="Flow" name="Flow">
-<area shape="rect" id="Node000001" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="351,5,442,181"/>
-<area shape="rect" id="Node000002" href="$class_flow_handle.html" title="Classe que representa o handle para FlowBody." alt="" coords="278,261,387,480"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="375,193,360,263,356,260,372,198"/>
-<area shape="rect" id="Node000003" href="$class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="411,229,510,512"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="421,193,431,230,426,229,420,198"/>
-<area shape="rect" id="Node000004" href="$class_flow_complexo.html" title=" " alt="" coords="5,581,124,672"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="403,510,401,514,367,535,335,546,304,548,273,547,210,543,176,548,138,562,107,584,104,580,136,558,174,543,210,538,273,541,304,543,334,541,365,531,398,510,398,512"/>
-<area shape="rect" id="Node000005" href="$class_flow_destructor_spy.html" title=" " alt="" coords="149,571,301,683"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="404,507,401,514,380,532,360,542,339,549,314,562,298,573,296,568,311,558,337,545,358,537,377,528,398,510,400,510"/>
-<area shape="rect" id="Node000006" href="$class_flow_exponential.html" title=" " alt="" coords="325,581,453,672"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="419,524,403,583,399,580,415,528"/>
-<area shape="rect" id="Node000007" href="$class_flow_logistical.html" title=" " alt="" coords="477,581,592,672"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="507,524,524,583,519,581,504,528"/>
-<area shape="rect" id="Node000008" href="$class_flow_mock.html" title="Implementação mock de um fluxo para testes." alt="" coords="616,560,708,693"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="521,443,619,568,614,567,518,448"/>
-<area shape="rect" id="Node000009" href="$class_flow_spy.html" title=" " alt="" coords="733,571,824,683"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="523,409,620,475,723,558,735,572,730,571,719,562,617,480,522,414"/>
+<area shape="rect" id="Node000001" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="415,5,506,181"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html" title="Classe que representa o handle para FlowBody." alt="" coords="406,229,515,448"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="462,194,463,231,458,229,460,199"/>
+<area shape="rect" id="Node000003" href="$class_flow_complexo.html" title="Fluxo complexo usado em cenário complexo." alt="" coords="5,517,124,608"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,368,272,423,203,458,138,498,111,519,108,515,135,494,201,454,269,418,395,364"/>
+<area shape="rect" id="Node000004" href="$class_flow_destructor_spy.html" title=" " alt="" coords="149,507,301,619"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="398,400,285,509,281,505,393,402"/>
+<area shape="rect" id="Node000005" href="$class_flow_exponential.html" title="Fluxo exponencial usado em cenário exponencial." alt="" coords="325,517,453,608"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="423,460,405,519,401,516,419,464"/>
+<area shape="rect" id="Node000006" href="$class_flow_logistical.html" title="Fluxo logístico usado em cenário logístico." alt="" coords="477,517,592,608"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="503,459,522,519,517,517,500,464"/>
+<area shape="rect" id="Node000007" href="$class_flow_mock.html" title="Implementação mock de um fluxo para testes." alt="" coords="616,496,708,629"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="526,408,605,494,619,511,614,510,602,498,524,413"/>
+<area shape="rect" id="Node000008" href="$class_flow_spy.html" title=" " alt="" coords="733,507,824,619"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="529,371,624,424,675,458,723,494,735,508,730,506,719,498,672,462,622,429,528,376"/>
 </map>

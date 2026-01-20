@@ -1,5 +1,5 @@
 <map id="unit_Flow::unit_flow_setTarget" name="unit_Flow::unit_flow_setTarget">
 <area shape="rect" id="Node000001" title="Teste para o método setTarget da classe Flow." alt="" coords="5,5,143,48"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html#abbe0241196ea58816815b295bb5d619b" title="Define o destino do fluxo." alt="" coords="191,13,333,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,24,177,26,172,27,143,29"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html#a01b989d7d723d221c4da641fa3266f44" title="Define o System de destino." alt="" coords="191,13,343,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,24,178,26,172,27,143,29"/>
 </map>

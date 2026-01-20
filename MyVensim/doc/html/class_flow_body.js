@@ -7,6 +7,7 @@ var class_flow_body =
     [ "getTarget", "class_flow_body.html#a437ebb62001b40c57cc0bf3effd8a431", null ],
     [ "setSource", "class_flow_body.html#a9ef6268a469e942d82b73c4b7d27266e", null ],
     [ "setTarget", "class_flow_body.html#afbca218fba7f23cb61628ff4d6b0d187", null ],
+    [ "unit_Flow", "class_flow_body.html#a5f0229c54a7c48899de53ed2bda71698", null ],
     [ "m_source", "class_flow_body.html#a59382420c9c20763af97677cf0451c6a", null ],
     [ "m_target", "class_flow_body.html#a5437f101f8b3dc87fbaede2d05dcfc60", null ]
 ];

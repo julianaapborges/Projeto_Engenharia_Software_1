@@ -6,12 +6,12 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,170,200,124,216,120,212,123,203,129,119,174"/>
 <area shape="rect" id="Node000004" href="$classunit___system.html#a939104102dd552e4f4dbe2245f19074a" title="Teste para o construtor de cópia da classe System." alt="" coords="202,139,375,181"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,179,189,175,184,178,155,184"/>
-<area shape="rect" id="Node000005" href="$classunit___system.html#adcb95920e451054ad25651318b6725fe" title=" " alt="" coords="202,205,375,248"/>
+<area shape="rect" id="Node000005" href="$classunit___system.html#adcb95920e451054ad25651318b6725fe" title="Teste para o destrutor da classe System." alt="" coords="202,205,375,248"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="153,203,189,209,184,212,155,208"/>
 <area shape="rect" id="Node000006" href="$classunit___system.html#a9e32d4a60c6509316b26f88dd921ad6e" title="Teste para o método getValue da classe System." alt="" coords="202,272,375,315"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="117,212,203,258,216,265,211,266,200,262,117,218"/>
 <area shape="rect" id="Node000007" href="$classunit___system.html#a5f966bd92232d30056c229bce609116f" title="Teste para o método setValue da classe System." alt="" coords="202,339,375,381"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="96,213,141,268,171,298,203,325,211,331,206,331,200,329,167,302,137,272,95,218"/>
-<area shape="rect" id="Node000008" href="$class_system__impl.html#a022956b13bb50efe527d40b38fa19ce9" title="Define o valor armazenado no sistema." alt="" coords="423,347,578,373"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="375,357,410,360,405,360,376,363"/>
+<area shape="rect" id="Node000008" href="$class_system_handle.html#ab4d71f14764d5d0c95a29fcb0e4a792d" title="Define o valor armazenado no SystemHandle." alt="" coords="423,347,588,373"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="375,357,410,360,405,360,375,363"/>
 </map>

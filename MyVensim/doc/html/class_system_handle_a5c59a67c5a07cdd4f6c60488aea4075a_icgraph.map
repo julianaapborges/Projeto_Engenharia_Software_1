@@ -1,5 +1,11 @@
 <map id="SystemHandle::getValue" name="SystemHandle::getValue">
-<area shape="rect" id="Node000001" title="Obtém o valor armazenado no SystemHandle." alt="" coords="103,5,268,32"/>
-<area shape="rect" id="Node000002" href="$src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+<area shape="rect" id="Node000001" title="Obtém o valor armazenado no SystemHandle." alt="" coords="517,31,683,57"/>
+<area shape="rect" id="Node000002" href="$src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="354,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,33,404,24,404,19,505,33"/>
+<area shape="rect" id="Node000003" href="$classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do ModelHandle." alt="" coords="289,56,469,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="505,55,470,62,470,56,499,55"/>
+<area shape="rect" id="Node000004" href="$classunit___model.html#aa5cda57376f740bb9a9ca67730440157" title="Executa todos os testes unitários do Model_impl." alt="" coords="103,48,241,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="271,69,241,72,241,67,276,69"/>
+<area shape="rect" id="Node000005" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="85,70,55,72,55,67,89,68"/>
 </map>

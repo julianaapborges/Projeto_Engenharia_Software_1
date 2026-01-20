@@ -1,9 +1,9 @@
 <map id="unit_Model::unit_model_assignmentOperator" name="unit_Model::unit_model_assignmentOperator">
-<area shape="rect" id="Node000001" title="Testa o operador de atribuição do Model_impl." alt="" coords="5,48,161,91"/>
-<area shape="rect" id="Node000002" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="240,5,356,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,48,227,35,222,37,162,54"/>
-<area shape="rect" id="Node000003" href="$class_model__impl.html#a1484cc48179d33dcb673b5d8f6351c2d" title=" " alt="" coords="209,56,387,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,196,69,190,70,161,72"/>
-<area shape="rect" id="Node000004" href="$class_model__impl.html#a002b185410a2468b03df530b46adcf5c" title=" " alt="" coords="214,107,382,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,85,226,102,221,103,161,90"/>
+<area shape="rect" id="Node000001" title="Testa o operador de atribuição do ModelHandle." alt="" coords="5,48,161,91"/>
+<area shape="rect" id="Node000002" href="$class_model_handle.html#a8be4061afed9ea571e49e25c3e0e5f3d" title="Adiciona um System ao modelo." alt="" coords="240,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,49,230,35,225,37,162,54"/>
+<area shape="rect" id="Node000003" href="$class_model_handle.html#a4bea52e982c6ca64d4a5b62754bd9227" title="Obtém o iterador para o início dos Systems." alt="" coords="209,56,397,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,195,69,190,70,161,72"/>
+<area shape="rect" id="Node000004" href="$class_model_handle.html#a82e3947b39d2082be21a9a33d466da0f" title="Obtém o iterador para o fim dos Systems." alt="" coords="214,107,392,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,85,230,102,225,103,161,90"/>
 </map>

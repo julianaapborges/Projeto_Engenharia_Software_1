@@ -1,7 +1,9 @@
 <map id="FlowComplexo" name="FlowComplexo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,560,124,651"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="15,229,114,512"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,525,67,561,62,560,64,530"/>
-<area shape="rect" id="Node000003" href="$class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="19,5,110,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,194,67,230,62,229,65,199"/>
+<area shape="rect" id="Node000001" title="Fluxo complexo usado em cenário complexo." alt="" coords="59,496,178,587"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html" title="Classe que representa o handle para FlowBody." alt="" coords="64,229,173,448"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,461,121,497,116,495,117,465"/>
+<area shape="rect" id="Node000003" href="$class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,5,96,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,193,91,229,86,230,79,198"/>
+<area shape="rect" id="Node000004" href="$class_handle.html" title=" " alt="" coords="120,37,254,149"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="168,161,152,230,147,229,167,166"/>
 </map>

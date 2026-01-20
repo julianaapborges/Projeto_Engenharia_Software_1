@@ -95,7 +95,7 @@ $(function(){initNavTree('funcional__tests_8cpp.html','',''); });
 <code>#include &quot;<a class="el" href="flow_8hpp_source.html">../../src/lib/flow.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="model_8hpp_source.html">../../src/lib/model.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="system_8hpp_source.html">../../src/lib/system.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="flow__impl_8hpp_source.html">../../src/lib/flow_impl.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="flow__handle_8hpp_source.html">../../src/lib/flow_handle.hpp</a>&quot;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -105,36 +105,43 @@ Include dependency graph for funcional_tests.cpp:</div>
 <map name="atest_2funcional_2funcional__tests_8cpp" id="atest_2funcional_2funcional__tests_8cpp">
 <area shape="rect" title=" " alt="" coords="360,5,516,48"/>
 <area shape="rect" href="funcional__tests_8hpp.html" title=" " alt="" coords="5,104,140,131"/>
-<area shape="poly" title=" " alt="" coords="358,49,153,99,138,102,136,98,152,93,361,44"/>
-<area shape="rect" href="flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="288,187,420,213"/>
-<area shape="poly" title=" " alt="" coords="413,47,391,72,374,97,361,135,356,173,352,170,356,134,369,95,387,68,409,50"/>
+<area shape="poly" title=" " alt="" coords="358,49,153,99,139,102,135,98,152,93,361,44"/>
+<area shape="rect" href="flow_8hpp.html" title="Interface pura para a classe Flow." alt="" coords="232,187,364,213"/>
+<area shape="poly" title=" " alt="" coords="418,47,373,98,316,176,312,172,369,94,414,50"/>
 <area shape="rect" href="model_8hpp.html" title="Interface para a classe Model." alt="" coords="164,104,309,131"/>
-<area shape="poly" title=" " alt="" coords="388,50,281,100,278,95,393,47"/>
-<area shape="rect" href="system_8hpp.html" title="Interface para a classe System." alt="" coords="448,187,601,213"/>
-<area shape="poly" title=" " alt="" coords="465,46,488,68,507,95,521,134,526,173,521,170,515,135,502,97,484,72,464,51"/>
-<area shape="rect" href="flow__impl_8hpp.html" title="Declaração da classe Flow_impl (Abstrata)." alt="" coords="384,96,492,139"/>
-<area shape="poly" title=" " alt="" coords="439,46,440,82,435,79,436,51"/>
+<area shape="poly" title=" " alt="" coords="389,50,281,100,278,95,393,47"/>
+<area shape="rect" href="system_8hpp.html" title="Interface para a classe System." alt="" coords="454,261,606,288"/>
+<area shape="poly" title=" " alt="" coords="466,46,489,68,507,95,521,134,530,175,533,247,529,244,524,176,516,136,502,97,485,72,465,51"/>
+<area shape="rect" href="flow__handle_8hpp.html" title="Declaração da classe FlowHandle que implementa o padrão Handle&#45;Body para Flow." alt="" coords="384,96,492,139"/>
+<area shape="poly" title=" " alt="" coords="439,46,440,82,435,79,437,51"/>
 <area shape="rect" title=" " alt="" coords="567,104,631,131"/>
 <area shape="poly" title=" " alt="" coords="476,46,565,96,560,96,475,51"/>
 <area shape="rect" title=" " alt="" coords="656,104,713,131"/>
 <area shape="poly" title=" " alt="" coords="508,46,644,94,649,97,644,97,642,98,507,51"/>
-<area shape="poly" title=" " alt="" coords="255,129,326,177,320,178,254,134"/>
-<area shape="rect" title=" " alt="" coords="128,187,185,213"/>
-<area shape="poly" title=" " alt="" coords="226,130,181,178,178,174,222,133"/>
-<area shape="rect" title=" " alt="" coords="210,187,263,213"/>
-<area shape="poly" title=" " alt="" coords="238,129,239,173,234,170,235,133"/>
-<area shape="rect" title=" " alt="" coords="489,261,560,288"/>
-<area shape="poly" title=" " alt="" coords="526,212,527,247,522,244,523,216"/>
-<area shape="poly" title=" " alt="" coords="419,138,380,178,377,173,414,141"/>
-<area shape="poly" title=" " alt="" coords="461,137,503,176,497,176,459,142"/>
+<area shape="poly" title=" " alt="" coords="247,129,282,175,277,175,245,134"/>
+<area shape="rect" title=" " alt="" coords="150,187,208,213"/>
+<area shape="poly" title=" " alt="" coords="229,129,199,176,195,172,226,133"/>
+<area shape="rect" title=" " alt="" coords="72,187,126,213"/>
+<area shape="poly" title=" " alt="" coords="213,133,135,181,132,176,217,129"/>
+<area shape="rect" title=" " alt="" coords="494,336,566,363"/>
+<area shape="poly" title=" " alt="" coords="532,287,532,322,528,319,528,290"/>
+<area shape="poly" title=" " alt="" coords="404,138,334,181,331,176,399,141"/>
+<area shape="rect" href="flow__body_8hpp.html" title="Declaração da classe FlowBody que implementa o padrão Handle&#45;Body para Flow." alt="" coords="388,187,493,213"/>
+<area shape="poly" title=" " alt="" coords="440,137,442,172,437,170,437,141"/>
+<area shape="poly" title=" " alt="" coords="457,211,505,252,500,251,455,216"/>
+<area shape="rect" href="handle_body_8hpp.html" title="Definição das classes Handle e Body para o padrão de projeto ponte (bridge)." alt="" coords="316,261,429,288"/>
+<area shape="poly" title=" " alt="" coords="431,213,396,252,393,248,426,215"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:FlowExponential" id="r_FlowExponential"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_exponential.html">FlowExponential</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fluxo exponencial usado em cenário exponencial.  <a href="class_flow_exponential.html#details">More...</a><br /></td></tr>
 <tr class="memitem:FlowLogistical" id="r_FlowLogistical"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_logistical.html">FlowLogistical</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fluxo logístico usado em cenário logístico.  <a href="class_flow_logistical.html#details">More...</a><br /></td></tr>
 <tr class="memitem:FlowComplexo" id="r_FlowComplexo"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_complexo.html">FlowComplexo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fluxo complexo usado em cenário complexo.  <a href="class_flow_complexo.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -144,6 +151,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a873703af6cfeefd5cfd67aef5493ea68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Teste funcional para o crescimento logístico.  <br /></td></tr>
 <tr class="memitem:ab5b2fd66ce3b2f1996afb4d0368962c3" id="r_ab5b2fd66ce3b2f1996afb4d0368962c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5b2fd66ce3b2f1996afb4d0368962c3">complexFunctionalTest</a> ()</td></tr>
 <tr class="memdesc:ab5b2fd66ce3b2f1996afb4d0368962c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Teste funcional para um cenário complexo.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aac78cb29dfe4a565da68073b0beebf2f" id="r_aac78cb29dfe4a565da68073b0beebf2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a> = 0</td></tr>
+<tr class="memdesc:aac78cb29dfe4a565da68073b0beebf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contadores globais para criação e destruição de handles.  <br /></td></tr>
+<tr class="memitem:a01128a06118f949a0b24a3d080f515fd" id="r_a01128a06118f949a0b24a3d080f515fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a> = 0</td></tr>
+<tr class="memitem:ac1322042429ed9724fbef55908244f3b" id="r_ac1322042429ed9724fbef55908244f3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a> = 0</td></tr>
+<tr class="memdesc:ac1322042429ed9724fbef55908244f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contadores globais para criação e destruição de bodies.  <br /></td></tr>
+<tr class="memitem:aba38ebae7f83ef57afab8c447dddb6cf" id="r_aba38ebae7f83ef57afab8c447dddb6cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a> = 0</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ab5b2fd66ce3b2f1996afb4d0368962c3" name="ab5b2fd66ce3b2f1996afb4d0368962c3"></a>
@@ -302,6 +318,67 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
 </map>
 </div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="ac1322042429ed9724fbef55908244f3b" name="ac1322042429ed9724fbef55908244f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1322042429ed9724fbef55908244f3b">&#9670;&#160;</a></span>numBodyCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numBodyCreated = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contadores globais para criação e destruição de bodies. </p>
+
+</div>
+</div>
+<a id="aba38ebae7f83ef57afab8c447dddb6cf" name="aba38ebae7f83ef57afab8c447dddb6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba38ebae7f83ef57afab8c447dddb6cf">&#9670;&#160;</a></span>numBodyDeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numBodyDeleted = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac78cb29dfe4a565da68073b0beebf2f" name="aac78cb29dfe4a565da68073b0beebf2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac78cb29dfe4a565da68073b0beebf2f">&#9670;&#160;</a></span>numHandleCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numHandleCreated = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contadores globais para criação e destruição de handles. </p>
+
+</div>
+</div>
+<a id="a01128a06118f949a0b24a3d080f515fd" name="a01128a06118f949a0b24a3d080f515fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01128a06118f949a0b24a3d080f515fd">&#9670;&#160;</a></span>numHandleDeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numHandleDeleted = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

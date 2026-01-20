@@ -7,5 +7,6 @@ var class_flow_handle =
     [ "getSource", "class_flow_handle.html#a9ced76b3e7b67f47c8651dd4e8e6ff17", null ],
     [ "getTarget", "class_flow_handle.html#a660808cc3bcc0ecc404e5e43ee2df5d9", null ],
     [ "setSource", "class_flow_handle.html#a24bd92b9d17cc644b9a6ef890592ef70", null ],
-    [ "setTarget", "class_flow_handle.html#a01b989d7d723d221c4da641fa3266f44", null ]
+    [ "setTarget", "class_flow_handle.html#a01b989d7d723d221c4da641fa3266f44", null ],
+    [ "unit_Flow", "class_flow_handle.html#a5f0229c54a7c48899de53ed2bda71698", null ]
 ];

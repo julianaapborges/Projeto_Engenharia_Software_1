@@ -1,7 +1,15 @@
 <map id="src/lib/flow_handle.hpp" name="src/lib/flow_handle.hpp">
-<area shape="rect" id="Node000001" title="Declaração da classe FlowHandle que implementa o padrão Handle&#45;Body para Flow." alt="" coords="69,5,223,32"/>
-<area shape="rect" id="Node000002" href="$flow__impl_8cpp.html" title=" " alt="" coords="5,80,146,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,42,89,82,86,78,121,44"/>
-<area shape="rect" id="Node000003" href="$src_2main_8cpp.html" title=" " alt="" coords="170,80,266,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,41,208,80,203,79,168,46"/>
+<area shape="rect" id="Node000001" title="Declaração da classe FlowHandle que implementa o padrão Handle&#45;Body para Flow." alt="" coords="240,5,395,32"/>
+<area shape="rect" id="Node000002" href="$src_2main_8cpp.html" title=" " alt="" coords="5,88,102,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,39,114,83,92,90,89,85,113,77,260,34"/>
+<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html" title=" " alt="" coords="125,80,280,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,40,234,82,231,77,285,43"/>
+<area shape="rect" id="Node000004" href="$flow__mock_8hpp.html" title="Declaração da classe FlowMock utilizada para testes unitários." alt="" coords="355,88,515,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,38,419,88,414,88,348,44"/>
+<area shape="rect" id="Node000005" href="$unit__flow_8cpp.html" title=" " alt="" coords="271,171,420,197"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="324,45,346,171,341,169,320,49"/>
+<area shape="rect" id="Node000006" href="$unit__model_8cpp.html" title=" " alt="" coords="457,171,618,197"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="410,21,443,28,475,39,504,56,529,78,541,101,546,127,542,172,538,169,540,127,536,103,525,82,501,60,473,44,441,33,411,27"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="412,124,360,173,358,168,407,126"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="464,122,524,171,519,170,462,127"/>
 </map>

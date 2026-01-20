@@ -4,5 +4,6 @@ var class_system_handle =
     [ "SystemHandle", "class_system_handle.html#af5f1a33ea1a32d15a9404b5b063be908", null ],
     [ "~SystemHandle", "class_system_handle.html#a4b917da05a077c741b5ddddadf2f5d95", null ],
     [ "getValue", "class_system_handle.html#a5c59a67c5a07cdd4f6c60488aea4075a", null ],
-    [ "setValue", "class_system_handle.html#ab4d71f14764d5d0c95a29fcb0e4a792d", null ]
+    [ "setValue", "class_system_handle.html#ab4d71f14764d5d0c95a29fcb0e4a792d", null ],
+    [ "unit_System", "class_system_handle.html#ab312b9f46d61a1d3affb046860b19fe3", null ]
 ];

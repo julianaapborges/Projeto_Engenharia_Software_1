@@ -1,7 +1,9 @@
 <map id="FlowExponential" name="FlowExponential">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,560,133,651"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="20,229,119,512"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,525,72,561,67,560,68,530"/>
-<area shape="rect" id="Node000003" href="$class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="24,5,115,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,194,72,230,67,229,69,199"/>
+<area shape="rect" id="Node000001" title="Fluxo exponencial usado em cenário exponencial." alt="" coords="55,496,183,587"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html" title="Classe que representa o handle para FlowBody." alt="" coords="64,229,173,448"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,461,121,497,116,495,117,465"/>
+<area shape="rect" id="Node000003" href="$class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,5,96,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,193,91,229,86,230,79,198"/>
+<area shape="rect" id="Node000004" href="$class_handle.html" title=" " alt="" coords="120,37,254,149"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="168,161,152,230,147,229,167,166"/>
 </map>

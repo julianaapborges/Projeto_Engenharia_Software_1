@@ -15,7 +15,7 @@ Inheritance diagram for Flow\+Mock\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_flow_mock__inherit__graph}
+\includegraphics[width=266pt]{class_flow_mock__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -38,45 +38,48 @@ Collaboration diagram for Flow\+Mock\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em Construtor completo que permite definir source, target e valor da equação. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_flow_mock_a0b34cfe64dd8db67455054f60521a343}{equation}} ()
 \begin{DoxyCompactList}\small\item\em Retorna o valor mockado da equação. Esta implementação ignora completamente informações dos sistemas, retornando sempre o valor definido em {\ttfamily \doxylink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\+\_\+result}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_flow__impl_abf4dd386b62757d0edf11a4ff3401e66}{Flow\+\_\+impl}} ()
-\begin{DoxyCompactList}\small\item\em Construtor padrão. Inicializa ponteiros como NULL. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_flow__impl_aca57a16fdcc0858ddc3d28ea965f047c}{Flow\+\_\+impl}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
-\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_flow__impl_af0590fdae42d7a0806e891f5c8020a1d}{Flow\+\_\+impl}} (const \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}} \&other)
-\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}} \& \mbox{\hyperlink{class_flow__impl_ab4e49eabca208809487c2a719eec51a3}{operator=}} (const \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}} \&other)
-\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_flow__impl_a73c7839b2b58c735fbbdf9a777fb2f74}{\texorpdfstring{$\sim$}{\string~}\+Flow\+\_\+impl}} ()
-\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_flow__impl_af972bc754c715026f3966ed93dfdcadc}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source)
-\begin{DoxyCompactList}\small\item\em Define a origem do fluxo. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_flow__impl_abbe0241196ea58816815b295bb5d619b}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
-\begin{DoxyCompactList}\small\item\em Define o destino do fluxo. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_a5276f60a3a8e889740f3091e9e9ecf0a}{get\+Source}} () const
-\begin{DoxyCompactList}\small\item\em Retorna o ponteiro da origem. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_abcc5b318972ee1a136def46a6ae5ae13}{get\+Target}} () const
-\begin{DoxyCompactList}\small\item\em Retorna o ponteiro do destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_flow_handle_adf61e2eadfbc04b5791dd15c330bd0b2}{Flow\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o \doxylink{class_flow_handle}{Flow\+Handle}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_handle_a0f82d8ef772931c44f4eb352b70fc02d}{Flow\+Handle}} (const \mbox{\hyperlink{class_flow_handle}{Flow\+Handle}} \&hd)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia que incrementa o contador de handles. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow_handle_acec255198c28118981e7bb62194fe9e2}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor que atualiza o contador global. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_handle_a24bd92b9d17cc644b9a6ef890592ef70}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s) override
+\begin{DoxyCompactList}\small\item\em Define o \doxylink{class_system}{System} de origem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_handle_a01b989d7d723d221c4da641fa3266f44}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}t) override
+\begin{DoxyCompactList}\small\item\em Define o \doxylink{class_system}{System} de destino. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle_a9ced76b3e7b67f47c8651dd4e8e6ff17}{get\+Source}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o \doxylink{class_system}{System} de origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow_handle_a660808cc3bcc0ecc404e5e43ee2df5d9}{get\+Target}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém o \doxylink{class_system}{System} de destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{class_flow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handle}{Handle$<$ Flow\+Body $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_handle_a6a72028918adf79c0ff8d9996e5e4107}{Handle}} ()
+\item 
+virtual \mbox{\hyperlink{class_handle_addd59fdf43baa517a06d44e1125b5ab1}{\texorpdfstring{$\sim$}{\string~}\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_handle}{Handle}}$<$ \mbox{\hyperlink{class_flow_body}{Flow\+Body}} $>$ \& \mbox{\hyperlink{class_handle_a52e146e2a1427c8e7d3a692e9378185a}{operator=}} (const \mbox{\hyperlink{class_handle}{Handle}} \&hd)
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{class_flow_mock_ad9762be52fa0bc993589c0679e9dd342}{m\+\_\+result}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_flow__impl}{Flow\+\_\+impl}}}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handle}{Handle$<$ Flow\+Body $>$}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_a2cae0c3867cfb6b46e99108fa8dece99}{m\+\_\+source}}
-\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de origem (quem perde valor). \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_flow__impl_a1ecaf2b241f15bd0ddf040683a55dc27}{m\+\_\+target}}
-\begin{DoxyCompactList}\small\item\em Ponteiro para o sistema de destino (quem ganha valor). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_flow_body}{Flow\+Body}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{p\+Impl\+\_\+}}
+\begin{DoxyCompactList}\small\item\em referência para a implementação \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -101,7 +104,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=339pt]{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143_cgraph}
+\includegraphics[width=350pt]{class_flow_mock_a80d36c4a617ae4519d72e8fa59518143_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911}\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
@@ -123,7 +126,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=339pt]{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911_cgraph}
+\includegraphics[width=350pt]{class_flow_mock_a7dd0950b77b48f4f68290f8f869c4911_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_flow_mock_a109200d11747b3fc031a6be715f67e8e}\index{FlowMock@{FlowMock}!FlowMock@{FlowMock}}
@@ -149,7 +152,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=339pt]{class_flow_mock_a109200d11747b3fc031a6be715f67e8e_cgraph}
+\includegraphics[width=350pt]{class_flow_mock_a109200d11747b3fc031a6be715f67e8e_cgraph}
 \end{center}
 \end{figure}
 
@@ -172,7 +175,7 @@ Valor da equação mockada.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{class_flow__impl_ae00b58b8aba6a0b4fc69fb47bad18876}{Flow\+\_\+impl}}.
+Implements \mbox{\hyperlink{class_flow_handle_a1b506d6662f8f70055fa97426f29b440}{Flow\+Handle}}.
 
 
 

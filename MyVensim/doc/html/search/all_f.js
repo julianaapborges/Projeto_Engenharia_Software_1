@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unit_5fflow_0',['unit_Flow',['../classunit___flow.html',1,'unit_Flow'],['../class_flow__impl.html#a5f0229c54a7c48899de53ed2bda71698',1,'Flow_impl::unit_Flow()']]],
+  ['unit_5fflow_0',['unit_Flow',['../classunit___flow.html',1,'unit_Flow'],['../class_flow_body.html#a5f0229c54a7c48899de53ed2bda71698',1,'FlowBody::unit_Flow()'],['../class_flow_handle.html#a5f0229c54a7c48899de53ed2bda71698',1,'FlowHandle::unit_Flow()']]],
   ['unit_5fflow_2ecpp_1',['unit_flow.cpp',['../unit__flow_8cpp.html',1,'']]],
   ['unit_5fflow_2ehpp_2',['unit_flow.hpp',['../unit__flow_8hpp.html',1,'']]],
   ['unit_5fflow_5fassignmentoperator_3',['unit_flow_assignmentOperator',['../classunit___flow.html#a23d21ec6e944a4a0df2bf4506ad57e3e',1,'unit_Flow']]],
@@ -12,7 +12,7 @@ var searchData=
   ['unit_5fflow_5fgettarget_9',['unit_flow_getTarget',['../classunit___flow.html#a661f9af4d891cc9c29c23c9ab4cabb38',1,'unit_Flow']]],
   ['unit_5fflow_5fsetsource_10',['unit_flow_setSource',['../classunit___flow.html#a5e57d869e40d38a78c9914413691b4e7',1,'unit_Flow']]],
   ['unit_5fflow_5fsettarget_11',['unit_flow_setTarget',['../classunit___flow.html#a20b6a639814095191c27aaa04252c7f3',1,'unit_Flow']]],
-  ['unit_5fmodel_12',['unit_Model',['../classunit___model.html',1,'unit_Model'],['../class_model__impl.html#a6eac0ca2a815734ddd311ff3578f1715',1,'Model_impl::unit_Model()']]],
+  ['unit_5fmodel_12',['unit_Model',['../classunit___model.html',1,'unit_Model'],['../class_model_body.html#a6eac0ca2a815734ddd311ff3578f1715',1,'ModelBody::unit_Model()'],['../class_model_handle.html#a6eac0ca2a815734ddd311ff3578f1715',1,'ModelHandle::unit_Model()']]],
   ['unit_5fmodel_2ecpp_13',['unit_model.cpp',['../unit__model_8cpp.html',1,'']]],
   ['unit_5fmodel_2ehpp_14',['unit_model.hpp',['../unit__model_8hpp.html',1,'']]],
   ['unit_5fmodel_5fadd_15',['unit_model_add',['../classunit___model.html#a89a1f4682305d5dfd5b284de38088f55',1,'unit_Model']]],
@@ -23,7 +23,7 @@ var searchData=
   ['unit_5fmodel_5fiterator_5fflows_20',['unit_model_iterator_flows',['../classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c',1,'unit_Model']]],
   ['unit_5fmodel_5fiterator_5fsystems_21',['unit_model_iterator_systems',['../classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89',1,'unit_Model']]],
   ['unit_5fmodel_5frun_22',['unit_model_run',['../classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d',1,'unit_Model']]],
-  ['unit_5fsystem_23',['unit_System',['../classunit___system.html',1,'unit_System'],['../class_system__impl.html#ab312b9f46d61a1d3affb046860b19fe3',1,'System_impl::unit_System()']]],
+  ['unit_5fsystem_23',['unit_System',['../classunit___system.html',1,'unit_System'],['../class_system_body.html#ab312b9f46d61a1d3affb046860b19fe3',1,'SystemBody::unit_System()'],['../class_system_handle.html#ab312b9f46d61a1d3affb046860b19fe3',1,'SystemHandle::unit_System()']]],
   ['unit_5fsystem_2ecpp_24',['unit_system.cpp',['../unit__system_8cpp.html',1,'']]],
   ['unit_5fsystem_2ehpp_25',['unit_system.hpp',['../unit__system_8hpp.html',1,'']]],
   ['unit_5fsystem_5fassignmentoperator_26',['unit_system_assignmentOperator',['../classunit___system.html#aaf0f098024e4633419b2cce3384f02e0',1,'unit_System']]],

@@ -91,16 +91,21 @@ $(function(){initNavTree('class_flow_logistical.html','','class_flow_logistical-
   <div class="headertitle"><div class="title">FlowLogistical Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Fluxo logístico usado em cenário logístico.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FlowLogistical:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow_logistical__inherit__graph.png" border="0" usemap="#a_flow_logistical_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_flow_logistical_inherit__map" id="a_flow_logistical_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,560,120,651"/>
-<area shape="rect" href="class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="13,229,112,512"/>
-<area shape="poly" title=" " alt="" coords="64,525,65,561,60,560,62,530"/>
-<area shape="rect" href="class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="17,5,108,181"/>
-<area shape="poly" title=" " alt="" coords="63,194,65,230,60,229,63,199"/>
+<area shape="rect" title="Fluxo logístico usado em cenário logístico." alt="" coords="61,496,176,587"/>
+<area shape="rect" href="class_flow_handle.html" title="Classe que representa o handle para FlowBody." alt="" coords="64,229,173,448"/>
+<area shape="poly" title=" " alt="" coords="120,461,121,497,116,495,117,465"/>
+<area shape="rect" href="class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,5,96,181"/>
+<area shape="poly" title=" " alt="" coords="79,193,91,229,86,230,79,198"/>
+<area shape="rect" href="class_handle.html" title=" " alt="" coords="120,37,254,149"/>
+<area shape="poly" title=" " alt="" coords="168,161,152,230,147,229,167,166"/>
 </map>
 </div>
 <div class="dynheader">
@@ -108,13 +113,19 @@ Collaboration diagram for FlowLogistical:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow_logistical__coll__graph.png" border="0" usemap="#a_flow_logistical_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_flow_logistical_coll__map" id="a_flow_logistical_coll__map">
-<area shape="rect" title=" " alt="" coords="49,585,164,676"/>
-<area shape="rect" href="class_flow__impl.html" title="Implementação base para fluxos." alt="" coords="57,275,156,536"/>
-<area shape="poly" title=" " alt="" coords="108,549,109,586,104,585,105,553"/>
-<area shape="rect" href="class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,5,96,181"/>
-<area shape="poly" title=" " alt="" coords="69,194,86,275,81,275,69,199"/>
-<area shape="rect" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="120,37,205,149"/>
-<area shape="poly" title=" " alt="" coords="154,147,136,258,131,257,152,152"/>
+<area shape="rect" title="Fluxo logístico usado em cenário logístico." alt="" coords="9,1059,124,1149"/>
+<area shape="rect" href="class_flow_handle.html" title="Classe que representa o handle para FlowBody." alt="" coords="12,791,121,1009"/>
+<area shape="poly" title=" " alt="" coords="68,1022,69,1059,64,1058,66,1027"/>
+<area shape="rect" href="class_flow.html" title="Interface que representa um Fluxo na teoria de sistemas." alt="" coords="5,565,96,741"/>
+<area shape="poly" title=" " alt="" coords="58,753,62,791,57,791,57,759"/>
+<area shape="rect" href="class_handle.html" title=" " alt="" coords="120,597,254,709"/>
+<area shape="poly" title=" " alt="" coords="153,725,122,792,117,790,154,720"/>
+<area shape="rect" href="class_flow_body.html" title="Classe concreta que representa o corpo de um Flow." alt="" coords="138,296,236,493"/>
+<area shape="poly" title=" " alt="" coords="187,491,189,581,184,580,186,496"/>
+<area shape="rect" href="class_body.html" title=" " alt="" coords="89,5,176,203"/>
+<area shape="poly" title=" " alt="" coords="153,214,171,296,166,296,153,220"/>
+<area shape="rect" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="200,48,285,160"/>
+<area shape="poly" title=" " alt="" coords="233,157,212,280,206,279,232,162"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,39 +133,40 @@ Collaboration diagram for FlowLogistical:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a41a1107828e9b913448317146ba8164a" id="r_a41a1107828e9b913448317146ba8164a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41a1107828e9b913448317146ba8164a">FlowLogistical</a> ()</td></tr>
 <tr class="memitem:aee96435ea9fc8273be8b0f977720d686" id="r_aee96435ea9fc8273be8b0f977720d686"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee96435ea9fc8273be8b0f977720d686">equation</a> () override</td></tr>
-<tr class="memdesc:aee96435ea9fc8273be8b0f977720d686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método virtual puro para a equação do fluxo.  <br /></td></tr>
-<tr class="inherit_header pub_methods_class_flow__impl"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_flow__impl')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_flow__impl.html">Flow_impl</a></td></tr>
-<tr class="memitem:abf4dd386b62757d0edf11a4ff3401e66 inherit pub_methods_class_flow__impl" id="r_abf4dd386b62757d0edf11a4ff3401e66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#abf4dd386b62757d0edf11a4ff3401e66">Flow_impl</a> ()</td></tr>
-<tr class="memdesc:abf4dd386b62757d0edf11a4ff3401e66 inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor padrão. Inicializa ponteiros como NULL.  <br /></td></tr>
-<tr class="memitem:aca57a16fdcc0858ddc3d28ea965f047c inherit pub_methods_class_flow__impl" id="r_aca57a16fdcc0858ddc3d28ea965f047c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#aca57a16fdcc0858ddc3d28ea965f047c">Flow_impl</a> (<a class="el" href="class_system.html">System</a> *source, <a class="el" href="class_system.html">System</a> *target)</td></tr>
-<tr class="memdesc:aca57a16fdcc0858ddc3d28ea965f047c inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor parametrizado.  <br /></td></tr>
-<tr class="memitem:af0590fdae42d7a0806e891f5c8020a1d inherit pub_methods_class_flow__impl" id="r_af0590fdae42d7a0806e891f5c8020a1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#af0590fdae42d7a0806e891f5c8020a1d">Flow_impl</a> (const <a class="el" href="class_flow__impl.html">Flow_impl</a> &amp;other)</td></tr>
-<tr class="memdesc:af0590fdae42d7a0806e891f5c8020a1d inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor de cópia.  <br /></td></tr>
-<tr class="memitem:ab4e49eabca208809487c2a719eec51a3 inherit pub_methods_class_flow__impl" id="r_ab4e49eabca208809487c2a719eec51a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow__impl.html">Flow_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#ab4e49eabca208809487c2a719eec51a3">operator=</a> (const <a class="el" href="class_flow__impl.html">Flow_impl</a> &amp;other)</td></tr>
-<tr class="memdesc:ab4e49eabca208809487c2a719eec51a3 inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de atribuição.  <br /></td></tr>
-<tr class="memitem:a73c7839b2b58c735fbbdf9a777fb2f74 inherit pub_methods_class_flow__impl" id="r_a73c7839b2b58c735fbbdf9a777fb2f74"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#a73c7839b2b58c735fbbdf9a777fb2f74">~Flow_impl</a> ()</td></tr>
-<tr class="memdesc:a73c7839b2b58c735fbbdf9a777fb2f74 inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
-<tr class="memitem:af972bc754c715026f3966ed93dfdcadc inherit pub_methods_class_flow__impl" id="r_af972bc754c715026f3966ed93dfdcadc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#af972bc754c715026f3966ed93dfdcadc">setSource</a> (<a class="el" href="class_system.html">System</a> *source)</td></tr>
-<tr class="memdesc:af972bc754c715026f3966ed93dfdcadc inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a origem do fluxo.  <br /></td></tr>
-<tr class="memitem:abbe0241196ea58816815b295bb5d619b inherit pub_methods_class_flow__impl" id="r_abbe0241196ea58816815b295bb5d619b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#abbe0241196ea58816815b295bb5d619b">setTarget</a> (<a class="el" href="class_system.html">System</a> *target)</td></tr>
-<tr class="memdesc:abbe0241196ea58816815b295bb5d619b inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o destino do fluxo.  <br /></td></tr>
-<tr class="memitem:a5276f60a3a8e889740f3091e9e9ecf0a inherit pub_methods_class_flow__impl" id="r_a5276f60a3a8e889740f3091e9e9ecf0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#a5276f60a3a8e889740f3091e9e9ecf0a">getSource</a> () const</td></tr>
-<tr class="memdesc:a5276f60a3a8e889740f3091e9e9ecf0a inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o ponteiro da origem.  <br /></td></tr>
-<tr class="memitem:abcc5b318972ee1a136def46a6ae5ae13 inherit pub_methods_class_flow__impl" id="r_abcc5b318972ee1a136def46a6ae5ae13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#abcc5b318972ee1a136def46a6ae5ae13">getTarget</a> () const</td></tr>
-<tr class="memdesc:abcc5b318972ee1a136def46a6ae5ae13 inherit pub_methods_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o ponteiro do destino.  <br /></td></tr>
+<tr class="memdesc:aee96435ea9fc8273be8b0f977720d686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método que representa a equação do fluxo, pode ser sobrescrito.  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_flow_handle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_flow_handle')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_flow_handle.html">FlowHandle</a></td></tr>
+<tr class="memitem:adf61e2eadfbc04b5791dd15c330bd0b2 inherit pub_methods_class_flow_handle" id="r_adf61e2eadfbc04b5791dd15c330bd0b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#adf61e2eadfbc04b5791dd15c330bd0b2">FlowHandle</a> ()</td></tr>
+<tr class="memdesc:adf61e2eadfbc04b5791dd15c330bd0b2 inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor que inicializa o <a class="el" href="class_flow_handle.html" title="Classe que representa o handle para FlowBody.">FlowHandle</a>.  <br /></td></tr>
+<tr class="memitem:a0f82d8ef772931c44f4eb352b70fc02d inherit pub_methods_class_flow_handle" id="r_a0f82d8ef772931c44f4eb352b70fc02d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#a0f82d8ef772931c44f4eb352b70fc02d">FlowHandle</a> (const <a class="el" href="class_flow_handle.html">FlowHandle</a> &amp;hd)</td></tr>
+<tr class="memdesc:a0f82d8ef772931c44f4eb352b70fc02d inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor de cópia que incrementa o contador de handles.  <br /></td></tr>
+<tr class="memitem:acec255198c28118981e7bb62194fe9e2 inherit pub_methods_class_flow_handle" id="r_acec255198c28118981e7bb62194fe9e2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#acec255198c28118981e7bb62194fe9e2">~FlowHandle</a> ()</td></tr>
+<tr class="memdesc:acec255198c28118981e7bb62194fe9e2 inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor que atualiza o contador global.  <br /></td></tr>
+<tr class="memitem:a24bd92b9d17cc644b9a6ef890592ef70 inherit pub_methods_class_flow_handle" id="r_a24bd92b9d17cc644b9a6ef890592ef70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#a24bd92b9d17cc644b9a6ef890592ef70">setSource</a> (<a class="el" href="class_system.html">System</a> *s) override</td></tr>
+<tr class="memdesc:a24bd92b9d17cc644b9a6ef890592ef70 inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o <a class="el" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas.">System</a> de origem.  <br /></td></tr>
+<tr class="memitem:a01b989d7d723d221c4da641fa3266f44 inherit pub_methods_class_flow_handle" id="r_a01b989d7d723d221c4da641fa3266f44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#a01b989d7d723d221c4da641fa3266f44">setTarget</a> (<a class="el" href="class_system.html">System</a> *t) override</td></tr>
+<tr class="memdesc:a01b989d7d723d221c4da641fa3266f44 inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o <a class="el" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas.">System</a> de destino.  <br /></td></tr>
+<tr class="memitem:a9ced76b3e7b67f47c8651dd4e8e6ff17 inherit pub_methods_class_flow_handle" id="r_a9ced76b3e7b67f47c8651dd4e8e6ff17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#a9ced76b3e7b67f47c8651dd4e8e6ff17">getSource</a> () const override</td></tr>
+<tr class="memdesc:a9ced76b3e7b67f47c8651dd4e8e6ff17 inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o <a class="el" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas.">System</a> de origem.  <br /></td></tr>
+<tr class="memitem:a660808cc3bcc0ecc404e5e43ee2df5d9 inherit pub_methods_class_flow_handle" id="r_a660808cc3bcc0ecc404e5e43ee2df5d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow_handle.html#a660808cc3bcc0ecc404e5e43ee2df5d9">getTarget</a> () const override</td></tr>
+<tr class="memdesc:a660808cc3bcc0ecc404e5e43ee2df5d9 inherit pub_methods_class_flow_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o <a class="el" href="class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas.">System</a> de destino.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_flow"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_flow')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_flow.html">Flow</a></td></tr>
 <tr class="memitem:a325d284a50ca3274b126b21f5c39b9af inherit pub_methods_class_flow" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
 <tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af inherit pub_methods_class_flow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_handle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_handle')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_handle.html">Handle&lt; FlowBody &gt;</a></td></tr>
+<tr class="memitem:a6a72028918adf79c0ff8d9996e5e4107 inherit pub_methods_class_handle" id="r_a6a72028918adf79c0ff8d9996e5e4107"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Handle</a> ()</td></tr>
+<tr class="memitem:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle" id="r_addd59fdf43baa517a06d44e1125b5ab1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#addd59fdf43baa517a06d44e1125b5ab1">~Handle</a> ()</td></tr>
+<tr class="memdesc:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor.  <br /></td></tr>
+<tr class="memitem:a52e146e2a1427c8e7d3a692e9378185a inherit pub_methods_class_handle" id="r_a52e146e2a1427c8e7d3a692e9378185a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_handle.html">Handle</a>&lt; <a class="el" href="class_flow_body.html">FlowBody</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#a52e146e2a1427c8e7d3a692e9378185a">operator=</a> (const <a class="el" href="class_handle.html">Handle</a> &amp;hd)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_flow__impl"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_flow__impl')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="class_flow__impl.html">Flow_impl</a></td></tr>
-<tr class="memitem:a2cae0c3867cfb6b46e99108fa8dece99 inherit pro_attribs_class_flow__impl" id="r_a2cae0c3867cfb6b46e99108fa8dece99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#a2cae0c3867cfb6b46e99108fa8dece99">m_source</a></td></tr>
-<tr class="memdesc:a2cae0c3867cfb6b46e99108fa8dece99 inherit pro_attribs_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponteiro para o sistema de origem (quem perde valor).  <br /></td></tr>
-<tr class="memitem:a1ecaf2b241f15bd0ddf040683a55dc27 inherit pro_attribs_class_flow__impl" id="r_a1ecaf2b241f15bd0ddf040683a55dc27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow__impl.html#a1ecaf2b241f15bd0ddf040683a55dc27">m_target</a></td></tr>
-<tr class="memdesc:a1ecaf2b241f15bd0ddf040683a55dc27 inherit pro_attribs_class_flow__impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponteiro para o sistema de destino (quem ganha valor).  <br /></td></tr>
+<tr class="inherit_header pro_attribs_class_handle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_handle')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="class_handle.html">Handle&lt; FlowBody &gt;</a></td></tr>
+<tr class="memitem:a16021e57596d7369dfa1a9fadc35c06f inherit pro_attribs_class_handle" id="r_a16021e57596d7369dfa1a9fadc35c06f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow_body.html">FlowBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a></td></tr>
+<tr class="memdesc:a16021e57596d7369dfa1a9fadc35c06f inherit pro_attribs_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">referência para a implementação  <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Fluxo logístico usado em cenário logístico. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a41a1107828e9b913448317146ba8164a" name="a41a1107828e9b913448317146ba8164a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41a1107828e9b913448317146ba8164a">&#9670;&#160;</a></span>FlowLogistical()</h2>
 
@@ -183,7 +195,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_flow_logistical_a41a1107828e9b913448317146ba8164a_cgraph.png" border="0" usemap="#aclass_flow_logistical_a41a1107828e9b913448317146ba8164a_cgraph" loading="lazy" alt=""/></div>
 <map name="aclass_flow_logistical_a41a1107828e9b913448317146ba8164a_cgraph" id="aclass_flow_logistical_a41a1107828e9b913448317146ba8164a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,201,32"/>
-<area shape="rect" href="class_flow__impl.html#abf4dd386b62757d0edf11a4ff3401e66" title="Construtor padrão. Inicializa ponteiros como NULL." alt="" coords="249,5,396,32"/>
+<area shape="rect" href="class_flow_handle.html#adf61e2eadfbc04b5791dd15c330bd0b2" title="Construtor que inicializa o FlowHandle." alt="" coords="249,5,416,32"/>
 <area shape="poly" title=" " alt="" coords="201,16,236,19,230,19,201,21"/>
 </map>
 </div>
@@ -214,20 +226,19 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Método virtual puro para a equação do fluxo. </p>
-<dl class="section return"><dt>Returns</dt><dd>O valor calculado da taxa de transferência no passo atual. </dd></dl>
+<p>Método que representa a equação do fluxo, pode ser sobrescrito. </p>
 
-<p>Implements <a class="el" href="class_flow__impl.html#ae00b58b8aba6a0b4fc69fb47bad18876">Flow_impl</a>.</p>
+<p>Implements <a class="el" href="class_flow_handle.html#a1b506d6662f8f70055fa97426f29b440">FlowHandle</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow_logistical_aee96435ea9fc8273be8b0f977720d686_cgraph.png" border="0" usemap="#aclass_flow_logistical_aee96435ea9fc8273be8b0f977720d686_cgraph" loading="lazy" alt=""/></div>
 <map name="aclass_flow_logistical_aee96435ea9fc8273be8b0f977720d686_cgraph" id="aclass_flow_logistical_aee96435ea9fc8273be8b0f977720d686_cgraph">
-<area shape="rect" title="Método virtual puro para a equação do fluxo." alt="" coords="5,31,167,57"/>
-<area shape="rect" href="class_flow__impl.html#abcc5b318972ee1a136def46a6ae5ae13" title="Retorna o ponteiro do destino." alt="" coords="215,5,357,32"/>
-<area shape="poly" title=" " alt="" coords="166,31,202,29,197,30,167,36"/>
-<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="224,56,348,83"/>
-<area shape="poly" title=" " alt="" coords="167,52,211,59,206,60,167,57"/>
+<area shape="rect" title="Método que representa a equação do fluxo, pode ser sobrescrito." alt="" coords="5,31,167,57"/>
+<area shape="rect" href="class_flow_handle.html#a660808cc3bcc0ecc404e5e43ee2df5d9" title="Obtém o System de destino." alt="" coords="215,5,367,32"/>
+<area shape="poly" title=" " alt="" coords="167,31,202,29,197,31,168,37"/>
+<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="229,56,353,83"/>
+<area shape="poly" title=" " alt="" coords="167,51,216,60,211,60,167,57"/>
 </map>
 </div>
 

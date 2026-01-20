@@ -10,5 +10,6 @@ var class_model_handle =
     [ "createSystem", "class_model_handle.html#a53da2eb75da9062bf261c5423987724b", null ],
     [ "endFlows", "class_model_handle.html#a764484c7acf746145d885d2c297425bc", null ],
     [ "endSystems", "class_model_handle.html#a82e3947b39d2082be21a9a33d466da0f", null ],
-    [ "run", "class_model_handle.html#a4db2fc970fdf643e78e15d33d4007c82", null ]
+    [ "run", "class_model_handle.html#a4db2fc970fdf643e78e15d33d4007c82", null ],
+    [ "unit_Model", "class_model_handle.html#a6eac0ca2a815734ddd311ff3578f1715", null ]
 ];

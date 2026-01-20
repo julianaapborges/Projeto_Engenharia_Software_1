@@ -1,9 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$class_handle.html" title=" " alt="" coords="5,5,157,32"/>
-<area shape="rect" id="Node000001" href="$class_model_handle.html" title="Classe que representa o handle para ModelBody." alt="" coords="205,5,302,32"/>
-<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="172,16,207,18,202,19,173,21"/>
+<area shape="rect" id="Node000001" href="$class_model_handle.html" title="Classe que representa o handle para ModelBody." alt="" coords="205,31,302,57"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="172,29,207,37,202,37,172,35"/>
 <area shape="rect" id="Node000002" href="$class_model.html" title="Interface que representa o Motor de Simulação." alt="" coords="53,56,109,83"/>
-<area shape="poly" id="edge14_Node000002_Node000001" title=" " alt="" coords="124,54,203,33,208,32,125,59"/>
-<area shape="rect" id="Node000003" href="$class_model__impl.html" title="Implementação concreta do Modelo." alt="" coords="210,56,297,83"/>
-<area shape="poly" id="edge15_Node000002_Node000003" title=" " alt="" coords="125,67,212,69,207,70,125,72"/>
+<area shape="poly" id="edge13_Node000002_Node000001" title=" " alt="" coords="124,60,207,51,202,52,125,66"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="unit_Model::unit_model_iterator_flows" name="unit_Model::unit_model_iterator_flows">
 <area shape="rect" id="Node000001" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="5,48,161,91"/>
-<area shape="rect" id="Node000002" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="231,5,348,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,48,220,35,215,37,162,53"/>
-<area shape="rect" id="Node000003" href="$class_model__impl.html#a43c7c6a347d1e86c45c7d539b01aa896" title=" " alt="" coords="209,56,370,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,195,69,190,70,162,72"/>
-<area shape="rect" id="Node000004" href="$class_model__impl.html#a7d86d17f5a79ddba980cb40570fa6abb" title=" " alt="" coords="214,107,365,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,86,220,102,214,103,161,91"/>
+<area shape="rect" id="Node000002" href="$class_model_handle.html#a8be4061afed9ea571e49e25c3e0e5f3d" title="Adiciona um System ao modelo." alt="" coords="231,5,358,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,48,223,35,219,37,162,53"/>
+<area shape="rect" id="Node000003" href="$class_model_handle.html#ab0b65368ab557d73fc4250f38c97a36a" title="Obtém o iterador para o início dos Flows." alt="" coords="209,56,380,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,67,195,69,190,70,161,72"/>
+<area shape="rect" id="Node000004" href="$class_model_handle.html#a764484c7acf746145d885d2c297425bc" title="Obtém o iterador para o fim dos Flows." alt="" coords="214,107,375,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,85,224,102,218,103,161,91"/>
 </map>

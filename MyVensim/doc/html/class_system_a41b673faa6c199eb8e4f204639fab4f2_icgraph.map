@@ -2,11 +2,11 @@
 <area shape="rect" id="Node000001" title="Obtém o valor atual do sistema." alt="" coords="325,157,449,184"/>
 <area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#ab5b2fd66ce3b2f1996afb4d0368962c3" title="Teste funcional para um cenário complexo." alt="" coords="112,5,268,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,144,330,95,304,69,276,46,254,35,254,30,278,42,308,65,334,91,373,145"/>
-<area shape="rect" id="Node000004" href="$class_flow_complexo.html#a262bf3f57698d50380ae79922cb9a0bc" title="Método virtual puro para a equação do fluxo." alt="" coords="107,56,272,83"/>
+<area shape="rect" id="Node000004" href="$class_flow_complexo.html#a262bf3f57698d50380ae79922cb9a0bc" title="Método que representa a equação do fluxo, pode ser sobrescrito." alt="" coords="107,56,272,83"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="355,147,319,122,276,97,248,86,248,81,278,92,322,118,360,147"/>
-<area shape="rect" id="Node000005" href="$class_flow_exponential.html#ab8a634c6e849582a1c2ea8051d814334" title="Método virtual puro para a equação do fluxo." alt="" coords="103,107,277,133"/>
+<area shape="rect" id="Node000005" href="$class_flow_exponential.html#ab8a634c6e849582a1c2ea8051d814334" title="Método que representa a equação do fluxo, pode ser sobrescrito." alt="" coords="103,107,277,133"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="315,154,245,137,245,131,320,152"/>
-<area shape="rect" id="Node000006" href="$class_flow_logistical.html#aee96435ea9fc8273be8b0f977720d686" title="Método virtual puro para a equação do fluxo." alt="" coords="109,157,270,184"/>
+<area shape="rect" id="Node000006" href="$class_flow_logistical.html#aee96435ea9fc8273be8b0f977720d686" title="Método que representa a equação do fluxo, pode ser sobrescrito." alt="" coords="109,157,270,184"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="307,171,272,173,270,168,312,170"/>
 <area shape="rect" id="Node000007" href="$funcional__tests_8cpp.html#ab8a16a2ec03d4962454728491b968d6b" title="Teste funcional para o crescimento exponencial." alt="" coords="104,208,276,235"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="315,190,246,210,244,205,320,187"/>

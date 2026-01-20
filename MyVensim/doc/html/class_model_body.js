@@ -12,6 +12,7 @@ var class_model_body =
     [ "endFlows", "class_model_body.html#a3b09d3f8774e294cd8f0058dcb798000", null ],
     [ "endSystems", "class_model_body.html#a85cfb965ea8372b9886259d4d1031c09", null ],
     [ "run", "class_model_body.html#a0f656761189d8d2826ed5c906f416d24", null ],
+    [ "unit_Model", "class_model_body.html#a6eac0ca2a815734ddd311ff3578f1715", null ],
     [ "m_flows", "class_model_body.html#ab142a3d8a761343fa0e9a582904be444", null ],
     [ "m_systems", "class_model_body.html#a82e5d39fedbf31bdb4d16a405ce334eb", null ],
     [ "m_time", "class_model_body.html#accd83a2b2ef6c9e4e1361b40e0e244f4", null ]

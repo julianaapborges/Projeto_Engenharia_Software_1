@@ -4,7 +4,7 @@
 {\ttfamily \#include "{}../../src/lib/flow.\+hpp"{}}\newline
 {\ttfamily \#include "{}../../src/lib/model.\+hpp"{}}\newline
 {\ttfamily \#include "{}../../src/lib/system.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../src/lib/flow\+\_\+impl.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/lib/flow\+\_\+handle.\+hpp"{}}\newline
 {\ttfamily \#include $<$cassert$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
 Include dependency graph for funcional\+\_\+tests.\+cpp\+:\nopagebreak
@@ -18,11 +18,11 @@ Include dependency graph for funcional\+\_\+tests.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_flow_exponential}{Flow\+Exponential}}
-\item 
+\begin{DoxyCompactList}\small\item\em Fluxo exponencial usado em cenário exponencial. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_flow_logistical}{Flow\+Logistical}}
-\item 
+\begin{DoxyCompactList}\small\item\em Fluxo logístico usado em cenário logístico. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_flow_complexo}{Flow\+Complexo}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fluxo complexo usado em cenário complexo. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,6 +32,17 @@ void \mbox{\hyperlink{funcional__tests_8cpp_a873703af6cfeefd5cfd67aef5493ea68}{l
 \begin{DoxyCompactList}\small\item\em Teste funcional para o crescimento logístico. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funcional__tests_8cpp_ab5b2fd66ce3b2f1996afb4d0368962c3}{complex\+Functional\+Test}} ()
 \begin{DoxyCompactList}\small\item\em Teste funcional para um cenário complexo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{funcional__tests_8cpp_aac78cb29dfe4a565da68073b0beebf2f}{num\+Handle\+Created}} = 0
+\begin{DoxyCompactList}\small\item\em Contadores globais para criação e destruição de handles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcional__tests_8cpp_a01128a06118f949a0b24a3d080f515fd}{num\+Handle\+Deleted}} = 0
+\item 
+int \mbox{\hyperlink{funcional__tests_8cpp_ac1322042429ed9724fbef55908244f3b}{num\+Body\+Created}} = 0
+\begin{DoxyCompactList}\small\item\em Contadores globais para criação e destruição de bodies. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcional__tests_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}{num\+Body\+Deleted}} = 0
+\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -47,8 +58,7 @@ void complex\+Functional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaptio
 
 Teste funcional para um cenário complexo. 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -72,8 +82,7 @@ void exponential\+Functional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCa
 
 Teste funcional para o crescimento exponencial. 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -97,8 +106,7 @@ void logistical\+Functional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCap
 
 Teste funcional para o crescimento logístico. 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -112,3 +120,40 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=271pt]{funcional__tests_8cpp_a873703af6cfeefd5cfd67aef5493ea68_icgraph}
 \end{center}
 \end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{funcional__tests_8cpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{funcional__tests_8cpp_ac1322042429ed9724fbef55908244f3b}\index{funcional\_tests.cpp@{funcional\_tests.cpp}!numBodyCreated@{numBodyCreated}}
+\index{numBodyCreated@{numBodyCreated}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{numBodyCreated}{numBodyCreated}}
+{\footnotesize\ttfamily \label{funcional__tests_8cpp_ac1322042429ed9724fbef55908244f3b} 
+int num\+Body\+Created = 0}
+
+
+
+Contadores globais para criação e destruição de bodies. 
+
+\Hypertarget{funcional__tests_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}\index{funcional\_tests.cpp@{funcional\_tests.cpp}!numBodyDeleted@{numBodyDeleted}}
+\index{numBodyDeleted@{numBodyDeleted}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{numBodyDeleted}{numBodyDeleted}}
+{\footnotesize\ttfamily \label{funcional__tests_8cpp_aba38ebae7f83ef57afab8c447dddb6cf} 
+int num\+Body\+Deleted = 0}
+
+\Hypertarget{funcional__tests_8cpp_aac78cb29dfe4a565da68073b0beebf2f}\index{funcional\_tests.cpp@{funcional\_tests.cpp}!numHandleCreated@{numHandleCreated}}
+\index{numHandleCreated@{numHandleCreated}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{numHandleCreated}{numHandleCreated}}
+{\footnotesize\ttfamily \label{funcional__tests_8cpp_aac78cb29dfe4a565da68073b0beebf2f} 
+int num\+Handle\+Created = 0}
+
+
+
+Contadores globais para criação e destruição de handles. 
+
+\Hypertarget{funcional__tests_8cpp_a01128a06118f949a0b24a3d080f515fd}\index{funcional\_tests.cpp@{funcional\_tests.cpp}!numHandleDeleted@{numHandleDeleted}}
+\index{numHandleDeleted@{numHandleDeleted}!funcional\_tests.cpp@{funcional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{numHandleDeleted}{numHandleDeleted}}
+{\footnotesize\ttfamily \label{funcional__tests_8cpp_a01128a06118f949a0b24a3d080f515fd} 
+int num\+Handle\+Deleted = 0}
+

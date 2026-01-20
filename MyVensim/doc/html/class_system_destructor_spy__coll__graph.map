@@ -1,7 +1,13 @@
 <map id="SystemDestructorSpy" name="SystemDestructorSpy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,411,174,501"/>
-<area shape="rect" id="Node000002" href="$class_system__impl.html" title="Implementação concreta da interface System." alt="" coords="32,165,148,363"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,375,92,412,87,410,89,380"/>
-<area shape="rect" id="Node000003" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="47,5,132,117"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,130,92,166,87,165,89,135"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,823,175,913"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html" title="Classe que representa o handle para SystemBody." alt="" coords="28,619,154,773"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,786,93,824,88,822,89,791"/>
+<area shape="rect" id="Node000003" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="5,457,90,569"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,581,75,619,70,619,64,587"/>
+<area shape="rect" id="Node000004" href="$class_handle.html" title=" " alt="" coords="114,457,264,569"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="151,585,134,620,130,618,153,580"/>
+<area shape="rect" id="Node000005" href="$class_system_body.html" title="Classe concreta que representa o corpo de um System Esta classe implementa os métodos para definir e ..." alt="" coords="132,252,247,385"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="190,382,192,441,187,440,189,388"/>
+<area shape="rect" id="Node000006" href="$class_body.html" title=" " alt="" coords="146,5,233,203"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="190,215,192,252,187,252,189,220"/>
 </map>

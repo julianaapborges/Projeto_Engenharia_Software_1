@@ -40,6 +40,9 @@ public:
     
     /** @brief Método que representa a equação do fluxo, pode ser sobrescrito */
     virtual double equation() = 0; 
+
+    /** @brief Declaração de amizade para permitir acesso aos membros privados em testes unitários */
+    friend class unit_Flow;
 };
 
 #endif

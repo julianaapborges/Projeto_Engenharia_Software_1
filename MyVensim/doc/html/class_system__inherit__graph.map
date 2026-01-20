@@ -1,11 +1,9 @@
 <map id="System" name="System">
-<area shape="rect" id="Node000001" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="98,5,183,117"/>
-<area shape="rect" id="Node000002" href="$class_system_handle.html" title="Classe que representa o handle para SystemBody." alt="" coords="5,187,131,341"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,134,98,188,93,186,116,129"/>
-<area shape="rect" id="Node000003" href="$class_system__impl.html" title="Implementação concreta da interface System." alt="" coords="156,165,272,363"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,129,181,165,175,165,165,134"/>
-<area shape="rect" id="Node000004" href="$class_system_destructor_spy.html" title=" " alt="" coords="48,411,217,501"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,374,153,413,149,409,164,378"/>
-<area shape="rect" id="Node000005" href="$class_system_spy.html" title=" " alt="" coords="241,411,349,501"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="263,374,279,412,274,410,260,379"/>
+<area shape="rect" id="Node000001" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="129,5,214,117"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html" title="Classe que representa o handle para SystemBody." alt="" coords="108,165,234,320"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,130,174,166,169,165,170,135"/>
+<area shape="rect" id="Node000003" href="$class_system_destructor_spy.html" title=" " alt="" coords="5,368,174,459"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,331,113,370,109,367,126,335"/>
+<area shape="rect" id="Node000004" href="$class_system_spy.html" title=" " alt="" coords="198,368,306,459"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="216,331,234,369,229,368,213,336"/>
 </map>

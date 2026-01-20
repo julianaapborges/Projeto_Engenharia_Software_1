@@ -49,6 +49,9 @@ protected:
     void add(System* s) override { pImpl_->add(s); }
     /** @brief Adiciona um Flow ao modelo */
     void add(Flow* f) override { pImpl_->add(f); }
+
+    /** @brief Declaração de amizade para permitir acesso aos membros privados em testes unitários */
+    friend class unit_Model;
 };
 
 #endif

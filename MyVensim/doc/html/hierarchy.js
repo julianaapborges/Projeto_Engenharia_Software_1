@@ -6,8 +6,7 @@ var hierarchy =
       [ "SystemBody", "class_system_body.html", null ]
     ] ],
     [ "Flow", "class_flow.html", [
-      [ "FlowHandle", "class_flow_handle.html", null ],
-      [ "Flow_impl", "class_flow__impl.html", [
+      [ "FlowHandle", "class_flow_handle.html", [
         [ "FlowComplexo", "class_flow_complexo.html", null ],
         [ "FlowDestructorSpy", "class_flow_destructor_spy.html", null ],
         [ "FlowExponential", "class_flow_exponential.html", null ],
@@ -24,18 +23,16 @@ var hierarchy =
       [ "ModelHandle", "class_model_handle.html", null ]
     ] ],
     [ "Handle&lt; SystemBody &gt;", "class_handle.html", [
-      [ "SystemHandle", "class_system_handle.html", null ]
-    ] ],
-    [ "Model", "class_model.html", [
-      [ "ModelHandle", "class_model_handle.html", null ],
-      [ "Model_impl", "class_model__impl.html", null ]
-    ] ],
-    [ "System", "class_system.html", [
-      [ "SystemHandle", "class_system_handle.html", null ],
-      [ "System_impl", "class_system__impl.html", [
+      [ "SystemHandle", "class_system_handle.html", [
         [ "SystemDestructorSpy", "class_system_destructor_spy.html", null ],
         [ "SystemSpy", "class_system_spy.html", null ]
       ] ]
+    ] ],
+    [ "Model", "class_model.html", [
+      [ "ModelHandle", "class_model_handle.html", null ]
+    ] ],
+    [ "System", "class_system.html", [
+      [ "SystemHandle", "class_system_handle.html", null ]
     ] ],
     [ "unit_Flow", "classunit___flow.html", null ],
     [ "unit_Model", "classunit___model.html", null ],

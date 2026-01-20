@@ -1,0 +1,5 @@
+<map id="FlowHandle::getTarget" name="FlowHandle::getTarget">
+<area shape="rect" id="Node000001" title="Obtém o System de destino." alt="" coords="215,5,367,32"/>
+<area shape="rect" id="Node000002" href="$class_flow_logistical.html#aee96435ea9fc8273be8b0f977720d686" title="Método que representa a equação do fluxo, pode ser sobrescrito." alt="" coords="5,5,167,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,19,167,21,167,16,202,19"/>
+</map>

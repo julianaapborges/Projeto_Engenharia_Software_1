@@ -10,7 +10,7 @@
 #ifndef FLOW_MOCK_HPP
 #define FLOW_MOCK_HPP
 
-#include "../../src/lib/flow_impl.hpp"
+#include "../../src/lib/flow_handle.hpp"
 #include "../../src/lib/system.hpp"
 
 /**
@@ -21,7 +21,7 @@
  * `equation()`, facilitando a validação do comportamento dos sistemas
  * sem depender de cálculos reais.
  */
-class FlowMock : public Flow_impl {
+class FlowMock : public FlowHandle {
 private:
     /** Valor pré-definido que a equação irá retornar. */
     double m_result; // Valor que a equação vai retornar
@@ -31,13 +31,13 @@ public:
      * @brief Construtor padrão.
      * Inicializa o fluxo com valor de equação igual a 0.
      */
-    FlowMock() : Flow_impl(), m_result(0.0) {}
+    FlowMock() : FlowHandle(), m_result(0.0) {}
 
     /**
      * @brief Construtor que define o valor que será retornado pela equação.
      * @param result Valor desejado para o retorno de `equation()`.
      */
-    FlowMock(double result) : Flow_impl(), m_result(result) {}
+    FlowMock(double result) : FlowHandle(), m_result(result) {}
 
     /**
      * @brief Construtor completo que permite definir source, target e valor da equação.
@@ -45,7 +45,10 @@ public:
      * @param t Ponteiro para o sistema de destino (Target).
      * @param result Valor que a equação irá retornar. (Padrão: 0.0)
      */
-    FlowMock(System *s, System *t, double result = 0.0) : Flow_impl(s, t), m_result(result) {}
+    FlowMock(System *s, System *t, double result = 0.0) : FlowHandle(), m_result(result) {
+        setSource(s);
+        setTarget(t);
+    }
 
     /**
      * @brief Retorna o valor mockado da equação.

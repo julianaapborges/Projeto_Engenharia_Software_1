@@ -1,5 +1,5 @@
 <map id="unit_Model::unit_model_destructor" name="unit_Model::unit_model_destructor">
-<area shape="rect" id="Node000001" title="Testa o destrutor do Model_impl." alt="" coords="5,5,161,48"/>
-<area shape="rect" id="Node000002" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="209,13,325,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,24,196,26,191,27,161,29"/>
+<area shape="rect" id="Node000001" title="Testa o destrutor do ModelHandle." alt="" coords="5,5,161,48"/>
+<area shape="rect" id="Node000002" href="$class_model_handle.html#a8be4061afed9ea571e49e25c3e0e5f3d" title="Adiciona um System ao modelo." alt="" coords="209,13,335,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,24,196,26,190,27,161,29"/>
 </map>

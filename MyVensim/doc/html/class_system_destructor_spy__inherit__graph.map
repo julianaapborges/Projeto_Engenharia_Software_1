@@ -1,7 +1,9 @@
 <map id="SystemDestructorSpy" name="SystemDestructorSpy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,411,174,501"/>
-<area shape="rect" id="Node000002" href="$class_system__impl.html" title="Implementação concreta da interface System." alt="" coords="32,165,148,363"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,375,92,412,87,410,89,380"/>
-<area shape="rect" id="Node000003" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="47,5,132,117"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,130,92,166,87,165,89,135"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="34,368,203,459"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html" title="Classe que representa o handle para SystemBody." alt="" coords="56,165,182,320"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,333,121,369,116,368,117,337"/>
+<area shape="rect" id="Node000003" href="$class_system.html" title="Interface que representa um Sistema (Estoque) na teoria de sistemas." alt="" coords="5,5,90,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,129,91,165,86,166,75,134"/>
+<area shape="rect" id="Node000004" href="$class_handle.html" title=" " alt="" coords="114,5,264,117"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="163,129,151,166,146,164,161,134"/>
 </map>

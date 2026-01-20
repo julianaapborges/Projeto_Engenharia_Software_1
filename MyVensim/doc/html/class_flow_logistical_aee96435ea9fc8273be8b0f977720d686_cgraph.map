@@ -1,7 +1,7 @@
 <map id="FlowLogistical::equation" name="FlowLogistical::equation">
-<area shape="rect" id="Node000001" title="Método virtual puro para a equação do fluxo." alt="" coords="5,31,167,57"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html#abcc5b318972ee1a136def46a6ae5ae13" title="Retorna o ponteiro do destino." alt="" coords="215,5,357,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,31,202,29,197,30,167,36"/>
-<area shape="rect" id="Node000003" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="224,56,348,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,52,211,59,206,60,167,57"/>
+<area shape="rect" id="Node000001" title="Método que representa a equação do fluxo, pode ser sobrescrito." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html#a660808cc3bcc0ecc404e5e43ee2df5d9" title="Obtém o System de destino." alt="" coords="215,5,367,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,31,202,29,197,31,168,37"/>
+<area shape="rect" id="Node000003" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor atual do sistema." alt="" coords="229,56,353,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,51,216,60,211,60,167,57"/>
 </map>

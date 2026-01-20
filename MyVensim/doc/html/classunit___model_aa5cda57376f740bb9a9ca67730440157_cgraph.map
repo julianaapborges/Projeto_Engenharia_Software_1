@@ -1,42 +1,42 @@
 <map id="unit_Model::run_unit_tests_Model" name="unit_Model::run_unit_tests_Model">
 <area shape="rect" id="Node000001" title="Executa todos os testes unitários do Model_impl." alt="" coords="5,223,144,265"/>
-<area shape="rect" id="Node000002" href="$classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do Model_impl." alt="" coords="192,5,375,32"/>
+<area shape="rect" id="Node000002" href="$classunit___model.html#a89a1f4682305d5dfd5b284de38088f55" title="Testa o método add do ModelHandle." alt="" coords="192,5,375,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,221,94,183,117,134,149,84,168,62,190,42,200,37,196,42,193,46,172,65,153,88,121,137,99,185,85,223"/>
-<area shape="rect" id="Node000004" href="$classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do Model_impl." alt="" coords="206,123,361,165"/>
+<area shape="rect" id="Node000004" href="$classunit___model.html#a5612372ad2fe9bd1cd7ba60dde6060e2" title="Testa o operador de atribuição do ModelHandle." alt="" coords="206,123,361,165"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,220,190,175,206,170,202,173,193,180,112,224"/>
-<area shape="rect" id="Node000007" href="$classunit___model.html#a87d055b047bc605b35eaeb6d5343ac8b" title="Testa o construtor padrão do Model_impl." alt="" coords="206,389,361,432"/>
+<area shape="rect" id="Node000007" href="$classunit___model.html#a87d055b047bc605b35eaeb6d5343ac8b" title="Testa o construtor padrão do ModelHandle." alt="" coords="206,389,361,432"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="90,263,133,319,162,349,193,375,201,381,196,382,190,379,158,353,129,323,89,269"/>
-<area shape="rect" id="Node000008" href="$classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do Model_impl." alt="" coords="206,189,361,232"/>
+<area shape="rect" id="Node000008" href="$classunit___model.html#a369c59c0d03137a67dfd38e68154931c" title="Testa o construtor de cópia do ModelHandle." alt="" coords="206,189,361,232"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="143,231,192,224,188,227,145,235"/>
-<area shape="rect" id="Node000009" href="$classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do Model_impl." alt="" coords="206,56,361,99"/>
+<area shape="rect" id="Node000009" href="$classunit___model.html#aedd95aec1dc5db2ab7de5b2420023673" title="Testa o destrutor do ModelHandle." alt="" coords="206,56,361,99"/>
 <area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="87,221,129,165,158,135,190,109,200,104,197,108,193,113,162,139,133,169,92,223"/>
 <area shape="rect" id="Node000010" href="$classunit___model.html#ab4e119d154d10326a3b29cc371a67f9c" title="Teste para verificar o funcionamento dos iteradores de Flow." alt="" coords="206,323,361,365"/>
 <area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="110,263,193,308,207,316,202,317,190,313,110,268"/>
 <area shape="rect" id="Node000013" href="$classunit___model.html#a77b53b8cbe519f6089ffc33dc9a25d89" title="Teste para verificar o funcionamento dos iteradores de System." alt="" coords="206,256,361,299"/>
 <area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="143,252,193,261,188,264,145,258"/>
-<area shape="rect" id="Node000014" href="$classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do Model_impl." alt="" coords="193,456,374,483"/>
+<area shape="rect" id="Node000014" href="$classunit___model.html#a16d8176c8c784c638097f7c8293a6e6d" title="Testa o método run do ModelHandle." alt="" coords="193,456,374,483"/>
 <area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="83,263,99,303,121,351,153,400,172,423,193,442,201,449,195,448,190,446,168,426,149,404,117,354,94,305,82,268"/>
-<area shape="rect" id="Node000003" href="$class_model__impl.html#a9c9ab275a8fb201d8de579ff95c6a4ba" title="Adiciona um Sistema ao Modelo (implementação interna)." alt="" coords="454,135,570,161"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,30,376,42,438,81,488,124,483,124,435,85,374,46,347,35"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="360,143,441,146,436,148,362,148"/>
-<area shape="rect" id="Node000005" href="$class_model__impl.html#a1484cc48179d33dcb673b5d8f6351c2d" title=" " alt="" coords="423,240,601,267"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="354,163,377,175,392,188,401,201,410,214,424,226,436,233,431,234,422,230,406,218,397,205,388,192,373,180,355,169"/>
-<area shape="rect" id="Node000006" href="$class_model__impl.html#a002b185410a2468b03df530b46adcf5c" title=" " alt="" coords="428,189,596,216"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="361,161,445,184,440,186,362,167"/>
-<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="360,187,448,165,444,167,362,192"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="361,222,424,236,419,237,362,228"/>
-<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="360,205,415,205,410,207,362,210"/>
-<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="355,97,454,129,449,131,355,102"/>
-<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="359,320,373,309,386,293,392,276,396,243,400,210,408,192,421,175,442,164,438,167,425,179,412,195,405,211,401,244,397,278,390,295,377,313,362,324"/>
-<area shape="rect" id="Node000011" href="$class_model__impl.html#a43c7c6a347d1e86c45c7d539b01aa896" title=" " alt="" coords="432,356,593,383"/>
-<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="361,350,418,358,413,359,361,355"/>
-<area shape="rect" id="Node000012" href="$class_model__impl.html#a7d86d17f5a79ddba980cb40570fa6abb" title=" " alt="" coords="436,305,588,332"/>
-<area shape="poly" id="edge17_Node000010_Node000012" title=" " alt="" coords="361,333,424,328,418,330,362,338"/>
-<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="355,253,373,242,388,226,396,209,405,192,421,175,442,166,437,169,425,179,409,195,401,212,393,229,377,246,358,258"/>
-<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="360,267,410,263,405,265,362,272"/>
-<area shape="poly" id="edge21_Node000013_Node000006" title=" " alt="" coords="342,253,422,225,448,220,443,222,424,231,345,258"/>
-<area shape="rect" id="Node000015" href="$class_system__impl.html#a810bee0fb6296a3882ed7c3d7b8b0218" title="Retorna o valor atual do sistema." alt="" coords="434,481,590,508"/>
-<area shape="poly" id="edge23_Node000014_Node000015" title=" " alt="" coords="374,477,422,484,416,484,374,482"/>
-<area shape="rect" id="Node000016" href="$class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51" title="Executa a simulação." alt="" coords="456,431,569,457"/>
-<area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="374,457,443,452,438,452,374,462"/>
+<area shape="rect" id="Node000003" href="$class_model_handle.html#a8be4061afed9ea571e49e25c3e0e5f3d" title="Adiciona um System ao modelo." alt="" coords="454,135,580,161"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,30,376,42,440,81,492,124,487,124,437,85,374,46,347,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="361,143,441,146,436,148,362,148"/>
+<area shape="rect" id="Node000005" href="$class_model_handle.html#a4bea52e982c6ca64d4a5b62754bd9227" title="Obtém o iterador para o início dos Systems." alt="" coords="423,240,611,267"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="354,163,377,175,392,188,401,202,410,214,424,226,436,234,431,234,422,230,406,218,397,205,388,192,373,180,355,169"/>
+<area shape="rect" id="Node000006" href="$class_model_handle.html#a82e3947b39d2082be21a9a33d466da0f" title="Obtém o iterador para o fim dos Systems." alt="" coords="428,189,606,216"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="361,161,448,184,443,186,362,166"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="361,187,452,165,447,167,363,192"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="361,222,428,236,423,237,362,228"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="361,205,415,205,410,207,362,211"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="356,97,458,129,453,131,357,102"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="359,320,373,309,386,293,392,276,396,243,400,210,407,192,421,175,442,164,438,167,425,179,412,195,405,211,401,244,397,278,390,295,377,313,362,324"/>
+<area shape="rect" id="Node000011" href="$class_model_handle.html#ab0b65368ab557d73fc4250f38c97a36a" title="Obtém o iterador para o início dos Flows." alt="" coords="432,356,603,383"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="361,350,418,358,413,359,362,355"/>
+<area shape="rect" id="Node000012" href="$class_model_handle.html#a764484c7acf746145d885d2c297425bc" title="Obtém o iterador para o fim dos Flows." alt="" coords="436,305,598,332"/>
+<area shape="poly" id="edge17_Node000010_Node000012" title=" " alt="" coords="361,333,424,328,419,330,362,338"/>
+<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="355,253,373,242,388,226,396,209,405,192,421,175,442,166,438,169,425,179,409,195,401,212,393,229,377,246,358,258"/>
+<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="361,267,410,264,405,266,362,272"/>
+<area shape="poly" id="edge21_Node000013_Node000006" title=" " alt="" coords="342,253,422,225,450,220,445,222,424,231,344,258"/>
+<area shape="rect" id="Node000015" href="$class_system_handle.html#a5c59a67c5a07cdd4f6c60488aea4075a" title="Obtém o valor armazenado no SystemHandle." alt="" coords="434,481,600,508"/>
+<area shape="poly" id="edge23_Node000014_Node000015" title=" " alt="" coords="374,476,421,484,416,484,374,482"/>
+<area shape="rect" id="Node000016" href="$class_model_handle.html#a4db2fc970fdf643e78e15d33d4007c82" title="Executa o modelo no intervalo de tempo especificado." alt="" coords="456,431,579,457"/>
+<area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="374,457,443,452,437,453,374,462"/>
 </map>

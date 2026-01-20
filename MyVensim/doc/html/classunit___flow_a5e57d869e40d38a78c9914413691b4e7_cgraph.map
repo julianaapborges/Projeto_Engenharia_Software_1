@@ -1,5 +1,5 @@
 <map id="unit_Flow::unit_flow_setSource" name="unit_Flow::unit_flow_setSource">
 <area shape="rect" id="Node000001" title="Teste para o método setSource da classe Flow." alt="" coords="5,5,143,48"/>
-<area shape="rect" id="Node000002" href="$class_flow__impl.html#af972bc754c715026f3966ed93dfdcadc" title="Define a origem do fluxo." alt="" coords="191,13,338,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,24,178,26,173,27,143,29"/>
+<area shape="rect" id="Node000002" href="$class_flow_handle.html#a24bd92b9d17cc644b9a6ef890592ef70" title="Define o System de origem." alt="" coords="191,13,348,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,24,178,26,172,27,143,29"/>
 </map>

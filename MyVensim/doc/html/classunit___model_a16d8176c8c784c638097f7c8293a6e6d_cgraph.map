@@ -1,7 +1,7 @@
 <map id="unit_Model::unit_model_run" name="unit_Model::unit_model_run">
-<area shape="rect" id="Node000001" title="Testa o método run do Model_impl." alt="" coords="5,31,186,57"/>
-<area shape="rect" id="Node000002" href="$class_system__impl.html#a810bee0fb6296a3882ed7c3d7b8b0218" title="Retorna o valor atual do sistema." alt="" coords="234,5,389,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,31,221,29,216,30,186,36"/>
-<area shape="rect" id="Node000003" href="$class_model__impl.html#a56f41629f62e1829bd28d85c9de23b51" title="Executa a simulação." alt="" coords="255,56,368,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,52,242,61,236,61,186,57"/>
+<area shape="rect" id="Node000001" title="Testa o método run do ModelHandle." alt="" coords="5,31,186,57"/>
+<area shape="rect" id="Node000002" href="$class_system_handle.html#a5c59a67c5a07cdd4f6c60488aea4075a" title="Obtém o valor armazenado no SystemHandle." alt="" coords="234,5,399,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,31,221,29,216,30,187,36"/>
+<area shape="rect" id="Node000003" href="$class_model_handle.html#a4db2fc970fdf643e78e15d33d4007c82" title="Executa o modelo no intervalo de tempo especificado." alt="" coords="255,56,378,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,52,242,60,236,61,186,57"/>
 </map>

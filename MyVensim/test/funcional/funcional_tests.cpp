@@ -6,6 +6,8 @@
 #include <cassert>
 #include <cmath>
 
+using namespace std;
+
 // Definição das variáveis globais necessárias para o Handle/Body funcionar
 int numHandleCreated = 0;
 int numHandleDeleted = 0;
@@ -75,6 +77,9 @@ void exponentialFunctionalTest() {
 
     // 6. Limpa
     delete model;
+
+    cout << "Teste Exponencial -> Handles Criados: " << numHandleCreated << ", Deletados: " << numHandleDeleted << endl;
+    cout << "Teste Exponencial -> Bodies Criados: " << numBodyCreated << ", Deletados: " << numBodyDeleted << endl;
 }
 
 /** @brief Teste funcional para o crescimento logístico */
@@ -94,6 +99,9 @@ void logisticalFunctionalTest() {
     assert(fabs(p2->getValue() - 21.7833) < 0.0001);
 
     delete model;
+
+    cout << "Teste Logístico -> Handles Criados: " << numHandleCreated << ", Deletados: " << numHandleDeleted << endl;
+    cout << "Teste Logístico -> Bodies Criados: " << numBodyCreated << ", Deletados: " << numBodyDeleted << endl;
 }
 
 /** @brief Teste funcional para um cenário complexo */
@@ -125,4 +133,7 @@ void complexFunctionalTest() {
     assert(fabs(q5->getValue() - 16.4612) < 0.0001);
 
     delete model;
+
+    cout << "Teste Complexo -> Handles Criados: " << numHandleCreated << ", Deletados: " << numHandleDeleted << endl;
+    cout << "Teste Complexo -> Bodies Criados: " << numBodyCreated << ", Deletados: " << numBodyDeleted << endl;
 }

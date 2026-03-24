@@ -49,6 +49,7 @@ make BUILD_APP
 make BUILD_FUNC_TEST
     ou
 make BUILD_UNIT_TEST
+```
 
 **Executar os testes (validação dos Modelos):**
 ```bash
@@ -57,3 +58,12 @@ make APP
 make RUN_FUNC_TEST
     ou
 make RUN_UNIT_TEST
+```
+
+## 📌 Status do Projeto e Versões
+
+A versão atual na branch principal (`master`) reflete a entrega da **Sprint 5**, que é a versão **mais estável e funcional** do framework, com todos os testes passando.
+
+> **💡 Nota sobre a Sprint 6 (Padrão Handle/Body):** > Existe uma branch isolada chamada `sprint6` no repositório. Nela, realizei um experimento de refatoração da arquitetura para aplicar o idioma **Handle/Body** (Padrão Bridge), muito comum em C++ para encapsular a implementação e gerenciar memória. 
+> 
+> Como essa mudança estrutural profunda acabou comprometendo a estabilidade da lógica de simulação construída anteriormente, decidi não mesclá-la com a `master`. A branch foi mantida propositalmente como um registro valioso de aprendizado prático sobre padrões de projeto e evolução de arquitetura.
